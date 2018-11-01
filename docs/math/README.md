@@ -8,7 +8,7 @@
     - [2017美赛参赛整理(Problem D)](/math/2017-mcm-icm)
     - [2016数学建模国赛](/math/2016-guosai)
     - [数学建模之2016深圳杯——初次尝试](/math/math-model-szb)
-- [随机多边形转化为椭圆的过程研究](/math/polygon-to-ellipse)
+    - [随机多边形转化为椭圆的过程研究](/math/polygon-to-ellipse)
 - NKU数院试题整理:
     - 分析:
         - [2017-2018第一学期泛函分析期末考试](/math/exam/functional-analysis-final)

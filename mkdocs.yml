@@ -2,7 +2,7 @@ site_name: ONCE.MATH
 site_description: Welcome to zawnpn's blog.
 site_url: 'https://oncemath.com'
 strict: true
-repo_url: 'https://github.com/zawnpn/zawnpn.github.io'
+repo_url: 'https://github.com/zawnpn/ONCEMATH'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
 remote_name: origin
@@ -11,6 +11,8 @@ copyright: 'Copyright &copy; 2016-2019 ONCE.MATH'
 nav:
   - Home:
     - 主页: index.md
+    - 友情链接: links.md
+    - 打赏: donates.md
   - Projects:
     - README: projects/README.md
     - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
@@ -27,7 +29,7 @@ nav:
       - 2017美赛参赛整理(Problem D): math/2017-mcm-icm.md
       - 2016数学建模国赛: math/2016-guosai.md
       - 数学建模之2016深圳杯——初次尝试: math/math-model-szb.md
-    - 随机多边形转化为椭圆的过程研究: math/polygon-to-ellipse.md
+      - 随机多边形转化为椭圆的过程研究: math/polygon-to-ellipse.md
     - NKU数院试题整理:
       - 分析:
         - 2017-2018第一学期泛函分析期末考试: math/exam/functional-analysis-final.md
