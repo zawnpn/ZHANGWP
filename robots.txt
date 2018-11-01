@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /mathjax/
+Disallow: /theme/
+Disallow: /images/
+Disallow: /files/
+
+Disallow: /*.md$
+Disallow: /*.css$
+Disallow: /*.js$
+
+Sitemap: /sitemap.xml
