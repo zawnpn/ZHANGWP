@@ -73,7 +73,7 @@ nav:
 theme:
   name: 'material'
   font: false
-  language: 'en'
+  language: 'zh'
   favicon: '/assets/images/all_inclusive.png'
   logo:
     icon: 'all_inclusive'
@@ -97,10 +97,10 @@ extra:
       link: 'https://steamcommunity.com/id/zawnpn/'
     - type: 'globe'
       link: 'https://www.zhihu.com/people/zhangwanpeng'
-
 extra_javascript:
   - assets/extra.js
-  - //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+  - //cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
 markdown_extensions:
   - pymdownx.arithmatex
   - codehilite
