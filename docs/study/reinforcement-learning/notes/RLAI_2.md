@@ -70,7 +70,7 @@ $$A_t \doteq \mathop{\arg\max}\limits_aQ_t(a)$$
 
 为什么这个 ε-greedy action 就要比单纯的 greedy action 策略好呢？我们来简单分析一下：
 
- - 如果 $t \rightarrow \infty$，那么 $\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty$，正如前面已经分析过的，会有 $Q_t(a)\rightarrow q_*(a)$.
+ - 显然可知， ε-greedy action 由于有随机探索的过程，必然能保证：当 $t \rightarrow \infty$，就有 $\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty$。这样正如前面已经分析过的，根据大数定律会有 $Q_t(a)\rightarrow q_*(a)$.
  - $\mathrm{Pr}\{A_t=\mathop{\arg\max}\limits_{a}Q_t(a)\} = 1-\varepsilon$，如果 ε 取得太大，就会过于注重探索，而没有充分利用好这些收获到的信息来增加我们的收益，对于我们想要最大化**累积收益**的目标是不利的，但如果取到一个合适的 ε ，便能兼顾信息探索和信息的**充分利用**。
 
 ## 2.3 The 10-armed Testbed
@@ -367,4 +367,4 @@ $$
 
 简单而言，之前一直讨论的 nonassociative 问题可以看作现在这个问题下 m=1 的特例。在这个新任务中，我们不但要像之前一样通过探索和利用来学习每个问题的情况，还要把问题之间的关联性也学出来，也就是把环境因素也考虑进来。
 
-这种负杂的问题，叫做 full reinforcement learning problem ，会在书的后面章节讲到。
+这种复杂的问题，叫做 full reinforcement learning problem ，会在书的后面章节讲到。
