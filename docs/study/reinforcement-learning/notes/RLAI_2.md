@@ -110,6 +110,8 @@ $$A_t \doteq \mathop{\arg\max}\limits_aQ_t(a)$$
 
 这一节的简单讲提到如何让计算机来学习 bandit 问题。
 
+### Optimization
+
 首先，我们把问题简化一下，只关注某个具体的 action $a$ ，其他的类比即可。
 
 设 $R_i$ 表示第 i 次选到 $a$ 时系统返回的奖励值，$Q_n$ 表示在前 n 次执行 action $a$ 的经验基础上，对下一次再选到 $a$ 的预测值，那么就有
@@ -132,6 +134,8 @@ $$
 上面式子的更广义的写法是
 
 $$NewEstimate \leftarrow OldEstimate + StepSize[Target - OldEstimate]$$
+
+### Pseuducode
 
 在这个基础上，我们整理一下程序的流程，下面是程序的伪代码：
 
@@ -246,6 +250,8 @@ UCB 算法就是采取满足上式的 action $A_t$ ，算法的核心就在于�
 
 ## 2.8 Gradient Bandit Algorithms
 
+### Introduction
+
 前面几种算法，都是在围绕着 $Q_t$ 进行取 $\mathop{\arg\max}$ 然后直接执行 action 的策略，显得有点偏激，一个看上去更合理的做法是，每个 action 对其评分后，确定一个概率分布，然后以这种分布下的**趋势**去做选择，而非凭借数值的绝对大小去做选择。这样显得更加“平滑”，同时根据这些趋势，也能达到动态探索的效果。这便是 Gradient Bandit Algorithms 。
 
 $$\mathrm{Pr}\{A_{t} = a\} \doteq \frac{e^{H_{t}(a)}}{\sum^{k}_{b=1}e^{H_{t}(b)}}\doteq \pi_{t}(a)$$
@@ -264,6 +270,8 @@ $$
 更一般地，我们可以用指示函数来写成一个通式
 
 $$H_{t+1}(a) \doteq H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))$$
+
+### Proof
 
 我们知道，随机梯度上升确实能确保收敛到最优值，那么问题就在于，这个形式是否就是“随机梯度上升”的形式呢？
 
@@ -344,3 +352,19 @@ $$
 <div align="center"><img src="../imgs/RLAI_2/sga.png" width="450" alt="sga" /></div>
 
 关于 $H_t(a)$ 的更新式中 $\overline R_{t}$ 这一项，他起到一个对比基准线的作用，事实上这个基准线不一定设为均值，他的取值并不影响更新式的方差。作者表明，其实设为均值并不一定能达到最佳效果，但总体而言是一个简单方便且效果较好的一个选择。上图中的实验简单对比了 baseline 为均值和 baseline 为 0 时的不同效果。
+
+## 2.9 Associative Search (Contextual Bandit)
+
+本文的一开头，我们提到本章主要针对“非关联性（nonassociative）”的简单场景来学习基础的强化学习方法。而非关联性在本章就是指**无需考虑每一步行动之间的影响，以及环境对行动的影响**。非关联性问题是一种很理想化的问题，现实中很多东西都是有所联系的，包括 action 与 action 之间的关联， action 与环境之间的关联等等。这一小节，就是关于关联性问题做了一个最基本的简单介绍。
+
+### Background
+
+ - 考虑有 m 个独立的 $k_i$-armed bandit 任务（$i=1,\ldots,m$），每个都有独特的特征能被区分开。
+ - 每一步会让你面对一个 $k_i$-armed bandit 任务来做选择。
+ - 目标是学习出能将这 m 个独立任务关联起来的最优方案。
+
+### Full Reinforcement Learning Problem
+
+简单而言，之前一直讨论的 nonassociative 问题可以看作现在这个问题下 m=1 的特例。在这个新任务中，我们不但要像之前一样通过探索和利用来学习每个问题的情况，还要把问题之间的关联性也学出来，也就是把环境因素也考虑进来。
+
+这种负杂的问题，叫做 full reinforcement learning problem ，会在书的后面章节讲到。

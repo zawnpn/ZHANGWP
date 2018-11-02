@@ -5,7 +5,7 @@ strict: true
 repo_url: 'https://github.com/zawnpn/ONCEMATH'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
-remote_name: origin
+remote_name: 'zawnpn/ONCEMATH'
 site_author: zawnpn
 copyright: 'Copyright &copy; 2016-2019 ONCE.MATH'
 nav:
@@ -72,6 +72,7 @@ nav:
 
 theme:
   name: 'material'
+  font: false
   language: 'en'
   favicon: '/assets/images/all_inclusive.png'
   logo:
@@ -87,9 +88,21 @@ theme:
 extra:
   search:
     language: 'en, jp'
+  social:
+    - type: 'github'
+      link: 'https://github.com/zawnpn'
+    - type: 'twitter'
+      link: 'https://twitter.com/zawnpn'
+    - type: 'steam'
+      link: 'https://steamcommunity.com/id/zawnpn/'
+    - type: 'globe'
+      link: 'https://www.zhihu.com/people/zhangwanpeng'
 
 extra_javascript:
   - assets/extra.js
   - //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
 markdown_extensions:
   - pymdownx.arithmatex
+  - codehilite
+  - toc:
+      permalink: true
