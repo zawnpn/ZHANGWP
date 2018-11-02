@@ -613,6 +613,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#26-optimistic-initial-values" title="2.6 Optimistic Initial Values" class="md-nav__link">
+    2.6 Optimistic Initial Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-upper-confidence-bound-action-selection" title="2.7 Upper-Confidence-Bound Action Selection" class="md-nav__link">
+    2.7 Upper-Confidence-Bound Action Selection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-gradient-bandit-algorithms" title="2.8 Gradient Bandit Algorithms" class="md-nav__link">
+    2.8 Gradient Bandit Algorithms
+  </a>
+  
+</li>
+      
       
       
       
@@ -1529,6 +1550,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#26-optimistic-initial-values" title="2.6 Optimistic Initial Values" class="md-nav__link">
+    2.6 Optimistic Initial Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-upper-confidence-bound-action-selection" title="2.7 Upper-Confidence-Bound Action Selection" class="md-nav__link">
+    2.7 Upper-Confidence-Bound Action Selection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-gradient-bandit-algorithms" title="2.8 Gradient Bandit Algorithms" class="md-nav__link">
+    2.8 Gradient Bandit Algorithms
+  </a>
+  
+</li>
+      
       
       
       
@@ -1632,7 +1674,7 @@
 <li>整体上都能一定程度地通过学习找到问题的规律，所以三种策略最后都能有一个正的稳定回报值（如果没有学到任何信息，也即随机选 action ，最后这些 “<strong>average</strong> reward” 显然会趋于0。注意这个 “<strong>average</strong>” ，是指很多不同问题的平均）</li>
 <li>贪心策略一开始的表现要比其他的略好，但是最终明显不如 ε-贪心策略（猜测是陷入了局部最优解）。</li>
 </ul>
-<div align="center"><img src="../imgs/RLAI_2/optimal-action.png" width="450" alt="optimal-action.png" /></div>
+<div align="center"><img src="../imgs/RLAI_2/optimal-action.png" width="450" alt="optimal-action" /></div>
 
 <p>从上图易知，</p>
 <ul>
@@ -1742,6 +1784,188 @@ Q_{n+1} &\doteq Q_{n} + \alpha[R_{n} - Q_{n}]
 </ul>
 <p>易见，<span><span class="MathJax_Preview">\alpha_n = \dfrac{1}{n}</span><script type="math/tex">\alpha_n = \dfrac{1}{n}</script></span> 满足条件能够让其收敛，而 <span><span class="MathJax_Preview">\alpha_n \equiv \alpha</span><script type="math/tex">\alpha_n \equiv \alpha</script></span>(<span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span> 为常量) 则由于不满足条件中的第二项，使 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 不能收敛。看似这是一个坏结果，其实这一结果反而能被利用在<strong>非稳定（nonstationary）问题</strong>中，这是因为，一个不收敛的波动的 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 其实更适合用来描述非稳定问题下的奖励值，而前面收敛的 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 反而可能失去了非稳定环境下的一些关键波动信息。</p>
 <p>另一个关键之处在于，满足两个条件的 <span><span class="MathJax_Preview">\{\alpha_n\}</span><script type="math/tex">\{\alpha_n\}</script></span> 往往收敛缓慢，非常不实用，一般也只用在理论研究中。</p>
+<h2 id="26-optimistic-initial-values">2.6 Optimistic Initial Values</h2>
+<p>这一节简单研究了一下初始预估值对模型学习效果的影响。</p>
+<p>我们再次拿出前面的指数近因加权平均：</p>
+<div>
+<div class="MathJax_Preview">Q_{n+1} = (1-\alpha)^{n}Q_{1}+\sum^{n}_{i=1}(1-\alpha)^{n-i}\alpha R_{i}</div>
+<script type="math/tex; mode=display">Q_{n+1} = (1-\alpha)^{n}Q_{1}+\sum^{n}_{i=1}(1-\alpha)^{n-i}\alpha R_{i}</script>
+</div>
+<p>不难看出，前面讨论的所有方法，对每个 action 而言，评估体系显然都会一定程度上受到初始值 <span><span class="MathJax_Preview">Q_1</span><script type="math/tex">Q_1</script></span> 的影响。在统计学中，这叫做被初值<em>偏置</em>了。</p>
+<p>初始预估值可以用来根据先验信息提供奖励的期望标准。此外，如果将初始值调高，还有着鼓励模型在早期更多地进行探索的作用。以贪心策略为例，一个很高的初始预期值（称为<strong>乐观初值</strong>），会诱使模型去选择这个 action ，然而事实上 reward 要比估计值差很多，误差值 <span><span class="MathJax_Preview">[R_n - Q_n]</span><script type="math/tex">[R_n - Q_n]</script></span> 会是一个较大的负数，导致模型对这个 action “失望”，评价降低，下一次，模型就会去主动尝试其他 action 。通过这一方法，达到了鼓励模型在早期多做探索的作用。</p>
+<p>下面是一个具体的实验，“高初始值的 greedy 策略” vs “正常初始值的 ε-greedy 策略”。</p>
+<div align="center"><img src="../imgs/RLAI_2/optimistic-init.png" width="450" alt="optimistic-init" /></div>
+
+<p>从图片可以看出，即使是纯贪心行动，由于一开始给定较高初始值，模型便如我们分析的一样，在早期进行了大量探索，收获了大量有用的信息，从而也能摆脱局部最优，达到全局最优解，而且其后期几乎 100% 利用率的优势，使其比该实验中 ε-greedy 方法的效果还要优秀。</p>
+<p>但是乐观初值法的适用面很窄，它仅适用于固定分布的问题。我们知道模型只会在早期多做探索，后期基本上仍是以 Exploiting 为主，对于非稳定的情况，必然需要时刻探索收集信息，此时乐观初值法就不再适用。</p>
+<h2 id="27-upper-confidence-bound-action-selection">2.7 Upper-Confidence-Bound Action Selection</h2>
+<p>这一节讲到一个考虑得更全面的评估算法：<strong>Upper-Confidence-Bound(UCB)</strong> 算法。简单讲，就是我们之前的 ε-greedy 方法虽然能保证最终能探索到足够的信息，但是效率不高，因为他只是简单的随机探索，探索时每个 action 都是等概率被选择的。</p>
+<p>我们可以想一想人是怎样探索学习的。人在探索过程中，通过探索学到的知识，肯定会建立一套标准来判定好坏，如果重复执行某个 action ，一直返回一个低回报，那么必须要动态调整探索策略，适当调低再探索这个 action 的概率，而要尽可能多去探索“潜力”更高的 action 。UCB 算法做的就是这么一件事。</p>
+<p>那么 UCB 算法具体是什么呢？</p>
+<div>
+<div class="MathJax_Preview">A_{t} \doteq \mathop{\arg\max}_{a}\left[Q_{t}(a) + c\sqrt{\frac{\ln{t}}{N_{t}(a)}}\right]</div>
+<script type="math/tex; mode=display">A_{t} \doteq \mathop{\arg\max}_{a}\left[Q_{t}(a) + c\sqrt{\frac{\ln{t}}{N_{t}(a)}}\right]</script>
+</div>
+<p>UCB 算法就是采取满足上式的 action <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，算法的核心就在于我们新加入的 <span><span class="MathJax_Preview">c\sqrt{\dfrac{\ln t}{N_t(a)}}</span><script type="math/tex">c\sqrt{\dfrac{\ln t}{N_t(a)}}</script></span> 。</p>
+<ul>
+<li><span><span class="MathJax_Preview">c\sqrt{\dfrac{\ln t}{N_t(a)}}</span><script type="math/tex">c\sqrt{\dfrac{\ln t}{N_t(a)}}</script></span> ：对于估值的不确定性。更广义地讲，其意义为方差。</li>
+<li><span><span class="MathJax_Preview">c</span><script type="math/tex">c</script></span> ：控制了探索的程度，决定了置信度。</li>
+<li><span><span class="MathJax_Preview">N_t(a)</span><script type="math/tex">N_t(a)</script></span> ：第 t 步之前 action <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 被选中的次数。<span><span class="MathJax_Preview">N_t(a)</span><script type="math/tex">N_t(a)</script></span> 如果增加，会给公式中的此项带来降低的影响效果。</li>
+<li><span><span class="MathJax_Preview">\ln t</span><script type="math/tex">\ln t</script></span> ：时间必然会增加，故此项也是一直在保持增加的。但他的影响效果与 action <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 的选择状态密切相关。如果 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 不被选择， <span><span class="MathJax_Preview">\ln t</span><script type="math/tex">\ln t</script></span> 增加但 <span><span class="MathJax_Preview">N_t(a)</span><script type="math/tex">N_t(a)</script></span> 不变，故此项变大，不确定性增加；反之，<span><span class="MathJax_Preview">N_{t+1}(a) = N_t(a) + 1</span><script type="math/tex">N_{t+1}(a) = N_t(a) + 1</script></span> ，虽然 <span><span class="MathJax_Preview">\ln t</span><script type="math/tex">\ln t</script></span> 增加但其增速不如 <span><span class="MathJax_Preview">N_t(a)</span><script type="math/tex">N_t(a)</script></span> ，所以此项整体变小，不确定性降低。</li>
+</ul>
+<p>所以，通过取 <span><span class="MathJax_Preview">\mathop{\arg\max}</span><script type="math/tex">\mathop{\arg\max}</script></span> 便能动态调整探索策略，适当地提高更加不确定、有潜力的 action 被探索的概率。</p>
+<div align="center"><img src="../imgs/RLAI_2/ucb.png" width="450" alt="ucb" /></div>
+
+<p>通过对比实验发现，UCB 算法确实表现要优于普通的 ε-greedy 算法。但是作者也提到，对于更一般的强化学习问题，UCB 算法会遇到一些难点，不再那么适用，比如非稳定问题、大状态空间问题等。</p>
+<h2 id="28-gradient-bandit-algorithms">2.8 Gradient Bandit Algorithms</h2>
+<p>前面几种算法，都是在围绕着 <span><span class="MathJax_Preview">Q_t</span><script type="math/tex">Q_t</script></span> 进行取 <span><span class="MathJax_Preview">\mathop{\arg\max}</span><script type="math/tex">\mathop{\arg\max}</script></span> 然后直接执行 action 的策略，显得有点偏激，一个看上去更合理的做法是，每个 action 对其评分后，确定一个概率分布，然后以这种分布下的<strong>趋势</strong>去做选择，而非凭借数值的绝对大小去做选择。这样显得更加“平滑”，同时根据这些趋势，也能达到动态探索的效果。这便是 Gradient Bandit Algorithms 。</p>
+<div>
+<div class="MathJax_Preview">\mathrm{Pr}\{A_{t} = a\} \doteq \frac{e^{H_{t}(a)}}{\sum^{k}_{b=1}e^{H_{t}(b)}}\doteq \pi_{t}(a)</div>
+<script type="math/tex; mode=display">\mathrm{Pr}\{A_{t} = a\} \doteq \frac{e^{H_{t}(a)}}{\sum^{k}_{b=1}e^{H_{t}(b)}}\doteq \pi_{t}(a)</script>
+</div>
+<p>其中，<span><span class="MathJax_Preview">H_t(a)</span><script type="math/tex">H_t(a)</script></span> 是 action <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 的偏好值，也就是前面提到的对每个 action 的评分，然后根据 <em>soft-max</em> 函数来给出选择每个 action 的概率分布。</p>
+<p>而在取得每步的反馈后，我们则需要利用随机梯度上升法来更新偏好值</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+H_{t+1}(A_{t})&amp;\doteq H_{t}(A_{t}) + \alpha(R_{t}-\overline R_{t})(1-\pi_{t}(A_{t}))
+\\H_{t+1}(a) &amp;\doteq H_{t}(a) - \alpha(R_{t} - \overline R_{t})\pi_{t}(a),\ \forall a \neq A_{t}
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+H_{t+1}(A_{t})&\doteq H_{t}(A_{t}) + \alpha(R_{t}-\overline R_{t})(1-\pi_{t}(A_{t}))
+\\H_{t+1}(a) &\doteq H_{t}(a) - \alpha(R_{t} - \overline R_{t})\pi_{t}(a),\ \forall a \neq A_{t}
+\end{aligned}
+</script>
+</div>
+<p>更一般地，我们可以用指示函数来写成一个通式</p>
+<div>
+<div class="MathJax_Preview">H_{t+1}(a) \doteq H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))</div>
+<script type="math/tex; mode=display">H_{t+1}(a) \doteq H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))</script>
+</div>
+<p>我们知道，随机梯度上升确实能确保收敛到最优值，那么问题就在于，这个形式是否就是“随机梯度上升”的形式呢？</p>
+<p>结论先摆出来，上面的方法确实满足随机梯度上升的条件。证明如下：</p>
+<p>只需证明</p>
+<div>
+<div class="MathJax_Preview">
+H_{t+1}(a) \doteq H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}
+</div>
+<script type="math/tex; mode=display">
+H_{t+1}(a) \doteq H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}
+</script>
+</div>
+<p>其中</p>
+<div>
+<div class="MathJax_Preview">
+\mathbb{E}[R_t] \doteq \sum_{b} \pi_t(b)q_*(b)
+</div>
+<script type="math/tex; mode=display">
+\mathbb{E}[R_t] \doteq \sum_{b} \pi_t(b)q_*(b)
+</script>
+</div>
+<p>而</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}&amp;=\frac{\partial}{\partial H_t(a)}\left[\sum_{b}\pi_t(b)q_*(b)\right]
+\\&amp;=\sum_b q_*(b)\frac{\partial \pi_t(b)}{\partial H_t(a)}
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}&=\frac{\partial}{\partial H_t(a)}\left[\sum_{b}\pi_t(b)q_*(b)\right]
+\\&=\sum_b q_*(b)\frac{\partial \pi_t(b)}{\partial H_t(a)}
+\end{aligned}
+</script>
+</div>
+<p>任设一个标量 <span><span class="MathJax_Preview">X_t</span><script type="math/tex">X_t</script></span> 与 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 独立，而显然又有 <span><span class="MathJax_Preview">\displaystyle \sum_b \frac{\partial \pi_t(b)}{\partial H_t(a)} = 0</span><script type="math/tex">\displaystyle \sum_b \frac{\partial \pi_t(b)}{\partial H_t(a)} = 0</script></span> ，因此 <span><span class="MathJax_Preview">\displaystyle X_t\sum_b \frac{\partial \pi_t(b)}{\partial H_t(a)} = 0</span><script type="math/tex">\displaystyle X_t\sum_b \frac{\partial \pi_t(b)}{\partial H_t(a)} = 0</script></span> 。接上式，</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+\\&amp;=\sum_b(q_*(b) - X_t)\frac{\partial \pi_t(b)}{\partial H_t(a)}
+\\&amp;=\sum_b \pi_t(b)(q_*(b) - X_t)\frac{\partial \pi_t(b)}{\partial H_t(a)}/\pi_t(b)
+\\&amp;=\mathbb{E}[(q_*(A_t) - X_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\\&=\sum_b(q_*(b) - X_t)\frac{\partial \pi_t(b)}{\partial H_t(a)}
+\\&=\sum_b \pi_t(b)(q_*(b) - X_t)\frac{\partial \pi_t(b)}{\partial H_t(a)}/\pi_t(b)
+\\&=\mathbb{E}[(q_*(A_t) - X_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+\end{aligned}
+</script>
+</div>
+<p>在给定 <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> 的条件下， <span><span class="MathJax_Preview">\mathbb{E}[R_t|A_t]=q_*(A_t)</span><script type="math/tex">\mathbb{E}[R_t|A_t]=q_*(A_t)</script></span> ， <span><span class="MathJax_Preview">R_t</span><script type="math/tex">R_t</script></span> 又与其他项不相关，故对于上式，期望意义下可以把 <span><span class="MathJax_Preview">q_*(A_t)</span><script type="math/tex">q_*(A_t)</script></span> 替换为 <span><span class="MathJax_Preview">R_t</span><script type="math/tex">R_t</script></span> ，此时再将任设的 <span><span class="MathJax_Preview">X_t</span><script type="math/tex">X_t</script></span> 定为 <span><span class="MathJax_Preview">R_t</span><script type="math/tex">R_t</script></span> 的均值 <span><span class="MathJax_Preview">\overline R_t</span><script type="math/tex">\overline R_t</script></span> ，则有</p>
+<div>
+<div class="MathJax_Preview">
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}=\mathbb{E}[(R_t - \overline R_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+</div>
+<script type="math/tex; mode=display">
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}=\mathbb{E}[(R_t - \overline R_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+</script>
+</div>
+<p>由于</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+\frac{\partial \pi_t(b)}{\partial H_t(a)} &amp;= \frac{\partial}{\partial H_t(a)}\pi_t(b)
+\\&amp;= \frac{\partial}{\partial H_t(a)}[\frac{e^{H_{t}(b)}}{\sum^{k}_{c=1}e^{H_{t}(c)}}]
+\\&amp;= \frac{\frac{\partial e^{H_t(b)}}{\partial H_t(a)}\sum_{c=1}^k e^{H_t(c)}-e^{H_t(b)} \frac{\partial \sum_{c=1}^k e^{H_t(c)}}{\partial H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&amp;=\frac{\textbf{1}_{a = b}e^{H_t(a)}\sum_{c=1}^k e^H_t(c) - e^{H_t(b)}e^{H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&amp;=\frac{\textbf{1}_{a = b}e^{H_t(b)}}{\sum_{c=1}^k e^{H_t(c)}} - \frac{e^{H_t(b)}e^{H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&amp;=\textbf{1}_{a=b}\pi_t(b)-\pi_t(b)\pi_t(a)
+\\&amp;=\pi_t(b)(\textbf{1}_{a=b}-\pi_t(a))
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\frac{\partial \pi_t(b)}{\partial H_t(a)} &= \frac{\partial}{\partial H_t(a)}\pi_t(b)
+\\&= \frac{\partial}{\partial H_t(a)}[\frac{e^{H_{t}(b)}}{\sum^{k}_{c=1}e^{H_{t}(c)}}]
+\\&= \frac{\frac{\partial e^{H_t(b)}}{\partial H_t(a)}\sum_{c=1}^k e^{H_t(c)}-e^{H_t(b)} \frac{\partial \sum_{c=1}^k e^{H_t(c)}}{\partial H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&=\frac{\textbf{1}_{a = b}e^{H_t(a)}\sum_{c=1}^k e^H_t(c) - e^{H_t(b)}e^{H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&=\frac{\textbf{1}_{a = b}e^{H_t(b)}}{\sum_{c=1}^k e^{H_t(c)}} - \frac{e^{H_t(b)}e^{H_t(a)}}{(\sum_{c=1}^k e^{H_t(c)})^2}
+\\&=\textbf{1}_{a=b}\pi_t(b)-\pi_t(b)\pi_t(a)
+\\&=\pi_t(b)(\textbf{1}_{a=b}-\pi_t(a))
+\end{aligned}
+</script>
+</div>
+<p>代回前面的式子得到</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}&amp;=\mathbb{E}[(R_t - \overline R_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+\\&amp;=\mathbb{E}[(R_t - \overline R_t)\pi_t(A_t)(\textbf{1}_{a = A_t} - \pi_t(a))/\pi_t(A_t)]
+\\&amp;=\mathbb{E}[(R_t - \overline R_t)(\textbf{1}_{a = A_t} - \pi_t(a))]
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}&=\mathbb{E}[(R_t - \overline R_t)\frac{\partial \pi_t(A_t)}{\partial H_t(a)}/\pi_t(A_t)]
+\\&=\mathbb{E}[(R_t - \overline R_t)\pi_t(A_t)(\textbf{1}_{a = A_t} - \pi_t(a))/\pi_t(A_t)]
+\\&=\mathbb{E}[(R_t - \overline R_t)(\textbf{1}_{a = A_t} - \pi_t(a))]
+\end{aligned}
+</script>
+</div>
+<p>结合上面的结果，此时再来对比我们的两个目标式</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned}
+H_{t+1}(a) &amp;= H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}
+\\H_{t+1}(a) &amp;= H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+H_{t+1}(a) &= H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}(a)}
+\\H_{t+1}(a) &= H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))
+\end{aligned}
+</script>
+</div>
+<p>发现确实是梯度上升的形式，证明完毕。</p>
+<div align="center"><img src="../imgs/RLAI_2/sga.png" width="450" alt="sga" /></div>
+
+<p>关于 <span><span class="MathJax_Preview">H_t(a)</span><script type="math/tex">H_t(a)</script></span> 的更新式中 <span><span class="MathJax_Preview">\overline R_{t}</span><script type="math/tex">\overline R_{t}</script></span> 这一项，他起到一个对比基准线的作用，事实上这个基准线不一定设为均值，他的取值并不影响更新式的方差。作者表明，其实设为均值并不一定能达到最佳效果，但总体而言是一个简单方便且效果较好的一个选择。上图中的实验简单对比了 baseline 为均值和 baseline 为 0 时的不同效果。</p>
                 
                   
                 
