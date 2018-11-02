@@ -5,7 +5,7 @@ strict: true
 repo_url: 'https://github.com/zawnpn/ONCEMATH'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
-remote_name: 'zawnpn/ONCEMATH'
+remote_name: 'origin'
 site_author: zawnpn
 copyright: 'Copyright &copy; 2016-2019 ONCE.MATH'
 nav:
