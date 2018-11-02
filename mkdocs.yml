@@ -13,6 +13,11 @@ nav:
     - 主页: index.md
     - 友情链接: links.md
     - 打赏: donates.md
+  - Study:
+    - README: study/README.md
+    - Reinforcement:
+      - Reinforcement Learning An Introduction:
+        - Chapter 2: study/reinforcement-learning/notes/RLAI_2.md
   - Projects:
     - README: projects/README.md
     - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
