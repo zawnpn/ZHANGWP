@@ -14,6 +14,7 @@ window.MathJax = {
       equationNumbers: {
         autoNumber: "AMS",
       },
+      extensions: ["AMSmath.js", "AMSsymbols.js"],
       unicode: {
         fonts: "STIXGeneral,'Arial Unicode MS'"
       }
