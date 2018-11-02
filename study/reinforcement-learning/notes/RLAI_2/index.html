@@ -1782,7 +1782,7 @@
 </blockquote>
 <p>为什么这个 ε-greedy action 就要比单纯的 greedy action 策略好呢？我们来简单分析一下：</p>
 <ul>
-<li>如果 <span><span class="MathJax_Preview">t \rightarrow \infty</span><script type="math/tex">t \rightarrow \infty</script></span>，那么 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</script></span>，正如前面已经分析过的，会有 <span><span class="MathJax_Preview">Q_t(a)\rightarrow q_*(a)</span><script type="math/tex">Q_t(a)\rightarrow q_*(a)</script></span>.</li>
+<li>显然可知， ε-greedy action 由于有随机探索的过程，必然能保证：当 <span><span class="MathJax_Preview">t \rightarrow \infty</span><script type="math/tex">t \rightarrow \infty</script></span>，就有 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</script></span>。这样正如前面已经分析过的，根据大数定律会有 <span><span class="MathJax_Preview">Q_t(a)\rightarrow q_*(a)</span><script type="math/tex">Q_t(a)\rightarrow q_*(a)</script></span>.</li>
 <li><span><span class="MathJax_Preview">\mathrm{Pr}\{A_t=\mathop{\arg\max}\limits_{a}Q_t(a)\} = 1-\varepsilon</span><script type="math/tex">\mathrm{Pr}\{A_t=\mathop{\arg\max}\limits_{a}Q_t(a)\} = 1-\varepsilon</script></span>，如果 ε 取得太大，就会过于注重探索，而没有充分利用好这些收获到的信息来增加我们的收益，对于我们想要最大化<strong>累积收益</strong>的目标是不利的，但如果取到一个合适的 ε ，便能兼顾信息探索和信息的<strong>充分利用</strong>。</li>
 </ul>
 <h2 id="23-the-10-armed-testbed">2.3 The 10-armed Testbed<a class="headerlink" href="#23-the-10-armed-testbed" title="Permanent link">&para;</a></h2>
