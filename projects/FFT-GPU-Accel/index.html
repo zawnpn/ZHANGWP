@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1436,33 +1432,33 @@
                   <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/projects/FFT-GPU-Accel.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="fft-gpu-accel">FFT-GPU-Accel</h1>
+                <h1 id="fft-gpu-accel">FFT-GPU-Accel<a class="headerlink" href="#fft-gpu-accel" title="Permanent link">&para;</a></h1>
 <p>Fast Fourier Transform Acceleration Algorithm. (Accelerated by CUDA)</p>
-<h2 id="_1">简要介绍</h2>
+<h2 id="_1">简要介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>基于FFT的蝶形公式，利用GPU的多核心优势，结合蝶形公式算法中同一层级的运算因子互不干扰的特点，对算法进行了并行化优化处理，加速效果十分显著。</p>
 <p>在同一测试机器上，速度能达到Matlab(R2017b)的数十倍。</p>
 <!-- more -->
 
-<h2 id="_2">核心算法</h2>
+<h2 id="_2">核心算法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>基于快速傅里叶变换的蝶形公式，对于N元待转换信号，蝶形公式为logN层级的子运算，每层的子运算中，运算因子在同层中互不干扰，因此只要利用好<code>CUDA</code>的<code>__syncthreads()</code>函数，在此基础上便可进一步利用GPU的单个线程来纵向处理每一个运算因子。</p>
-<h2 id="_3">优化处理</h2>
+<h2 id="_3">优化处理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>注意到蝶形公式中的旋转因子Wn^k大量重复出现，因此必须要对旋转因子做好预处理工作。由于预处理数据是静态的，故可考虑将其放入纹理单元以加速数据读取</li>
 <li>使用<code>zero-copy</code>(一种直接映射数据的技术)进行Host-Device之间的数据传输，减少数据传输成本</li>
 <li>合理利用GPU的高速缓存等，尽量减少数据交换的通讯成本</li>
 <li>算法上做一些合理优化，减少重复运算，同时及时释放空闲的内存占用，增加内存利用率</li>
 </ul>
-<h2 id="_4">待优化</h2>
+<h2 id="_4">待优化<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>GPU的sm单元间存在通信限制，因此要结合蝶形公式的算法结构，进一步改进算法以加强并行计算的性能</li>
 <li>Host到Device之间的内存数据传输仍然占用了大量时间，需要进一步改善数据传输的速度</li>
 </ul>
-<h2 id="demo">Demo</h2>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
 <p>利用QT设计了简单的界面，具备一定的实用化功能</p>
 <blockquote>
 <p><img alt="screenshot" src="/images/projects/fft-gpu-accel/screenshot.png" /></p>
 </blockquote>
-<h3 id="_5">项目地址</h3>
+<h3 id="_5">项目地址<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>本项目已开源至GitHub，欢迎探讨交流。</p>
 <p><a href="https://github.com/zawnpn/FFT-GPU-Accel">zawnpn/FFT-GPU-Accel</a></p>
                 
@@ -1533,6 +1529,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

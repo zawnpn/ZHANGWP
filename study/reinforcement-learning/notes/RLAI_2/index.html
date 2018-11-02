@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
@@ -604,6 +600,26 @@
     2.4 Incremental Implementation
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization" title="Optimization" class="md-nav__link">
+    Optimization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseuducode" title="Pseuducode" class="md-nav__link">
+    Pseuducode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -631,6 +647,53 @@
   <a href="#28-gradient-bandit-algorithms" title="2.8 Gradient Bandit Algorithms" class="md-nav__link">
     2.8 Gradient Bandit Algorithms
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof" title="Proof" class="md-nav__link">
+    Proof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-associative-search-contextual-bandit" title="2.9 Associative Search (Contextual Bandit)" class="md-nav__link">
+    2.9 Associative Search (Contextual Bandit)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background_2" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-reinforcement-learning-problem" title="Full Reinforcement Learning Problem" class="md-nav__link">
+    Full Reinforcement Learning Problem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1541,6 +1604,26 @@
     2.4 Incremental Implementation
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization" title="Optimization" class="md-nav__link">
+    Optimization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseuducode" title="Pseuducode" class="md-nav__link">
+    Pseuducode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1569,6 +1652,53 @@
     2.8 Gradient Bandit Algorithms
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" title="Introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof" title="Proof" class="md-nav__link">
+    Proof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-associative-search-contextual-bandit" title="2.9 Associative Search (Contextual Bandit)" class="md-nav__link">
+    2.9 Associative Search (Contextual Bandit)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background_2" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-reinforcement-learning-problem" title="Full Reinforcement Learning Problem" class="md-nav__link">
+    Full Reinforcement Learning Problem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -1590,7 +1720,7 @@
                   <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="reinforcement-learning-an-introduction-chapter-2">[读书笔记]Reinforcement Learning: An Introduction - Chapter 2</h1>
+                <h1 id="reinforcement-learning-an-introduction-chapter-2">[读书笔记]Reinforcement Learning: An Introduction - Chapter 2<a class="headerlink" href="#reinforcement-learning-an-introduction-chapter-2" title="Permanent link">&para;</a></h1>
 <p>本章主要针对“非关联性（nonassociative）”的简单场景来学习基础的强化学习方法。什么是“非关联性”呢？其实通过最后 2.9 节可以看出，非关联性在本章就是指<strong>无需考虑每一步行动之间的影响，以及环境对行动的影响</strong>。非关联性问题是一种很理想化的问题，研究这种问题对于现实中的实用性意义不大，但对于入门强化学习理论，是一个不错的背景载体。</p>
 <p>再说到强化学习，他与其他的机器学习方法最大的区别，也就是他自身的特点，在于强化学习重点关注<strong>评价性反馈（Evaluative Feedback）</strong>，而不是<strong>指导性反馈（Instructive Feedback）</strong>。</p>
 <ul>
@@ -1598,15 +1728,15 @@
 <li>指导性反馈：直接得知最优 action</li>
 </ul>
 <p>指导性反馈多用在监督学习中，需要大量正确的先验知识/信息来给予“指导”，而在一些特殊背景下，无法得到监督性指导，但却有大量实时的评价性反馈，这时候就需要用到<strong>强化学习</strong>。</p>
-<h2 id="21-a-k-armed-bandit-problem">2.1 A k-armed Bandit Problem</h2>
-<h3 id="background">Background</h3>
+<h2 id="21-a-k-armed-bandit-problem">2.1 A k-armed Bandit Problem<a class="headerlink" href="#21-a-k-armed-bandit-problem" title="Permanent link">&para;</a></h2>
+<h3 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h3>
 <p>问题的背景就是简化的 k 臂老虎机：</p>
 <ul>
 <li>每次在 k 个选项中做出一个选择，称之为一个 action</li>
 <li>每次根据玩家的 action 反馈一个“奖励值”，每种 action 对应的奖励值服从一个固定的概率分布（这个概率分布是我们从背后分析问题，也就是从上帝视角才能得知的，真正的玩家一开始根本不知道奖励值服从什么规律或者是否有规律，他需要通过“学习”来找到这一规律）</li>
 <li>玩家的目标在于使收获的奖励的<strong>累积值</strong>最大化</li>
 </ul>
-<h3 id="representation-of-the-problem">Representation of the problem</h3>
+<h3 id="representation-of-the-problem">Representation of the problem<a class="headerlink" href="#representation-of-the-problem" title="Permanent link">&para;</a></h3>
 <div>
 <div class="MathJax_Preview">q_*(a)\doteq\mathbb{E}[R_t|A_t=a]</div>
 <script type="math/tex; mode=display">q_*(a)\doteq\mathbb{E}[R_t|A_t=a]</script>
@@ -1625,8 +1755,8 @@
 <li>探索（Exploring）：放弃贪心行动，去探索潜在的、有长远价值的信息</li>
 </ul>
 <p>Exploitation 对于每一步而言，是能尽量利用上当前已掌握知识的最佳策略，能确保回报玩家认知范围内的最佳奖励值；Exploration 则会去“试错”，去尝试一些信息量少的 action ，这些 action 之所以信息量少，是因为在玩家的评估体系中被认为是低回报 action 而很少被选中，从而收获到的信息少。不过这个低回报，既有可能是真的低回报，也有可能是被低估了，如果这个 action 事实上是一个很有价值的 action ，却因过分低估而被玩家放弃，是一件非常可惜的事情。为了避免这一情况，从长远意义上真正地最大化收益，就需要玩家适当地去探索、去试错。信息越多，做出的选择也越客观。</p>
-<h2 id="22-action-value-methods">2.2 Action-value Methods</h2>
-<h3 id="sample-average">Sample-Average</h3>
+<h2 id="22-action-value-methods">2.2 Action-value Methods<a class="headerlink" href="#22-action-value-methods" title="Permanent link">&para;</a></h2>
+<h3 id="sample-average">Sample-Average<a class="headerlink" href="#sample-average" title="Permanent link">&para;</a></h3>
 <p>上一节提到，玩家需要建立一套合适的评估体系，这一节就会介绍一种最简单基础的方法。</p>
 <p>一个很自然的想法便是将过去得到过的奖励值取均值作为这一次对该 action 的评估</p>
 <div>
@@ -1638,7 +1768,7 @@
 <li>如果 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a} = 0</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a} = 0</script></span>, 分母为 0 该式无意义，这时候需要将 <span><span class="MathJax_Preview">Q_t(a)</span><script type="math/tex">Q_t(a)</script></span> 定义为一个默认值，比如 0</li>
 <li>如果 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</script></span>, 根据<strong>大数定律</strong>, <span><span class="MathJax_Preview">Q_t(a) \rightarrow q_*(a)</span><script type="math/tex">Q_t(a) \rightarrow q_*(a)</script></span>，样本统计值收敛于理论值，达到了我们前面提到的情况——只要掌握了真实的<span><span class="MathJax_Preview">q_*(a)</span><script type="math/tex">q_*(a)</script></span>，必将能取得最优解。</li>
 </ul>
-<h3 id="greedy-action">greedy action</h3>
+<h3 id="greedy-action">greedy action<a class="headerlink" href="#greedy-action" title="Permanent link">&para;</a></h3>
 <p>而前面所提到的贪心行动，表述为数学语言即为</p>
 <div>
 <div class="MathJax_Preview">A_t \doteq \mathop{\arg\max}\limits_aQ_t(a)</div>
@@ -1646,7 +1776,7 @@
 </div>
 <p>可以想象，纯贪心行动很有可能陷入局部最优解（最坏情况下，贪心行动甚至可能导致玩家从头到尾都在选择一个固定的非最优的 action），很难实现让每个 action 都能满足 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</script></span> 。</p>
 <p>这时候，就需要去“探索（Exploring）”，牺牲一点眼前的利益，换来能带来长远价值的信息。只需对贪心策略稍作修改，我们就能做到这一点。</p>
-<h3 id="-greedy-action">ε-greedy action</h3>
+<h3 id="-greedy-action">ε-greedy action<a class="headerlink" href="#-greedy-action" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong>ε-greedy action:</strong> 以 1-ε 的概率采取贪心行动，ε 概率随机选择一个行动 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 。</p>
 </blockquote>
@@ -1655,9 +1785,9 @@
 <li>如果 <span><span class="MathJax_Preview">t \rightarrow \infty</span><script type="math/tex">t \rightarrow \infty</script></span>，那么 <span><span class="MathJax_Preview">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</span><script type="math/tex">\displaystyle \sum_{i=1}^{t-1}\textbf{1}_{A_{i} = a}\rightarrow \infty</script></span>，正如前面已经分析过的，会有 <span><span class="MathJax_Preview">Q_t(a)\rightarrow q_*(a)</span><script type="math/tex">Q_t(a)\rightarrow q_*(a)</script></span>.</li>
 <li><span><span class="MathJax_Preview">\mathrm{Pr}\{A_t=\mathop{\arg\max}\limits_{a}Q_t(a)\} = 1-\varepsilon</span><script type="math/tex">\mathrm{Pr}\{A_t=\mathop{\arg\max}\limits_{a}Q_t(a)\} = 1-\varepsilon</script></span>，如果 ε 取得太大，就会过于注重探索，而没有充分利用好这些收获到的信息来增加我们的收益，对于我们想要最大化<strong>累积收益</strong>的目标是不利的，但如果取到一个合适的 ε ，便能兼顾信息探索和信息的<strong>充分利用</strong>。</li>
 </ul>
-<h2 id="23-the-10-armed-testbed">2.3 The 10-armed Testbed</h2>
+<h2 id="23-the-10-armed-testbed">2.3 The 10-armed Testbed<a class="headerlink" href="#23-the-10-armed-testbed" title="Permanent link">&para;</a></h2>
 <p>这一节就是关于上面提到的方法进行 10-armed bandit 实验来测试效果。</p>
-<h3 id="background_1">Background</h3>
+<h3 id="background_1">Background<a class="headerlink" href="#background_1" title="Permanent link">&para;</a></h3>
 <p>为了确保实验结果的准确性，总共随机生成了 2000 个 k-armed bandit 问题（k=10），然后针对每个问题，在其背景下都要进行 1000 步 action 的选择，最终针对这 2000 个独立的实验的结果来逐步取均值分析。</p>
 <div align="center"><img src="../imgs/RLAI_2/10-armed.png" width="450" alt="10-armed" /></div>
 
@@ -1666,7 +1796,7 @@
 <li>首先，需要理解的是，玩家每一步得到的奖励值 <span><span class="MathJax_Preview">R_t</span><script type="math/tex">R_t</script></span> ，是一个来自于对应的正态分布的随机值。举个例子，玩家在第 t 步选择 action 3 ，那么这一步老虎机返回给玩家的奖励值 <span><span class="MathJax_Preview">R_t</span><script type="math/tex">R_t</script></span> 就是一个服从正态分布 <span><span class="MathJax_Preview">\mathrm{N}(q_*(3),1)</span><script type="math/tex">\mathrm{N}(q_*(3),1)</script></span> 的随机值，这个值或高或低，但总体的趋势还是大概率为 <span><span class="MathJax_Preview">q_*(3)</span><script type="math/tex">q_*(3)</script></span> 附近的一个值。我们从上帝视角是知道这些值的，但是玩家并不知道这些情况，只能一步一步地收集信息，以此来猜测、学习这些奖励值的规律。</li>
 <li>然后，这些 <span><span class="MathJax_Preview">q_*(a)</span><script type="math/tex">q_*(a)</script></span> 是多少呢？这些 <span><span class="MathJax_Preview">q_*(a)</span><script type="math/tex">q_*(a)</script></span> 是我们在初始生成 2000 个问题时随机定下来的，我们从标准正态分布 <span><span class="MathJax_Preview">\mathrm{N}(0,1)</span><script type="math/tex">\mathrm{N}(0,1)</script></span> 中选出 2000 组数据，1 组数据对应生成一个老虎机问题，每组数据有 10 个（所以其实是从 <span><span class="MathJax_Preview">\mathrm{N}(0,1)</span><script type="math/tex">\mathrm{N}(0,1)</script></span> 中选出了 <span><span class="MathJax_Preview">2000\times 10=20000</span><script type="math/tex">2000\times 10=20000</script></span> 个随机数），分别表示这个问题下的 <span><span class="MathJax_Preview">q_*(1),\ldots,q_*(10)</span><script type="math/tex">q_*(1),\ldots,q_*(10)</script></span> 。</li>
 </ul>
-<h3 id="conclusion">Conclusion</h3>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
 <div align="center"><img src="../imgs/RLAI_2/avg-reward.png" width="450" alt="avg-reward" /></div>
 
 <p>从上图易知，</p>
@@ -1682,8 +1812,9 @@
 <li>ε = 0.1 要比 ε = 0.01 选中最优解的概率更大，这与其重视 Exploration 离不开关系，但事实上实验结果表示，最终的总 reward 还是 ε = 0.01 要高一些，原因在于其有 99% 的时间处于 Exploitation 阶段，信息的利用率更高，ε = 0.1 时，Exploitation 的时间只有 90% ，即使探索到了足够多的信息，但是利用率不够高，导致最终效果不如前者。</li>
 </ul>
 <p>所以，通过实验，我们看出，Exploration 确实很重要，但是也不能过度探索，需要掌握好平衡。</p>
-<h2 id="24-incremental-implementation">2.4 Incremental Implementation</h2>
+<h2 id="24-incremental-implementation">2.4 Incremental Implementation<a class="headerlink" href="#24-incremental-implementation" title="Permanent link">&para;</a></h2>
 <p>这一节的简单讲提到如何让计算机来学习 bandit 问题。</p>
+<h3 id="optimization">Optimization<a class="headerlink" href="#optimization" title="Permanent link">&para;</a></h3>
 <p>首先，我们把问题简化一下，只关注某个具体的 action <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> ，其他的类比即可。</p>
 <p>设 <span><span class="MathJax_Preview">R_i</span><script type="math/tex">R_i</script></span> 表示第 i 次选到 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 时系统返回的奖励值，<span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 表示在前 n 次执行 action <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 的经验基础上，对下一次再选到 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 的预测值，那么就有</p>
 <div>
@@ -1715,6 +1846,7 @@ Q_{n+1} & = \dfrac{1}{n}\sum_{i=1}^{n}R_i = \dfrac{1}{n}\left(R_n+\sum_{i=1}^{n-
 <div class="MathJax_Preview">NewEstimate \leftarrow OldEstimate + StepSize[Target - OldEstimate]</div>
 <script type="math/tex; mode=display">NewEstimate \leftarrow OldEstimate + StepSize[Target - OldEstimate]</script>
 </div>
+<h3 id="pseuducode">Pseuducode<a class="headerlink" href="#pseuducode" title="Permanent link">&para;</a></h3>
 <p>在这个基础上，我们整理一下程序的流程，下面是程序的伪代码：</p>
 <blockquote>
 <p>Initialize, for a = 1 to k:</p>
@@ -1726,7 +1858,7 @@ Q_{n+1} & = \dfrac{1}{n}\sum_{i=1}^{n}R_i = \dfrac{1}{n}\left(R_n+\sum_{i=1}^{n-
 <p><span><span class="MathJax_Preview">\qquad N(A)\leftarrow N(A)+1</span><script type="math/tex">\qquad N(A)\leftarrow N(A)+1</script></span></p>
 <p><span><span class="MathJax_Preview">\qquad Q(A)\leftarrow Q(A) + \dfrac{1}{N(A)}[R-Q(A)]</span><script type="math/tex">\qquad Q(A)\leftarrow Q(A) + \dfrac{1}{N(A)}[R-Q(A)]</script></span></p>
 </blockquote>
-<h2 id="25-tracking-a-nonstationary-problem">2.5 Tracking a Nonstationary Problem</h2>
+<h2 id="25-tracking-a-nonstationary-problem">2.5 Tracking a Nonstationary Problem<a class="headerlink" href="#25-tracking-a-nonstationary-problem" title="Permanent link">&para;</a></h2>
 <p>前面的讨论，都是基于<strong>固定奖励值分布</strong>这一条件的，即 <span><span class="MathJax_Preview">R_t\sim \mathrm{N}(q_*(A_t),1)</span><script type="math/tex">R_t\sim \mathrm{N}(q_*(A_t),1)</script></span> 这一事实在问题生成好之后都是一直保持不变的。然而现实中问题肯定不会如此理想，那么如果这个奖励值分布不是固定不变的，我们该如何解决呢？</p>
 <p>显然，这种情况下玩家需要将学习的重心放在每一步近期的奖励值分布情况上，这是因为，奖励值分布的变动，如果有规律的话，无论是周期性还是连续性等，都只会更多地体现在较近时刻，而很久之前的某个 reward 对于这一步而言已经很难看出其影响意义。</p>
 <p>一个常见的作法是，将前面提到的增量式中的参数 StepSize 设为一个常量 <span><span class="MathJax_Preview">\alpha \in (0,1]</span><script type="math/tex">\alpha \in (0,1]</script></span> ，则有</p>
@@ -1784,7 +1916,7 @@ Q_{n+1} &\doteq Q_{n} + \alpha[R_{n} - Q_{n}]
 </ul>
 <p>易见，<span><span class="MathJax_Preview">\alpha_n = \dfrac{1}{n}</span><script type="math/tex">\alpha_n = \dfrac{1}{n}</script></span> 满足条件能够让其收敛，而 <span><span class="MathJax_Preview">\alpha_n \equiv \alpha</span><script type="math/tex">\alpha_n \equiv \alpha</script></span>(<span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span> 为常量) 则由于不满足条件中的第二项，使 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 不能收敛。看似这是一个坏结果，其实这一结果反而能被利用在<strong>非稳定（nonstationary）问题</strong>中，这是因为，一个不收敛的波动的 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 其实更适合用来描述非稳定问题下的奖励值，而前面收敛的 <span><span class="MathJax_Preview">Q_n</span><script type="math/tex">Q_n</script></span> 反而可能失去了非稳定环境下的一些关键波动信息。</p>
 <p>另一个关键之处在于，满足两个条件的 <span><span class="MathJax_Preview">\{\alpha_n\}</span><script type="math/tex">\{\alpha_n\}</script></span> 往往收敛缓慢，非常不实用，一般也只用在理论研究中。</p>
-<h2 id="26-optimistic-initial-values">2.6 Optimistic Initial Values</h2>
+<h2 id="26-optimistic-initial-values">2.6 Optimistic Initial Values<a class="headerlink" href="#26-optimistic-initial-values" title="Permanent link">&para;</a></h2>
 <p>这一节简单研究了一下初始预估值对模型学习效果的影响。</p>
 <p>我们再次拿出前面的指数近因加权平均：</p>
 <div>
@@ -1798,7 +1930,7 @@ Q_{n+1} &\doteq Q_{n} + \alpha[R_{n} - Q_{n}]
 
 <p>从图片可以看出，即使是纯贪心行动，由于一开始给定较高初始值，模型便如我们分析的一样，在早期进行了大量探索，收获了大量有用的信息，从而也能摆脱局部最优，达到全局最优解，而且其后期几乎 100% 利用率的优势，使其比该实验中 ε-greedy 方法的效果还要优秀。</p>
 <p>但是乐观初值法的适用面很窄，它仅适用于固定分布的问题。我们知道模型只会在早期多做探索，后期基本上仍是以 Exploiting 为主，对于非稳定的情况，必然需要时刻探索收集信息，此时乐观初值法就不再适用。</p>
-<h2 id="27-upper-confidence-bound-action-selection">2.7 Upper-Confidence-Bound Action Selection</h2>
+<h2 id="27-upper-confidence-bound-action-selection">2.7 Upper-Confidence-Bound Action Selection<a class="headerlink" href="#27-upper-confidence-bound-action-selection" title="Permanent link">&para;</a></h2>
 <p>这一节讲到一个考虑得更全面的评估算法：<strong>Upper-Confidence-Bound(UCB)</strong> 算法。简单讲，就是我们之前的 ε-greedy 方法虽然能保证最终能探索到足够的信息，但是效率不高，因为他只是简单的随机探索，探索时每个 action 都是等概率被选择的。</p>
 <p>我们可以想一想人是怎样探索学习的。人在探索过程中，通过探索学到的知识，肯定会建立一套标准来判定好坏，如果重复执行某个 action ，一直返回一个低回报，那么必须要动态调整探索策略，适当调低再探索这个 action 的概率，而要尽可能多去探索“潜力”更高的 action 。UCB 算法做的就是这么一件事。</p>
 <p>那么 UCB 算法具体是什么呢？</p>
@@ -1817,7 +1949,8 @@ Q_{n+1} &\doteq Q_{n} + \alpha[R_{n} - Q_{n}]
 <div align="center"><img src="../imgs/RLAI_2/ucb.png" width="450" alt="ucb" /></div>
 
 <p>通过对比实验发现，UCB 算法确实表现要优于普通的 ε-greedy 算法。但是作者也提到，对于更一般的强化学习问题，UCB 算法会遇到一些难点，不再那么适用，比如非稳定问题、大状态空间问题等。</p>
-<h2 id="28-gradient-bandit-algorithms">2.8 Gradient Bandit Algorithms</h2>
+<h2 id="28-gradient-bandit-algorithms">2.8 Gradient Bandit Algorithms<a class="headerlink" href="#28-gradient-bandit-algorithms" title="Permanent link">&para;</a></h2>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
 <p>前面几种算法，都是在围绕着 <span><span class="MathJax_Preview">Q_t</span><script type="math/tex">Q_t</script></span> 进行取 <span><span class="MathJax_Preview">\mathop{\arg\max}</span><script type="math/tex">\mathop{\arg\max}</script></span> 然后直接执行 action 的策略，显得有点偏激，一个看上去更合理的做法是，每个 action 对其评分后，确定一个概率分布，然后以这种分布下的<strong>趋势</strong>去做选择，而非凭借数值的绝对大小去做选择。这样显得更加“平滑”，同时根据这些趋势，也能达到动态探索的效果。这便是 Gradient Bandit Algorithms 。</p>
 <div>
 <div class="MathJax_Preview">\mathrm{Pr}\{A_{t} = a\} \doteq \frac{e^{H_{t}(a)}}{\sum^{k}_{b=1}e^{H_{t}(b)}}\doteq \pi_{t}(a)</div>
@@ -1844,6 +1977,7 @@ H_{t+1}(A_{t})&\doteq H_{t}(A_{t}) + \alpha(R_{t}-\overline R_{t})(1-\pi_{t}(A_{
 <div class="MathJax_Preview">H_{t+1}(a) \doteq H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))</div>
 <script type="math/tex; mode=display">H_{t+1}(a) \doteq H_{t}(a) + \alpha(R_{t}-\overline R_{t})(\textbf{1}_{a = A_t}-\pi_{t}(A_{t}))</script>
 </div>
+<h3 id="proof">Proof<a class="headerlink" href="#proof" title="Permanent link">&para;</a></h3>
 <p>我们知道，随机梯度上升确实能确保收敛到最优值，那么问题就在于，这个形式是否就是“随机梯度上升”的形式呢？</p>
 <p>结论先摆出来，上面的方法确实满足随机梯度上升的条件。证明如下：</p>
 <p>只需证明</p>
@@ -1966,6 +2100,17 @@ H_{t+1}(a) &= H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}
 <div align="center"><img src="../imgs/RLAI_2/sga.png" width="450" alt="sga" /></div>
 
 <p>关于 <span><span class="MathJax_Preview">H_t(a)</span><script type="math/tex">H_t(a)</script></span> 的更新式中 <span><span class="MathJax_Preview">\overline R_{t}</span><script type="math/tex">\overline R_{t}</script></span> 这一项，他起到一个对比基准线的作用，事实上这个基准线不一定设为均值，他的取值并不影响更新式的方差。作者表明，其实设为均值并不一定能达到最佳效果，但总体而言是一个简单方便且效果较好的一个选择。上图中的实验简单对比了 baseline 为均值和 baseline 为 0 时的不同效果。</p>
+<h2 id="29-associative-search-contextual-bandit">2.9 Associative Search (Contextual Bandit)<a class="headerlink" href="#29-associative-search-contextual-bandit" title="Permanent link">&para;</a></h2>
+<p>本文的一开头，我们提到本章主要针对“非关联性（nonassociative）”的简单场景来学习基础的强化学习方法。而非关联性在本章就是指<strong>无需考虑每一步行动之间的影响，以及环境对行动的影响</strong>。非关联性问题是一种很理想化的问题，现实中很多东西都是有所联系的，包括 action 与 action 之间的关联， action 与环境之间的关联等等。这一小节，就是关于关联性问题做了一个最基本的简单介绍。</p>
+<h3 id="background_2">Background<a class="headerlink" href="#background_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>考虑有 m 个独立的 <span><span class="MathJax_Preview">k_i</span><script type="math/tex">k_i</script></span>-armed bandit 任务（<span><span class="MathJax_Preview">i=1,\ldots,m</span><script type="math/tex">i=1,\ldots,m</script></span>），每个都有独特的特征能被区分开。</li>
+<li>每一步会让你面对一个 <span><span class="MathJax_Preview">k_i</span><script type="math/tex">k_i</script></span>-armed bandit 任务来做选择。</li>
+<li>目标是学习出能将这 m 个独立任务关联起来的最优方案。</li>
+</ul>
+<h3 id="full-reinforcement-learning-problem">Full Reinforcement Learning Problem<a class="headerlink" href="#full-reinforcement-learning-problem" title="Permanent link">&para;</a></h3>
+<p>简单而言，之前一直讨论的 nonassociative 问题可以看作现在这个问题下 m=1 的特例。在这个新任务中，我们不但要像之前一样通过探索和利用来学习每个问题的情况，还要把问题之间的关联性也学出来，也就是把环境因素也考虑进来。</p>
+<p>这种负杂的问题，叫做 full reinforcement learning problem ，会在书的后面章节讲到。</p>
                 
                   
                 
@@ -2034,6 +2179,19 @@ H_{t+1}(a) &= H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

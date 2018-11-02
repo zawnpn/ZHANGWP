@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1546,35 +1542,36 @@
                 
                 <p align="right">——基于Mathematica软件进行仿真模拟</p>
 
-<h2 id="_1">一、问题背景</h2>
-<h3 id="11">1.1 背景来源</h3>
+<h2 id="_1">一、问题背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 背景来源<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <p>在网上看到一篇由 Adam N. Elmachtoub 和 Charles F. Van Loan 合作撰写的论文From Random Polygon to Ellipse: An Eigenanalysis 后，我对这篇文章的结论非常感兴趣。由于原文主要是对问题进行了理论上的证明，而没有对这个过程进行很好的展示，恰巧小学期的Mathematica课程要做个报告作业，于是打算利用Mathematica对这个问题进行具体的仿真模拟研究，使得对这个问题的理解更为透彻。</p>
 <!-- more -->
 
-<h3 id="12">1.2 问题描述</h3>
+<h3 id="12">1.2 问题描述<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>在二维实空间中随机生成<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>个点，将它们按生成顺序首尾相连，构成一个封闭的<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>边多边形。将这个随机生成的多边形的<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>条边的中点按边的生成顺序相连，得到新的封闭多边形。重新对生成的封闭多边形进行相同的操作，并不断重复上述的迭代过程，在经过足够次数的变换后(更具体地讲，记<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>为操作次数，则要求<span><span class="MathJax_Preview">n\to\infty</span><script type="math/tex">n\to\infty</script></span>)，最终这个封闭图形一定会是一个椭圆。</p>
 </blockquote>
-<h3 id="13">1.3 问题的初步理解</h3>
+<h3 id="13">1.3 问题的初步理解<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <p>先考虑最简单的情形——三角形，如果是对二维空间中不共线的三个点进行上述操作，可以想象，最终会逐步变成一个非常小的三角形，它甚至会无限趋近于同一个点，显然，这个点可以被理解为一个非常小的圆形，也即是一种特殊的椭圆。</p>
 <p>当然，一个很小的点我们可以认为是很小的椭圆，但甚至也可能认为是很小的矩形或者其他图形。所以，上面的话姑且只能当做一个用处不大的“猜想验证”。</p>
 <p>而当情况变为一个任意的多边形时，至少可以很容易地理解，这些逐步形成的多边形的边会越来越近似于一条光滑的曲线。
 从上述描述可以看出，我们通过简单的想象，至少能够初步对1.2中所提出结论有一个初步的直观感受，而至于结论是否成立，则需要通过理性的证明以及合理的验证来得到结论。</p>
-<h2 id="_2">二、问题的数学证明思路</h2>
+<h2 id="_2">二、问题的数学证明思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><em>【说明】原文中的数学证明较为冗长，且因本报告的重点内容在于结论的过程仿真，即结论的验证过程，故只对问题的数学证明过程作一个较为简略的介绍。</em></p>
 <p>首先，将取中点的操作抽象为矩阵的变换，记该变换的对应矩阵为<span><span class="MathJax_Preview">T</span><script type="math/tex">T</script></span>，被变换的矩阵是一个<span><span class="MathJax_Preview">N\times 2</span><script type="math/tex">N\times 2</script></span>阶矩阵，矩阵是由<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>个二维点坐标按行排列得到的，记为<span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span>，则<span><span class="MathJax_Preview">A \times T</span><script type="math/tex">A \times T</script></span>可以抽象地表示原图形初次操作后的结果，进一步地，不难理解，<span><span class="MathJax_Preview">A\times T^k</span><script type="math/tex">A\times T^k</script></span>可以抽象地表示原图形经过<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次变换后的图形。</p>
 <p>所需要进一步理解的就是这个变换矩阵的<span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>次幂，事实上，这样的矩阵是一个循环矩阵(把一个行向量循环右移一位，作为第二行，再循环右移一位，作为第三行，以此类推，最终所得到的矩阵即为循环矩阵了)。</p>
 <p>记上述所得到的循环矩阵为<span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>，根据线性代数中的相关定理可知，<span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>可以表示成形如<span><span class="MathJax_Preview">P \Lambda P^{-1}</span><script type="math/tex">P \Lambda P^{-1}</script></span>的形式，其中<span><span class="MathJax_Preview">\Lambda</span><script type="math/tex">\Lambda</script></span>是由<span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>的特征值构成的对角矩阵，则<span><span class="MathJax_Preview">M^k=P \Lambda^k P^{-1}</span><script type="math/tex">M^k=P \Lambda^k P^{-1}</script></span>。</p>
 <p>在原文中，作者引入一个循环矩阵的性质，即循环矩阵的特征值就是矩阵首行的傅里叶变换。接下来将傅里叶变换矩阵代入，并且发现当<span><span class="MathJax_Preview">k\to\infty</span><script type="math/tex">k\to\infty</script></span>的时候，只有一项不为<span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span>，最终对该项进行验算发现满足椭圆性质，进而得到了原命题，即通过足够多次的变换后，原多边形可以变换为一个椭圆。</p>
-<h2 id="mathematica">三、随机生成的多边形转化为椭圆过程的Mathematica仿真研究</h2>
-<h3 id="31">3.1 随机多边形的生成</h3>
+<h2 id="mathematica">三、随机生成的多边形转化为椭圆过程的Mathematica仿真研究<a class="headerlink" href="#mathematica" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 随机多边形的生成<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <p>首先随机生成30组二元数组，用来表示二维平面上的30个点。</p>
-<pre><code class="python">n = 30;
-PointList = RandomReal[10, {n, 2}]
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="n">PointList</span> <span class="o">=</span> <span class="n">RandomReal</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="p">{</span><span class="n">n</span><span class="p">,</span> <span class="mi">2</span><span class="p">}]</span>
+</pre></div>
+
 
 <p>以二元坐标形式记录生成的点，如下</p>
-<pre><code>{{3.80897, 8.86568}, {5.16511, 1.04105}, {2.20855, 5.62259},
+<div class="codehilite"><pre><span></span>{{3.80897, 8.86568}, {5.16511, 1.04105}, {2.20855, 5.62259},
 {9.999, 7.61291}, {9.93663, 1.7641}, {3.70494, 5.25041},
 {6.99509, 8.61465}, {7.74337, 7.56245}, {3.75603, 6.21289},
 {4.83932, 8.79755}, {9.42899, 2.48778}, {8.10076, 2.56023},
@@ -1584,40 +1581,46 @@ PointList = RandomReal[10, {n, 2}]
 {7.9264, 7.02054}, {1.30604, 5.32975}, {6.03109, 8.22584},
 {4.31784, 4.02132}, {0.776391, 4.3736}, {1.17457, 7.57537},
 {5.60569, 0.112303}, {2.76632, 0.70948}, {4.2963, 3.65391}}
-</code></pre>
+</pre></div>
+
 
 <p>然后根据这30个点绘出其对应的随机多边形，用以初步观察其性质。</p>
-<pre><code class="python">Graphics[Polygon[PointList]]
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">Graphics</span><span class="p">[</span><span class="n">Polygon</span><span class="p">[</span><span class="n">PointList</span><span class="p">]]</span>
+</pre></div>
+
 
 <p><img alt="random-polygon.png" src="/images/math/polygon-to-ellipse/random-polygon.png" /></p>
-<h3 id="32">3.2 绘图函数的构建</h3>
+<h3 id="32">3.2 绘图函数的构建<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <p>为了能够在迭代环境下进行图形绘制，我们必须要构建出合适的绘图函数。</p>
 <p>下面的绘图函数中，pt参量指点坐标集，而next参量指迭代后的后续点坐标，通过不断地向pt中加入next点，我们可以使用该函数针对本问题在后续中画出相应图形。</p>
 <p>在该函数中，使用了具体的点格式参数，便于后续观察。</p>
-<pre><code class="python">Paint[pt_] :=
-Module[{next = pt},AppendTo[next, pt[[1]]];
-ListLinePlot[next, Epilog -&gt; { PointSize[Large], Orange, Point[next]}]];
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">Paint</span><span class="p">[</span><span class="n">pt_</span><span class="p">]</span> <span class="p">:</span><span class="o">=</span>
+<span class="n">Module</span><span class="p">[{</span><span class="nb">next</span> <span class="o">=</span> <span class="n">pt</span><span class="p">},</span><span class="n">AppendTo</span><span class="p">[</span><span class="nb">next</span><span class="p">,</span> <span class="n">pt</span><span class="p">[[</span><span class="mi">1</span><span class="p">]]];</span>
+<span class="n">ListLinePlot</span><span class="p">[</span><span class="nb">next</span><span class="p">,</span> <span class="n">Epilog</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="n">PointSize</span><span class="p">[</span><span class="n">Large</span><span class="p">],</span> <span class="n">Orange</span><span class="p">,</span> <span class="n">Point</span><span class="p">[</span><span class="nb">next</span><span class="p">]}]];</span>
+</pre></div>
 
-<h3 id="33">3.3 功能函数的构建</h3>
+
+<h3 id="33">3.3 功能函数的构建<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <p>首先，我们要构建出取中点的功能函数。</p>
 <p>在该函数中，以centerpt为中点参量，通过表达式centerpt = (pt + RotateLeft[pt, 1])/2确保centerpt能够不断地在迭代过程中取得各边的中点。</p>
-<pre><code class="python">GetCenterList[pt_] :=
-Module[{centerpt},centerpt = ((pt + RotateLeft[pt, 1])/2)];
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">GetCenterList</span><span class="p">[</span><span class="n">pt_</span><span class="p">]</span> <span class="p">:</span><span class="o">=</span>
+<span class="n">Module</span><span class="p">[{</span><span class="n">centerpt</span><span class="p">},</span><span class="n">centerpt</span> <span class="o">=</span> <span class="p">((</span><span class="n">pt</span> <span class="o">+</span> <span class="n">RotateLeft</span><span class="p">[</span><span class="n">pt</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)];</span>
+</pre></div>
+
 
 <p>接下来即是程序设计中最为核心的一个部分，即为点的迭代过程，通过看似简单的语句，它能够将前面几个函数巧妙地联系在一起，通过迭代过程达到我们的预期目的。</p>
 <p>其中，需要指出的是，loop参量是指迭代次数也即循环次数，根据前面的描述可知，理论上这个数值设定得越大越好，但经过本人的实际测试，经过几百次的迭代后所得到的图形已经足够近似于椭圆，如果将数值设定得更大则意义不大，反倒会减慢程序的运行速度。</p>
-<pre><code class="python">loop = 300;
-iter = NestList[GetCenterList, PointList, loop];
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">loop</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+<span class="nb">iter</span> <span class="o">=</span> <span class="n">NestList</span><span class="p">[</span><span class="n">GetCenterList</span><span class="p">,</span> <span class="n">PointList</span><span class="p">,</span> <span class="n">loop</span><span class="p">];</span>
+</pre></div>
 
-<h3 id="34">3.4 程序调试</h3>
+
+<h3 id="34">3.4 程序调试<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
 <p>上述的工作都是大部分的准备工作，接下来我们需要利用上述成果，重新切入本次报告的核心主题——研究随机多边形转化为椭圆的动态过程。因此，我们需要对上述的一些函数进行进一步的调试使用，进而达到观察这个过程的目的。</p>
 <p>首先，我们需要观察一下整个过程的图像，但由于数量太多，我们等间隔地取出一部分来作观察。</p>
-<pre><code class="python">Table[Paint[iter[[i]]], {i, 1, loop, 20}]
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">Table</span><span class="p">[</span><span class="n">Paint</span><span class="p">[</span><span class="nb">iter</span><span class="p">[[</span><span class="n">i</span><span class="p">]]],</span> <span class="p">{</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">loop</span><span class="p">,</span> <span class="mi">20</span><span class="p">}]</span>
+</pre></div>
+
 
 <p><img alt="multi-ellipse.png" src="/images/math/polygon-to-ellipse/multi-ellipse.png" /></p>
 <p>从上面的图像可以初步得出下面几点结论：</p>
@@ -1627,23 +1630,24 @@ iter = NestList[GetCenterList, PointList, loop];
 <li>虽然直观地从图像来看，各个图像之间似乎是相同大小的，但实际从坐标来看，这个图形确是在逐步地变小。这一点很好理解，因为对于封闭图形来说，不断地连接边的中点形成新的图形显然会使得图形越来越小。</li>
 </ul>
 <p>由于取出部分图形来观察的方法还不够直观，在验证完初步的猜想后，我们进一步地用动态画面来观察这一过程，使该过程更完整地展现出来。</p>
-<pre><code class="python">plotlist = Table[Paint[iter[[i]]], {i, 1, loop}];
-ListAnimate[plotlist]
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="n">plotlist</span> <span class="o">=</span> <span class="n">Table</span><span class="p">[</span><span class="n">Paint</span><span class="p">[</span><span class="nb">iter</span><span class="p">[[</span><span class="n">i</span><span class="p">]]],</span> <span class="p">{</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">loop</span><span class="p">}];</span>
+<span class="n">ListAnimate</span><span class="p">[</span><span class="n">plotlist</span><span class="p">]</span>
+</pre></div>
+
 
 <p><img alt="polygon-to-ellipse.gif" src="/images/math/polygon-to-ellipse/polygon-to-ellipse.gif" /></p>
 <ul>
 <li>这个图看上去好厉害的样子，是不是？:)</li>
 <li>有强迫症的同学看到后面请一定保持耐心。。。</li>
 </ul>
-<h3 id="35">3.5 探究结论</h3>
+<h3 id="35">3.5 探究结论<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
 <p>根据转化过程的过程图像，并结合上述的动画，我们完整地观察到了随机生成多边形转化为椭圆的动态过程，通过Mathematica这一数学软件，我们成功验证了前文所提出的问题，并弥补了理论证明在直观性上的不足，使得这个结论更加直观可感，也达到了之前的研究目的。</p>
-<h2 id="_3">四、参考资料</h2>
+<h2 id="_3">四、参考资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
 <li>From Random Polygon to Ellipse: An Eigenanalysis.Adam N. Elmachtoub &amp; Charles F. Van Loan.Cornell University.</li>
 <li>随机多边形化为椭圆的数学证明.刘孟白.<a href="http://blog.renren.com/share/263272392/16482702857" target="_blank">(链接)</a></li>
 </ol>
-<h2 id="_4">五、后记</h2>
+<h2 id="_4">五、后记<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>这篇文章可以说技术含量并不高，因为只是一篇简单的作业文，说得狠一点就是篇“水文”。
 而由于自己数学能力不足且对Mathematica的掌握还不够，所以可以肯定的是上面的东西，绝对做得还不够，希望能多通过这样的小“研究”来帮助提升自己的能力。</p>
                 
@@ -1714,6 +1718,19 @@ ListAnimate[plotlist]
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

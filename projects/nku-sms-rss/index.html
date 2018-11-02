@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1464,7 +1460,7 @@
                 
                   <h1>NKU-SMS-RSS</h1>
                 
-                <h2 id="rss">RSS？</h2>
+                <h2 id="rss">RSS？<a class="headerlink" href="#rss" title="Permanent link">&para;</a></h2>
 <p>RSS在Wiki中的定义如下</p>
 <blockquote>
 <p>RSS（简易信息聚合）是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻、音频或视频的网摘。RSS文件（或称做摘要、网络摘要、或频更新，提供到频道）包含全文或是节录的文字，再加上发布者所订阅之网摘数据和授权的元数据。</p>
@@ -1474,10 +1470,10 @@
 <p><img src="/images/projects/nku-sms-rss/smsrss.png" width="300" alt="smsrss.png" /><img src="/images/projects/nku-sms-rss/nkrss.png" width="300" alt="nkrss.png" /></p>
 <!-- more -->
 
-<h2 id="_1">介绍</h2>
+<h2 id="_1">介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>南开数院官网并未提供官方RSS源，但网站结构简单，抓取信息非常方便，这里提供一个能够生成RSS订阅文件及推送邮件的python程序。</p>
 <p>程序可定时抓取<a href="http://sms.nankai.edu.cn">南开数院</a>的文章标题、日期及链接，生成xml文件便于订阅rss，同时推送邮件。</p>
-<h2 id="rss_1">RSS订阅</h2>
+<h2 id="rss_1">RSS订阅<a class="headerlink" href="#rss_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>学院新闻：<a href="http://sms_rss.oncemath.com/sms-rss/xyxw.xml">http://sms_rss.oncemath.com/sms-rss/xyxw.xml</a></li>
 <li>本科生教育：<a href="http://sms_rss.oncemath.com/sms-rss/bksjy.xml">http://sms_rss.oncemath.com/sms-rss/bksjy.xml</a></li>
@@ -1486,27 +1482,27 @@
 <li>学生工作：<a href="http://sms_rss.oncemath.com/sms-rss/xsgz.xml">http://sms_rss.oncemath.com/sms-rss/xsgz.xml</a></li>
 <li>公共数学：<a href="http://sms_rss.oncemath.com/sms-rss/ggsx.xml">http://sms_rss.oncemath.com/sms-rss/ggsx.xml</a></li>
 </ul>
-<h2 id="app">“即刻”APP中订阅</h2>
+<h2 id="app">“即刻”APP中订阅<a class="headerlink" href="#app" title="Permanent link">&para;</a></h2>
 <p>如嫌RSS订阅麻烦，可以尝试用“即刻”APP订阅“南开数学新闻订阅”主题(需要扫描下方二维码)，此主题即由上面的RSS地址提供
 <img alt="subscribe" src="/images/projects/nku-sms-rss/Jike_QR.jpg" /></p>
-<h2 id="_2">邮件订阅</h2>
+<h2 id="_2">邮件订阅<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>如有需要，可以发送相关信息至zwp@oncemath.com进行申请。</p>
-<h2 id="_3">使用</h2>
+<h2 id="_3">使用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>需要Python3环境，并按需安装模块</li>
 <li>更改<code>config/config.py</code>中的相关配置信息，同时在<code>config/receivers</code>中添加收件人信息(奇数行填写收件人的姓名等相关信息，偶数行填写对应的邮箱地址)</li>
 <li>通过命令<code>python3 main.py</code>即可运行，可配合crontab进行定时作业</li>
 </ul>
-<h2 id="_4">注意</h2>
+<h2 id="_4">注意<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>使用crontab时，务必确保代码内的路径都是恰当的<strong>绝对路径</strong>，否则可能会报错</li>
 <li>在服务器上运行时，注意不要泄露<code>config/config.py</code>中的密码等相关信息</li>
 <li>注意不要关闭服务器的邮件端口，如22、465等</li>
 <li>发送邮件时若要使用SSL，请将<code>./function/mail.py</code>的<code>send</code>函数中<code>server = smtplib.SMTP(smtp_server, port)</code>修改为<code>server = smtplib.SMTP_SSL(smtp_server, port)</code>，并注意使用正确的SSL端口号</li>
 </ul>
-<h2 id="github">GitHub地址</h2>
+<h2 id="github">GitHub地址<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/zawnpn/NKU-SMS-RSS">NKU-SMS-RSS</a></p>
-<h2 id="_5">其他</h2>
+<h2 id="_5">其他<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>感谢<a href="https://www.quicy.cn">@yqnku</a></p>
                 
                   
@@ -1576,6 +1572,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1476,7 +1472,7 @@
                 
                   <h1>Steam市场比价爬虫</h1>
                 
-                <h3 id="_1">背景</h3>
+                <h3 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>一直挺爱玩Steam，之前和很多人一样，喜欢直接在上面购买，后来发现，利用好第三方网站与steam官方的价格差，其实可以享受到更低的折扣。</p>
 <blockquote>
 <p><img alt="example" src="/images/projects/steam-market-price-bot/example.png" /></p>
@@ -1485,17 +1481,19 @@
 <p>当然，上面这个饰品只是随便找的例子，实际上还有比例更为优秀的饰品，实际测试中经常出现比例低到0.6的饰品，然而这种比例不是那么好找的，于是便萌生了爬虫遍历抓取价格来进行比较的想法。</p>
 <!-- more -->
 
-<h3 id="_2">简要介绍</h3>
+<h3 id="_2">简要介绍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>爬虫原理很简单，先对第三方网站进行request，拿到数据后先存起来，再针对每个item依次爬取Steam市场上的信息并进行比对，计算市场交易信息的均值、中位数、方差、极差。</p>
 <p>同时，爬虫也具备邮件发送的功能，可以在服务端设置好参数，爬虫能够根据用户设置好的条件，将优秀的饰品信息推送给用户，即使出门在外也能随时通过手机收取比例信息。</p>
-<h3 id="_3">使用</h3>
-<h4 id="usage">Usage</h4>
-<pre><code>usage: main.py [-h] [--game GAME] [--sleep SLEEP] [--itemnum ITEMNUM]
-           [--range RANGE RANGE] [--thresh THRESH] [--counts COUNTS]
-           [--save] [--print] [--mail]
-</code></pre>
-<h4 id="arguments">Arguments</h4>
-<pre><code>optional arguments:
+<h3 id="_3">使用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="n">usage</span><span class="o">:</span> <span class="n">main</span><span class="o">.</span><span class="na">py</span> <span class="o">[-</span><span class="n">h</span><span class="o">]</span> <span class="o">[--</span><span class="n">game</span> <span class="n">GAME</span><span class="o">]</span> <span class="o">[--</span><span class="n">sleep</span> <span class="n">SLEEP</span><span class="o">]</span> <span class="o">[--</span><span class="n">itemnum</span> <span class="n">ITEMNUM</span><span class="o">]</span>
+           <span class="o">[--</span><span class="n">range</span> <span class="n">RANGE</span> <span class="n">RANGE</span><span class="o">]</span> <span class="o">[--</span><span class="n">thresh</span> <span class="n">THRESH</span><span class="o">]</span> <span class="o">[--</span><span class="n">counts</span> <span class="n">COUNTS</span><span class="o">]</span>
+           <span class="o">[--</span><span class="n">save</span><span class="o">]</span> <span class="o">[--</span><span class="n">print</span><span class="o">]</span> <span class="o">[--</span><span class="n">mail</span><span class="o">]</span>
+</pre></div>
+
+
+<h4 id="arguments">Arguments<a class="headerlink" href="#arguments" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>optional arguments:
   -h, --help           show this help message and exit
   --game GAME          Choose a game
   --sleep SLEEP        Sleep time
@@ -1506,20 +1504,24 @@
   --save, -s           Save an output file
   --print, -p          Instant output
   --mail, -m           Send result by mail
-</code></pre>
-<h4 id="example">Example</h4>
-<pre><code>python3 main.py --game dota -m -s --days 8 --thresh 0.65
-</code></pre>
-<h3 id="tips">Tips</h3>
+</pre></div>
+
+
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>python3 main.py --game dota -m -s --days 8 --thresh 0.65
+</pre></div>
+
+
+<h3 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h3>
 <ol>
 <li>使用前只需更改<code>config/config.py</code>中的相关配置信息.</li>
 <li>可以考虑使用<code>crontab</code>来进行定时任务.</li>
 </ol>
-<h3 id="demo">Demo</h3>
+<h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><img src="/images/projects/steam-market-price-bot/mail.png" width="300" alt="mail.png" /></p>
 </blockquote>
-<h3 id="_4">项目地址</h3>
+<h3 id="_4">项目地址<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>本项目已开源至GitHub，欢迎探讨交流。</p>
 <p><a href="https://github.com/zawnpn/Steam-Bot_Market">zawnpn/Steam-Bot_Market</a></p>
                 
@@ -1590,6 +1592,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

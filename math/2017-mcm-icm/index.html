@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1450,13 +1446,13 @@
                 
                   <h1>2017美赛参赛整理(Problem D)</h1>
                 
-                <h2 id="_1">写在前面</h2>
+                <h2 id="_1">写在前面<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>在第一次挑战美赛前，我仅仅有着一次深圳杯和国赛的经验，一些技术还不够过关，加之英语不好，所以赛前真的挺紧张。</p>
 <p>好在比赛时三人也算齐心协力，总算把论文鼓捣了出来，获不获奖已无所谓，有所收获就已经很满足啦。</p>
 <p>今天恰逢博客运行一周年啦，总感觉应该写一点东西却又不知道写什么好，不如就趁机把这次美赛的一些思路整理整理放上来吧。</p>
 <!-- more -->
 
-<h2 id="_2">题目回顾</h2>
+<h2 id="_2">题目回顾<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>与去年一样，今年同样是三道MCM，三道ICM。</p>
 <p>A题是解决修建大坝的一些问题，B题则要求针对收费站的分合流细节进行建模，C题题型是去年才新出的大数据型题目，大概是分析指定地区下，协作交通的一些问题。</p>
 <p>后三道是ICM，D题要求分析机场安检系统，解决一下拥堵情况，E、F则属于脑洞比较大的题目了，一道是关于可持续的智慧型城市，另一道则是关于移民火星。</p>
@@ -1466,7 +1462,7 @@
 <p>其次排除了C题，这是一道大数据型的新题，最近两年才有，方向不太好把握，处理数据又是们专业活，做不好还不一定能出结果。</p>
 <p>而B，D题真的就比较简单了（最后官方给出的参赛者选题情况也说明了这一点），甚至可以说有挺大的相似之处——都是对抽象意义上的微观交通流作分析、都是要处理和“拥堵”有一定关系的问题。</p>
 <p>权衡之下，考虑到要想把B题做好，必须要做到能脱颖而出（料想到了选B的人会最多），所以我们选择了后者，D题。题目太长，就不具体重述了。（题目链接：<a href="http://www.comap.com/undergraduate/contests/mcm/contests/2017/problems/" title="2017 MCM/ICM Problems">2017 MCM/ICM Problems</a>）</p>
-<h2 id="_3">模型思路</h2>
+<h2 id="_3">模型思路<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>D题要求分析建立关于机场安检系统的模型，抽象分析这个过程，其实就好像一个个小物块要经过一些具体的服务流程，在这些流程中，可能会有一些等候，也就是具体的“堵”。</p>
 <p>背景如此明了，三人都很快想到了运筹学中的“排队论”，再查阅一些文献资料，一些相似的问题也确实常在用排队论来解决。</p>
 <blockquote>
@@ -1502,7 +1498,7 @@
 </blockquote>
 <p>其中，<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>表示平均到达率 (the number of arrival passengers in unit time )，$ \mu$表示 平均服务率 (the number of passengers who receive service in unit time)，s如前文所述，表示服务台数，k则是Erlang分布的一个参数</p>
 <p>得到了等待函数，那接下来就有很多事可以做了。</p>
-<h2 id="_4">模型分析</h2>
+<h2 id="_4">模型分析<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>首先我们对W求偏导，并画了些动态图，可以明确确定，该模型下，等待函数W对第二个环节（安检扫描行李）更敏感，具体点讲就是增加同样的服务时间<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>，<span><span class="MathJax_Preview">W_{q2}</span><script type="math/tex">W_{q2}</script></span>比<span><span class="MathJax_Preview">W_{q1}</span><script type="math/tex">W_{q1}</script></span>增加得更快，所以可以定性地说，拥堵问题更多地出自第二个环节</p>
 <p>然后画出W关于s1，s2的等高线图，如下（颜色越深表示高度越低，<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>的结果类似），可以用来分析服务台数的改变能够对W带来怎样的影响，比如可以说明s1，s2要均衡增加才能带来更好的效益</p>
 <p><img src="/images/math/2017-mcm-icm/selection_015.png" width="480" alt="Selection_015.png" /></p>
@@ -1513,13 +1509,13 @@
 <p>诸如此类的细节分析还有很多，也不具体描述了。当然，光有分析还不够，因此我们利用得出的结论，将他们通过一些创新点实现了出来，如下图所示</p>
 <p><img alt="sketch" src="/images/math/2017-mcm-icm/selection_010.png" /></p>
 <p>比如增加电子化的服务设施，其实就是降低一定的<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>，再比如贴心地增加电子屏幕，引导乘客有序更快地进入排队系统，同时还能合理分配服务资源，避免服务资源闲置，诸如此类的还有增加“快速无行李乘客通道”、“绿色通道”、增加传送带长度等具体措施。</p>
-<h2 id="_5">灵敏度分析</h2>
+<h2 id="_5">灵敏度分析<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>最后，则是非常非常重要的灵敏度分析，我们的思路是作出效用函数U（就不具体描述了，是一个综合权衡机场的效益和乘客的满意度、容忍度以及题目谈到的文化差异的函数）关于一些参量的3D图，如下所示</p>
 <p><img alt="sense1" src="/images/math/2017-mcm-icm/selection_011.png" /></p>
 <p><img alt="sense2" src="/images/math/2017-mcm-icm/selection_012.png" /></p>
 <p>从这两张图可以得出非常多的结论，比如，第一张图中，越往远端走，三张曲面分得越开，此时说明U对对应的参量越敏感，而近端则贴合得比较好，所以为了控制好灵敏性，参数也需要设定在一定的范围，或者，换个思路，不同的参数代表不同的机场（可以是机场大小不同、所处文化不同等等），那么不同的机场应该如何面对差异带来的变动呢，这两张图就能给出一些很具体的指导结论。</p>
 <p>由于这些结论的一些前提没有在这篇博文里详细介绍，所以就不再描述了。</p>
-<h2 id="_6">仿真</h2>
+<h2 id="_6">仿真<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>此外，我们还做了一点仿真，这个仿真是关于M/Ek/S模型的仿真。如前文所述，我们得到了具体的W表达式，但在求解过程中，我们采用了一些近似求解，为了进一步论证我们的模型是比较贴近实际的，我们结合数据，利用MATLAB程序和蒙特卡洛算法做了一下仿真，下面贴张仿真结果图</p>
 <p><img alt="sim" src="/images/math/2017-mcm-icm/selection_013.png" /></p>
 <p>以及误差表</p>
@@ -1530,10 +1526,10 @@
 </div>
 </blockquote>
 <p>总体波动不大，平均误差率只有5.90%，这些都在可接受误差范围内。</p>
-<h2 id="_7">参考网站</h2>
+<h2 id="_7">参考网站<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>1.<a href="https://zh.wikipedia.org/wiki/%E7%AD%89%E5%80%99%E7%90%86%E8%AB%96" title="排队论-维基百科">排队论-维基百科</a></p>
 <p>2.<a href="http://www.comap.com/undergraduate/contests/mcm/contests/2017/problems/" title="MCM/ICM Problems">MCM/ICM Problems</a></p>
-<h2 id="_8">写在最后</h2>
+<h2 id="_8">写在最后<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p>感谢子杰，感谢宜楠学姐，真的是神一般的队友呀！四天的艰辛真的很有收获，无论是对一些技术的“速成”，还是思维碰撞带来的思考方式的转变等等，都让我提升了很多、学会了很多。感谢！</p>
                 
                   
@@ -1603,6 +1599,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>

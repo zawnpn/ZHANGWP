@@ -61,10 +61,6 @@
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
     
     <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
@@ -1408,11 +1404,11 @@
                 
                   <h1>NKU-EAMIS_MiniApp(南开大学教务助手小程序)</h1>
                 
-                <h3 id="_1">背景</h3>
+                <h3 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>之前用Python写了nku-eamis工具，后来又移植到了服务端，同时根据服务端写了一个workflow脚本。不过在实际使用过程中，总感觉使用体验不是很好，于是利用寒假空闲时间，简单写了一个教务系统的微信小程序。</p>
 <!-- more -->
 
-<h3 id="_2">介绍</h3>
+<h3 id="_2">介绍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>小程序是由两部分构成，一部分是前端展现在用户眼前的微信小程序，另一部分则是放在服务器的后端代码。之所以这样设计，是不得不去满足小程序的审核要求。</p>
 <p>微信小程序的审核条件非常严格，首先小程序不能放外部链接，要与外部联系必须进行HTTPS请求，而且限制为只能设置一个通讯域名，同时条件十分严格：</p>
 <blockquote>
@@ -1436,7 +1432,7 @@
 </blockquote>
 <p>原本的考虑是，直接在本地小程序抓取教务系统的数据，然后再处理并返回到前端界面，然而仔细阅读小程序的要求后，发现南开大学的网址(nankai.edu.cn)并没有支持HTTPS证书（这里必须得吐槽一下了，现在已经是HTTPS的时代了，为什么还迟迟不支持？），所以要把抓取程序写在客户端是肯定没法过审的。</p>
 <p>因此，才考虑分离前后端设计，将数据抓取部分放在了我的服务器上，同时为服务器购买了一个HTTPS书，小程序端简化为简单地作POST请求，服务器响应请求后作为中间端去抓取数据再返回给客户端，小程序拿到数据后只需将这些数据填入渲染好的布局即可。</p>
-<h3 id="demo">Demo</h3>
+<h3 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
 <ul>
 <li>登录页面</li>
 </ul>
@@ -1452,7 +1448,7 @@
 <ul>
 <li>此外，还有成绩查询、学分绩计算等功能</li>
 </ul>
-<h3 id="_3">使用</h3>
+<h3 id="_3">使用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li>扫描小程序码：</li>
 </ul>
@@ -1462,7 +1458,7 @@
 <ul>
 <li>或者：直接在微信小程序中搜索“南开教务助手”</li>
 </ul>
-<h3 id="_4">项目地址</h3>
+<h3 id="_4">项目地址<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>本项目已开源至GitHub，欢迎探讨交流。</p>
 <p>小程序端:<a href="https://github.com/zawnpn/NKU-EAMIS_MiniApp">zawnpn/NKU-EAMIS_MiniApp</a></p>
 <p>服务器端:<a href="https://github.com/zawnpn/NKU-EAMIS_Server">zawnpn/NKU-EAMIS_Server</a></p>
@@ -1534,6 +1530,19 @@
       </div>
       
         
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
       
     </div>
   </div>
