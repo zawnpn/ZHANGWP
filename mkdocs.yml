@@ -99,7 +99,7 @@ extra:
       link: 'https://www.zhihu.com/people/zhangwanpeng'
 extra_javascript:
   - assets/extra.js
-  - //cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+  - //cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=?config=TeX-MML-AM_SVG
 
 markdown_extensions:
   - pymdownx.arithmatex
