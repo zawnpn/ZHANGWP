@@ -1,28 +1,3 @@
-window.MathJax = {
-    tex2jax: {
-      inlineMath: [['$', '$'], ["\\(", "\\)"]],
-      displayMath: [['$$', '$$'], ["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true,
-      ignoreClass: ".*|",
-      processClass: "arithmatex"
-    },
-    TeX: {
-      TagSide: "right",
-      TagIndent: ".8em",
-      MultLineWidth: "85%",
-      equationNumbers: {
-        autoNumber: "AMS",
-      },
-      extensions: ["AMSmath.js", "AMSsymbols.js"],
-      unicode: {
-        fonts: "STIXGeneral,'Arial Unicode MS'"
-      }
-    },
-    showProcessingMessages: false,
-    messageStyle: "none",
-    jax: ["input/TeX","output/SVG"]
-};
 (function(u, c) {
   var d = document, t = 'script', o = d.createElement(t),
       s = d.getElementsByTagName(t)[0];
