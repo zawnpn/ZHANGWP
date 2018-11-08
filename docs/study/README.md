@@ -9,5 +9,6 @@
 ## 强化学习系列
 
  - ***Reinforcement Learning: An Introduction***(Richard S. Sutton and Andrew G. Barto)
-    - Chapter 1 略过
+    - Chapter 1 [略过]
     - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 2](/study/reinforcement-learning/notes/RLAI_2/)
+    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 3](/study/reinforcement-learning/notes/RLAI_3/)

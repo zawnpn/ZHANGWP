@@ -185,7 +185,7 @@ $$
 
 $$Q_{n+1} = (1-\alpha)^{n}Q_{1}+\sum^{n}_{i=1}(1-\alpha)^{n-i}\alpha R_{i}$$
 
-因为 $\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1$ ，因此这是一个加权平均式，作者将此式称为**指数近因加权平均（Exponential Recency-weighted Average）**。
+因为 $\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1​$ ，因此这是一个加权平均式，作者将此式称为**指数近因加权平均（Exponential Recency-weighted Average）**。
 
 可以看出，当 i 很大时，$R_i$ 在式子中的影响占比才更大，这也符合了我们要将学习重心放在近期 reward 的要求。下面再讲将 $\alpha$ 设为常量的另一个重要原因。
 
