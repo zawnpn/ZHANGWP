@@ -708,6 +708,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_3/" title="Chapter 3" class="md-nav__link">
+      Chapter 3
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1897,7 +1909,7 @@ Q_{n+1} &\doteq Q_{n} + \alpha[R_{n} - Q_{n}]
 <div class="MathJax_Preview">Q_{n+1} = (1-\alpha)^{n}Q_{1}+\sum^{n}_{i=1}(1-\alpha)^{n-i}\alpha R_{i}</div>
 <script type="math/tex; mode=display">Q_{n+1} = (1-\alpha)^{n}Q_{1}+\sum^{n}_{i=1}(1-\alpha)^{n-i}\alpha R_{i}</script>
 </div>
-<p>因为 <span><span class="MathJax_Preview">\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1</span><script type="math/tex">\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1</script></span> ，因此这是一个加权平均式，作者将此式称为<strong>指数近因加权平均（Exponential Recency-weighted Average）</strong>。</p>
+<p>因为 <span><span class="MathJax_Preview">\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1​</span><script type="math/tex">\displaystyle (1-\alpha)^{n}+\sum^{n}_{i=1}\alpha(1-\alpha)^{n-i}=1​</script></span> ，因此这是一个加权平均式，作者将此式称为<strong>指数近因加权平均（Exponential Recency-weighted Average）</strong>。</p>
 <p>可以看出，当 i 很大时，<span><span class="MathJax_Preview">R_i</span><script type="math/tex">R_i</script></span> 在式子中的影响占比才更大，这也符合了我们要将学习重心放在近期 reward 的要求。下面再讲将 <span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span> 设为常量的另一个重要原因。</p>
 <p>我们先回到一般情况，对于 <span><span class="MathJax_Preview">Q_{n+1} = Q_{n} + \alpha_n[R_{n} - Q_{n}]</span><script type="math/tex">Q_{n+1} = Q_{n} + \alpha_n[R_{n} - Q_{n}]</script></span> ，其中的 <span><span class="MathJax_Preview">\alpha_n</span><script type="math/tex">\alpha_n</script></span> 是任意的，也即 step-size 是变长的，对于这样一组 <span><span class="MathJax_Preview">\{\alpha_n\}</span><script type="math/tex">\{\alpha_n\}</script></span> 序列，如果满足随机逼近理论中的一个条件</p>
 <div>
@@ -2146,13 +2158,13 @@ H_{t+1}(a) &= H_{t}(a) + \alpha \frac{\partial \mathbb{E}[R_{t}]}{\partial H_{t}
           </a>
         
         
-          <a href="../../../../projects/" title="README" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../RLAI_3/" title="Chapter 3" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                README
+                Chapter 3
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
