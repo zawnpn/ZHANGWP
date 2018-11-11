@@ -29,4 +29,4 @@ ONCE.MATH 将会用于记录和输出一些个人思考
 
 ## 版权
 
-本网站采用「<a rel="license" target=blank href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>」进行许可。
+如无特殊说明，本网站的内容均采用「<a rel="license" target=blank href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>」进行许可。
