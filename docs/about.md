@@ -17,19 +17,18 @@ comments: false
 
 ## Education
 
- - 高中：四川省郫县第一中学
- - 本科（大一/大二）：南开大学-数学系-数学类
- - 本科（大三/大四）：南开大学-数学系-信息与计算科学
- - 硕士：清华大学-计算机科学与技术系-计算机技术
+ - 本科（大一 / 大二）：南开大学 - 数学系 - 数学类
+ - 本科（大三 / 大四）：南开大学 - 数学系 - 信息与计算科学
+ - 硕士：清华大学 - 计算机科学与技术系 - 计算机技术
 
 ## E-mail
 
  - zwp@mail.oncemath.com
  - zawnpn@gmail.com
 
-## Statement
+## 版权
 
-如无特殊说明，本博客内的文章均遵守 [BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 知识共享协议.
+**如无特殊说明，网站内容均采用「<a rel="license" target=blank href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">知识共享署名 - 非商业性使用 - 禁止演绎 4.0 国际许可协议</a>」进行许可。**
 
 ## 备案信息
 

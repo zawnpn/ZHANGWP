@@ -70,8 +70,8 @@ nav:
     - 博客历史: diary/blog-history.md
   - Share:
     - README: share/README.md
-    - NKU数院试题整理: share/nku-sms-exams.md
-    - 保研推免经验分享-计算机方向（跨专业）: share/my-postgraduate-share.md
+    - NKU 数院试题整理: share/nku-sms-exams.md
+    - 保研推免经验分享 - 计算机方向（跨专业）: share/my-postgraduate-share.md
     - Student Developer Pack - GitHub Education: share/github-student-pack.md
   - About:
     - 关于我: about.md
