@@ -14,13 +14,13 @@ nav:
     - 友情链接: links.md
     - 打赏: donates.md
   - Study:
-    - README: study/README.md
+    - My Study: study/README.md
     - Reinforcement:
       - Reinforcement Learning An Introduction:
         - Chapter 2: study/reinforcement-learning/notes/RLAI_2.md
         - Chapter 3: study/reinforcement-learning/notes/RLAI_3.md
   - Projects:
-    - README: projects/README.md
+    - My Projects: projects/README.md
     - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
     - Steam-Toolkit:
       - Steam市场比价爬虫: projects/steam-market-price-bot.md
@@ -30,11 +30,11 @@ nav:
       - NKU-EAMIS_MiniApp(南开大学教务助手小程序): projects/eamis-miniapp.md
       - NKU-EAMIS for iOS(Workflow): projects/eamis-workflow.md
   - Notes:
-    - README: notes/README.md
+    - My Notes: notes/README.md
     - Data Processing: notes/data-processing.md
     - Linux: notes/linux.md
   - Math:
-    - README: math/README.md
+    - Math Experience: math/README.md
     - 数学建模:
       - 2017美赛参赛整理(Problem D): math/2017-mcm-icm.md
       - 2016数学建模国赛: math/2016-guosai.md
@@ -64,17 +64,17 @@ nav:
         - 2016-2017第一学期常微分方程期末考试: math/exam/ODE-final.md
         - 2016-2017第一学期常微分方程期中考试: math/exam/ODE-middle.md
   - Diary:
-    - README: diary/README.md
+    - My Diary: diary/README.md
     - 游戏记录 & 简评: diary/game-play.md
     - 鹏程万里: diary/roc-fly.md
     - 博客历史: diary/blog-history.md
   - Share:
-    - README: share/README.md
+    - Share: share/README.md
     - NKU 数院试题整理: share/nku-sms-exams.md
     - 保研推免经验分享 - 计算机方向（跨专业）: share/my-postgraduate-share.md
     - Student Developer Pack - GitHub Education: share/github-student-pack.md
   - About:
-    - 关于我: about.md
+    - About Me: about.md
 
 theme:
   name: 'material'
