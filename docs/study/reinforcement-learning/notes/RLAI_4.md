@@ -1,14 +1,14 @@
-# [读书笔记]Reinforcement Learning: An Introduction - Chapter 3
+# [读书笔记]Reinforcement Learning: An Introduction - Chapter 4
 
 本章内容较少，主要是解决上一章提出的贝尔曼方程不适合直接求解的问题。
 
 **Dynamic Programming (DP)**:
 
-在本书中，动态规划（DP）特指「**给定理想 MDP 模型后用于计算最优策略的算法集合**」。
+在本书中，动态规划（DP）特指「给定理想 MDP 模型后用于计算最优策略的算法集合」。
 
 **Dynamic Programming (From Wiki)**:
 
-在 Wiki 上，动态规划的解释为「**通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法**」。
+在 Wiki 上，动态规划的解释为「通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法」。
 
 ### DP 的核心思想
 
@@ -32,7 +32,7 @@ $$
 \begin{aligned}v_\pi(s) &\doteq \mathbb{E}_\pi[R_{t+1}+\gamma R_{t+2}+ \gamma^2 R_{t+3}+ \cdots \mid S_t = s] \\ &= \mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] &(4.3)\\ &=\sum_a\pi(a\mid s)\sum_{s',r}p(s',r\mid s,a)[r+\gamma v_\pi(s')] &(4.4)\end{aligned}
 $$
 
-- 如果我们已知 $p(s',r|s,a) ，那么 (4.4) 式为其实就是一个线性方程组（$$|\mathcal{S}|$ 个方程、 $|\mathcal{S}|​$ 个未知元）。
+- 如果我们已知 $p(s',r|s,a)$ ，那么 (4.4) 式为其实就是一个线性方程组（$|\mathcal{S}|$ 个方程、 $|\mathcal{S}|​$ 个未知元）。
 - 这个方程组是能直接求解得出的，但是速度太慢，不实用。
 
 ### 思路
