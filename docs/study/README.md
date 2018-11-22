@@ -13,3 +13,4 @@
     - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 2](/study/reinforcement-learning/notes/RLAI_2/)
     - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 3](/study/reinforcement-learning/notes/RLAI_3/)
     - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 4](/study/reinforcement-learning/notes/RLAI_4/)
+    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 5](/study/reinforcement-learning/notes/RLAI_5/)
