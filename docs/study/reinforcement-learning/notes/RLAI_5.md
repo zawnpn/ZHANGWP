@@ -304,7 +304,7 @@ $$
 
 第二章讲过增量执行式，可以通过增量计算来节省内存并且提高计算速度，这个思路我们同样能用在这一章的算法里。
 
-令 $W_k = \frac{\pi_k(s)}{b_k(s)}$ ，那么 $\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}$ ，记 $C_n = \sum_{k=1}^nW_k$ ，那么
+将 $\rho_{t:T(t)-1}$ 简记作 $W_k$ ，即有 $\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}$ ，记 $C_n = \sum_{k=1}^nW_k$ ，那么
 
 $$
 \begin{aligned}
