@@ -2195,7 +2195,7 @@ v_{\pi'}(s)&\geq\frac{\varepsilon}{|\mathcal A(s)|}\sum_aq_\pi(s,a)+(1-\varepsil
 <p>所以，从这个例子可以可以看出，简单平均是相当不稳定的。</p>
 <h2 id="56-incremental-implementation">5.6 Incremental Implementation<a class="headerlink" href="#56-incremental-implementation" title="Permanent link">&para;</a></h2>
 <p>第二章讲过增量执行式，可以通过增量计算来节省内存并且提高计算速度，这个思路我们同样能用在这一章的算法里。</p>
-<p>令 <span><span class="MathJax_Preview">W_k = \frac{\pi_k(s)}{b_k(s)}</span><script type="math/tex">W_k = \frac{\pi_k(s)}{b_k(s)}</script></span> ，那么 <span><span class="MathJax_Preview">\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}</span><script type="math/tex">\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}</script></span> ，记 <span><span class="MathJax_Preview">C_n = \sum_{k=1}^nW_k</span><script type="math/tex">C_n = \sum_{k=1}^nW_k</script></span> ，那么</p>
+<p>将 <span><span class="MathJax_Preview">\rho_{t:T(t)-1}</span><script type="math/tex">\rho_{t:T(t)-1}</script></span> 简记作 <span><span class="MathJax_Preview">W_k</span><script type="math/tex">W_k</script></span> ，即有 <span><span class="MathJax_Preview">\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}</span><script type="math/tex">\displaystyle V_n = \frac{\sum_{k=1}^{n-1}W_kG_k}{\sum_{k=1}^{n-1}W_k}</script></span> ，记 <span><span class="MathJax_Preview">C_n = \sum_{k=1}^nW_k</span><script type="math/tex">C_n = \sum_{k=1}^nW_k</script></span> ，那么</p>
 <div>
 <div class="MathJax_Preview">
 \begin{aligned}
