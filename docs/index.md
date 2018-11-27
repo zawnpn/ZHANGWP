@@ -27,7 +27,7 @@ ONCE.MATH 暂不开设页面评论功能，仅使用 Github 仓库自带的反�
 
  - [About Me](/about/)
  - 数学系本科，信息与计算科学方向
- - 计算机系硕士（在读），信息安全、机器学习算法
+ - 计算机系硕士，信息安全、机器学习算法
  - Github: [zawnpn](https://github.com/zawnpn/)
  - 知乎: [Zarper](https://www.zhihu.com/people/zhangwanpeng)
 
