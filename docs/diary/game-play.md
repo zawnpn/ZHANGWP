@@ -12,6 +12,7 @@
 |           开坑待填           | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
 |            偶尔玩            | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 120+ h | ★★★☆  |
 |          多周目填坑          | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
+|             在玩             | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 10+ h  | ★★★★  |
 | 主线通关 / 支线 & DLC 待填坑 | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
 |  主线通关 / 支线 & DLC 弃坑  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
 | 主线通关 / 支线 & DLC 看心情 | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
