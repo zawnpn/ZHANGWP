@@ -1,4 +1,4 @@
-# [读书笔记]Reinforcement Learning: An Introduction - Chapter 3
+# 强化学习导论（三）- 有限马尔可夫决策过程
 
 这章主要讲有限马尔可夫决策过程（finite MDPs）。
 
@@ -199,7 +199,7 @@ Value function 被用在强化学习和动态规划的一个基本性质在于�
 
 $$\begin{aligned} v_\pi(s) &\doteq \mathbb{E}_\pi[G_t\,|\,S_t=s] \\ &=\mathbb{E}\pi \left[\sum_{k=0}^\infty\gamma^kR_{t+k+1}\,|\,S_t=s \right] \\ &= \mathbb{E}_\pi \left [R_{t+1}+\gamma\sum_{k=0}^\infty\gamma^kR_{t+k+2}\,|\,S_t=s \right] \\ &=\sum_a\pi(a|s)\sum_{s'}\sum_rp(s',r|s,a)\left[r+\gamma \mathbb{E}_\pi \left[\sum_{k=0}^\infty\gamma^kR_{t+k+2}\,|\,S_{t+1}=s' \right] \right] \\ &= \sum_a\pi(a|s)\sum_{s',r}p(s',r|s,a)\left[r+\gamma v_\pi(s') \right], \qquad \forall s \in \mathcal S \end{aligned}$$
 
-- $a$: 一个行动，取自行动集 $\mathcal{A}(s)$ 
+- $a$: 一个行动，取自行动集 $\mathcal{A}(s)$
 - $s'$: 后继状态，取自状态集 $\mathcal{S}$ （对于片段式任务，取自 $\mathcal{S}^+$ ）
 - $r$: 奖励值，取自奖励集 $\mathcal{R}$
 
@@ -278,7 +278,7 @@ $$\begin{aligned}v_*(s) &= \max_{a\in \mathcal A(s)}q_{\pi_*}(s,a) \\ &=\max_a \
 
 显式求解贝尔曼最优方程虽然能直接确定最优策略，但是并不太实用，因为这一方法涉及到了「穷举」，依赖严苛的计算资源和内存条件。此外，这个方法还依赖于三个假设，使得问题本身就很难利用上这一方法：
 
-1. 精确地知道环境的动态性质 $p$ 
+1. 精确地知道环境的动态性质 $p$
 2. 有足够的计算资源
 3. 满足马尔可夫性质
 

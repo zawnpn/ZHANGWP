@@ -1,4 +1,4 @@
-# [读书笔记]Reinforcement Learning: An Introduction - Chapter 4
+# 强化学习导论（四）- 动态规划
 
 本章内容较少，主要是解决上一章提出的贝尔曼方程不适合直接求解的问题。
 

@@ -1,4 +1,4 @@
-# [读书笔记]Reinforcement Learning: An Introduction - Chapter 5
+# 强化学习导论（五）- 蒙特卡罗方法
 
 本章主要讲强化学习中的蒙特卡罗方法。
 

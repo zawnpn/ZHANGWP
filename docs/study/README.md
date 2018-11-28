@@ -9,8 +9,8 @@
 ## 强化学习系列
 
  - ***Reinforcement Learning: An Introduction*** (Richard S. Sutton and Andrew G. Barto)
-    - Chapter 1 [略过]
-    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 2](/study/reinforcement-learning/notes/RLAI_2/)
-    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 3](/study/reinforcement-learning/notes/RLAI_3/)
-    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 4](/study/reinforcement-learning/notes/RLAI_4/)
-    - [[读书笔记]Reinforcement Learning: An Introduction - Chapter 5](/study/reinforcement-learning/notes/RLAI_5/)
+    - 强化学习导论（一）- 强化学习问题（略）
+    - [强化学习导论（二）- 多臂老虎机](/study/reinforcement-learning/notes/RLAI_2/)
+    - [强化学习导论（三）- 有限马尔可夫决策过程](/study/reinforcement-learning/notes/RLAI_3/)
+    - [强化学习导论（四）- 动态规划](/study/reinforcement-learning/notes/RLAI_4/)
+    - [强化学习导论（五）- 蒙特卡罗方法](/study/reinforcement-learning/notes/RLAI_5/)
