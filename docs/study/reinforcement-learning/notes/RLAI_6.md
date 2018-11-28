@@ -109,7 +109,7 @@ V(S_t)\leftarrow V(S_t)+\alpha\left[G_t-V(S_t)\right]\\
 V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
 $$
 
-对于上面这样的更新式，我们可以通过**批量更新（Batch Update）**来进行更新操作：
+对于上面这样的更新式，我们有时也可通过**批量更新（Batch Update）**来进行更新操作：
 
 - 每一步 t 我们仍按照原来的步骤做计算，求出增量（也就误差值）。
 - 先不执行更新，而是将增量（误差值）累积起来。
@@ -242,7 +242,7 @@ $$
 
 ![](imgs/RLAI_6/q-learning.png)
 
-### Expected Sarsa
+### Expected Sarsa 算法
 
 若 $\hat{Q}(S_{t+1},A_{t+1})=\mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]$ ，这时的 TD 算法称为 Expected Sarsa ，其更新式为
 
