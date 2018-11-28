@@ -41,6 +41,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://oncemath.com/study/reinforcement-learning/notes/RLAI_6/</loc>
+     <lastmod>2018-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://oncemath.com/projects/</loc>
      <lastmod>2018-11-28</lastmod>
      <changefreq>daily</changefreq>
@@ -77,6 +82,11 @@
     </url>
     <url>
      <loc>https://oncemath.com/notes/</loc>
+     <lastmod>2018-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://oncemath.com/notes/to-do/</loc>
      <lastmod>2018-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
