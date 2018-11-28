@@ -14,3 +14,4 @@
     - [强化学习导论（三）- 有限马尔可夫决策过程](/study/reinforcement-learning/notes/RLAI_3/)
     - [强化学习导论（四）- 动态规划](/study/reinforcement-learning/notes/RLAI_4/)
     - [强化学习导论（五）- 蒙特卡罗方法](/study/reinforcement-learning/notes/RLAI_5/)
+    - [强化学习导论（六）- 时序差分学习](/study/reinforcement-learning/notes/RLAI_6/)

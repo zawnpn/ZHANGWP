@@ -21,6 +21,7 @@ nav:
         - Chapter 3: study/reinforcement-learning/notes/RLAI_3.md
         - Chapter 4: study/reinforcement-learning/notes/RLAI_4.md
         - Chapter 5: study/reinforcement-learning/notes/RLAI_5.md
+        - Chapter 6: study/reinforcement-learning/notes/RLAI_6.md
   - Projects:
     - My Projects: projects/README.md
     - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
@@ -33,6 +34,7 @@ nav:
       - NKU-EAMIS for iOS(Workflow): projects/eamis-workflow.md
   - Notes:
     - My Notes: notes/README.md
+    - To Do: notes/to-do.md
     - Data Processing: notes/data-processing.md
     - Linux: notes/linux.md
   - Math:
