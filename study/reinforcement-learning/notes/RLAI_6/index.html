@@ -13,7 +13,7 @@
         <meta name="description" content="Welcome to zawnpn's blog.">
       
       
-        <link rel="canonical" href="https://oncemath.com/study/reinforcement-learning/notes/RLAI_4/">
+        <link rel="canonical" href="https://oncemath.com/study/reinforcement-learning/notes/RLAI_6/">
       
       
         <meta name="author" content="zawnpn">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Chapter 4 - ONCE.MATH</title>
+        <title>强化学习导论（六）- 时序差分学习 - ONCE.MATH</title>
       
     
     
@@ -126,7 +126,7 @@
                 ONCE.MATH
               </span>
               <span class="md-header-nav__topic">
-                Chapter 4
+                强化学习导论（六）- 时序差分学习
               </span>
             
           
@@ -198,9 +198,7 @@
       
         
 
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+<nav class="md-tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -222,7 +220,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../" title="Study" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../" title="Study" class="md-tabs__link">
           Study
         </a>
       
@@ -417,12 +415,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Study
@@ -450,12 +446,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
     
     <label class="md-nav__link" for="nav-2-2">
       Reinforcement
@@ -471,12 +465,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1">
     
     <label class="md-nav__link" for="nav-2-2-1">
       Reinforcement Learning An Introduction
@@ -516,233 +508,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Chapter 4
-      </label>
-    
-    <a href="./" title="Chapter 4" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../RLAI_4/" title="Chapter 4" class="md-nav__link">
       Chapter 4
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dp" title="DP 的核心思想" class="md-nav__link">
-    DP 的核心思想
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#41-policy-evaluation" title="4.1 Policy Evaluation" class="md-nav__link">
-    4.1 Policy Evaluation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iterative-policy-evaluation" title="算法 (Iterative Policy Evaluation)" class="md-nav__link">
-    算法 (Iterative Policy Evaluation)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#42-policy-improvement" title="4.2 Policy Improvement" class="md-nav__link">
-    4.2 Policy Improvement
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#policy-improvement-theorem" title="Policy Improvement Theorem" class="md-nav__link">
-    Policy Improvement Theorem
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#43-policy-iteration" title="4.3 Policy Iteration" class="md-nav__link">
-    4.3 Policy Iteration
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#policy-iteration" title="算法 (Policy Iteration)" class="md-nav__link">
-    算法 (Policy Iteration)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#44-value-iteration" title="4.4 Value Iteration" class="md-nav__link">
-    4.4 Value Iteration
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#value-iteration" title="算法 (Value Iteration)" class="md-nav__link">
-    算法 (Value Iteration)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#45-asynchronous-dynamic-programming" title="4.5 Asynchronous Dynamic Programming" class="md-nav__link">
-    4.5 Asynchronous Dynamic Programming
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" title="算法特点" class="md-nav__link">
-    算法特点
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#46-generalized-policy-iteration-gpi" title="4.6 Generalized Policy Iteration (GPI)" class="md-nav__link">
-    4.6 Generalized Policy Iteration (GPI)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#47-efficiency-of-dynamic-programming" title="4.7 Efficiency of Dynamic Programming" class="md-nav__link">
-    4.7 Efficiency of Dynamic Programming
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1634,37 +1404,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dp" title="DP 的核心思想" class="md-nav__link">
-    DP 的核心思想
+  <a href="#61-td-prediction" title="6.1 TD Prediction" class="md-nav__link">
+    6.1 TD Prediction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#41-policy-evaluation" title="4.1 Policy Evaluation" class="md-nav__link">
-    4.1 Policy Evaluation
+  <a href="#62-advantages-of-td-prediction-methods" title="6.2 Advantages of TD Prediction Methods" class="md-nav__link">
+    6.2 Advantages of TD Prediction Methods
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" title="目标" class="md-nav__link">
-    目标
+  <a href="#advantages" title="Advantages" class="md-nav__link">
+    Advantages
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" title="思路" class="md-nav__link">
-    思路
+  <a href="#convergence" title="Convergence" class="md-nav__link">
+    Convergence
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#iterative-policy-evaluation" title="算法 (Iterative Policy Evaluation)" class="md-nav__link">
-    算法 (Iterative Policy Evaluation)
+  <a href="#efficiency-comparison" title="Efficiency Comparison" class="md-nav__link">
+    Efficiency Comparison
   </a>
   
 </li>
@@ -1675,30 +1445,91 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-policy-improvement" title="4.2 Policy Improvement" class="md-nav__link">
-    4.2 Policy Improvement
+  <a href="#63-optimality-of-td0" title="6.3 Optimality of TD(0)" class="md-nav__link">
+    6.3 Optimality of TD(0)
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" title="目标" class="md-nav__link">
-    目标
+  <a href="#batch-updating" title="Batch Updating" class="md-nav__link">
+    Batch Updating
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" title="思路" class="md-nav__link">
-    思路
+  <a href="#overfit" title="Overfit" class="md-nav__link">
+    Overfit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#policy-improvement-theorem" title="Policy Improvement Theorem" class="md-nav__link">
-    Policy Improvement Theorem
+  <a href="#td0-methods" title="TD(0) methods" class="md-nav__link">
+    TD(0) methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mc-methods" title="MC methods" class="md-nav__link">
+    MC methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#certainty-equivalence-estimate" title="Certainty-Equivalence Estimate" class="md-nav__link">
+    Certainty-Equivalence Estimate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-65-66-td-control" title="6.4 &amp; 6.5 &amp; 6.6 TD Control" class="md-nav__link">
+    6.4 &amp; 6.5 &amp; 6.6 TD Control
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sarsa" title="Sarsa" class="md-nav__link">
+    Sarsa
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-learning" title="Q-learning" class="md-nav__link">
+    Q-learning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-sarsa" title="Expected Sarsa" class="md-nav__link">
+    Expected Sarsa
   </a>
   
 </li>
@@ -1709,30 +1540,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-policy-iteration" title="4.3 Policy Iteration" class="md-nav__link">
-    4.3 Policy Iteration
+  <a href="#67-maximization-bias-and-double-learning" title="6.7 Maximization Bias and Double Learning" class="md-nav__link">
+    6.7 Maximization Bias and Double Learning
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#policy-iteration" title="算法 (Policy Iteration)" class="md-nav__link">
-    算法 (Policy Iteration)
+  <a href="#double-learning" title="Double Learning" class="md-nav__link">
+    Double Learning
   </a>
   
 </li>
@@ -1743,83 +1560,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#44-value-iteration" title="4.4 Value Iteration" class="md-nav__link">
-    4.4 Value Iteration
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#value-iteration" title="算法 (Value Iteration)" class="md-nav__link">
-    算法 (Value Iteration)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#45-asynchronous-dynamic-programming" title="4.5 Asynchronous Dynamic Programming" class="md-nav__link">
-    4.5 Asynchronous Dynamic Programming
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" title="目标" class="md-nav__link">
-    目标
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" title="思路" class="md-nav__link">
-    思路
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" title="算法特点" class="md-nav__link">
-    算法特点
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#46-generalized-policy-iteration-gpi" title="4.6 Generalized Policy Iteration (GPI)" class="md-nav__link">
-    4.6 Generalized Policy Iteration (GPI)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#47-efficiency-of-dynamic-programming" title="4.7 Efficiency of Dynamic Programming" class="md-nav__link">
-    4.7 Efficiency of Dynamic Programming
+  <a href="#68-games-afterstates-and-other-special-cases" title="6.8 Games, Afterstates, and Other Special Cases" class="md-nav__link">
+    6.8 Games, Afterstates, and Other Special Cases
   </a>
   
 </li>
@@ -1840,244 +1582,319 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_4.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_6.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="-">强化学习导论（四）- 动态规划<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
-<p>本章内容较少，主要是解决上一章提出的贝尔曼方程不适合直接求解的问题。</p>
-<p><strong>Dynamic Programming (DP)</strong>:</p>
-<p>在本书中，动态规划（DP）特指「给定理想 MDP 模型后用于计算最优策略的算法集合」。</p>
-<p><strong>Dynamic Programming (From Wiki)</strong>:</p>
-<p>在 Wiki 上，动态规划的解释为「通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法」。</p>
-<h3 id="dp">DP 的核心思想<a class="headerlink" href="#dp" title="Permanent link">&para;</a></h3>
-<p>本章中，DP 的核心思想体现在将上一章讲的贝尔曼方程作为<strong>更新规则</strong>，通过<strong>迭代求解法</strong>得到近似解。</p>
+                <h1 id="-">强化学习导论（六）- 时序差分学习<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+<p>本章在上一章的基础上，进一步介绍了新的方法：<strong>时序差分学习</strong>（Temporal-Difference learning），简称 TD Learning:</p>
+<p>A combination of MC and DP.</p>
+<ul>
+<li>Like MC, TD methods can learn directly from raw experience without a model of the environment’s dynamics.</li>
+<li>Like DP, TD methods update estimates without waiting for a final outcome (bootstrap).</li>
+<li>GPI</li>
+</ul>
+<h2 id="61-td-prediction">6.1 TD Prediction<a class="headerlink" href="#61-td-prediction" title="Permanent link">&para;</a></h2>
+<p><strong>constant-<span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span> MC:</strong>
+$$
+V(S_t)\leftarrow V(S_t)+\alpha\left[G_t-V(S_t)\right]
+$$</p>
+<p><strong>TD(0) (one-step TD):</strong>
+$$
+V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
+$$</p>
+<ul>
+<li>MC methods must wait until the end of the episode to get <span><span class="MathJax_Preview">G_t</span><script type="math/tex">G_t</script></span>.</li>
+<li>TD methods need to wait only until the next time step, making a useful update using <strong>observed</strong> reward <span><span class="MathJax_Preview">R_{t+1}</span><script type="math/tex">R_{t+1}</script></span> and <strong>estimated</strong> <span><span class="MathJax_Preview">V(S_{t+1})</span><script type="math/tex">V(S_{t+1})</script></span>.</li>
+</ul>
+<p><strong>TD error:</strong>
+$$
+\delta_t\doteq R_{t+1}+\gamma V(S_{t+1})-V(S_t)
+$$</p>
+<h2 id="62-advantages-of-td-prediction-methods">6.2 Advantages of TD Prediction Methods<a class="headerlink" href="#62-advantages-of-td-prediction-methods" title="Permanent link">&para;</a></h2>
+<h3 id="advantages">Advantages<a class="headerlink" href="#advantages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Do not require a model of the environment.</li>
+<li>Implemented in an online, fully incremental fashion. </li>
+<li>For MC, if episodes are too long, they’ll delay all learning. Other applications are continuing tasks with no episodes. TD methods can solve these problems.</li>
+</ul>
+<h3 id="convergence">Convergence<a class="headerlink" href="#convergence" title="Permanent link">&para;</a></h3>
+<p>For any <strong>fixed</strong> policy <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span>, TD(0) has been proved to converge to <span><span class="MathJax_Preview">v_\pi</span><script type="math/tex">v_\pi</script></span> if:
+$$
+\sum_{k=1}^{\infty}\alpha=\infty\qquad \mathrm{and}\qquad\sum_{k=1}^{\infty}\alpha^2&lt;\infty
+$$</p>
+<h3 id="efficiency-comparison">Efficiency Comparison<a class="headerlink" href="#efficiency-comparison" title="Permanent link">&para;</a></h3>
+<ul>
+<li>No one has been able to prove mathematically that which method (TD &amp; MC) converges faster than the other.</li>
+<li>In practice, however, TD methods have usually been found to converge faster than constant-<span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span> MC methods on stochastic tasks.</li>
+</ul>
+<p><strong>Example</strong>:</p>
+<p><img alt="" src="../imgs/RLAI_6/rand-walk.png" /></p>
+<p>We use <span><span class="MathJax_Preview">P_i</span><script type="math/tex">P_i</script></span> to denote the probability of getting reward 1 when starting with node i, so 
+$$
+\begin{cases}
+P_a=\dfrac{1}{2}P_b+\dfrac{1}{2}\times 0\
+P_b=\dfrac{1}{2}P_a+\dfrac{1}{2}P_c\
+P_c=\dfrac{1}{2}P_b+\dfrac{1}{2}P_d\
+P_d=\dfrac{1}{2}P_c+\dfrac{1}{2}P_e\
+P_e=\dfrac{1}{2}P_d+\dfrac{1}{2}\times 1\
+\end{cases}
+$$
+Solve the equations, we can get 
+$$
+P_a=\frac{1}{6},P_b=\frac{2}{6},P_c=\frac{3}{6},P_d=\frac{4}{6},P_e=\frac{5}{6}\
+V(A)=\frac{1}{6},V(B)=\frac{2}{6},V(C)=\frac{3}{6},V(D)=\frac{4}{6},V(E)=\frac{5}{6}
+$$
+<img alt="" src="../imgs/RLAI_6/rand-walk-result.png" /></p>
+<ul>
+<li>left graph shows estimated value after n episodes for TD(0).</li>
+<li>right graph shows the learning learning curves for the two methods.</li>
+</ul>
+<h2 id="63-optimality-of-td0">6.3 Optimality of TD(0)<a class="headerlink" href="#63-optimality-of-td0" title="Permanent link">&para;</a></h2>
+<h3 id="batch-updating">Batch Updating<a class="headerlink" href="#batch-updating" title="Permanent link">&para;</a></h3>
 <div>
 <div class="MathJax_Preview">
-\begin{aligned}v_*(s) &amp;= \max_a \mathbb{E}[R_{t+1}+\gamma v_*(S_{t+1}) \mid  S_t=s,A_t=a] \\ &amp;= \max_a \sum_{s',r}p(s',r\mid s,a)[r+\gamma v_*(s')] &amp;(4.1)\end{aligned}
+V(S_t)\leftarrow V(S_t)+\alpha\left[G_t-V(S_t)\right]\\
+V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
 </div>
 <script type="math/tex; mode=display">
-\begin{aligned}v_*(s) &= \max_a \mathbb{E}[R_{t+1}+\gamma v_*(S_{t+1}) \mid  S_t=s,A_t=a] \\ &= \max_a \sum_{s',r}p(s',r\mid s,a)[r+\gamma v_*(s')] &(4.1)\end{aligned}
-</script>
-</div>
-<div>
-<div class="MathJax_Preview">
-\begin{aligned}q_*(s,a) &amp;= \mathbb{E} [R_{t+1} + \gamma \max_{a'} q_*(S_{t+1},a') \mid S_t=s, A_t=a] \\ &amp;= \sum_{s',r}p(s',r \mid s,a)[r+\gamma \max_{a'} q_*(s',a')]&amp;(4.2)\end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}q_*(s,a) &= \mathbb{E} [R_{t+1} + \gamma \max_{a'} q_*(S_{t+1},a') \mid S_t=s, A_t=a] \\ &= \sum_{s',r}p(s',r \mid s,a)[r+\gamma \max_{a'} q_*(s',a')]&(4.2)\end{aligned}
-</script>
-</div>
-<h2 id="41-policy-evaluation">4.1 Policy Evaluation<a class="headerlink" href="#41-policy-evaluation" title="Permanent link">&para;</a></h2>
-<h3 id="_1">目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p><strong>给定 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> ，如何更快地计算 <span><span class="MathJax_Preview">v_\pi</span><script type="math/tex">v_\pi</script></span> ？</strong></p>
-<div>
-<div class="MathJax_Preview">
-\begin{aligned}v_\pi(s) &amp;\doteq \mathbb{E}_\pi[R_{t+1}+\gamma R_{t+2}+ \gamma^2 R_{t+3}+ \cdots \mid S_t = s] \\ &amp;= \mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] &amp;(4.3)\\ &amp;=\sum_a\pi(a\mid s)\sum_{s',r}p(s',r\mid s,a)[r+\gamma v_\pi(s')] &amp;(4.4)\end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}v_\pi(s) &\doteq \mathbb{E}_\pi[R_{t+1}+\gamma R_{t+2}+ \gamma^2 R_{t+3}+ \cdots \mid S_t = s] \\ &= \mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] &(4.3)\\ &=\sum_a\pi(a\mid s)\sum_{s',r}p(s',r\mid s,a)[r+\gamma v_\pi(s')] &(4.4)\end{aligned}
+V(S_t)\leftarrow V(S_t)+\alpha\left[G_t-V(S_t)\right]\\
+V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
 </script>
 </div>
 <ul>
-<li>如果我们已知 <span><span class="MathJax_Preview">p(s',r|s,a)</span><script type="math/tex">p(s',r|s,a)</script></span> ，那么 (4.4) 式为其实就是一个线性方程组（<span><span class="MathJax_Preview">|\mathcal{S}|</span><script type="math/tex">|\mathcal{S}|</script></span> 个方程、 <span><span class="MathJax_Preview">|\mathcal{S}|​</span><script type="math/tex">|\mathcal{S}|​</script></span> 个未知元）。</li>
-<li>这个方程组是能直接求解得出的，但是速度太慢，不实用。</li>
+<li>The increments are computed for each t.</li>
+<li>But the value function is changed only once, by the sum of all increments.</li>
+<li>Updates are made only after processing each complete batch of training data.</li>
 </ul>
-<h3 id="_2">思路<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p><strong>通过迭代求解法，找到序列 <span><span class="MathJax_Preview">\{v_k\}</span><script type="math/tex">\{v_k\}</script></span> 使得 <span><span class="MathJax_Preview">\lim\limits_{k\to\infty}v_k=v_\pi</span><script type="math/tex">\lim\limits_{k\to\infty}v_k=v_\pi</script></span>.</strong></p>
-<p>我们采用 <span><span class="MathJax_Preview">v_\pi</span><script type="math/tex">v_\pi</script></span> 的贝尔曼方程作为更新规则：</p>
-<div>
-<div class="MathJax_Preview">
-\begin{aligned}v_{k+1}(s) &amp;\doteq \mathbb{E}_\pi[R_{t+1}+\gamma v_k(S_{t+1}) \mid S_t=s] \\ &amp;= \sum_a\pi(a\mid s)\sum_{s',r}p(s',r \mid s,a)[r+\gamma v_k(s')]\end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}v_{k+1}(s) &\doteq \mathbb{E}_\pi[R_{t+1}+\gamma v_k(S_{t+1}) \mid S_t=s] \\ &= \sum_a\pi(a\mid s)\sum_{s',r}p(s',r \mid s,a)[r+\gamma v_k(s')]\end{aligned}
-</script>
-</div>
-<p>方程的系数我们简记为 <span><span class="MathJax_Preview">c_{ij}</span><script type="math/tex">c_{ij}</script></span>，此外还有常数项，记为 <span><span class="MathJax_Preview">b_i</span><script type="math/tex">b_i</script></span>：</p>
-<div>
-<div class="MathJax_Preview">
+<h3 id="overfit">Overfit<a class="headerlink" href="#overfit" title="Permanent link">&para;</a></h3>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<p>Suppose you observe the following 8 episodes (a batch):
+$$
 \begin{aligned}
-v_{k+1}(s_1)=&amp;c_{11}v_k(s_1)+c_{12}v_k(s_2)+\cdots+c_{1n}v_k(s_n)+b_1\\
-v_{k+1}(s_2)= &amp; c_{21}v_k(s_1)+c_{22}v_k(s_2)+\cdots+c_{2n}v_k(s_n)+b_2\\
-&amp;\vdots\\
-v_{k+1}(s_n)= &amp; c_{n1}v_k(s_1)+c_{n2}v_k(s_2)+\cdots+c_{nn}v_k(s_n)+b_n\\
+(A,0,B,0)\qquad&amp;(B,1)&amp;(B,1)\qquad&amp;(B,1)\
+(B,1)\qquad&amp;(B,1)&amp;(B,1)\qquad&amp;(B,0)
+\end{aligned}
+$$
+Given this <strong>batch of data</strong>, we can easily say <span><span class="MathJax_Preview">V(B)=\dfrac{3}{4}\times 1=\dfrac{3}{4}</span><script type="math/tex">V(B)=\dfrac{3}{4}\times 1=\dfrac{3}{4}</script></span>, but how about <span><span class="MathJax_Preview">V(A)</span><script type="math/tex">V(A)</script></span>?</p>
+<h4 id="td0-methods">TD(0) methods<a class="headerlink" href="#td0-methods" title="Permanent link">&para;</a></h4>
+<div>
+<div class="MathJax_Preview">
+V_0(A)=V_0(B)=V(T)=0\\
+\alpha_a=1,\alpha_b=\frac{1}{8},\gamma=1\\
+\begin{aligned}
+(1)&amp;{\begin{cases}
+\delta_1(A)=R_0+V_0(B)-V_0(A)=0+0-0=0\\
+\delta_1(B)=\sum_{i}\left[R_{0i}+V(T)-V_0(B)\right]=6+0-0=6\\
+V_1(A)=V_0(A)+1\times\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+(2)&amp;{\begin{cases}
+\delta_2(A)=R_1+V_1(B)-V_1(A)=0+\frac{3}{4}-0=\frac{3}{4}\\
+\delta_2(B)=\sum_{i}\left[R_{1i}+V(T)-V_1(B)\right]=6+0-\frac{8\times3}{4}=0\\
+V_2(A)=V_1(A)+1\times\delta_2(A)=\frac{3}{4}\\
+V_2(B)=V_1(B)+\frac{1}{8}\delta_2(B)=\frac{3}{4}
+\end{cases}}\\
+\vdots\\
+(n)&amp;{\begin{cases}
+\delta_n(A)=0,\delta_n(B)=0\\
+V_n(A)=\frac{3}{4},V_n(B)=\frac{3}{4}
+\end{cases}}
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
+V_0(A)=V_0(B)=V(T)=0\\
+\alpha_a=1,\alpha_b=\frac{1}{8},\gamma=1\\
 \begin{aligned}
-v_{k+1}(s_1)=&c_{11}v_k(s_1)+c_{12}v_k(s_2)+\cdots+c_{1n}v_k(s_n)+b_1\\
-v_{k+1}(s_2)= & c_{21}v_k(s_1)+c_{22}v_k(s_2)+\cdots+c_{2n}v_k(s_n)+b_2\\
-&\vdots\\
-v_{k+1}(s_n)= & c_{n1}v_k(s_1)+c_{n2}v_k(s_2)+\cdots+c_{nn}v_k(s_n)+b_n\\
+(1)&{\begin{cases}
+\delta_1(A)=R_0+V_0(B)-V_0(A)=0+0-0=0\\
+\delta_1(B)=\sum_{i}\left[R_{0i}+V(T)-V_0(B)\right]=6+0-0=6\\
+V_1(A)=V_0(A)+1\times\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+(2)&{\begin{cases}
+\delta_2(A)=R_1+V_1(B)-V_1(A)=0+\frac{3}{4}-0=\frac{3}{4}\\
+\delta_2(B)=\sum_{i}\left[R_{1i}+V(T)-V_1(B)\right]=6+0-\frac{8\times3}{4}=0\\
+V_2(A)=V_1(A)+1\times\delta_2(A)=\frac{3}{4}\\
+V_2(B)=V_1(B)+\frac{1}{8}\delta_2(B)=\frac{3}{4}
+\end{cases}}\\
+\vdots\\
+(n)&{\begin{cases}
+\delta_n(A)=0,\delta_n(B)=0\\
+V_n(A)=\frac{3}{4},V_n(B)=\frac{3}{4}
+\end{cases}}
 \end{aligned}
 </script>
 </div>
-<p>进一步地，我们可以把贝尔曼方程及其迭代法更新规则表示为以下的向量化形式：</p>
+<p><img alt="" src="../imgs/RLAI_6/batch-update-td0.png" /></p>
+<h4 id="mc-methods">MC methods<a class="headerlink" href="#mc-methods" title="Permanent link">&para;</a></h4>
 <div>
 <div class="MathJax_Preview">
+V_0(A)=V_0(B)=V(T)=0\\
+\alpha_a=\alpha_b=\frac{1}{8},\gamma=1\\
 \begin{aligned}
-\vec{\mathbf{v}}&amp;=\mathbf{C}\vec{\mathbf{v}}+\vec{\mathbf{b}} \quad\left(\mathbf{I}-\mathbf{C}\right)\vec{\mathbf{v}}=\vec{\mathbf{b}}\\
-\vec{\mathbf{v_{k+1}}}&amp;=\mathbf{C}\vec{\mathbf{v_k}}+\vec{\mathbf{b}}
+(1)&amp;{\begin{cases}
+\delta_1(A)=G_1(A)-V_0(A)=0-0=0\\
+\delta_1(B)=\sum_{i}\left[G_{0i}-V_0(B)\right]=6-0=6\\
+V_1(A)=V_0(A)+\frac{1}{8}\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+(2)&amp;{\begin{cases}
+\delta_2(A)=G_1(A)-V_1(A)=0-0=0\\
+\delta_2(B)=\sum_{i}\left[G_{2i}-V_1(B)\right]=6-6=0\\
+V_1(A)=V_0(A)+\frac{1}{8}\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+\vdots\\
+(n)&amp;{\begin{cases}
+\delta_n(A)=0,\delta_n(B)=0\\
+V_n(A)=0,V_n(B)=\frac{3}{4}
+\end{cases}}
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
+V_0(A)=V_0(B)=V(T)=0\\
+\alpha_a=\alpha_b=\frac{1}{8},\gamma=1\\
 \begin{aligned}
-\vec{\mathbf{v}}&=\mathbf{C}\vec{\mathbf{v}}+\vec{\mathbf{b}} \quad\left(\mathbf{I}-\mathbf{C}\right)\vec{\mathbf{v}}=\vec{\mathbf{b}}\\
-\vec{\mathbf{v_{k+1}}}&=\mathbf{C}\vec{\mathbf{v_k}}+\vec{\mathbf{b}}
+(1)&{\begin{cases}
+\delta_1(A)=G_1(A)-V_0(A)=0-0=0\\
+\delta_1(B)=\sum_{i}\left[G_{0i}-V_0(B)\right]=6-0=6\\
+V_1(A)=V_0(A)+\frac{1}{8}\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+(2)&{\begin{cases}
+\delta_2(A)=G_1(A)-V_1(A)=0-0=0\\
+\delta_2(B)=\sum_{i}\left[G_{2i}-V_1(B)\right]=6-6=0\\
+V_1(A)=V_0(A)+\frac{1}{8}\delta_1(A)=0\\
+V_1(B)=V_0(B)+\frac{1}{8}\delta_1(B)=\frac{3}{4}
+\end{cases}}\\
+\vdots\\
+(n)&{\begin{cases}
+\delta_n(A)=0,\delta_n(B)=0\\
+V_n(A)=0,V_n(B)=\frac{3}{4}
+\end{cases}}
 \end{aligned}
 </script>
 </div>
-<p>在「数值分析」中，这样的方法叫 <strong>Jacobi 迭代求解法</strong>：</p>
-<blockquote>
-<p><img alt="" src="../imgs/RLAI_4/iter-seq.png" />
-<img alt="" src="../imgs/RLAI_4/iter-method.png" /></p>
-</blockquote>
-<p>可以看出，我们之前给出的向量化形式，正是迭代法所讨论的问题。而我们可以通过下面的定理来确保我们的迭代极限确实能够收敛到真实解：</p>
-<blockquote>
-<p><img alt="" src="../imgs/RLAI_4/theorem1.png" />
-<img alt="" src="../imgs/RLAI_4/theorem2.png" />
-<img alt="" src="../imgs/RLAI_4/theorem3.png" /></p>
-</blockquote>
-<p>前两个定理描述的是迭代法收敛的<strong>充要条件</strong>，其条件有点强，不容易看出，而第三个定理只是一个<strong>必要条件</strong>，所以条件要求得比较弱，只需找到一个矩阵范数能使我们的系数矩阵范数小于 1 即可（<span><span class="MathJax_Preview">||C||&lt;1</span><script type="math/tex">||C||<1</script></span>）。</p>
-<p>我们可以考虑「无穷范数」：</p>
-<div>
-<div class="MathJax_Preview">
-||C||_\infty=\max\limits_{1\leq j\leq n}\sum_{i=1}^m|c_{ij}|
-</div>
-<script type="math/tex; mode=display">
-||C||_\infty=\max\limits_{1\leq j\leq n}\sum_{i=1}^m|c_{ij}|
-</script>
-</div>
-<p>其含义是矩阵的 <strong>元素绝对值的行和最大值</strong> ，显然，我们的 <span><span class="MathJax_Preview">c_{ij}</span><script type="math/tex">c_{ij}</script></span> 是由概率 <span><span class="MathJax_Preview">\pi, p</span><script type="math/tex">\pi, p</script></span> 以及削减率 <span><span class="MathJax_Preview">\gamma (0\leq \gamma &lt; 1)</span><script type="math/tex">\gamma (0\leq \gamma < 1)</script></span> 相乘而得，我们先不看削减率，由于状态和行动的独立性，两个概率相乘即为联合分布（关于 s,a）。我们对一行求和，显然只包含到了部分情况，进而显然概率之和小于等于 1 （注意特殊情况下仍有可能为 1，此时恰好只有这一行的 (s,a) 对应的事件能够发生，其他行的概率均分别为0），再乘上削减率 <span><span class="MathJax_Preview">\gamma</span><script type="math/tex">\gamma</script></span> ，于是显然有 <span><span class="MathJax_Preview">||C||_\infty &lt; 1</span><script type="math/tex">||C||_\infty < 1</script></span>，于是迭代序列收敛到真实解，因此这个方法是正确合理的。</p>
-<h3 id="iterative-policy-evaluation">算法 (Iterative Policy Evaluation)<a class="headerlink" href="#iterative-policy-evaluation" title="Permanent link">&para;</a></h3>
+<h4 id="certainty-equivalence-estimate">Certainty-Equivalence Estimate<a class="headerlink" href="#certainty-equivalence-estimate" title="Permanent link">&para;</a></h4>
+<ul>
+<li>MC method gives <strong>minimum squared error</strong> on <strong>training set</strong>, but we can see it may be <strong>overfitted</strong>!</li>
+<li>TD(0) method gives <strong>maximum-likelihood estimate: </strong><span><span class="MathJax_Preview">\hat{\theta}=\mathop{\arg\max}\limits_\theta p(\theta|\mathbf{x})</span><script type="math/tex">\hat{\theta}=\mathop{\arg\max}\limits_\theta p(\theta|\mathbf{x})</script></span></li>
+</ul>
+<p>The MLE is the <strong>model</strong> of the Markov process formed in the obvious way from the observed episodes:</p>
 <ol>
-<li>给定初始值 <span><span class="MathJax_Preview">v_0(s)</span><script type="math/tex">v_0(s)</script></span></li>
-<li>使用贝尔曼方程作为更新规则，通过更新 <span><span class="MathJax_Preview">v_k</span><script type="math/tex">v_k</script></span> 来得到 <span><span class="MathJax_Preview">v_{k+1}</span><script type="math/tex">v_{k+1}</script></span></li>
-<li>直到 <span><span class="MathJax_Preview">\max\limits_{s \in \mathcal{S}}\mid v_{k+1}(s)-v_k(s)\mid &lt; \theta</span><script type="math/tex">\max\limits_{s \in \mathcal{S}}\mid v_{k+1}(s)-v_k(s)\mid < \theta</script></span> 时停止迭代</li>
+<li>estimated trasition probability of states.</li>
+<li>estimated reward.</li>
 </ol>
-<p><img alt="" src="../imgs/RLAI_4/IPE.png" /></p>
-<ul>
-<li>同步法: 使用两个数组 <code>v_k[]</code> 和 <code>v_k+1[]</code>，其中 <code>v_k+1[]=Bellman(v_k[])</code>，更新时不对旧数组 <code>v_k[]</code> 作任何改动，能够确保完全按照我们的公式逐步更新。</li>
-<li>In-Place 法: 只使用一个数组 <code>v[]</code>，每轮更新产生更新值时直接覆写在旧值上。这样就会导致下一次更新时，本应该按照公式用旧值更新另一个值，结果发现这个值已经被之前的更新给覆写上去了。</li>
-</ul>
-<p>In-Place 法仍然能够确保收敛到 <span><span class="MathJax_Preview">v_\pi</span><script type="math/tex">v_\pi</script></span> ，而且速度更快。事实上，这种迭代规则仍然是数值分析中的一种迭代求解法，叫做「<strong>Gauss-Seidel 迭代法</strong>」：</p>
-<blockquote>
-<p><img alt="" src="../imgs/RLAI_4/gauss-siedel.png" /></p>
-</blockquote>
-<p>关于这种方法不再详细说明。</p>
-<h2 id="42-policy-improvement">4.2 Policy Improvement<a class="headerlink" href="#42-policy-improvement" title="Permanent link">&para;</a></h2>
-<h3 id="_3">目标<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p><strong>给定 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 和 <span><span class="MathJax_Preview">v_\pi</span><script type="math/tex">v_\pi</script></span> ，如何改进策略以得到一个更优的 <span><span class="MathJax_Preview">\pi'</span><script type="math/tex">\pi'</script></span> ？</strong></p>
-<h3 id="_4">思路<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>先摆结论，我们要通过下面这样的贪心方法来对策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 做小改进：</p>
+<p>Given this model, we can compute the esitmate of <strong>correct</strong> value function, this is called <strong>certainty-equivalence estimate</strong>.</p>
+<h2 id="64-65-66-td-control">6.4 &amp; 6.5 &amp; 6.6 TD Control<a class="headerlink" href="#64-65-66-td-control" title="Permanent link">&para;</a></h2>
 <div>
 <div class="MathJax_Preview">
-\begin{aligned}\pi'(s) &amp;= \mathop{\arg\max}\limits_a q_\pi(s, a)\\&amp;=\mathop{\arg\max}\limits_a \mathbb{E}[R_{t+1}+\gamma v_\pi(S_{t+1})\mid S_t=s,A_t=a] \\&amp;= \mathop{\arg\max}\limits_a \sum_{s',r} p(s', r | s, a) (r + \gamma v_\pi(s'))\end{aligned}
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma\hat{Q}(S_{t+1},A_{t+1})-Q(S_t,A_t)\right]
 </div>
 <script type="math/tex; mode=display">
-\begin{aligned}\pi'(s) &= \mathop{\arg\max}\limits_a q_\pi(s, a)\\&=\mathop{\arg\max}\limits_a \mathbb{E}[R_{t+1}+\gamma v_\pi(S_{t+1})\mid S_t=s,A_t=a] \\&= \mathop{\arg\max}\limits_a \sum_{s',r} p(s', r | s, a) (r + \gamma v_\pi(s'))\end{aligned}
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma\hat{Q}(S_{t+1},A_{t+1})-Q(S_t,A_t)\right]
 </script>
 </div>
-<p>上面所要表达的意思是，仅在状态 s 下对策略进行微小的改进，其他状态仍保持原策略，那么总体上来讲，直观上显然新策略 <span><span class="MathJax_Preview">\pi'</span><script type="math/tex">\pi'</script></span> 更优，即有 <span><span class="MathJax_Preview">v_{\pi'}(s)\geq v_\pi(s)(\forall s \in \mathcal S)</span><script type="math/tex">v_{\pi'}(s)\geq v_\pi(s)(\forall s \in \mathcal S)</script></span>，下面给出证明。</p>
-<h3 id="policy-improvement-theorem">Policy Improvement Theorem<a class="headerlink" href="#policy-improvement-theorem" title="Permanent link">&para;</a></h3>
-<p><strong>如果 <span><span class="MathJax_Preview">q_\pi(s, \pi'(s)) \geq v_\pi(s)  ,\forall s\in\mathcal S</span><script type="math/tex">q_\pi(s, \pi'(s)) \geq v_\pi(s)  ,\forall s\in\mathcal S</script></span>, 可证得 <span><span class="MathJax_Preview">v_{\pi'}(s) \geq v_\pi(s)</span><script type="math/tex">v_{\pi'}(s) \geq v_\pi(s)</script></span></strong> 。</p>
+<p>where <span><span class="MathJax_Preview">\hat{Q}</span><script type="math/tex">\hat{Q}</script></span> is the replaceable estimator of <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> in <strong>bootstrap method</strong>.</p>
+<h3 id="sarsa">Sarsa<a class="headerlink" href="#sarsa" title="Permanent link">&para;</a></h3>
 <div>
 <div class="MathJax_Preview">
+\hat{Q}(S_{t+1},A_{t+1})=Q(S_{t+1},A_{t+1})\\Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma Q(S_{t+1},A_{t+1})-Q(S_t,A_t)\right]
+</div>
+<script type="math/tex; mode=display">
+\hat{Q}(S_{t+1},A_{t+1})=Q(S_{t+1},A_{t+1})\\Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma Q(S_{t+1},A_{t+1})-Q(S_t,A_t)\right]
+</script>
+</div>
+<ul>
+<li>this method uses <span><span class="MathJax_Preview">(S_t,A_t,R_{t+1},S_{t+1},A_{t+1})</span><script type="math/tex">(S_t,A_t,R_{t+1},S_{t+1},A_{t+1})</script></span>, so the name is <strong>sarsa</strong>.</li>
+<li>estimate <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> and then improve <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> , so it’s an on-policy method.</li>
+</ul>
+<p><img alt="" src="../imgs/RLAI_6/sarsa.png" /></p>
+<h3 id="q-learning">Q-learning<a class="headerlink" href="#q-learning" title="Permanent link">&para;</a></h3>
+<div>
+<div class="MathJax_Preview">
+\hat{Q}(S_{t+1},A_{t+1})=\max\limits_aQ(S_{t+1},a)\\
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma  \max\limits_aQ(S_{t+1},a)-Q(S_t,A_t)\right]
+</div>
+<script type="math/tex; mode=display">
+\hat{Q}(S_{t+1},A_{t+1})=\max\limits_aQ(S_{t+1},a)\\
+Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma  \max\limits_aQ(S_{t+1},a)-Q(S_t,A_t)\right]
+</script>
+</div>
+<ul>
+<li>it’s <strong>off-policy</strong>, becuase it updates <span><span class="MathJax_Preview">Q(S_t,A_t)</span><script type="math/tex">Q(S_t,A_t)</script></span> using current <span><span class="MathJax_Preview">\max\limits_aQ(S_{t+1},a)</span><script type="math/tex">\max\limits_aQ(S_{t+1},a)</script></span> without taking next action <span><span class="MathJax_Preview">A_{t+1}</span><script type="math/tex">A_{t+1}</script></span>, after updating, we can take any actions to explore.</li>
+</ul>
+<p><img alt="" src="../imgs/RLAI_6/q-learning.png" /></p>
+<h3 id="expected-sarsa">Expected Sarsa<a class="headerlink" href="#expected-sarsa" title="Permanent link">&para;</a></h3>
+<div>
+<div class="MathJax_Preview">
+\hat{Q}(S_{t+1},A_{t+1})=\mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]\\
 \begin{aligned}
-q_{\pi}(s,a)&amp;\doteq\mathbb{E}_{\pi}\left[G_t|S_t=s,A_t=a\right]=\mathbb{E}_{\pi}\left[R_{t+1}+\gamma v_\pi(s)|s,a\right]\\
-v_\pi(s) &amp;\leq q_\pi(s, \pi'(s)) \\ &amp;=\mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s,A_t=\pi'(s)]\\&amp;= \mathbb{E}_{\pi'}[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] \\ &amp;\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma q_\pi(S_{t+1},\pi'(S_{t+1}))\mid S_t=s] \\&amp;= \mathbb{E}_{\pi'}[R_{t+1}+\gamma \mathbb{E}_{\pi'}[R_{t+2}+\gamma v_\pi(S_{t+2})] \mid S_t=s] \\ &amp;= \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2v_\pi(S_{t+2}) \mid S_t=s] \\ &amp;\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\gamma^3v_\pi(S_{t+3})\mid S_t=s] \\ &amp;\vdots \\ &amp;\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\gamma^3R_{t+4}+\cdots \mid S_t=s]\\&amp;=\mathbb{E}_{\pi'}[G_t|S_t=s]  \\ &amp;=v_{\pi'}(s)
+Q(S_t,A_t)&amp;\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma  \mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]-Q(S_t,A_t)\right]\\
+&amp;\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma\sum_a\pi(a|S_{t+1})Q(S_{t+1},a)  -Q(S_t,A_t)\right]
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
+\hat{Q}(S_{t+1},A_{t+1})=\mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]\\
 \begin{aligned}
-q_{\pi}(s,a)&\doteq\mathbb{E}_{\pi}\left[G_t|S_t=s,A_t=a\right]=\mathbb{E}_{\pi}\left[R_{t+1}+\gamma v_\pi(s)|s,a\right]\\
-v_\pi(s) &\leq q_\pi(s, \pi'(s)) \\ &=\mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s,A_t=\pi'(s)]\\&= \mathbb{E}_{\pi'}[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] \\ &\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma q_\pi(S_{t+1},\pi'(S_{t+1}))\mid S_t=s] \\&= \mathbb{E}_{\pi'}[R_{t+1}+\gamma \mathbb{E}_{\pi'}[R_{t+2}+\gamma v_\pi(S_{t+2})] \mid S_t=s] \\ &= \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2v_\pi(S_{t+2}) \mid S_t=s] \\ &\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\gamma^3v_\pi(S_{t+3})\mid S_t=s] \\ &\vdots \\ &\leq \mathbb{E}_{\pi'}[R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+\gamma^3R_{t+4}+\cdots \mid S_t=s]\\&=\mathbb{E}_{\pi'}[G_t|S_t=s]  \\ &=v_{\pi'}(s)
+Q(S_t,A_t)&\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma  \mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]-Q(S_t,A_t)\right]\\
+&\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma\sum_a\pi(a|S_{t+1})Q(S_{t+1},a)  -Q(S_t,A_t)\right]
 \end{aligned}
 </script>
 </div>
-<h2 id="43-policy-iteration">4.3 Policy Iteration<a class="headerlink" href="#43-policy-iteration" title="Permanent link">&para;</a></h2>
-<h3 id="_5">目标<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>既然是讲动态规划，显然前面就是在解决子问题了，这一节便要开始考虑回归原本的问题：「<strong>如何得到全局最优策略 <span><span class="MathJax_Preview">\pi_*</span><script type="math/tex">\pi_*</script></span> ？</strong>」</p>
-<h3 id="_6">思路<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p>我们反复交替执行进行前两节的两种算法：</p>
-<div>
-<div class="MathJax_Preview">
-\pi_0 \xrightarrow{E} v_{\pi_0} \xrightarrow{I}\pi_1 \xrightarrow{E} v_{\pi_1} \xrightarrow{I} \pi_2 \xrightarrow{E} \cdots \xrightarrow{I} \pi_* \xrightarrow{E} v_*
-</div>
-<script type="math/tex; mode=display">
-\pi_0 \xrightarrow{E} v_{\pi_0} \xrightarrow{I}\pi_1 \xrightarrow{E} v_{\pi_1} \xrightarrow{I} \pi_2 \xrightarrow{E} \cdots \xrightarrow{I} \pi_* \xrightarrow{E} v_*
-</script>
-</div>
 <ul>
-<li><span><span class="MathJax_Preview">\xrightarrow{E}</span><script type="math/tex">\xrightarrow{E}</script></span>: Policy Evaluation</li>
-<li><span><span class="MathJax_Preview">\xrightarrow{I}</span><script type="math/tex">\xrightarrow{I}</script></span>: Policy Inprovement</li>
-<li>由于在有限 MDP 中，整个定义空间都是有限的，策略也必然是有限的，在我们的交替过程中，值函数单调上升且显然有上界，由定理可知，这个过程执行一定步数后，策略必然能收敛到最优策略。</li>
+<li>small additional computational cost.</li>
+<li>lower variance and perform better.</li>
 </ul>
-<h3 id="policy-iteration">算法 (Policy Iteration)<a class="headerlink" href="#policy-iteration" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../imgs/RLAI_4/PI.png" /></p>
-<h2 id="44-value-iteration">4.4 Value Iteration<a class="headerlink" href="#44-value-iteration" title="Permanent link">&para;</a></h2>
-<h3 id="_7">目标<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>在我们上一节讲的策略迭代算法中，每次迭代中又都包含一个「策略估计（policy evaluation）」迭代，可想而知这严重拖慢了算法速度，因此我们还得改进算法。</p>
-<h3 id="_8">思路<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p>Policy evaluatoin 的慢体现在他要扫描不断整个状态集，确保精确性，其实我们可以考虑不做这么精准的「估计（evaluation）」，而是每一步（每次处理一个状态）都同步进行 evaluation 和 improvement，也不再以策略是否稳定为标准，而是看总的上界是否收敛。</p>
-<div>
-<div class="MathJax_Preview">
-\begin{aligned}v_{k+1}(s) &amp;\doteq \max_a \mathbb{E}[R_{t+1}+\gamma v_k(S_{t+1}) \mid S_t=s, A_t=a] \\ &amp;= \max_a \sum_{s',r}p(s',r \mid s,a)[r+\gamma v_k(s')], \forall s \in \mathcal S &amp;(4.10)\end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}v_{k+1}(s) &\doteq \max_a \mathbb{E}[R_{t+1}+\gamma v_k(S_{t+1}) \mid S_t=s, A_t=a] \\ &= \max_a \sum_{s',r}p(s',r \mid s,a)[r+\gamma v_k(s')], \forall s \in \mathcal S &(4.10)\end{aligned}
-</script>
-</div>
-<p>看似这样做很暴力不讲道理，但其实依然是有依据的，在上一章中，我们讲到贝尔曼最优方程：</p>
-<div>
-<div class="MathJax_Preview">
-\begin{aligned}v_* &amp;= \max_a \mathbb{E}[R_{t+1}+\gamma v_*(S_{t+1}) \mid S_t= s,A_t=a] \\ &amp;= \max_a \sum_{s',r}p(s',r \mid s,a)[r+\gamma v_*(s')]\end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}v_* &= \max_a \mathbb{E}[R_{t+1}+\gamma v_*(S_{t+1}) \mid S_t= s,A_t=a] \\ &= \max_a \sum_{s',r}p(s',r \mid s,a)[r+\gamma v_*(s')]\end{aligned}
-</script>
-</div>
-<p>可以看出，我们这一节提出的「值迭代（value iteration）」的迭代公式其实就是贝尔曼最优方程的更新式，而且同样可以类似前面证明，对这个公式做迭代法也是能收敛的。</p>
-<h3 id="value-iteration">算法 (Value Iteration)<a class="headerlink" href="#value-iteration" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../imgs/RLAI_4/VI.png" /></p>
-<h2 id="45-asynchronous-dynamic-programming">4.5 Asynchronous Dynamic Programming<a class="headerlink" href="#45-asynchronous-dynamic-programming" title="Permanent link">&para;</a></h2>
-<h3 id="_9">目标<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<p>之前讲到的 DP 方法都还有一个问题，那就是他们都会遍历整个状态集。如果状态集特别大，即使是改进后的 value iteration 也会很慢。这一节简单提一提如何采用<strong>异步动态规划</strong>来解决这一问题。</p>
-<h3 id="_10">思路<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<p>在 value iteration 的基础上，更激进地，我们优先更新我们认为值得更新的状态，而不是像之前那样「同步 / 无差别」更新。</p>
-<p>举个例子，比如下棋，一些局势基本上不太可能会出现，我们就可以认为这样的状态不值得频繁更新，而应把计算资源集中在那些经常出现的局面上，让我们的模型在大概率出现的局面上能够采取最优解，而在那些低概率出现的局面上仅采取一个较为合适的「局部最优解 / 较优解」，这样在<strong>期望意义下</strong>我们仍能拿到一个不错的收益，但却解决了计算能力不足的问题。</p>
-<h3 id="_11">算法特点<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../imgs/RLAI_6/performance-compare.png" /></p>
 <ul>
-<li>能够灵活选择我们所想要多去更新的状态，同时在大部分情况下也能收敛到最优解</li>
-<li>在每个状态下，我们利用 (4.10) 式来对状态 <span><span class="MathJax_Preview">s_k</span><script type="math/tex">s_k</script></span> 进行更新，此时，<span><span class="MathJax_Preview">v_k \to v_*</span><script type="math/tex">v_k \to v_*</script></span> 当且仅当 <strong>全部状态都在 <span><span class="MathJax_Preview">\{s_k\}</span><script type="math/tex">\{s_k\}</script></span> 中出现了 <span><span class="MathJax_Preview">\infty</span><script type="math/tex">\infty</script></span>次</strong> <span><span class="MathJax_Preview">(0 \leq \gamma &lt;1)</span><script type="math/tex">(0 \leq \gamma <1)</script></span> 。可以看出，若想得到全局最优解，这个算法没法做到本质上的速度提升，但是正如前面所讨论的，我们可以通过灵活更新，提前停止迭代，一样能够达到一个较好的整体策略。</li>
+<li><strong>Asymptotic performance</strong>: an average over 100,000 episodes.</li>
+<li>
+<p><strong>Interim performance</strong>: an average over the first 100 episodes.</p>
+</li>
+<li>
+<p>Expected Sarsa can safely set <span><span class="MathJax_Preview">\alpha=1</span><script type="math/tex">\alpha=1</script></span>, whereas Sarsa can only perform well with small <span><span class="MathJax_Preview">\alpha</span><script type="math/tex">\alpha</script></span>.</p>
+</li>
+<li>It can be either On-policy or Off-policy.</li>
 </ul>
-<h2 id="46-generalized-policy-iteration-gpi">4.6 Generalized Policy Iteration (GPI)<a class="headerlink" href="#46-generalized-policy-iteration-gpi" title="Permanent link">&para;</a></h2>
-<p><strong>GPI：「策略估计」与「策略改进」相交互的一种通用描述模型。</strong></p>
-<p>举两个例子：</p>
+<h2 id="67-maximization-bias-and-double-learning">6.7 Maximization Bias and Double Learning<a class="headerlink" href="#67-maximization-bias-and-double-learning" title="Permanent link">&para;</a></h2>
+<p>Many algorithms involve <strong>maximization</strong> to construct their target policies.</p>
 <ul>
-<li>在 policy iteration 中，我们是把两个过程（估计、改进）当作独立过程，分别执行再进行联立，这种方法就属于典型的 GPI 。</li>
-<li>在异步 DP 方法种，两个过程被高度整合在一起，这同样属于 GPI 。</li>
+<li>Q-learning: <span><span class="MathJax_Preview">\max\limits_a Q(S_{t+1},a)</span><script type="math/tex">\max\limits_a Q(S_{t+1},a)</script></span></li>
+<li>Sarsa: the policy is often <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span>-greddy, also involves maximization operation.</li>
 </ul>
-<p><strong>几乎所有的强化学习方法都能很好地被描述为 GPI 模型。</strong></p>
-<p><img alt="" src="../imgs/RLAI_4/GPI.png" /></p>
-<p><img alt="" src="../imgs/RLAI_4/GPI2.png" /></p>
-<p>上图可以这样解读：</p>
+<p>These can lead to  significant positive bias.</p>
+<p><strong>Example</strong>:</p>
 <ul>
-<li>GPI 可以看作是「竞争」和「协作」共存的模型。</li>
-<li>竞争：现有策略通过贪心方法进行改进后，值函数不再精准；修改策略之后，重新估算值函数，使得原有的改进策略变得正常、合理，显得不「贪心」。</li>
-<li>协作：两个过程相互促进，最后达到了共同点，也就是全局最优解。</li>
+<li>a single state s.</li>
+<li>many actions a whose true values <span><span class="MathJax_Preview">q(s,a)</span><script type="math/tex">q(s,a)</script></span> are all 0.</li>
+<li>estimated values <span><span class="MathJax_Preview">Q(s,a)</span><script type="math/tex">Q(s,a)</script></span> are uncertain, so can be above or below 0.</li>
+<li>the maximum of the estimates is positive, so there may be positive bias, we call this <strong>maximization bias</strong>.</li>
 </ul>
-<h2 id="47-efficiency-of-dynamic-programming">4.7 Efficiency of Dynamic Programming<a class="headerlink" href="#47-efficiency-of-dynamic-programming" title="Permanent link">&para;</a></h2>
-<p>最后再简要提一提我们这章讲的 DP 算法的效率。</p>
-<p><strong>算法复杂度</strong>：</p>
+<h3 id="double-learning">Double Learning<a class="headerlink" href="#double-learning" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../imgs/RLAI_6/max-bias.png" /></p>
 <ul>
-<li>直接搜索： <span><span class="MathJax_Preview">O(k^n)</span><script type="math/tex">O(k^n)</script></span> (n 种状态，k 种行动)</li>
-<li>动态规划： <span><span class="MathJax_Preview">O(c^n+c^k)</span><script type="math/tex">O(c^n+c^k)</script></span> (c 是与 n、k 无关的常数)</li>
+<li>episodes always start in A with a choice between <strong>left</strong> and <strong>right</strong> (with reward 0).</li>
+<li><span><span class="MathJax_Preview">R(B)\sim\mathcal N(-0.1,1)</span><script type="math/tex">R(B)\sim\mathcal N(-0.1,1)</script></span>, so <span><span class="MathJax_Preview">V(left)=-0.1, V(right)=0</span><script type="math/tex">V(left)=-0.1, V(right)=0</script></span>.</li>
+<li>However our methods may favor <strong>left</strong> because of maximization bias making B appear to have positive value.</li>
 </ul>
-<p><strong>总结</strong>:</p>
+<p><strong>Double Learning</strong>:</p>
 <ul>
-<li>DP 方法在面对特别大规模的问题仍然不适用，主要是因为维度灾难（curse of dimensionality）。但相比上一章的直接求解或者暴力搜索，仍然有着非常大的提升。</li>
-<li>以今天的计算机，DP 算法足以用来处理百万数量级 states 的 MDP 问题。</li>
+<li>divide samples into two sets and use them to learn two independent estimate, called <span><span class="MathJax_Preview">Q_1(a), Q_2(a)</span><script type="math/tex">Q_1(a), Q_2(a)</script></span>, each an estimate of the true value <span><span class="MathJax_Preview">q(a)</span><script type="math/tex">q(a)</script></span>.</li>
+<li>use one estimate to determine the maximizing action <span><span class="MathJax_Preview">A^*=\mathop{\arg\max}\limits_aQ_1(a)</span><script type="math/tex">A^*=\mathop{\arg\max}\limits_aQ_1(a)</script></span>.</li>
+<li>use the other to provide the estimate value <span><span class="MathJax_Preview">Q_2(A^*)=Q_2(\mathop{\arg\max}\limits_aQ_1(a))</span><script type="math/tex">Q_2(A^*)=Q_2(\mathop{\arg\max}\limits_aQ_1(a))</script></span>.</li>
+<li>the estimate will be unbiased because <span><span class="MathJax_Preview">\mathbb{E}[Q_2(A^*)]=q(A^*)</span><script type="math/tex">\mathbb{E}[Q_2(A^*)]=q(A^*)</script></span>.</li>
+<li>we can repeat the process and get a second unbiased estimate <span><span class="MathJax_Preview">Q_1(\mathop{\arg\max}\limits_aQ_2(a))</span><script type="math/tex">Q_1(\mathop{\arg\max}\limits_aQ_2(a))</script></span>.</li>
+</ul>
+<p>This is the idea of <strong>double learning</strong>, it can eliminate the harm caused by maximization bias.</p>
+<p><img alt="" src="../imgs/RLAI_6/double-q-learning.png" /></p>
+<p>This method doubles the memory requirements but does not increase the amount of computation.</p>
+<h2 id="68-games-afterstates-and-other-special-cases">6.8 Games, Afterstates, and Other Special Cases<a class="headerlink" href="#68-games-afterstates-and-other-special-cases" title="Permanent link">&para;</a></h2>
+<p>Sometimes we need to evaluate value functions after our actions, we call these <strong>Afterstates</strong>.</p>
+<p><img alt="" src="../imgs/RLAI_6/tic.png" /></p>
+<ul>
+<li>Afterstates are useful when we just need to have part of information.</li>
+<li>A more efficient learning method.</li>
 </ul>
                 
                   
@@ -2095,41 +1912,6 @@ v_\pi(s) &\leq q_\pi(s, \pi'(s)) \\ &=\mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../RLAI_3/" title="Chapter 3" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  后退
-                </span>
-                Chapter 3
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../RLAI_5/" title="Chapter 5" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  前进
-                </span>
-                Chapter 5
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

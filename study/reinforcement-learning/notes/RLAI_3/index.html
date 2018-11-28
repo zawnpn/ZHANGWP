@@ -100,7 +100,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../../#reinforcement-learning-an-introduction-chapter-3" tabindex="1" class="md-skip">
+      <a href="../../../../#-" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -1799,7 +1799,7 @@
                   <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_3.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="reinforcement-learning-an-introduction-chapter-3">[读书笔记]Reinforcement Learning: An Introduction - Chapter 3<a class="headerlink" href="#reinforcement-learning-an-introduction-chapter-3" title="Permanent link">&para;</a></h1>
+                <h1 id="-">强化学习导论（三）- 有限马尔可夫决策过程<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
 <p>这章主要讲有限马尔可夫决策过程（finite MDPs）。</p>
 <p>首先会涉及到上一章提到的评估反馈，但与之前不同的是，现在也会开始考虑问题与环境的联系，也就是在不同情景下去做不同的选择。MDPs 是决策序列的一种经典形式化模型，其中的行动不仅会影响当前的即时奖励值，也会通过未来的奖励值来影响后续的情况或状态。</p>
 <h2 id="31-the-agentenvironment-interface">3.1 The Agent–Environment Interface<a class="headerlink" href="#31-the-agentenvironment-interface" title="Permanent link">&para;</a></h2>
@@ -1979,7 +1979,7 @@
 <script type="math/tex; mode=display">\begin{aligned} v_\pi(s) &\doteq \mathbb{E}_\pi[G_t\,|\,S_t=s] \\ &=\mathbb{E}\pi \left[\sum_{k=0}^\infty\gamma^kR_{t+k+1}\,|\,S_t=s \right] \\ &= \mathbb{E}_\pi \left [R_{t+1}+\gamma\sum_{k=0}^\infty\gamma^kR_{t+k+2}\,|\,S_t=s \right] \\ &=\sum_a\pi(a|s)\sum_{s'}\sum_rp(s',r|s,a)\left[r+\gamma \mathbb{E}_\pi \left[\sum_{k=0}^\infty\gamma^kR_{t+k+2}\,|\,S_{t+1}=s' \right] \right] \\ &= \sum_a\pi(a|s)\sum_{s',r}p(s',r|s,a)\left[r+\gamma v_\pi(s') \right], \qquad \forall s \in \mathcal S \end{aligned}</script>
 </div>
 <ul>
-<li><span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span>: 一个行动，取自行动集 <span><span class="MathJax_Preview">\mathcal{A}(s)</span><script type="math/tex">\mathcal{A}(s)</script></span> </li>
+<li><span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span>: 一个行动，取自行动集 <span><span class="MathJax_Preview">\mathcal{A}(s)</span><script type="math/tex">\mathcal{A}(s)</script></span></li>
 <li><span><span class="MathJax_Preview">s'</span><script type="math/tex">s'</script></span>: 后继状态，取自状态集 <span><span class="MathJax_Preview">\mathcal{S}</span><script type="math/tex">\mathcal{S}</script></span> （对于片段式任务，取自 <span><span class="MathJax_Preview">\mathcal{S}^+</span><script type="math/tex">\mathcal{S}^+</script></span> ）</li>
 <li><span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span>: 奖励值，取自奖励集 <span><span class="MathJax_Preview">\mathcal{R}</span><script type="math/tex">\mathcal{R}</script></span></li>
 </ul>
@@ -2049,7 +2049,7 @@
 </ul>
 <p>显式求解贝尔曼最优方程虽然能直接确定最优策略，但是并不太实用，因为这一方法涉及到了「穷举」，依赖严苛的计算资源和内存条件。此外，这个方法还依赖于三个假设，使得问题本身就很难利用上这一方法：</p>
 <ol>
-<li>精确地知道环境的动态性质 <span><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span> </li>
+<li>精确地知道环境的动态性质 <span><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span></li>
 <li>有足够的计算资源</li>
 <li>满足马尔可夫性质</li>
 </ol>
