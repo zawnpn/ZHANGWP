@@ -693,8 +693,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#expected-sarsa" title="Expected Sarsa" class="md-nav__link">
-    Expected Sarsa
+  <a href="#expected-sarsa" title="Expected Sarsa 算法" class="md-nav__link">
+    Expected Sarsa 算法
   </a>
   
 </li>
@@ -1754,8 +1754,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#expected-sarsa" title="Expected Sarsa" class="md-nav__link">
-    Expected Sarsa
+  <a href="#expected-sarsa" title="Expected Sarsa 算法" class="md-nav__link">
+    Expected Sarsa 算法
   </a>
   
 </li>
@@ -1944,7 +1944,7 @@ V(S_t)\leftarrow V(S_t)+\alpha\left[G_t-V(S_t)\right]\\
 V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
 </script>
 </div>
-<p>对于上面这样的更新式，我们可以通过<strong>批量更新（Batch Update）</strong>来进行更新操作：</p>
+<p>对于上面这样的更新式，我们有时也可通过<strong>批量更新（Batch Update）</strong>来进行更新操作：</p>
 <ul>
 <li>每一步 t 我们仍按照原来的步骤做计算，求出增量（也就误差值）。</li>
 <li>先不执行更新，而是将增量（误差值）累积起来。</li>
@@ -2131,7 +2131,7 @@ Q(S_t,A_t)\leftarrow Q(S_t,A_t)+\alpha\left[R_{t+1}+\gamma  \max\limits_aQ(S_{t+
 </div>
 <p>易分析知，我们是从所有的 <span><span class="MathJax_Preview">Q(S_{t+1},a)</span><script type="math/tex">Q(S_{t+1},a)</script></span> 中直接<strong>选取</strong>了最大值来更新（而不是像前面的 Sarsa 一样还需往前实际走一步 <span><span class="MathJax_Preview">A_{t+1}</span><script type="math/tex">A_{t+1}</script></span>）就能完成更新， 更新之后，我们可以任意采取其他策略来做 exploration actions ，所以 Q-learning 是 Off-policy 方法。</p>
 <p><img alt="" src="../imgs/RLAI_6/q-learning.png" /></p>
-<h3 id="expected-sarsa">Expected Sarsa<a class="headerlink" href="#expected-sarsa" title="Permanent link">&para;</a></h3>
+<h3 id="expected-sarsa">Expected Sarsa 算法<a class="headerlink" href="#expected-sarsa" title="Permanent link">&para;</a></h3>
 <p>若 <span><span class="MathJax_Preview">\hat{Q}(S_{t+1},A_{t+1})=\mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]</span><script type="math/tex">\hat{Q}(S_{t+1},A_{t+1})=\mathbb{E}_\pi\left[Q(S_{t+1},A_{t+1})\mid S_{t+1}\right]</script></span> ，这时的 TD 算法称为 Expected Sarsa ，其更新式为</p>
 <div>
 <div class="MathJax_Preview">
