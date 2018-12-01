@@ -17,7 +17,7 @@
 |  主线通关 / 支线 & DLC 弃坑  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
 | 主线通关 / 支线 & DLC 看心情 | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
 |           开坑待填           | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
-|           开坑待填           | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 30+ h  | ★★★☆  |
+|             在玩             | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 30+ h  | ★★★☆  |
 |           开坑待填           | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
 |           开坑待填           | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
 |           开坑待填           | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |  文字 / 科幻 / 爱情  |  1   | 10+ h  | ★★★★  |
@@ -35,7 +35,7 @@
 |            偶尔玩            | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 200+ h |  ★★★  |
 |           开坑待填           |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
 |           暂时不玩           | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
-|           开坑待填           | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |         恐怖         |  1   | 20+ h  | ★★★☆  |
+|             通关             | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
 |           开坑待填           | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
 |           暂时不玩           | [**Cities: Skylines**](https://store.steampowered.com/app/255710) |     模拟 / 城建      |      | 10+ h  |  ★★★  |
 |             通关             | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         gal          |  1   | 10+ h  | ★★★☆  |
