@@ -15,7 +15,7 @@
 我们将下面这样的返回值定义为 n-step 返回值：
 
 $$
-G_{t:t+n}\doteq {\color{red}R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+{\color{blue}\gamma^nV_{t+n-1}(S_{t+n})}
+G_{t:t+n}\doteq \color{red}{R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+\color{blue}{\gamma^nV_{t+n-1}(S_{t+n})}
 $$
 
 显然可知，只有当 $R_{t+n}$ 和 $V_{t+n-1}$ 都确定好后才能得到 $G_{t:t+n}$ 。
@@ -25,7 +25,7 @@ $$
 将上面的 n 步返回值用于算法更新式，可以得到 n 步 TD 算法
 
 $$
-V_{t+n}(S_t)\doteq V_{t+n-1}(S_t)+\alpha[{\color{red}G_{t:t+n}}-{\color{blue}V_{t+n-1}(S_t)}]
+V_{t+n}(S_t)\doteq V_{t+n-1}(S_t)+\alpha[\color{red}{G_{t:t+n}}-\color{blue}{V_{t+n-1}(S_t)}]
 $$
 
 由于 n 步返回值只在一定时间后才能求出，所以也会影响到这一算法，因此在前 n 步都不会作更新。
@@ -49,11 +49,11 @@ $$
 将 n-step return 加入到 Sarsa 算法的更新式中，即可得到 n-step Sarsa 算法。
 
 $$
-G_{t:t+n}\doteq {\color{red}R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+{\color{blue}\gamma^nQ_{t+n-1}(S_{t+n},A_{t+n})}
+G_{t:t+n}\doteq \color{red}{R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+\color{blue}{\gamma^nQ_{t+n-1}(S_{t+n},A_{t+n})}
 $$
 
 $$
-Q_{t+n}(S_t,A_t)\doteq Q_{t+n-1}(S_t,A_t)+\alpha[{\color{red}G_{t:t+n}}-{\color{blue}Q_{t+n-1}(S_t,A_t)}]
+Q_{t+n}(S_t,A_t)\doteq Q_{t+n-1}(S_t,A_t)+\alpha[\color{red}{G_{t:t+n}}-\color{blue}{Q_{t+n-1}(S_t,A_t)}]
 $$
 
 ![](imgs/RLAI_7/n-step-SARSA.png)
@@ -65,7 +65,7 @@ $$
 **Expected Sarsa**:
 
 $$
-G_{t:t+n}\doteq {\color{red}R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+{\color{blue}\gamma^n\bar{V}_{t+n-1}(S_{t+n})}
+G_{t:t+n}\doteq \color{red}{R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}}+\color{blue}{\gamma^n\bar{V}_{t+n-1}(S_{t+n})}
 $$
 
 其中
@@ -79,7 +79,7 @@ $$
 n-step 的 Off-policy 学习也可以很方便地表示为类似的形式，只需要乘上一个重要性权重即可：
 
 $$
-V_{t+n}(S_t)\doteq V_{t+n-1}(S_t)+\alpha\rho_{t:t+n-1}[{\color{red}G_{t:t+n}}-{\color{blue}V_{t+n-1}(S_t)}]
+V_{t+n}(S_t)\doteq V_{t+n-1}(S_t)+\alpha\rho_{t:t+n-1}[\color{red}{G_{t:t+n}}-\color{blue}{V_{t+n-1}(S_t)}]
 $$
 
 $$
@@ -89,7 +89,7 @@ $$
 **n-step Off-policy Sarsa**:
 
 $$
-Q_{t+n}(S_t,A_t)\doteq Q_{t+n-1}(S_t,A_t)+\alpha\rho_{t+1:t+n}[{\color{red}G_{t:t+n}}-{\color{blue}Q_{t+n-1}(S_t,A_t)}]
+Q_{t+n}(S_t,A_t)\doteq Q_{t+n-1}(S_t,A_t)+\alpha\rho_{t+1:t+n}[\color{red}{G_{t:t+n}}-\color{blue}{Q_{t+n-1}(S_t,A_t)}]
 $$
 
 ![](imgs/RLAI_7/n-SARSA-off.png)
