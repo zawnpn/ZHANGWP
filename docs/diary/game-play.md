@@ -2,48 +2,49 @@
 
 ## 已玩游戏汇总
 
-|             状态             |                             名称                             |         Tag          | 周目 |  时间  | 评价  |
-| :--------------------------: | :----------------------------------------------------------: | :------------------: | :--: | :----: | :---: |
-|            全成就            | [**DARK SOULS™: REMASTERED**](https://store.steampowered.com/app/570940/) |        魂系列        |  3   | 100+ h | ★★★★★ |
-|             收藏             | [**DARK SOULS™: Prepare To Die Edition**](https://store.steampowered.com/app/211420) |        魂系列        |  1   | 10+ h  | ★★★★★ |
-|            全成就            | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
-|            全成就            | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
-|             通关             | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
-|           开坑待填           | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
-|            偶尔玩            | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 120+ h | ★★★☆  |
-|          多周目填坑          | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
-|             在玩             | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 10+ h  | ★★★★  |
-| 主线通关 / 支线 & DLC 待填坑 | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
-|  主线通关 / 支线 & DLC 弃坑  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
-| 主线通关 / 支线 & DLC 看心情 | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
-|           开坑待填           | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
-|             在玩             | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 30+ h  | ★★★☆  |
-|           开坑待填           | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
-|           开坑待填           | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
-|           开坑待填           | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |  文字 / 科幻 / 爱情  |  1   | 10+ h  | ★★★★  |
-|            全成就            | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |  文字 / 科幻 / 爱情  |  1   | 50+ h  | ★★★★☆ |
-|           开坑待填           | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
-|             在玩             | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |       动画风格       |  1   | 20+ h  | ★★★☆  |
-|             通关             |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
-|           开坑待填           | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
-|           开坑待填           | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
-|             通关             | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
-|           开坑待填           |    [**Portal 2**](https://store.steampowered.com/app/620)    |     解谜 / 探索      |  1   | <10 h  | ★★★☆  |
-|           开坑待填           | [**Deponia: The Complete Journey**](https://store.steampowered.com/app/292910) |         冒险         |  1   | <10 h  | ★★★☆  |
-|           暂时不玩           | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
-|            偶尔玩            |  [**For Honor**](https://store.steampowered.com/app/304390)  |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
-|            偶尔玩            | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 200+ h |  ★★★  |
-|           开坑待填           |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
-|           暂时不玩           | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
-|             通关             | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
-|           开坑待填           | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
-|           暂时不玩           | [**Cities: Skylines**](https://store.steampowered.com/app/255710) |     模拟 / 城建      |      | 10+ h  |  ★★★  |
-|             通关             | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         gal          |  1   | 10+ h  | ★★★☆  |
-|           开坑待填           | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         gal          |  1   | <10 h  |  ★★★  |
-|           开坑待填           | [**The Long Dark**](https://store.steampowered.com/app/305620) |     生存 / 冒险      |  1   | <10 h  |  ★★★  |
-|           开坑待填           | [**while True: learn()**](https://store.steampowered.com/app/619150) |   编程 / 机器学习    |      | <10 h  | ★★★☆  |
-|           暂时不玩           |   [**Hacknet**](https://store.steampowered.com/app/365450)   |     编程 / Unix      |      | <10 h  |  ★★☆  |
-|           开坑待填           | [**Crazy Machines 3**](https://store.steampowered.com/app/351920) |     设计 / 休闲      |      | <10 h  |  ★★★  |
+|    状态    |                             名称                             |         Tag          | 周目 |  时间  | 评价  |
+| :--------: | :----------------------------------------------------------: | :------------------: | :--: | :----: | :---: |
+|   全成就   | [**DARK SOULS™: REMASTERED**](https://store.steampowered.com/app/570940/) |        魂系列        |  3   | 100+ h | ★★★★★ |
+|    收藏    | [**DARK SOULS™: Prepare To Die Edition**](https://store.steampowered.com/app/211420) |        魂系列        |  1   | 10+ h  | ★★★★★ |
+|   全成就   | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
+|   全成就   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
+|    通关    | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
+|  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
+|    在玩    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | <10 h  | ★★★★☆ |
+|   偶尔玩   | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 120+ h | ★★★☆  |
+| 多周目填坑 | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
+|    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 10+ h  | ★★★★  |
+|  主线通关  | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
+|  主线通关  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
+|  主线通关  | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
+|  开坑待填  | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
+|    通关    | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 75+ h  | ★★★☆  |
+|  开坑待填  | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
+|  开坑待填  | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
+|  开坑待填  | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |  文字 / 科幻 / 爱情  |  1   | 10+ h  | ★★★★  |
+|   全成就   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |  文字 / 科幻 / 爱情  |  1   | 50+ h  | ★★★★☆ |
+|  开坑待填  | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
+|    在玩    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |       动画风格       |  1   | 20+ h  | ★★★☆  |
+|    通关    |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
+|  开坑待填  | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
+|  开坑待填  | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
+|    通关    | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
+|  开坑待填  |    [**Portal 2**](https://store.steampowered.com/app/620)    |     解谜 / 探索      |  1   | <10 h  | ★★★☆  |
+|  开坑待填  | [**Deponia: The Complete Journey**](https://store.steampowered.com/app/292910) |         冒险         |  1   | <10 h  | ★★★☆  |
+|  暂时不玩  | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
+|   偶尔玩   |  [**For Honor**](https://store.steampowered.com/app/304390)  |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
+|   偶尔玩   | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 200+ h |  ★★★  |
+|  开坑待填  |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
+|  暂时不玩  | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
+|    通关    | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
+|  开坑待填  | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
+|  暂时不玩  | [**Cities: Skylines**](https://store.steampowered.com/app/255710) |     模拟 / 城建      |      | 10+ h  |  ★★★  |
+|    通关    | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         gal          |  1   | 10+ h  | ★★★☆  |
+|  开坑待填  | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         gal          |  1   | <10 h  |  ★★★  |
+|  开坑待填  | [**The Long Dark**](https://store.steampowered.com/app/305620) |     生存 / 冒险      |  1   | <10 h  |  ★★★  |
+|  开坑待填  | [**while True: learn()**](https://store.steampowered.com/app/619150) |   编程 / 机器学习    |      | <10 h  | ★★★☆  |
+|  暂时不玩  |   [**Hacknet**](https://store.steampowered.com/app/365450)   |     编程 / Unix      |      | <10 h  |  ★★☆  |
+|  开坑待填  | [**Crazy Machines 3**](https://store.steampowered.com/app/351920) |     设计 / 休闲      |      | <10 h  |  ★★★  |
 
 ## 简评
 
