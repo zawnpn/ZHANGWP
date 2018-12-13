@@ -1,0 +1,1989 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Welcome to zawnpn's blog.">
+      
+      
+        <link rel="canonical" href="https://oncemath.com/study/reinforcement-learning/notes/RLAI_8/">
+      
+      
+        <meta name="author" content="zawnpn">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="jp">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="/assets/images/all_inclusive.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Chapter 8 - ONCE.MATH</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../../../#-" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://oncemath.com" title="ONCE.MATH" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">all_inclusive</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                ONCE.MATH
+              </span>
+              <span class="md-header-nav__topic">
+                Chapter 8
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/zawnpn/ONCEMATH/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../.." title="Home" class="md-tabs__link">
+          Home
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../" title="Study" class="md-tabs__link md-tabs__link--active">
+          Study
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../projects/" title="Projects" class="md-tabs__link">
+          Projects
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../notes/" title="Notes" class="md-tabs__link">
+          Notes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../math/" title="Math" class="md-tabs__link">
+          Math
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../diary/" title="Diary" class="md-tabs__link">
+          Diary
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../share/" title="Share" class="md-tabs__link">
+          Share
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../about/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://oncemath.com" title="ONCE.MATH" class="md-nav__button md-logo">
+      
+        <i class="md-icon">all_inclusive</i>
+      
+    </a>
+    ONCE.MATH
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/zawnpn/ONCEMATH/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="主页" class="md-nav__link">
+      主页
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../links/" title="友情链接" class="md-nav__link">
+      友情链接
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../donates/" title="打赏" class="md-nav__link">
+      打赏
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Study
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Study
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="My Study" class="md-nav__link">
+      My Study
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Reinforcement
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Reinforcement
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-2-1">
+      Reinforcement Learning An Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        Reinforcement Learning An Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_2/" title="Chapter 2" class="md-nav__link">
+      Chapter 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_3/" title="Chapter 3" class="md-nav__link">
+      Chapter 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_4/" title="Chapter 4" class="md-nav__link">
+      Chapter 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_5/" title="Chapter 5" class="md-nav__link">
+      Chapter 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_6/" title="Chapter 6" class="md-nav__link">
+      Chapter 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_7/" title="Chapter 7" class="md-nav__link">
+      Chapter 7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Chapter 8
+      </label>
+    
+    <a href="./" title="Chapter 8" class="md-nav__link md-nav__link--active">
+      Chapter 8
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-models-and-planning" title="8.1 Models and Planning" class="md-nav__link">
+    8.1 Models and Planning
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model" title="模型（Model）" class="md-nav__link">
+    模型（Model）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planning" title="规划（Planning）" class="md-nav__link">
+    规划（Planning）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-dyna-integrated-planning-acting-and-learning" title="8.2 Dyna: Integrated Planning, Acting, and Learning" class="md-nav__link">
+    8.2 Dyna: Integrated Planning, Acting, and Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-when-the-model-is-wrong" title="8.3 When the Model Is Wrong" class="md-nav__link">
+    8.3 When the Model Is Wrong
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-prioritized-sweeping" title="8.4 Prioritized Sweeping" class="md-nav__link">
+    8.4 Prioritized Sweeping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-expected-vs-sample-updates" title="8.5 Expected vs. Sample Updates" class="md-nav__link">
+    8.5 Expected vs. Sample Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-trajectory-sampling" title="8.6 Trajectory Sampling" class="md-nav__link">
+    8.6 Trajectory Sampling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87-real-time-dynamic-programming" title="8.7 Real-time Dynamic Programming" class="md-nav__link">
+    8.7 Real-time Dynamic Programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#88-planning-at-decision-time" title="8.8 Planning at Decision Time" class="md-nav__link">
+    8.8 Planning at Decision Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#89-heuristic-search" title="8.9 Heuristic Search" class="md-nav__link">
+    8.9 Heuristic Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#810-rollout-algorithms" title="8.10 Rollout Algorithms" class="md-nav__link">
+    8.10 Rollout Algorithms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#811-monte-carlo-tree-search" title="8.11 Monte Carlo Tree Search" class="md-nav__link">
+    8.11 Monte Carlo Tree Search
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/" title="My Projects" class="md-nav__link">
+      My Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/FFT-GPU-Accel/" title="基于GPU的快速傅里叶变换并行化加速" class="md-nav__link">
+      基于GPU的快速傅里叶变换并行化加速
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Steam-Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Steam-Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/steam-market-price-bot/" title="Steam市场比价爬虫" class="md-nav__link">
+      Steam市场比价爬虫
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
+      NKU-Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        NKU-Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/nku-eamis/" title="NKU-EAMIS工具" class="md-nav__link">
+      NKU-EAMIS工具
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/nku-sms-rss/" title="NKU-SMS-RSS" class="md-nav__link">
+      NKU-SMS-RSS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/eamis-miniapp/" title="NKU-EAMIS_MiniApp(南开大学教务助手小程序)" class="md-nav__link">
+      NKU-EAMIS_MiniApp(南开大学教务助手小程序)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../projects/eamis-workflow/" title="NKU-EAMIS for iOS(Workflow)" class="md-nav__link">
+      NKU-EAMIS for iOS(Workflow)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../notes/" title="My Notes" class="md-nav__link">
+      My Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../notes/to-do/" title="To Do" class="md-nav__link">
+      To Do
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../notes/data-processing/" title="Data Processing" class="md-nav__link">
+      Data Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../notes/linux/" title="Linux" class="md-nav__link">
+      Linux
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Math
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Math
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/" title="Math Experience" class="md-nav__link">
+      Math Experience
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      数学建模
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        数学建模
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/2017-mcm-icm/" title="2017美赛参赛整理(Problem D)" class="md-nav__link">
+      2017美赛参赛整理(Problem D)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/2016-guosai/" title="2016数学建模国赛" class="md-nav__link">
+      2016数学建模国赛
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/math-model-szb/" title="数学建模之2016深圳杯——初次尝试" class="md-nav__link">
+      数学建模之2016深圳杯——初次尝试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/polygon-to-ellipse/" title="随机多边形转化为椭圆的过程研究" class="md-nav__link">
+      随机多边形转化为椭圆的过程研究
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      NKU 数院试题整理
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        NKU 数院试题整理
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-1" type="checkbox" id="nav-5-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-1">
+      分析
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-1">
+        分析
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/functional-analysis-final/" title="2017-2018第一学期泛函分析期末考试" class="md-nav__link">
+      2017-2018第一学期泛函分析期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/real-variable-function/" title="2016-2017第二学期实变函数期末考试" class="md-nav__link">
+      2016-2017第二学期实变函数期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/mathematical-analysis-3-3-final/" title="2016-2017第一学期数学分析3-3期末考试" class="md-nav__link">
+      2016-2017第一学期数学分析3-3期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/complex-analysis-final/" title="2016-2017第一学期复变函数期末考试" class="md-nav__link">
+      2016-2017第一学期复变函数期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/mathematical-analysis-3-3-middle/" title="2016-2017第一学期数学分析3-3期中考试" class="md-nav__link">
+      2016-2017第一学期数学分析3-3期中考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/mathematical-analysis-3-2-final/" title="2015-2016第二学期数学分析3-2期末考试（含解答）" class="md-nav__link">
+      2015-2016第二学期数学分析3-2期末考试（含解答）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/mathematical-analysis-3-2-middle/" title="2015-2016第二学期数学分析3-2期中考试" class="md-nav__link">
+      2015-2016第二学期数学分析3-2期中考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/mathematical-analysis-3-1-final/" title="2015-2016第一学期数学分析3-1期末考试" class="md-nav__link">
+      2015-2016第一学期数学分析3-1期末考试
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-2" type="checkbox" id="nav-5-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-2">
+      代数
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-2">
+        代数
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/abstract-algebra-final/" title="2016-2017第一学期抽象代数期末考试" class="md-nav__link">
+      2016-2017第一学期抽象代数期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/abstract-algebra-middle/" title="2016-2017第一学期抽象代数期中考试" class="md-nav__link">
+      2016-2017第一学期抽象代数期中考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/advanced-algebra-2-2-final/" title="2015-2016第二学期高等代数2-2期末考试" class="md-nav__link">
+      2015-2016第二学期高等代数2-2期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/advanced-algebra-2-2-middle/" title="2015-2016第二学期高等代数2-2期中考试" class="md-nav__link">
+      2015-2016第二学期高等代数2-2期中考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/advanced-algebra-2-1-final/" title="2015-2016第一学期高等代数2-1期末考试" class="md-nav__link">
+      2015-2016第一学期高等代数2-1期末考试
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3">
+      概率统计
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-3">
+        概率统计
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/probability-final/" title="2016-2017第二学期概率论期末考试" class="md-nav__link">
+      2016-2017第二学期概率论期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/probability-middle/" title="2016-2017第二学期概率论期中考试" class="md-nav__link">
+      2016-2017第二学期概率论期中考试
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-4" type="checkbox" id="nav-5-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-4">
+      微分方程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-4">
+        微分方程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/PDE-final/" title="2017-2018第一学期数理方程期末考试" class="md-nav__link">
+      2017-2018第一学期数理方程期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/ODE-final/" title="2016-2017第一学期常微分方程期末考试" class="md-nav__link">
+      2016-2017第一学期常微分方程期末考试
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../math/exam/ODE-middle/" title="2016-2017第一学期常微分方程期中考试" class="md-nav__link">
+      2016-2017第一学期常微分方程期中考试
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Diary
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Diary
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../diary/" title="My Diary" class="md-nav__link">
+      My Diary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../diary/game-play/" title="游戏记录 & 简评" class="md-nav__link">
+      游戏记录 & 简评
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../diary/roc-fly/" title="鹏程万里" class="md-nav__link">
+      鹏程万里
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../diary/blog-history/" title="博客历史" class="md-nav__link">
+      博客历史
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Share
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Share
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../share/" title="Share" class="md-nav__link">
+      Share
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../share/nku-sms-exams/" title="NKU 数院试题整理" class="md-nav__link">
+      NKU 数院试题整理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../share/my-postgraduate-share/" title="保研推免经验分享 - 数学系跨保 CS" class="md-nav__link">
+      保研推免经验分享 - 数学系跨保 CS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../share/github-student-pack/" title="Student Developer Pack - GitHub Education" class="md-nav__link">
+      Student Developer Pack - GitHub Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../about/" title="About Me" class="md-nav__link">
+      About Me
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-models-and-planning" title="8.1 Models and Planning" class="md-nav__link">
+    8.1 Models and Planning
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model" title="模型（Model）" class="md-nav__link">
+    模型（Model）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planning" title="规划（Planning）" class="md-nav__link">
+    规划（Planning）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-dyna-integrated-planning-acting-and-learning" title="8.2 Dyna: Integrated Planning, Acting, and Learning" class="md-nav__link">
+    8.2 Dyna: Integrated Planning, Acting, and Learning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-when-the-model-is-wrong" title="8.3 When the Model Is Wrong" class="md-nav__link">
+    8.3 When the Model Is Wrong
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-prioritized-sweeping" title="8.4 Prioritized Sweeping" class="md-nav__link">
+    8.4 Prioritized Sweeping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-expected-vs-sample-updates" title="8.5 Expected vs. Sample Updates" class="md-nav__link">
+    8.5 Expected vs. Sample Updates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86-trajectory-sampling" title="8.6 Trajectory Sampling" class="md-nav__link">
+    8.6 Trajectory Sampling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87-real-time-dynamic-programming" title="8.7 Real-time Dynamic Programming" class="md-nav__link">
+    8.7 Real-time Dynamic Programming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#88-planning-at-decision-time" title="8.8 Planning at Decision Time" class="md-nav__link">
+    8.8 Planning at Decision Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#89-heuristic-search" title="8.9 Heuristic Search" class="md-nav__link">
+    8.9 Heuristic Search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#810-rollout-algorithms" title="8.10 Rollout Algorithms" class="md-nav__link">
+    8.10 Rollout Algorithms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#811-monte-carlo-tree-search" title="8.11 Monte Carlo Tree Search" class="md-nav__link">
+    8.11 Monte Carlo Tree Search
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_8.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="-">强化学习导论（八）- 规划与学习<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+<p>这一章全面地对前面几章的算法做了综合性的分类、总结和对比。</p>
+<h2 id="81-models-and-planning">8.1 Models and Planning<a class="headerlink" href="#81-models-and-planning" title="Permanent link">&para;</a></h2>
+<h3 id="model">模型（Model）<a class="headerlink" href="#model" title="Permanent link">&para;</a></h3>
+<p><strong>模型</strong>指学习者能够用来基于环境预测行为的反馈情况。简单而言，模型就是『<strong>先验</strong>知识』。</p>
+<ul>
+<li>分布模型（distribution models）：描述了各种状态转移以及奖励反馈的概率，也就是提供了具体的分布 <span><span class="MathJax_Preview">p(s',r|s,a)</span><script type="math/tex">p(s',r|s,a)</script></span> 。</li>
+<li>样本模型（sample models）：基于概率产生<strong>一种</strong>随机结果。</li>
+</ul>
+<p>不难想象，如果结合提供的策略，样本模型能够产生完整的 episode ，而分布模型理论上能够生成所有可能的 episode 。所以，『模型』也可以被看作是对环境的模拟，进而生成出『模拟经验』。</p>
+<h3 id="planning">规划（Planning）<a class="headerlink" href="#planning" title="Permanent link">&para;</a></h3>
+<p><strong>规划</strong>，指<strong>将模型作为输入，进而与之交互，对策略进行优化改进的计算过程</strong>。</p>
+<p>主要有两种不同类别的规划：</p>
+<ul>
+<li>state-space planning ：在状态空间中，通过计算各种状态值、行为值，来找到能够取得最优策略的转移方法。</li>
+<li>plan-space planning ：重新将问题定义在一种『plan 空间』。这种方法比较抽象，难以实现，本书不会对其进行进一步的探讨。</li>
+</ul>
+<p>规划方法的两个基本思想：</p>
+<ol>
+<li>将 value functions 的计算作为改进策略的关键中间步骤。</li>
+<li>通过在模拟出来的经验上的更新、反馈等操作，来计算 value functions 。</li>
+</ol>
+<p><img alt="" src="../imgs/RLAI_8/planning.png" /></p>
+<p>规划（Planning）方法和后面要提到的学习（Learning）方法核心思想都一样：通过反向更新来估计价值函数。区别仅在于，前者通过 model 生成<strong>模拟经验</strong>数据，而后者直接与环境交互，生成<strong>真实经验</strong>经数据。</p>
+<p>下面提供一个规划方法的例子（基于 one-step Q-learning 和 random model）：</p>
+<p><img alt="" src="../imgs/RLAI_8/rand-sample-one-Q-plan.png" /></p>
+<h2 id="82-dyna-integrated-planning-acting-and-learning">8.2 Dyna: Integrated Planning, Acting, and Learning<a class="headerlink" href="#82-dyna-integrated-planning-acting-and-learning" title="Permanent link">&para;</a></h2>
+<p>这一节，主要讲一种 Dyna-Q 的结构，他将下面三种概念整合在一起：</p>
+<ul>
+<li>『模型』：对环境的模拟。</li>
+<li>『真实经验』：用于改进模型，使模型和真实环境更加匹配；也能用于直接改进价值函数和策略（比如 MC 方法）。</li>
+<li>『价值函数 &amp; 策略』：<span><span class="MathJax_Preview">v_\pi,q_\pi,\pi</span><script type="math/tex">v_\pi,q_\pi,\pi</script></span> 等</li>
+</ul>
+<p><img alt="" src="../imgs/RLAI_8/dynaq.png" /></p>
+<p>真实经验既可以被用来先改善模型，再做 planning 来调整 value function；也可以结合前面几章讲过的方法用来直接用于改进 value function 和 policy 。如上图所示，Dyna-Q 则将两种思路整合在一起，其中</p>
+<ul>
+<li>规划方法采用了 random sample one-step tabular Q-learning</li>
+<li>学习方法采用了 one-step tabular Q-learning</li>
+</ul>
+<p><img alt="" src="../imgs/RLAI_8/dynaq-struct.png" /></p>
+<ul>
+<li>中间的 real experience 是算法的核心要素，通过与环境交互获得。</li>
+<li>向左的箭头表示 direct RL 过程，通过真实经验数据<strong>直接</strong>更新 value function 和 policy 。</li>
+<li>向右下的箭头表示 indirect RL 过程。先由真实经验数据改善 model ，再由 model 产生模拟经验数据，进而去更新 value function 和 policy 。</li>
+</ul>
+<p>在 Dyna-Q 中，规划和学习的原理几乎一样，唯一的不同在于，前者使用模拟经验数据，后者采用真实经验数据，最终都使用 Q-learning 来进行学习。</p>
+<p><img alt="" src="../imgs/RLAI_8/dynaq-code.png" /></p>
+<ul>
+<li>（c） &amp; （d） : direct RL</li>
+<li>（e） &amp; （f） : model learning + planning</li>
+</ul>
+<h2 id="83-when-the-model-is-wrong">8.3 When the Model Is Wrong<a class="headerlink" href="#83-when-the-model-is-wrong" title="Permanent link">&para;</a></h2>
+<p>有时问题的背景是不固定的，也就是『环境』可能发生变动，这时我们的 model 可能就是错误的模型，导致其后的规划过程无法得到理想的策略。</p>
+<p>如果能够及时发现环境的变化，也就是发现原有的最优解已不是最优，进而重新开始探索，那么便能解决这一问题。</p>
+<p>这一节我们提出 Dyna-Q+ 算法，其特点是：将『奖励值』与 『状态被访问次数』结合（而不是像之前只看奖励值），使算法一定程度上能够多考虑长期未被访问的状态（有点像第二章的 UCB 算法）。</p>
+<p>具体的结合方法是，将 reward 重新设置为 <span><span class="MathJax_Preview">r+\kappa\sqrt{\tau}</span><script type="math/tex">r+\kappa\sqrt{\tau}</script></span> ，其中</p>
+<ul>
+<li><span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> ：转移过程收到的奖励反馈。</li>
+<li><span><span class="MathJax_Preview">\tau</span><script type="math/tex">\tau</script></span> ：从上一次被访问开始，未被访问到的时间步数。</li>
+<li><span><span class="MathJax_Preview">\kappa</span><script type="math/tex">\kappa</script></span> ：一个较小的系数。</li>
+</ul>
+<p>这样，长期未被访问过的状态便能拥有一个更大的奖励值，更容易被算法访问到。</p>
+<h2 id="84-prioritized-sweeping">8.4 Prioritized Sweeping<a class="headerlink" href="#84-prioritized-sweeping" title="Permanent link">&para;</a></h2>
+<p>在 Dyna-Q 算法的 (f) 步骤，在选择 S 和 A 时本来是随机选取，这样会存在一个问题，初始值一般设为 0 ，在算法的初始阶段，会大量访问到 value 为 0 的状态，此时『误差』为 0 ，也就不会产生更新，导致算法初期的规划学习效率低下。</p>
+<p>如果能够在规划过程中，更有针对性地优先考虑那些 value 发生过较明显改变的状态，便能提升规划学习的效率。</p>
+<p><img alt="" src="../imgs/RLAI_8/prior-sweep.png" /></p>
+<ul>
+<li>以 value 的改变量为指标，对访问过的 state-action pair 进行优先级排序。</li>
+<li>构造一个优先级队列 PQueue ，存储每次满足条件的状态和行动。</li>
+</ul>
+<h2 id="85-expected-vs-sample-updates">8.5 Expected vs. Sample Updates<a class="headerlink" href="#85-expected-vs-sample-updates" title="Permanent link">&para;</a></h2>
+<p>前面的 Dyna-Q 算法中，更新方法是 Sample Updates ，也就是选取某一个具体的 sample 来更新价值函数，于其对应地，就是 Expected Updates ，对下一步所有可能的 actions 都遍历一次，按概率分布取得期望后更新价值函数。</p>
+<p>下图是几作常见的价值函数在两种 Update 方法下的示意图：</p>
+<p><img alt="" src="../imgs/RLAI_8/value-updates1.png" /></p>
+<p><img alt="" src="../imgs/RLAI_8/value-updates2.png" /></p>
+<p>下面对比两种更新方法。</p>
+<ul>
+<li>如果没有 model ，那么无法使用 expected updates ，只能和环境交互，做 sample updates 。</li>
+<li>如果有 model ，expected updates 的估计准确性更高，避免了采样误差，而 sample updates 的运算量则会很小，速度快。</li>
+</ul>
+<p>以一个实例来进行说明，设 model 为 <span><span class="MathJax_Preview">\hat{p}(s'|s,a)</span><script type="math/tex">\hat{p}(s'|s,a)</script></span> ，期望奖励为 <span><span class="MathJax_Preview">\hat{r}(s,a,s')</span><script type="math/tex">\hat{r}(s,a,s')</script></span> 。</p>
+<p>则 expected updates 的更新式为
+$$
+Q(s,a)\leftarrow \sum_{s'}\hat{p}(s'|s,a)[\hat{r}(s,a,s')+\gamma \max_{a'}Q(s',a')]
+$$
+sample updates 的更新式为
+$$
+Q(s,a)\leftarrow Q(s,a)+\alpha[\hat{r}(s,a,s')+\gamma \max_{a'}Q(S',a')-Q(s,a)]
+$$</p>
+<p>这里再引入一个变量 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> ，表示当前状态的下一步有多少种可能的状态，意义上代表了环境状态的随机程度，而环境随机程度也正是 expected updates 和 sample updates 的重要区别因素。</p>
+<ul>
+<li>若 <span><span class="MathJax_Preview">b=1</span><script type="math/tex">b=1</script></span> ，则两者没有区别；</li>
+<li>若 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 较大，expected updates 的准确度只受状态值函数 Q 的准确性的影响，sample updates 则既受 Q 的准确性的影响，也受采样误差的影响。</li>
+</ul>
+<p>此外，expected updates 的计算量约为 sample updates 的 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 倍。</p>
+<p>下面看一组对比两种方法性能的实验。</p>
+<p><img alt="" src="../imgs/RLAI_8/expected-vs-sample.png" /></p>
+<ul>
+<li>假定用于更新的 value function 是<strong>完全准确</strong>的。</li>
+<li>对于 expected updates，在 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 确定的情况下，更新的时间是固定的，更新完成后，误差为 0 。</li>
+<li>对于 sample updates ，随着 <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 的增大，其相比于 expected updates 的优势则渐渐体现出来（较快收敛）。</li>
+</ul>
+<h2 id="86-trajectory-sampling">8.6 Trajectory Sampling<a class="headerlink" href="#86-trajectory-sampling" title="Permanent link">&para;</a></h2>
+<p>这一节主要解决『<strong>如何取选</strong>取哪些状态、行动用于更新价值函数』这一问题。</p>
+<p>在经典的 DP 中，算法是直接选取了所有状态，全部状态都赋予了相同重要程度，而未作区分，在实际情况下，很多状态的出现概率很低，而 DP 显然浪费了很多时间在很多这样不必花太多精力去更新的状态。</p>
+<p>为了避免这类问题，考虑以某种『合适的』概率分布在状态空间中采样，避免『盲目性』。</p>
+<p>一种更有效的采样方式为：根据当前策略的概率分布进行采样操作。称这样的采样方法为 Trajectory Sampling 。</p>
+<p>下面看一组对比 Trajectory Sampling 与 Uniform Sampling 的效率对比实验。实验中统一使用 expected updates：
+$$
+Q(s,a)\leftarrow \sum_{s'}\hat{p}(s'|s,a)[\hat{r}(s,a,s')+\gamma \max_{a'}Q(s',a')]
+$$</p>
+<ul>
+<li>Uniform Sampling ：从整个 state-action 空间随机采样，并进行更新操作。</li>
+<li>Trajectory Sampling ：先生成模拟序列（状态和奖励由 model 确定，行为由策略确定），然后对模拟序列出现的每个 state-action 进行更新。</li>
+</ul>
+<p>下面是对比实验，横轴表示计算时间，纵轴表示 <span><span class="MathJax_Preview">v_{\tilde{\pi}}(s)</span><script type="math/tex">v_{\tilde{\pi}}(s)</script></span> 。</p>
+<p><img alt="" src="../imgs/RLAI_8/traj-samp1.png" /></p>
+<p><img alt="" src="../imgs/RLAI_8/traj-samp2.png" /></p>
+<ul>
+<li>Trajectory Sampling 在初始阶段速度很快，但后期效果一般。</li>
+<li><span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> 越小，Trajectory Sampling 速度优势越明显。</li>
+<li>状态总数越大，Trajectory Sampling 速度优势越明显。</li>
+</ul>
+<p>初期，路径采样更集中于对那些和初始态相关度进行更新，所以效率很高，但到了后期，所有状态对应的 <span><span class="MathJax_Preview">Q(S)</span><script type="math/tex">Q(S)</script></span> 已经都较为准确，无需再进行有倾向性的采样，但路径采样仍去频繁地对他们采样，所以效率较低。</p>
+<h2 id="87-real-time-dynamic-programming">8.7 Real-time Dynamic Programming<a class="headerlink" href="#87-real-time-dynamic-programming" title="Permanent link">&para;</a></h2>
+<p><strong>实时动态规划</strong>（RTDP）是 on-policy trajectory-sampling DP 算法（就是将上一节的 Trajectory Sampling 整合进 DP 算法）。他是一种异步动态规划（asynchronous DP），异步动态规划不像常规的 DP 那样对状态空间进行彻底性的扫描，而是任意规定一种顺序来扫描。</p>
+<p>RTDP 允许跳过一些与问题目标无关的状态，同样也能收敛到最优策略。虽然在前面章节提过，常规的 DP 算法如果想要取得最优策略，需要对每种状态都要更新无穷次，才能确保收敛。但是，对于一些满足特定条件的情况和问题，RTDP 在忽略一些状态的情况下，仍然能够以概率 1 收敛到最优策略：</p>
+<ol>
+<li>想要达到的目标状态的初始值为 0 。</li>
+<li>至少存在一个策略，使得任意初始状态都以概率 1 达到目标状态。</li>
+<li>所有从非目标状态出发的转移过程对于的 reward ，都必须严格小于 0 。</li>
+<li>所有初始 value 都要大于等于最优情况下的 value （显然将初值全部设为 0 即可满足）。</li>
+</ol>
+<p>拥有上述性质的任务，称为<strong>随机最优路径问题</strong>（stochastic optimal path problems），主要指那些需要将<strong>代价最小化</strong>的问题，而不是使收益最大化。</p>
+<p>RTDP 高度关注与问题相关的状态子空间，其效率较高，与普通的全扫描迭代相比，时间要少 50% 。</p>
+<h2 id="88-planning-at-decision-time">8.8 Planning at Decision Time<a class="headerlink" href="#88-planning-at-decision-time" title="Permanent link">&para;</a></h2>
+<ul>
+<li>前面主要讲的方法（称为 background planning）：使用模拟经验数据来渐渐地改善策略和价值函数。</li>
+<li>本节的 decision-time planning ：使用模拟经验数据，结合已知信息，直接选出当前状态下的最优策略。</li>
+</ul>
+<p>Decision-time planning 的优点在于，他重点关注了即时状态，而没有太注重综合性的信息。由于在一些问题中，一些状态出现一次后要很长时间才能再出现一次，这时 decision-time planning 就能较好地处理这种情况。</p>
+<p>Decision-time planning 适合那些不太需要快速反应的场景，比如一些棋类游戏，在每一步都允许较多思考时间。</p>
+<h2 id="89-heuristic-search">8.9 Heuristic Search<a class="headerlink" href="#89-heuristic-search" title="Permanent link">&para;</a></h2>
+<p>启发式搜索在访问到一个状态时，会建立一棵后续可能情况的树，然后利用树中的信息进行更新。</p>
+<p>搜索树越深，每一次更新时的信息量也更大，显然更深的启发式搜索能够生成更好的结果。通常来说，如果搜索深度 <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> 能使 <span><span class="MathJax_Preview">\gamma^k​</span><script type="math/tex">\gamma^k​</script></span> 非常小的话，最终得到的 action 也会非常接近<strong>最优解</strong>，然而此时<strong>计算量</strong>会非常大，因此需要找到一个<strong>合适的平衡点</strong>。</p>
+<p>常用的构造高效搜索树的方法是：下一步中，有希望成为最优 action 的分支，就增加搜索深度；而不太可能去采取行动的 action ，就将分支深度适当降低。</p>
+<p>启发式搜索的核心思想正如上一节的 decision-time action 中的思想，即重点关注当且（或者与当且较近）的状态，所以搜索树的构造思路也应是<strong>如何更好地去更新当且状态值</strong>。</p>
+<p><img alt="" src="../imgs/RLAI_8/heuristic-search.png" /></p>
+<h2 id="810-rollout-algorithms">8.10 Rollout Algorithms<a class="headerlink" href="#810-rollout-algorithms" title="Permanent link">&para;</a></h2>
+<p>Rollout 算法其实就是将 decision-time planning 整合进 Monte Carlo 方法的算法。</p>
+<p>Rollout 算法对当前状态，从各个 action 出发，根据策略分别进行采样，通过样本数据来进行计算和更新。</p>
+<ul>
+<li>MC 中，采样是为了逐步使信息更准确，进而更准确地改善策略。</li>
+<li>Rollout 中，采样是采出每一步之后的一定信息，利用信息更新后，然后做出选择让这一步进入下一个状态（思想依然是主要关注当前状态）。</li>
+</ul>
+<h2 id="811-monte-carlo-tree-search">8.11 Monte Carlo Tree Search<a class="headerlink" href="#811-monte-carlo-tree-search" title="Permanent link">&para;</a></h2>
+<p>蒙特卡罗树搜索（MCTS）是对上一节 Rollout 算法的进一步拓展，他会在其基础上记录搜索过程中的行动值变化，以便更好地采样。他的核心思想是：设法重点关注从当前状态出发后有高估值的路径。其主要步骤为：</p>
+<ol>
+<li>选择：从根节点出发，根据<strong>树策略（tree policy）</strong>选择一个叶节点。</li>
+<li>拓展：有一定概率从选择的叶节点中执行一个未执行过的行动来增加一个子节点。</li>
+<li>模拟：从当前叶节点开始，根据 rollout 策略执行动作直到终止时间。</li>
+<li>回溯：利用本次模拟中得到的奖励和逐层更新所使用到的树内节点。</li>
+</ol>
+<p><img alt="" src="../imgs/RLAI_8/mcts.png" /></p>
+<p>MCTS 常用在双人竞技游戏，比如围棋，2016 年战胜人类冠军围棋手的 AlphaGo 正是大量用到了这一算法。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../RLAI_7/" title="Chapter 7" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  后退
+                </span>
+                Chapter 7
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../../projects/" title="My Projects" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前进
+                </span>
+                My Projects
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016-2019 ONCE.MATH
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/zawnpn" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/zawnpn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://steamcommunity.com/id/zawnpn/" class="md-footer-social__link fa fa-steam"></a>
+    
+      <a href="https://www.zhihu.com/people/zhangwanpeng" class="md-footer-social__link fa fa-globe"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="../../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../../../assets/javascripts/lunr/lunr.jp.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+        <script src="../../../../assets/extra.js"></script>
+      
+        <script src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_SVG"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
