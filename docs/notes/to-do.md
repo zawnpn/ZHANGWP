@@ -12,3 +12,4 @@
 ## Programming
 
 - Study C++
+- Study Golang
