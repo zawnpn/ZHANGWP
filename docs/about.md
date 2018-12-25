@@ -32,3 +32,7 @@ comments: false
 ## 备案信息
 
 <a href="http://www.miibeian.gov.cn/"target=_blank>蜀ICP备16005637号-1</a>
+
+----
+
+![](/images/about/maho-bar.jpg)

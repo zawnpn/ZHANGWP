@@ -8,13 +8,15 @@
 |    收藏    | [**DARK SOULS™: Prepare To Die Edition**](https://store.steampowered.com/app/211420) |        魂系列        |  1   | 10+ h  | ★★★★★ |
 |   全成就   | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
 |   全成就   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
+|    在玩    | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |        魂系列        |  1   | 50+ h  | ★★★★★ |
 |    通关    | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
 |  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
-|    在玩    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | <10 h  | ★★★★☆ |
-|   偶尔玩   | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 120+ h | ★★★☆  |
+|    通关    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | 100+ h | ★★★★☆ |
+|   偶尔玩   | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 150+ h | ★★★☆  |
 | 多周目填坑 | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
-|    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 10+ h  | ★★★★  |
+|    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 20+ h  | ★★★★  |
 |  主线通关  | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
+|    在玩    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 恐怖      |  1   | 10+ h  | ★★★★  |
 |  主线通关  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
 |  主线通关  | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
 |  开坑待填  | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
