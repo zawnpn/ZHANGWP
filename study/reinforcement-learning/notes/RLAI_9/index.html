@@ -731,6 +731,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2-2">
+      Some Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        Some Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MCTS_introduction/" title="MCTS" class="md-nav__link">
+      MCTS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1861,10 +1897,15 @@
 \end{aligned}
 </script>
 </div>
-<p>也可写作
-$$
+<p>也可写作</p>
+<div>
+<div class="MathJax_Preview">
 \mathbb{E}[\mathbf{w}_{t+1}|\mathbf{w}_t]=\mathbf{w}_t+\alpha(\mathbf{b}-\mathbf{Aw}_t)
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+\mathbb{E}[\mathbf{w}_{t+1}|\mathbf{w}_t]=\mathbf{w}_t+\alpha(\mathbf{b}-\mathbf{Aw}_t)
+</script>
+</div>
 <p>其中</p>
 <div>
 <div class="MathJax_Preview">
@@ -1897,10 +1938,15 @@ $$</p>
 \end{aligned}
 </script>
 </div>
-<p>这个值称为『<strong>TD 不动点</strong>』，根据一些定理可以证明确实能够收敛于此点。线性半梯度 TD(0) 算法的收敛值就是这个不动点，他有一个性质：
-$$
-\mathrm{MSVE}(\mathbf{w}<em>{TD})\leq\frac{1}{1-\gamma}\min</em>\mathbf{w}\mathrm{MSVE}(\mathbf{w})
-$$</p>
+<p>这个值称为『<strong>TD 不动点</strong>』，根据一些定理可以证明确实能够收敛于此点。线性半梯度 TD(0) 算法的收敛值就是这个不动点，他有一个性质：</p>
+<div>
+<div class="MathJax_Preview">
+\mathrm{MSVE}(\mathbf{w}_{TD})\leq\frac{1}{1-\gamma}\min_\mathbf{w}\mathrm{MSVE}(\mathbf{w})
+</div>
+<script type="math/tex; mode=display">
+\mathrm{MSVE}(\mathbf{w}_{TD})\leq\frac{1}{1-\gamma}\min_\mathbf{w}\mathrm{MSVE}(\mathbf{w})
+</script>
+</div>
 <p>即 TD(0) 法得到的误差不超过 MC 法的 <span><span class="MathJax_Preview">\dfrac{1}{1-\gamma}</span><script type="math/tex">\dfrac{1}{1-\gamma}</script></span> 倍。</p>
 <p><img alt="" src="../imgs/RLAI_9/n-grad-td.png" /></p>
 <h2 id="95-feature-construction-for-linear-methods">9.5 Feature Construction for Linear Methods<a class="headerlink" href="#95-feature-construction-for-linear-methods" title="Permanent link">&para;</a></h2>
@@ -2136,13 +2182,13 @@ M_t = I_t+\gamma^n M_{t-n}, \qquad 0 \leq t < T
           </a>
         
         
-          <a href="../../../../projects/" title="My Projects" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../MCTS_introduction/" title="MCTS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                My Projects
+                MCTS
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
