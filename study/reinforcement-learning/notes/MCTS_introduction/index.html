@@ -1753,14 +1753,22 @@
 </ul>
 <h2 id="minimax-alpha-beta"><strong>MiniMax 策略和 alpha-beta 剪枝算法</strong><a class="headerlink" href="#minimax-alpha-beta" title="Permanent link">&para;</a></h2>
 <p>如何利用博弈树寻找最有潜力的下一步行动？首先不能提前知道对手的策略，如果完全不了解对手，那么可以使用一种非常保守的策略—— MiniMax 算法：在假定你的对手执行最佳行动的前提下，最大化你的收益，也可以说在各种获得最小收益的策略中选择有最大收益的策略。</p>
-<p>这种方法以放弃最优策略为代价，从而最小化了风险，因此它是一种非常保守的方法。在 A 和 B 的两人有限零和序列博弈中（其中 A 尝试最大化其收益，而 B 尝试最小化 A 的收益），极小极大算法可以用以下的递归形式来描述：
-$$
+<p>这种方法以放弃最优策略为代价，从而最小化了风险，因此它是一种非常保守的方法。在 A 和 B 的两人有限零和序列博弈中（其中 A 尝试最大化其收益，而 B 尝试最小化 A 的收益），极小极大算法可以用以下的递归形式来描述：</p>
+<div>
+<div class="MathJax_Preview">
 \begin{aligned}
-v_A(s_i)=\max_{a_i}v_B(\mathrm{move}(s_i,a_i))\
+v_A(s_i)=\max_{a_i}v_B(\mathrm{move}(s_i,a_i))\\
 v_B(s_i)=\min_{a_i}v_A(\mathrm{move}(s_i,a_i))
 \end{aligned}
-$$
-其中：</p>
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned}
+v_A(s_i)=\max_{a_i}v_B(\mathrm{move}(s_i,a_i))\\
+v_B(s_i)=\min_{a_i}v_A(\mathrm{move}(s_i,a_i))
+\end{aligned}
+</script>
+</div>
+<p>其中：</p>
 <ul>
 <li><span><span class="MathJax_Preview">v_A</span><script type="math/tex">v_A</script></span> 和 <span><span class="MathJax_Preview">v_B</span><script type="math/tex">v_B</script></span> 分别是玩家 A 和玩家 B 的收益函数</li>
 <li>move 是一个函数，它在给定当前状态 <span><span class="MathJax_Preview">s_i</span><script type="math/tex">s_i</script></span> 和在该状态的动作 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 下，生成下一个博弈状态（当前节点的子节点之一）</li>
@@ -1788,11 +1796,16 @@ $$
 <h2 id="_3"><strong>蒙特卡洛树搜索的基本概念</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>蒙特卡洛树搜索的主要概念是<strong>搜索</strong>，即沿着博弈树向下的<strong>一组遍历过程</strong>。顾名思义，蒙特卡洛树搜索会多次<strong>模拟</strong>博弈，并尝试根据模拟结果<strong>预测最优方案</strong>。</p>
 <h2 id="_4"><strong>模拟</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>模拟即<strong>单次博弈策略</strong>，在模拟中，行动可以通过 rollout 策略函数选择：
-$$
+<p>模拟即<strong>单次博弈策略</strong>，在模拟中，行动可以通过 rollout 策略函数选择：</p>
+<div>
+<div class="MathJax_Preview">
 \text{RolloutPolicy:} s_i\rightarrow a_i
-$$
-该函数将输入一个博弈状态，并产生下一次行动的选择。在实践中，该函数会设计为允许很多次模拟快速进行，一般默认的 rollout 策略函数可以是服从均匀分布的随机采样。</p>
+</div>
+<script type="math/tex; mode=display">
+\text{RolloutPolicy:} s_i\rightarrow a_i
+</script>
+</div>
+<p>该函数将输入一个博弈状态，并产生下一次行动的选择。在实践中，该函数会设计为允许很多次模拟快速进行，一般默认的 rollout 策略函数可以是服从均匀分布的随机采样。</p>
 <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">rollout</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
     <span class="k">while</span> <span class="n">non_terminal</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
         <span class="n">node</span> <span class="o">=</span> <span class="n">rollout_policy</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
