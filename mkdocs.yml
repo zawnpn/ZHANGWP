@@ -24,6 +24,7 @@ nav:
         - Chapter 6: study/reinforcement-learning/notes/RLAI_6.md
         - Chapter 7: study/reinforcement-learning/notes/RLAI_7.md
         - Chapter 8: study/reinforcement-learning/notes/RLAI_8.md
+        - Chapter 9: study/reinforcement-learning/notes/RLAI_9.md
   - Projects:
     - My Projects: projects/README.md
     - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
