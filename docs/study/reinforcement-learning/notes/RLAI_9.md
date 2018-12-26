@@ -108,6 +108,7 @@ $$
 $$
 
 也可写作
+
 $$
 \mathbb{E}[\mathbf{w}_{t+1}|\mathbf{w}_t]=\mathbf{w}_t+\alpha(\mathbf{b}-\mathbf{Aw}_t)
 $$
@@ -132,6 +133,7 @@ $$
 $$
 
 这个值称为『**TD 不动点**』，根据一些定理可以证明确实能够收敛于此点。线性半梯度 TD(0) 算法的收敛值就是这个不动点，他有一个性质：
+
 $$
 \mathrm{MSVE}(\mathbf{w}_{TD})\leq\frac{1}{1-\gamma}\min_\mathbf{w}\mathrm{MSVE}(\mathbf{w})
 $$

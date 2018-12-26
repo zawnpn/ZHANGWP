@@ -18,3 +18,5 @@
     - [强化学习导论（七）- n 步自助法](/study/reinforcement-learning/notes/RLAI_7/)
     - [强化学习导论（八）- 规划与学习](/study/reinforcement-learning/notes/RLAI_8/)
     - [强化学习导论（九）- 规划与学习](/study/reinforcement-learning/notes/RLAI_9/)
+ - **强化学习相关介绍**
+    - [蒙特卡罗树搜索 - 介绍](/study/reinforcement-learning/notes/MCTS_introduction/)
