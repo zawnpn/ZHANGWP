@@ -1711,10 +1711,15 @@ r(\pi)&\doteq\lim_{h\to\infty}\frac{1}{h}\sum_{t=1}^h\mathbb{E}[R_t|A_{0:t-1}\si
 </div>
 </blockquote>
 <p>遍历性意味着 MDP 的开始位置以及任何早期决策带来的影响都只是暂时性的，长期而言，期望收益仅取决于<strong>策略</strong>和<strong>状态转移概率</strong>。</p>
-<p><span><span class="MathJax_Preview">\mu_\pi</span><script type="math/tex">\mu_\pi</script></span> 有个特点，根据策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 执行某个 action 所进入的新状态仍为同一分布：
-$$
+<p><span><span class="MathJax_Preview">\mu_\pi</span><script type="math/tex">\mu_\pi</script></span> 有个特点，根据策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 执行某个 action 所进入的新状态仍为同一分布：</p>
+<div>
+<div class="MathJax_Preview">
 \sum_s\mu_\pi(s)\sum_a\pi(a|s)p(s'|s,a)=\mu_\pi(s')
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+\sum_s\mu_\pi(s)\sum_a\pi(a|s)p(s'|s,a)=\mu_\pi(s')
+</script>
+</div>
 <p>在 average reward setting 中，return 的定义为</p>
 <div>
 <div class="MathJax_Preview">
