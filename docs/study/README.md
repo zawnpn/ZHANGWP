@@ -17,6 +17,7 @@
     - [强化学习导论（六）- 时序差分学习](/study/reinforcement-learning/notes/RLAI_6/)
     - [强化学习导论（七）- n 步自助法](/study/reinforcement-learning/notes/RLAI_7/)
     - [强化学习导论（八）- 规划与学习](/study/reinforcement-learning/notes/RLAI_8/)
-    - [强化学习导论（九）- 规划与学习](/study/reinforcement-learning/notes/RLAI_9/)
+    - [强化学习导论（九）- 在线策略的近似预测](/study/reinforcement-learning/notes/RLAI_9/)
+    - [强化学习导论（十）- 在线策略的近似控制](/study/reinforcement-learning/notes/RLAI_10/)
  - **强化学习相关介绍**
     - [蒙特卡罗树搜索 - 介绍](/study/reinforcement-learning/notes/MCTS_introduction/)
