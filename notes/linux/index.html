@@ -602,6 +602,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../study/reinforcement-learning/notes/RLAI_12/" title="Chapter 12" class="md-nav__link">
+      Chapter 12
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -929,6 +941,13 @@
           <li class="md-nav__item">
   <a href="#root" title="非 root 用户安装程序" class="md-nav__link">
     非 root 用户安装程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="查看进程" class="md-nav__link">
+    查看进程
   </a>
   
 </li>
@@ -1633,6 +1652,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_1" title="查看进程" class="md-nav__link">
+    查看进程
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1661,8 +1687,9 @@
 <h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
 <h3 id="ssh-key">ssh-key<a class="headerlink" href="#ssh-key" title="Permanent link">&para;</a></h3>
 <ul>
+<li>需要确保 <code>/etc/ssh/sshd_config</code> 中的 <code>StrictModes</code> 不为 <code>yes</code></li>
 <li>本机生成密钥/公钥：<code>ssh-keygen -t rsa</code></li>
-<li>pub key 加入服务器 <code>~/.ssh/authorized_keys</code> 中即可（需注意，可能需要确保读写权限：<code>chmod 644 authorized_keys</code>）</li>
+<li>pub key 加入服务器 <code>~/.ssh/authorized_keys</code> 中即可（需注意，可能需要确保相应的读写权限：<code>chmod 644 authorized_keys</code>，或者 600 权限）</li>
 <li>也可使用 <code>ssh-copy-id -i ~/.ssh/id_rsa.pub user@host</code> ，更为简便</li>
 </ul>
 <h2 id="system">System<a class="headerlink" href="#system" title="Permanent link">&para;</a></h2>
@@ -1670,6 +1697,11 @@
 <ul>
 <li>make &amp; make install（注意留下 logs 以便删除）</li>
 <li>考虑使用 <a href="https://linuxbrew.sh/">linuxbrew</a></li>
+</ul>
+<h3 id="_1">查看进程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>jobs -l | grep xxx</li>
+<li>ps -ef | grep xxx</li>
 </ul>
                 
                   

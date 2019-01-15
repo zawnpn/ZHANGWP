@@ -736,6 +736,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RLAI_12/" title="Chapter 12" class="md-nav__link">
+      Chapter 12
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1794,10 +1806,15 @@
 </ul>
 <h2 id="111-semi-gradient-methods"><strong>11.1 Semi-gradient Methods</strong><a class="headerlink" href="#111-semi-gradient-methods" title="Permanent link">&para;</a></h2>
 <p>这一节主要目的是将 off-policy 下的查表法改造为梯度 / 半梯度法，主要针对第一个难点（变化的 update target）。大多数情况下，这个方法表现良好，少数情况存在发散的情况。</p>
-<p>这些算法大多数采用了『<strong>单步重要性比例</strong>』：
-$$
+<p>这些算法大多数采用了『<strong>单步重要性比例</strong>』：</p>
+<div>
+<div class="MathJax_Preview">
 \rho_t\doteq\rho_{t:t}=\frac{\pi(A_t|S_t)}{b(A_t|S_t)}
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+\rho_t\doteq\rho_{t:t}=\frac{\pi(A_t|S_t)}{b(A_t|S_t)}
+</script>
+</div>
 <h3 id="semi-gradient-off-policy-td0"><strong>semi-gradient off-policy TD(0)</strong><a class="headerlink" href="#semi-gradient-off-policy-td0" title="Permanent link">&para;</a></h3>
 <div>
 <div class="MathJax_Preview">
@@ -2346,13 +2363,13 @@ M_t&=\gamma\rho_{t-1}M_{t-1}+I_t
           </a>
         
         
-          <a href="../MCTS_introduction/" title="MCTS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../RLAI_12/" title="Chapter 12" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                MCTS
+                Chapter 12
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
