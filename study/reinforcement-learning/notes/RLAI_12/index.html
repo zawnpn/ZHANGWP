@@ -704,8 +704,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="12.10 Watkins’s Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)" class="md-nav__link">
-    12.10 Watkins’s Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)
+  <a href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="12.10 Watkins's Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)" class="md-nav__link">
+    12.10 Watkins's Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)
   </a>
   
 </li>
@@ -1756,8 +1756,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="12.10 Watkins’s Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)" class="md-nav__link">
-    12.10 Watkins’s Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)
+  <a href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="12.10 Watkins's Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)" class="md-nav__link">
+    12.10 Watkins's Q(\lambda\lambda) to Tree-Backup(\lambda\lambda)
   </a>
   
 </li>
@@ -2351,7 +2351,7 @@ G _ { t } ^ { \lambda s } \doteq \rho _ { t } \left( R _ { t + 1 } + \gamma _ { 
 </div>
 <p>将其用于半梯度更新可得到更一般的 Sarsa(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) ，同样可通用于 on-policy 和 off-policy 。</p>
 <p><span><span class="MathJax_Preview">\lambda=1</span><script type="math/tex">\lambda=1</script></span> 时，目前这些算法和 MC 联系密切，而 <span><span class="MathJax_Preview">\lambda&lt;1</span><script type="math/tex">\lambda<1</script></span> 时，上面所有的 off-policy 算法都将面临 11 章提到过的『<strong>致命三因素（the deadly triad）</strong>』—— approximation、bootstrapping、off-policy 。</p>
-<h2 id="1210-watkinss-qlambdalambda-to-tree-backuplambdalambda"><strong>12.10 Watkins’s Q(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) to Tree-Backup(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>)</strong><a class="headerlink" href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="Permanent link">&para;</a></h2>
+<h2 id="1210-watkinss-qlambdalambda-to-tree-backuplambdalambda"><strong>12.10 Watkins's Q(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) to Tree-Backup(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>)</strong><a class="headerlink" href="#1210-watkinss-qlambdalambda-to-tree-backuplambdalambda" title="Permanent link">&para;</a></h2>
 <p>近些年提出了很多在 Q-learning 上使用 eligibility trace 的扩展算法，最早的便是 Watkins's Q(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) ：若采取 greedy action，则照常对 eligibility trace 进行衰退，否则，就将首个 non-greedy action 之后的 traces 重置为 0 。算法的 backup 示意图如下：</p>
 <p><img alt="" src="../imgs/RLAI_12/watkins.png" /></p>
 <p>第 7 章介绍过无需 importance sampling 的 n-step tree backup 算法，下面将 eligibility trace 结合于其中，称为 Tree-Backup(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) 或 TB(<span><span class="MathJax_Preview">\lambda</span><script type="math/tex">\lambda</script></span>) 算法，示意图如下：</p>
