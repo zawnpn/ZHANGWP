@@ -8,7 +8,7 @@
 |    收藏    | [**DARK SOULS™: Prepare To Die Edition**](https://store.steampowered.com/app/211420) |        魂系列        |  1   | 10+ h  | ★★★★★ |
 |   全成就   | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
 |   全成就   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
-|    在玩    | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |        魂系列        |  1   | 50+ h  | ★★★★★ |
+|    白金    | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |        魂系列        |  1   | 100+ h | ★★★★★ |
 |    通关    | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
 |  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
 |    通关    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | 100+ h | ★★★★☆ |
@@ -16,21 +16,26 @@
 | 多周目填坑 | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
 |    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 20+ h  | ★★★★  |
 |  主线通关  | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
-|    在玩    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 恐怖      |  1   | 10+ h  | ★★★★  |
+|    通关    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 恐怖      |  1   |  20 h  | ★★★★☆ |
+|    通关    | [**UNCHARTED 4: A Thief's End™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00912_00-ASIAPLACEHOLDER0) |  冒险 / 剧情 / 解谜  |  1   |  20 h  | ★★★★☆ |
+|    通关    | [**Fallout 4**](https://store.steampowered.com/app/377160/Fallout_4/) |  剧情 / 开放 / 探索  |  1   | 60+ h  | ★★★★  |
+|    通关    | [**METAL GEAR SOLID V: GROUND ZEROES**](https://store.steampowered.com/app/311340) |     潜入 / 剧情      |  1   |  10 h  | ★★★★  |
+|    在玩    | [**METAL GEAR SOLID V: THE PHANTOM PAIN**](https://store.steampowered.com/app/287700) |     潜入 / 剧情      |  1   | 10+ h  | ★★★★☆ |
 |  主线通关  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |     动作 / 类魂      |  1   | 70+ h  |  ★★☆  |
 |  主线通关  | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
 |  开坑待填  | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
 |    通关    | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 75+ h  | ★★★☆  |
 |  开坑待填  | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
 |  开坑待填  | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
-|  开坑待填  | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |  文字 / 科幻 / 爱情  |  1   | 10+ h  | ★★★★  |
-|   全成就   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |  文字 / 科幻 / 爱情  |  1   | 50+ h  | ★★★★☆ |
+|  开坑待填  | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |     文字 / 科幻      |  1   | 10+ h  | ★★★★  |
+|   全成就   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |     文字 / 科幻      |  1   | 50+ h  | ★★★★☆ |
 |  开坑待填  | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
-|    在玩    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |       动画风格       |  1   | 20+ h  | ★★★☆  |
+|    在玩    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |       动画风格       |  1   | 30+ h  | ★★★☆  |
 |    通关    |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
 |  开坑待填  | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
 |  开坑待填  | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
 |    通关    | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
+|    在玩    | [**Danganronpa 2: Goodbye Despair**](https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/) |     解谜 / 剧情      |  1   | 10+ h  | ★★★★☆ |
 |  开坑待填  |    [**Portal 2**](https://store.steampowered.com/app/620)    |     解谜 / 探索      |  1   | <10 h  | ★★★☆  |
 |  开坑待填  | [**Deponia: The Complete Journey**](https://store.steampowered.com/app/292910) |         冒险         |  1   | <10 h  | ★★★☆  |
 |  暂时不玩  | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
