@@ -10,13 +10,15 @@
 |   全成就   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
 |    白金    | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |        魂系列        |  1   | 100+ h | ★★★★★ |
 |    通关    | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
-|  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | <10 h  | ★★★★  |
+|    在玩    | [**God of War**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA07413_00-00000000GODOFWAR) |     剧情 / 动作      |  1   | 10+ h  | ★★★★☆ |
+|  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | 10+ h  | ★★★★  |
 |    通关    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | 100+ h | ★★★★☆ |
 |   偶尔玩   | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |   打击感 / 刷刷刷    |  1   | 150+ h | ★★★☆  |
+|    在玩    | [**女神异闻录5**](https://store.playstation.com/zh-hans-hk/product/HP0177-CUSA07195_00-PERSONA500000000) |    JRPG / 回合制     |  1   | 20+ h  | ★★★★☆ |
 | 多周目填坑 | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
 |    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 20+ h  | ★★★★  |
 |  主线通关  | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
-|    通关    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 恐怖      |  1   |  20 h  | ★★★★☆ |
+|    通关    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 潜入      |  1   |  20 h  | ★★★★☆ |
 |    通关    | [**UNCHARTED 4: A Thief's End™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00912_00-ASIAPLACEHOLDER0) |  冒险 / 剧情 / 解谜  |  1   |  20 h  | ★★★★☆ |
 |    通关    | [**Fallout 4**](https://store.steampowered.com/app/377160/Fallout_4/) |  剧情 / 开放 / 探索  |  1   | 60+ h  | ★★★★  |
 |    通关    | [**METAL GEAR SOLID V: GROUND ZEROES**](https://store.steampowered.com/app/311340) |     潜入 / 剧情      |  1   |  10 h  | ★★★★  |
@@ -30,24 +32,24 @@
 |  开坑待填  | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |     文字 / 科幻      |  1   | 10+ h  | ★★★★  |
 |   全成就   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |     文字 / 科幻      |  1   | 50+ h  | ★★★★☆ |
 |  开坑待填  | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
-|    在玩    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |       动画风格       |  1   | 30+ h  | ★★★☆  |
+|    通关    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |   JRPG / 低龄剧情    |  1   |  50 h  |  ★★★  |
 |    通关    |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
 |  开坑待填  | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
 |  开坑待填  | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
 |    通关    | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
-|    在玩    | [**Danganronpa 2: Goodbye Despair**](https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/) |     解谜 / 剧情      |  1   | 10+ h  | ★★★★☆ |
+|    在玩    | [**Danganronpa 2: Goodbye Despair**](https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/) |     解谜 / 剧情      |  1   | 20+ h  | ★★★★☆ |
 |  开坑待填  |    [**Portal 2**](https://store.steampowered.com/app/620)    |     解谜 / 探索      |  1   | <10 h  | ★★★☆  |
 |  开坑待填  | [**Deponia: The Complete Journey**](https://store.steampowered.com/app/292910) |         冒险         |  1   | <10 h  | ★★★☆  |
 |  暂时不玩  | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
-|   偶尔玩   |  [**For Honor**](https://store.steampowered.com/app/304390)  |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
+|   偶尔玩   | [**For Honor**](https://store.playstation.com/zh-hans-hk/product/EP0001-CUSA05264_00-ASIA000000000000) |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
 |   偶尔玩   | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 200+ h |  ★★★  |
 |  开坑待填  |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
 |  暂时不玩  | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
 |    通关    | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
 |  开坑待填  | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
 |  暂时不玩  | [**Cities: Skylines**](https://store.steampowered.com/app/255710) |     模拟 / 城建      |      | 10+ h  |  ★★★  |
-|    通关    | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         gal          |  1   | 10+ h  | ★★★☆  |
-|  开坑待填  | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         gal          |  1   | <10 h  |  ★★★  |
+|    通关    | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         Gal          |  1   | 10+ h  | ★★★☆  |
+|  开坑待填  | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         Gal          |  1   | <10 h  |  ★★★  |
 |  开坑待填  | [**The Long Dark**](https://store.steampowered.com/app/305620) |     生存 / 冒险      |  1   | <10 h  |  ★★★  |
 |  开坑待填  | [**while True: learn()**](https://store.steampowered.com/app/619150) |   编程 / 机器学习    |      | <10 h  | ★★★☆  |
 |  暂时不玩  |   [**Hacknet**](https://store.steampowered.com/app/365450)   |     编程 / Unix      |      | <10 h  |  ★★☆  |
@@ -75,6 +77,6 @@
 
 ### **STEINS;GATE / STEINS;GATE 0**
 
-第一次玩 Galgame ，选择了命运石这样的经典神作做为入门。之前对文字游戏总是有一种偏见，认为这样的游戏无非就是卖人设，粉丝向作品，但是看了动漫，想去更加深刻地体验故事时，才发现文字游戏原来这么好玩。
+第一次玩文字冒险游戏，选择了命运石这样的经典神作做为入门。之前对文字游戏总是有一种偏见，认为这样的游戏无非就是卖人设，粉丝向作品，但是看了动漫，想去更加深刻地体验故事时，才发现文字游戏原来这么好玩。
 
 动漫的剧情已经相当不错了，但还是缺一点代入感，而玩命运石，让我有机会去做我的选择，一次次地存档、恢复，尝试着改变什么的时候，就好像真的像冈部伦太郎一样在世界线之间跳动，当我意识到这一点的时候真的激动不已，原来我之前一直瞧不起的文字游戏，竟然也能这般奇妙。嗯，真香。
