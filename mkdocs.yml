@@ -43,6 +43,7 @@ nav:
   - Notes:
     - My Notes: notes/README.md
     - To Do: notes/to-do.md
+    - Python: notes/python.md
     - Data Processing: notes/data-processing.md
     - Linux: notes/linux.md
   - Math:
