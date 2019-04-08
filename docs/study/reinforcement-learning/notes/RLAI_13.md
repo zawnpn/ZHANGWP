@@ -62,12 +62,12 @@ $$
 \nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
 $$
 
-推导过程如下 (episodic case) 
+推导过程如下 (episodic case)
 
 
 
 $$
-\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right] 
+\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right]
 \\&=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right] \\&= \sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right)  \\ &\times \sum_{a^{\prime}}\left[\nabla \pi\left(a^{\prime} | s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)+\pi\left(a^{\prime} | s^{\prime}\right) \sum_{s^{\prime \prime}} p\left(s^{\prime \prime} | s^{\prime}, a^{\prime}\right) \nabla v_{\pi}\left(s^{\prime \prime}\right)\right] \Bigg]\\
 &=\sum_{x \in \mathcal S} \sum_{k=0}^{\infty} \operatorname{Pr}(s \rightarrow x, k, \pi) \sum_{a} \nabla \pi(a | x) q_{\pi}(x, a)
 \end{aligned}
@@ -107,6 +107,7 @@ $$
 $$
 \boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
 $$
+
 其中 $\hat{q}$ 是对 $q_\pi$ 学习出来的逼近，称该算法 all-actions 方法。
 
 
