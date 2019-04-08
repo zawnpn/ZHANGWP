@@ -13,7 +13,7 @@
         <meta name="description" content="Welcome to zawnpn's blog.">
       
       
-        <link rel="canonical" href="https://oncemath.com/study/reinforcement-learning/notes/RLAI_10/">
+        <link rel="canonical" href="https://oncemath.com/study/reinforcement-learning/notes/RLAI_13/">
       
       
         <meta name="author" content="zawnpn">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Chapter 10 - ONCE.MATH</title>
+        <title>Chapter 13 - ONCE.MATH</title>
       
     
     
@@ -126,7 +126,7 @@
                 ONCE.MATH
               </span>
               <span class="md-header-nav__topic">
-                Chapter 10
+                Chapter 13
               </span>
             
           
@@ -588,77 +588,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Chapter 10
-      </label>
-    
-    <a href="./" title="Chapter 10" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../RLAI_10/" title="Chapter 10" class="md-nav__link">
       Chapter 10
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目录</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#101-episode-semi-gradient-control" title="10.1 Episode Semi-gradient Control" class="md-nav__link">
-    10.1 Episode Semi-gradient Control
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#102-n-step-semi-gradient-sarsa" title="10.2 n-step Semi-gradient Sarsa" class="md-nav__link">
-    10.2 n-step Semi-gradient Sarsa
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#103-average-reward-a-new-problem-setting-for-continuing-tasks" title="10.3 Average Reward: A New Problem Setting for Continuing Tasks" class="md-nav__link">
-    10.3 Average Reward: A New Problem Setting for Continuing Tasks
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#104-deprecating-the-discounted-setting" title="10.4 Deprecating the Discounted Setting" class="md-nav__link">
-    10.4 Deprecating the Discounted Setting
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#105-n-step-differential-semi-gradient-sarsa" title="10.5 n-step Differential Semi-gradient Sarsa" class="md-nav__link">
-    10.5 n-step Differential Semi-gradient Sarsa
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -690,11 +624,91 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../RLAI_13/" title="Chapter 13" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Chapter 13
+      </label>
+    
+    <a href="./" title="Chapter 13" class="md-nav__link md-nav__link--active">
       Chapter 13
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-policy-approximation-and-its-advantages" title="13.1 Policy Approximation and its Advantages" class="md-nav__link">
+    13.1 Policy Approximation and its Advantages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-the-policy-gradient-theorem" title="13.2 The Policy Gradient Theorem" class="md-nav__link">
+    13.2 The Policy Gradient Theorem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-reinforce-monte-carlo-policy-gradient" title="13.3 REINFORCE: Monte Carlo Policy Gradient" class="md-nav__link">
+    13.3 REINFORCE: Monte Carlo Policy Gradient
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-reinforce-with-baseline" title="13.4 REINFORCE with Baseline" class="md-nav__link">
+    13.4 REINFORCE with Baseline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-actorcritic-methods" title="13.5 Actor–Critic Methods" class="md-nav__link">
+    13.5 Actor–Critic Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-policy-gradient-for-continuing-problems" title="13.6 Policy Gradient for Continuing Problems" class="md-nav__link">
+    13.6 Policy Gradient for Continuing Problems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-policy-parameterization-for-continuous-actions" title="13.7 Policy Parameterization for Continuous Actions" class="md-nav__link">
+    13.7 Policy Parameterization for Continuous Actions
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1634,36 +1648,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#101-episode-semi-gradient-control" title="10.1 Episode Semi-gradient Control" class="md-nav__link">
-    10.1 Episode Semi-gradient Control
+  <a href="#131-policy-approximation-and-its-advantages" title="13.1 Policy Approximation and its Advantages" class="md-nav__link">
+    13.1 Policy Approximation and its Advantages
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-n-step-semi-gradient-sarsa" title="10.2 n-step Semi-gradient Sarsa" class="md-nav__link">
-    10.2 n-step Semi-gradient Sarsa
+  <a href="#132-the-policy-gradient-theorem" title="13.2 The Policy Gradient Theorem" class="md-nav__link">
+    13.2 The Policy Gradient Theorem
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-average-reward-a-new-problem-setting-for-continuing-tasks" title="10.3 Average Reward: A New Problem Setting for Continuing Tasks" class="md-nav__link">
-    10.3 Average Reward: A New Problem Setting for Continuing Tasks
+  <a href="#133-reinforce-monte-carlo-policy-gradient" title="13.3 REINFORCE: Monte Carlo Policy Gradient" class="md-nav__link">
+    13.3 REINFORCE: Monte Carlo Policy Gradient
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#104-deprecating-the-discounted-setting" title="10.4 Deprecating the Discounted Setting" class="md-nav__link">
-    10.4 Deprecating the Discounted Setting
+  <a href="#134-reinforce-with-baseline" title="13.4 REINFORCE with Baseline" class="md-nav__link">
+    13.4 REINFORCE with Baseline
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#105-n-step-differential-semi-gradient-sarsa" title="10.5 n-step Differential Semi-gradient Sarsa" class="md-nav__link">
-    10.5 n-step Differential Semi-gradient Sarsa
+  <a href="#135-actorcritic-methods" title="13.5 Actor–Critic Methods" class="md-nav__link">
+    13.5 Actor–Critic Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-policy-gradient-for-continuing-problems" title="13.6 Policy Gradient for Continuing Problems" class="md-nav__link">
+    13.6 Policy Gradient for Continuing Problems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-policy-parameterization-for-continuous-actions" title="13.7 Policy Parameterization for Continuous Actions" class="md-nav__link">
+    13.7 Policy Parameterization for Continuous Actions
   </a>
   
 </li>
@@ -1684,159 +1712,285 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_10.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/zawnpn/ONCEMATH/edit/master/docs/study/reinforcement-learning/notes/RLAI_13.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="-">强化学习导论（十）- 在线策略的近似控制<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
-<p>第九章是在讲 prediction 问题，也就是如何对 value function 估值，这一章主要在其基础上关注 control 问题，也就是结合了 policy improvement 和 action select 的问题。</p>
-<h2 id="101-episode-semi-gradient-control">10.1 Episode Semi-gradient Control<a class="headerlink" href="#101-episode-semi-gradient-control" title="Permanent link">&para;</a></h2>
-<p>这一节对 Q 函数进行估计：<span><span class="MathJax_Preview">\hat{q}\approx q_\pi</span><script type="math/tex">\hat{q}\approx q_\pi</script></span> ，同样也是关于权向量 <span><span class="MathJax_Preview">\mathbf{w}</span><script type="math/tex">\mathbf{w}</script></span> 的参数化函数，此时用于训练的样本由前一节的 <span><span class="MathJax_Preview">S_t\mapsto U_t</span><script type="math/tex">S_t\mapsto U_t</script></span> 变为 <span><span class="MathJax_Preview">S_t,A_t\mapsto U_t</span><script type="math/tex">S_t,A_t\mapsto U_t</script></span> 。</p>
-<p>对于 one-step sarsa，梯度更新式为：</p>
+                <h1 id="-">强化学习导论（十三）- 策略梯度法<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+<p>之前一直在讲 action-value 方法，它们都依赖于对 action-value 的估计，而本章的方法将考虑直接去学习『参数化策略』，这样就能不通过 value function 来选择 action 。</p>
 <div>
 <div class="MathJax_Preview">
-\mathbf{w}_{t+1}\doteq\mathbf{w}_t+\alpha[R_{t+1}+\gamma\hat{q}(S_{t+1},A_{t+1},\mathbf{w}_t)-\hat{q}(S_t,A_t,\mathbf{w}_t)]\nabla\hat{q}(S_t,A_t,\mathbf{w}_t)
+\pi ( a | s , \boldsymbol { \theta } ) = \operatorname { Pr } \left\{ A _ { t } = a | S _ { t } = s , \boldsymbol { \theta } _ { t } = \boldsymbol { \theta } \right\}
 </div>
 <script type="math/tex; mode=display">
-\mathbf{w}_{t+1}\doteq\mathbf{w}_t+\alpha[R_{t+1}+\gamma\hat{q}(S_{t+1},A_{t+1},\mathbf{w}_t)-\hat{q}(S_t,A_t,\mathbf{w}_t)]\nabla\hat{q}(S_t,A_t,\mathbf{w}_t)
+\pi ( a | s , \boldsymbol { \theta } ) = \operatorname { Pr } \left\{ A _ { t } = a | S _ { t } = s , \boldsymbol { \theta } _ { t } = \boldsymbol { \theta } \right\}
 </script>
 </div>
-<p>为了构成 control 问题，需要将以下几步结合起来：</p>
+<p>本章主要考虑对度量函数 <span><span class="MathJax_Preview">J ( \boldsymbol { \theta } )</span><script type="math/tex">J ( \boldsymbol { \theta } )</script></span> 的梯度（关于策略参数 <span><span class="MathJax_Preview">\boldsymbol { \theta }</span><script type="math/tex">\boldsymbol { \theta }</script></span> ）来学习，来最大化 performance ，因此参数更新式即为对 <span><span class="MathJax_Preview">J</span><script type="math/tex">J</script></span> 的梯度上升：</p>
+<div>
+<div class="MathJax_Preview">
+\boldsymbol { \theta } _ { t + 1 } = \boldsymbol { \theta } _ { t } + \alpha \widehat { \nabla J \left( \boldsymbol { \theta } _ { t } \right) }
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol { \theta } _ { t + 1 } = \boldsymbol { \theta } _ { t } + \alpha \widehat { \nabla J \left( \boldsymbol { \theta } _ { t } \right) }
+</script>
+</div>
+<p>其中，<span><span class="MathJax_Preview">\widehat { \nabla J \left( \boldsymbol { \theta } _ { t } \right) } \in \mathbb { R } ^ { d ^ { \prime } }</span><script type="math/tex">\widehat { \nabla J \left( \boldsymbol { \theta } _ { t } \right) } \in \mathbb { R } ^ { d ^ { \prime } }</script></span> 是对梯度的一个估计，其期望值为该梯度。所有满足该通式的方法，均称为『policy gradient methods』。</p>
+<p>有些方法，既学习了 policy ，也同时学了 value function ，称这样的方法为『actor-critic methods』，其中『actor』指所学的 policy，『critic』指所学的 value function 。</p>
+<p>下面具体介绍 Policy Gradient Methods 。</p>
+<h2 id="131-policy-approximation-and-its-advantages"><strong>13.1 Policy Approximation and its Advantages</strong><a class="headerlink" href="#131-policy-approximation-and-its-advantages" title="Permanent link">&para;</a></h2>
+<p>对于不太大的离散 action 空间，若要将 policy 参数化，一个很自然的方法是对每个 state-action 来构造一个参数化的数值偏好 <span><span class="MathJax_Preview">h(s, a, \boldsymbol{\theta}) \in \mathbb{R}</span><script type="math/tex">h(s, a, \boldsymbol{\theta}) \in \mathbb{R}</script></span> ，进而通过指数 soft-max 函数来得到分布</p>
+<div>
+<div class="MathJax_Preview">
+\pi(a | s, \boldsymbol{\theta}) \doteq \frac{e^{h(s, a, \boldsymbol{\theta})}}{\sum_{b} e^{h(s, b, \boldsymbol{\theta})}}
+</div>
+<script type="math/tex; mode=display">
+\pi(a | s, \boldsymbol{\theta}) \doteq \frac{e^{h(s, a, \boldsymbol{\theta})}}{\sum_{b} e^{h(s, b, \boldsymbol{\theta})}}
+</script>
+</div>
+<p>称这样参数化得到的 policy 为『soft-max in action preferences』。</p>
+<p>action preferences 可以被任意参数化。既可以用神经网络来计算（ <span><span class="MathJax_Preview">\boldsymbol{\theta}</span><script type="math/tex">\boldsymbol{\theta}</script></span> 作为网络的权重），也可以简单地使用线性模型 <span><span class="MathJax_Preview">h(s, a, \boldsymbol{\theta})=\boldsymbol{\theta}^{\top} \mathbf{x}(s, a)</span><script type="math/tex">h(s, a, \boldsymbol{\theta})=\boldsymbol{\theta}^{\top} \mathbf{x}(s, a)</script></span> 。</p>
+<p>Policy Approximation 有几个优点：</p>
 <ul>
-<li>action-value prediction</li>
-<li>policy improvement</li>
-<li>action selection</li>
+<li>第一个优势是，即使对于 deterministic policy（确定性策略，明确选择某个具体 action 的策略），参数化策略也能足够逼近（比如将某个 a 对应的 <span><span class="MathJax_Preview">h(s,a,\boldsymbol{\theta})</span><script type="math/tex">h(s,a,\boldsymbol{\theta})</script></span> 设为无穷大即可），而传统的 <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span>-greedy 策略则不能做到，因为它必须对非最优策略分配 <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span> 的概率。</li>
+<li>第二个优势是能灵活地任意分配 action 的概率，对于一些特殊情况，比如不完全信息下的卡牌游戏，最佳 policy 对应的选择随机性很强，能够对两种差异很大的 action 来分配概率进而做出选择，比如在 Poker 中进行 bluffing 时（bluff 指在自己手牌较弱时加注以试图吓退对方），这对于 action-value 方法而言很难做到，从 example 13.1 中可以简单明了的看出两类方法的效果差异。</li>
+<li>第三个优势是，参数化的 policy 是一个相对更易于近似的函数(Simsek, Algorta, and Kothiyal, 2016)。</li>
+<li>最后一个优势是，参数化的 policy 能较好地将先验知识引入强化学习系统，这通常也是选择 policy-based learning method 的重要原因。</li>
 </ul>
-<p><img alt="" src="../imgs/RLAI_10/ep-semi-grad-sarsa.png" /></p>
-<h2 id="102-n-step-semi-gradient-sarsa">10.2 n-step Semi-gradient Sarsa<a class="headerlink" href="#102-n-step-semi-gradient-sarsa" title="Permanent link">&para;</a></h2>
-<p>令 <span><span class="MathJax_Preview">U_t=G_{t:t+n}</span><script type="math/tex">U_t=G_{t:t+n}</script></span> ，即为 n-step semi-gradient sarsa 算法，其中</p>
+<h2 id="132-the-policy-gradient-theorem"><strong>13.2 The Policy Gradient Theorem</strong><a class="headerlink" href="#132-the-policy-gradient-theorem" title="Permanent link">&para;</a></h2>
+<p>参数化 policy 除了上一节提到的几点实用价值外，还有一个重要的理论优势。对于连续的参数化 policy ，action 的概率可以连续性地改变，而 <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span>-greedy 方法中选择 action 的概率则有可能因小变动而发生突变，主要是由于 policy-gradient methods 有着更强的收敛性。</p>
+<p>这一节先只考虑 episodic 形式的问题，不失一般性，先假定每一段 episode 都起始于指定状态 <span><span class="MathJax_Preview">s_0</span><script type="math/tex">s_0</script></span> ，定义 performance：</p>
 <div>
 <div class="MathJax_Preview">
-G_{t:t+n}\doteq R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}+\gamma^n\hat{q}(S_{t+n},A_{t+n},\mathbf{w}_{t+n-1})
+J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 </div>
 <script type="math/tex; mode=display">
-G_{t:t+n}\doteq R_{t+1}+\gamma R_{t+2}+\cdots+\gamma^{n-1}R_{t+n}+\gamma^n\hat{q}(S_{t+n},A_{t+n},\mathbf{w}_{t+n-1})
+J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 </script>
 </div>
-<p>更新式为</p>
+<p>其中 <span><span class="MathJax_Preview">v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)</span><script type="math/tex">v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)</script></span> 是 <span><span class="MathJax_Preview">\pi_\theta</span><script type="math/tex">\pi_\theta</script></span> 的 <strong>true</strong> value function ，其中策略由 <span><span class="MathJax_Preview">\boldsymbol{\theta}</span><script type="math/tex">\boldsymbol{\theta}</script></span> 决定。为简化证明，后面的推导中假定 <span><span class="MathJax_Preview">\gamma=1</span><script type="math/tex">\gamma=1</script></span> （但描述算法时则写回一般形式）。</p>
+<p>『<strong>Policy Gradient Theorem</strong>』：</p>
 <div>
 <div class="MathJax_Preview">
-\mathbf{w}_{t+n}\doteq \mathbf{w}_{t+n-1}+\alpha[G_{t:t+n}-\hat{q}(S_t,A_t,\mathbf{w}_{t+n-1})]\nabla\hat{q}(S_t,A_t,\mathbf{w}_{t+n-1})
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
 </div>
 <script type="math/tex; mode=display">
-\mathbf{w}_{t+n}\doteq \mathbf{w}_{t+n-1}+\alpha[G_{t:t+n}-\hat{q}(S_t,A_t,\mathbf{w}_{t+n-1})]\nabla\hat{q}(S_t,A_t,\mathbf{w}_{t+n-1})
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
 </script>
 </div>
-<p><img alt="" src="../imgs/RLAI_10/ep-semi-grad-n-sarsa.png" /></p>
-<h2 id="103-average-reward-a-new-problem-setting-for-continuing-tasks">10.3 Average Reward: A New Problem Setting for Continuing Tasks<a class="headerlink" href="#103-average-reward-a-new-problem-setting-for-continuing-tasks" title="Permanent link">&para;</a></h2>
-<p>为满足『有限马尔可夫决策过程（MDP）』中的『有限』这一条件，我们之前是采用了 episodic setting（片段式） 以及 discounted setting（带削减系数） 两种方案，这里再介绍一种新的方案—— average reward setting 。</p>
-<ul>
-<li>与 discounted setting 类似，average reward setting 也是不停止地与环境交互，用于没有开始、终止状态的连续型问题。</li>
-<li>与 discounted setting 不同，average reward setting 没有削减系数，对任何时刻 reward 的重视程度一致。</li>
-</ul>
-<p>在 average reward setting 中，策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 的好坏程度由 reward 的平均情况决定（而不是之前的总期望收益）：</p>
+<p>推导过程如下 (episodic case) </p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} \nabla v_{\pi}(s) &amp;=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right] 
+\\&amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right] \\&amp;= \sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right)  \\ &amp;\times \sum_{a^{\prime}}\left[\nabla \pi\left(a^{\prime} | s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)+\pi\left(a^{\prime} | s^{\prime}\right) \sum_{s^{\prime \prime}} p\left(s^{\prime \prime} | s^{\prime}, a^{\prime}\right) \nabla v_{\pi}\left(s^{\prime \prime}\right)\right] \Bigg]\\
+&amp;=\sum_{x \in \mathcal S} \sum_{k=0}^{\infty} \operatorname{Pr}(s \rightarrow x, k, \pi) \sum_{a} \nabla \pi(a | x) q_{\pi}(x, a)
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right] 
+\\&=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right] \\&= \sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right)  \\ &\times \sum_{a^{\prime}}\left[\nabla \pi\left(a^{\prime} | s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)+\pi\left(a^{\prime} | s^{\prime}\right) \sum_{s^{\prime \prime}} p\left(s^{\prime \prime} | s^{\prime}, a^{\prime}\right) \nabla v_{\pi}\left(s^{\prime \prime}\right)\right] \Bigg]\\
+&=\sum_{x \in \mathcal S} \sum_{k=0}^{\infty} \operatorname{Pr}(s \rightarrow x, k, \pi) \sum_{a} \nabla \pi(a | x) q_{\pi}(x, a)
+\end{aligned}
+</script>
+</div>
+<p>上一步是将前式反复展开得来，其中 <span><span class="MathJax_Preview">\operatorname{Pr}(s \rightarrow x, k, \pi)</span><script type="math/tex">\operatorname{Pr}(s \rightarrow x, k, \pi)</script></span> 表示在策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 下，从状态 s 经过 k 步达到状态 x 的转移概率，于是可得</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} \nabla J(\boldsymbol{\theta}) &amp;=\nabla v_{\pi}\left(s_{0}\right) \\ &amp;=\sum_{s}\left(\sum_{k=0}^{\infty} \operatorname{Pr}\left(s_{0} \rightarrow s, k, \pi\right)\right) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &amp;=\sum_{s} \eta(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &amp;=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)} \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &amp;=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \mu(s)\sum_a\nabla\pi(a|s) q_{\pi}(s, a) \\ &amp; \propto \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \nabla J(\boldsymbol{\theta}) &=\nabla v_{\pi}\left(s_{0}\right) \\ &=\sum_{s}\left(\sum_{k=0}^{\infty} \operatorname{Pr}\left(s_{0} \rightarrow s, k, \pi\right)\right) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s} \eta(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)} \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \mu(s)\sum_a\nabla\pi(a|s) q_{\pi}(s, a) \\ & \propto \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \end{aligned}
+</script>
+</div>
+<p>关于 <span><span class="MathJax_Preview">\eta(s)</span><script type="math/tex">\eta(s)</script></span> 和 <span><span class="MathJax_Preview">\mu(s)</span><script type="math/tex">\mu(s)</script></span> ，之前已在第 9、10 章有过相关定义：</p>
 <div>
 <div class="MathJax_Preview">
 \begin{aligned}
-r(\pi)&amp;\doteq\lim_{h\to\infty}\frac{1}{h}\sum_{t=1}^h\mathbb{E}[R_t|A_{0:t-1}\sim\pi]\\
-&amp;=\lim_{t\to\infty}\mathbb{E}[R_t|A_{0:t-1}\sim\pi]\\
-&amp;=\sum_s\mu_\pi(s)\sum_a\pi(a|s)\sum_{s',r}p(s',r|s,a)r
+\eta(s)&amp;=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
+\mu(s)&amp;=\frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)}, \text { for all } s \in \mathcal{S}
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
 \begin{aligned}
-r(\pi)&\doteq\lim_{h\to\infty}\frac{1}{h}\sum_{t=1}^h\mathbb{E}[R_t|A_{0:t-1}\sim\pi]\\
-&=\lim_{t\to\infty}\mathbb{E}[R_t|A_{0:t-1}\sim\pi]\\
-&=\sum_s\mu_\pi(s)\sum_a\pi(a|s)\sum_{s',r}p(s',r|s,a)r
+\eta(s)&=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
+\mu(s)&=\frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)}, \text { for all } s \in \mathcal{S}
 \end{aligned}
 </script>
 </div>
-<p>其中 <span><span class="MathJax_Preview">\mu_\pi(s)\doteq\lim\limits_{t\to\infty}\mathrm{Pr}\{S_t=s|A_{0:t-1}\sim\pi\}</span><script type="math/tex">\mu_\pi(s)\doteq\lim\limits_{t\to\infty}\mathrm{Pr}\{S_t=s|A_{0:t-1}\sim\pi\}</script></span> 为稳态分布，并且假定对于任意策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 都有 <span><span class="MathJax_Preview">\mu_\pi</span><script type="math/tex">\mu_\pi</script></span> 存在。称这个性质为『遍历性（ergodicity）』。</p>
-<blockquote>
-<p>补充：上式第 1 行到第 2 行其实用的是数学分析里的一个性质：</p>
-<div>
-<div class="MathJax_Preview">\lim_{n\to \infty}a_n= a \Rightarrow \lim_{n\to\infty}\frac{a_1+a_2+\ldots + a_n}{n}=a</div>
-<script type="math/tex; mode=display">\lim_{n\to \infty}a_n= a \Rightarrow \lim_{n\to\infty}\frac{a_1+a_2+\ldots + a_n}{n}=a</script>
-</div>
-</blockquote>
-<p>遍历性意味着 MDP 的开始位置以及任何早期决策带来的影响都只是暂时性的，长期而言，期望收益仅取决于<strong>策略</strong>和<strong>状态转移概率</strong>。</p>
-<p><span><span class="MathJax_Preview">\mu_\pi</span><script type="math/tex">\mu_\pi</script></span> 有个特点，根据策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 执行某个 action 所进入的新状态仍为同一分布：</p>
+<h2 id="133-reinforce-monte-carlo-policy-gradient"><strong>13.3 REINFORCE: Monte Carlo Policy Gradient</strong><a class="headerlink" href="#133-reinforce-monte-carlo-policy-gradient" title="Permanent link">&para;</a></h2>
+<p>下面开始介绍 policy-gradient 的学习算法。回想一开始的目标是要得到随机梯度上升的形式，且希望样本梯度的期望恰好为度量函数的梯度，而 policy gradient theorem 给出的公式恰好满足，注意到公式右侧是一个关于 <span><span class="MathJax_Preview">\mu(s)</span><script type="math/tex">\mu(s)</script></span> （其含义是在服从策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 时，各状态 s 发生的概率）的加权和，因此有</p>
 <div>
 <div class="MathJax_Preview">
-\sum_s\mu_\pi(s)\sum_a\pi(a|s)p(s'|s,a)=\mu_\pi(s')
+\begin{aligned} \nabla J(\boldsymbol{\theta}) &amp; \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta}) \\ &amp;=\mathbb{E}_{\pi}\left[\sum_{a} q_{\pi}\left(S_{t}, a\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)\right] \end{aligned}
 </div>
 <script type="math/tex; mode=display">
-\sum_s\mu_\pi(s)\sum_a\pi(a|s)p(s'|s,a)=\mu_\pi(s')
+\begin{aligned} \nabla J(\boldsymbol{\theta}) & \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta}) \\ &=\mathbb{E}_{\pi}\left[\sum_{a} q_{\pi}\left(S_{t}, a\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)\right] \end{aligned}
 </script>
 </div>
-<p>在 average reward setting 中，return 的定义为</p>
+<p>这样便能得到随机梯度上升算法：</p>
+<p>$$
+\boldsymbol{\theta}<em>{t+1} \doteq \boldsymbol{\theta}</em>{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
+$$
+其中 <span><span class="MathJax_Preview">\hat{q}</span><script type="math/tex">\hat{q}</script></span> 是对 <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> 学习出来的逼近，称该算法 all-actions 方法。</p>
+<p>因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：</p>
 <div>
 <div class="MathJax_Preview">
-G_t\doteq R_{t+1}-r(\pi) +R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
+\begin{aligned} \nabla J(\boldsymbol{\theta}) &amp;=\mathbb{E}_{\pi}\left[\sum_{a} \pi\left(a | S_{t}, \boldsymbol{\theta}\right) q_{\pi}\left(S_{t}, a\right) \frac{\nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(a | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &amp;=\mathbb{E}_{\pi}\left[q_{\pi}\left(S_{t}, A_{t}\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &amp;=\mathbb{E}_{\pi}\left[G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \end{aligned}
 </div>
 <script type="math/tex; mode=display">
-G_t\doteq R_{t+1}-r(\pi) +R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
+\begin{aligned} \nabla J(\boldsymbol{\theta}) &=\mathbb{E}_{\pi}\left[\sum_{a} \pi\left(a | S_{t}, \boldsymbol{\theta}\right) q_{\pi}\left(S_{t}, a\right) \frac{\nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(a | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &=\mathbb{E}_{\pi}\left[q_{\pi}\left(S_{t}, A_{t}\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &=\mathbb{E}_{\pi}\left[G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \end{aligned}
 </script>
 </div>
-<p>称这种 return 为 differential return，对应的 value function 为 differential value function 。</p>
+<p>上面第一步既是将随机变量 a 替换为样本 <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，第二步是因为 <span><span class="MathJax_Preview">\mathbb{E}_{\pi}\left[G_{t} | S_{t}, A_{t}\right]=q_{\pi}\left(S_{t}, A_{t}\right)</span><script type="math/tex">\mathbb{E}_{\pi}\left[G_{t} | S_{t}, A_{t}\right]=q_{\pi}\left(S_{t}, A_{t}\right)</script></span> 。这样就得到了 REINFORCE update：</p>
+<div>
+<div class="MathJax_Preview">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}
+</script>
+</div>
+<p>这样就能通过简单的采样来代替梯度。直观上也很好理解，每次的增量正比于 <span><span class="MathJax_Preview">G_t</span><script type="math/tex">G_t</script></span> 乘上一个向量，这个向量即为参数空间中，那些能够增加 <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> 在 <span><span class="MathJax_Preview">S_t</span><script type="math/tex">S_t</script></span> 下被选中概率的参数的<strong>方向</strong>。于是如果 reward 较好，<span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> 对应的参数方向上就会得到较大幅度的更新，促进未来再被选中的概率，反之如果 reward 较差，更新的幅度就会变小，相对不如其他 action ，未来被选中的概率就会降低。</p>
+<p>由于 REINFORCE 算法使用了完整的返回值 <span><span class="MathJax_Preview">G_t</span><script type="math/tex">G_t</script></span> ，因此属于蒙特卡罗算法，只适用于 episodic 形式。</p>
+<p><img alt="" src="../imgs/RLAI_13/REINFORCE_algorighm.png" /></p>
+<p>注意最后一行用 <span><span class="MathJax_Preview">\nabla \ln \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)</span><script type="math/tex">\nabla \ln \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)</script></span> 来代替 <span><span class="MathJax_Preview">\frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}</span><script type="math/tex">\frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}</script></span> ，这是利用了 <span><span class="MathJax_Preview">\nabla \ln x=\frac{\nabla x}{x}</span><script type="math/tex">\nabla \ln x=\frac{\nabla x}{x}</script></span> 的简单性质。</p>
+<h2 id="134-reinforce-with-baseline"><strong>13.4 REINFORCE with Baseline</strong><a class="headerlink" href="#134-reinforce-with-baseline" title="Permanent link">&para;</a></h2>
+<p>Policy gradient theorem 原本的形式为：</p>
+<div>
+<div class="MathJax_Preview">
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
+</div>
+<script type="math/tex; mode=display">
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
+</script>
+</div>
+<p>考虑加入一个任意的 baseline <span><span class="MathJax_Preview">b(s)</span><script type="math/tex">b(s)</script></span> ：</p>
+<div>
+<div class="MathJax_Preview">
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a}\left(q_{\pi}(s, a)-b(s)\right) \nabla \pi(a | s, \boldsymbol{\theta})
+</div>
+<script type="math/tex; mode=display">
+\nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a}\left(q_{\pi}(s, a)-b(s)\right) \nabla \pi(a | s, \boldsymbol{\theta})
+</script>
+</div>
+<p><span><span class="MathJax_Preview">b(s)</span><script type="math/tex">b(s)</script></span> 可以是任意函数或随机变量，只要不和 a 相关即可。这样的改动显然是合理的，因为</p>
+<div>
+<div class="MathJax_Preview">
+\sum_{a} b(s) \nabla \pi(a | s, \boldsymbol{\theta})=b(s) \nabla \sum_{a} \pi(a | s, \boldsymbol{\theta})=b(s) \nabla 1=0
+</div>
+<script type="math/tex; mode=display">
+\sum_{a} b(s) \nabla \pi(a | s, \boldsymbol{\theta})=b(s) \nabla \sum_{a} \pi(a | s, \boldsymbol{\theta})=b(s) \nabla 1=0
+</script>
+</div>
+<p>这样便能同理得到带 baseline 的 REINFORCE 更新式：</p>
+<div>
+<div class="MathJax_Preview">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha\left(G_{t}-b\left(S_{t}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha\left(G_{t}-b\left(S_{t}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}
+</script>
+</div>
+<p>加入 baseline 不会对期望有任何影响，但能够减小方差。常用的选择是将 <span><span class="MathJax_Preview">\hat{v}\left(S_{t}, \mathbf{w}\right)</span><script type="math/tex">\hat{v}\left(S_{t}, \mathbf{w}\right)</script></span> 作为 baseline ，好处是无需做别的计算，利用现有的量就能同时更新 <span><span class="MathJax_Preview">\boldsymbol \theta</span><script type="math/tex">\boldsymbol \theta</script></span> 和 <span><span class="MathJax_Preview">\boldsymbol w</span><script type="math/tex">\boldsymbol w</script></span> 。具体算法如下：</p>
+<p><img alt="" src="../imgs/RLAI_13/REINFORCE_algorighm_baseline.png" /></p>
+<h2 id="135-actorcritic-methods"><strong>13.5 Actor–Critic Methods</strong><a class="headerlink" href="#135-actorcritic-methods" title="Permanent link">&para;</a></h2>
+<p>最开头提到过，同时学习 policy 和 value function 的算法是『actor-critic 算法』，尽管上一节的 REINFORCE-with-baseline 算法同时学习了 policy 和 value function ，但并不认为它是 actor-critic 算法，因为这个 value function 仅仅是用作 baseline ，而没起到 critic 的用处，具体而言，即是它没有用来做 bootstrapping（指通过状态估计值序列来更新状态估计值。例如用 <span><span class="MathJax_Preview">R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)</span><script type="math/tex">R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)</script></span> 更新就是 bootstrapping，而用 <span><span class="MathJax_Preview">G_t -\hat{v}\left(S_{t}, \mathbf{w}\right)</span><script type="math/tex">G_t -\hat{v}\left(S_{t}, \mathbf{w}\right)</script></span> 更新则不是）。</p>
+<p>这样区分是有意义的，因为只有通过 bootstrapping 才能引入 bias ，以及对函数近似效果的渐进依赖。通过 bootstrapping 引入的 bias 以及对状态表示的依赖都是有益的，因为它能够减小方差，并且加速学习。而上一节的 REINFORCE-with-baseline 算法由于是 unbiased 的，容易渐进收敛到局部最优解，同时由于是 MC 方法，方差较大，学习速度较慢，且不太适合处理在线学习/连续型问题。之前章节介绍的 TD 方法恰好能够解决上面所有的缺点，所以引出了下面的 actor–critic methods with a bootstrapping critic 。</p>
+<p>首先考虑 one-step actor-critic methods ，将 full return 替换为 one-step return:</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} \boldsymbol{\theta}_{t+1} &amp; \doteq \boldsymbol{\theta}_{t}+\alpha\left(G_{t : t+1}-\hat{v}\left(S_{t}, \mathbf{w}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \\ &amp;=\boldsymbol{\theta}_{t}+\alpha\left(R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \\ &amp;=\boldsymbol{\theta}_{t}+\alpha \delta_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \boldsymbol{\theta}_{t+1} & \doteq \boldsymbol{\theta}_{t}+\alpha\left(G_{t : t+1}-\hat{v}\left(S_{t}, \mathbf{w}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \\ &=\boldsymbol{\theta}_{t}+\alpha\left(R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \\ &=\boldsymbol{\theta}_{t}+\alpha \delta_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}_{t}\right)} \end{aligned}
+</script>
+</div>
+<p>下面是算法伪码：</p>
+<p><img alt="" src="../imgs/RLAI_13/one-step-actor-critic.png" /></p>
+<h2 id="136-policy-gradient-for-continuing-problems"><strong>13.6 Policy Gradient for Continuing Problems</strong><a class="headerlink" href="#136-policy-gradient-for-continuing-problems" title="Permanent link">&para;</a></h2>
+<p>在第十章中，对于没有 episode 界限的连续型问题，定义了平均回报率：</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} J(\boldsymbol{\theta}) \doteq r(\pi) &amp; \doteq \lim _{h \rightarrow \infty} \frac{1}{h} \sum_{t=1}^{h} \mathbb{E}\left[R_{t} | S_{0}, A_{0 : t-1} \sim \pi\right] \\ &amp;=\lim _{t \rightarrow \infty} \mathbb{E}\left[R_{t} | S_{0}, A_{0 : t-1} \sim \pi\right] \\ &amp;=\sum_{s} \mu(s) \sum_{a} \pi(a | s) \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right) r \end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} J(\boldsymbol{\theta}) \doteq r(\pi) & \doteq \lim _{h \rightarrow \infty} \frac{1}{h} \sum_{t=1}^{h} \mathbb{E}\left[R_{t} | S_{0}, A_{0 : t-1} \sim \pi\right] \\ &=\lim _{t \rightarrow \infty} \mathbb{E}\left[R_{t} | S_{0}, A_{0 : t-1} \sim \pi\right] \\ &=\sum_{s} \mu(s) \sum_{a} \pi(a | s) \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right) r \end{aligned}
+</script>
+</div>
+<p>其中 <span><span class="MathJax_Preview">\mu(s) \doteq \lim _{t \rightarrow \infty} \operatorname{Pr}\left\{S_{t}=s | A_{0 : t} \sim \pi\right\}</span><script type="math/tex">\mu(s) \doteq \lim _{t \rightarrow \infty} \operatorname{Pr}\left\{S_{t}=s | A_{0 : t} \sim \pi\right\}</script></span> 。</p>
+<p>此时</p>
+<div>
+<div class="MathJax_Preview">
+G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
+</div>
+<script type="math/tex; mode=display">
+G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
+</script>
+</div>
+<p>结合上面的定义，原先 episodic 下的 Policy Gradient Theorem 便可拓展到连续型情况下了。</p>
+<p>下面给出连续型问题下 Policy Gradient Theorem 的证明</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} \nabla v_{\pi}(s) &amp;=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right]\\ &amp;=\sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r-r(\boldsymbol{\theta})+v_{\pi}\left(s^{\prime}\right)\right)\Bigg] \\ &amp;=\sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s)\left[-\nabla r(\boldsymbol{\theta})+\sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]\Bigg] \end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right]\\ &=\sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r-r(\boldsymbol{\theta})+v_{\pi}\left(s^{\prime}\right)\right)\Bigg] \\ &=\sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s)\left[-\nabla r(\boldsymbol{\theta})+\sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]\Bigg] \end{aligned}
+</script>
+</div>
+<p>整理可得</p>
+<div>
+<div class="MathJax_Preview">
+\nabla r(\boldsymbol{\theta})=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]-\nabla v_{\pi}(s)
+</div>
+<script type="math/tex; mode=display">
+\nabla r(\boldsymbol{\theta})=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]-\nabla v_{\pi}(s)
+</script>
+</div>
+<p>注意到等式坐标即为 <span><span class="MathJax_Preview">\nabla J(\boldsymbol{\theta})</span><script type="math/tex">\nabla J(\boldsymbol{\theta})</script></span> ，与 s 无关，故等式右边也与 s 无关，且由于 <span><span class="MathJax_Preview">\sum_{s} \mu(s)=1</span><script type="math/tex">\sum_{s} \mu(s)=1</script></span> ，可得</p>
+<div>
+<div class="MathJax_Preview">
+\begin{aligned} \nabla J(\boldsymbol{\theta})=&amp; \sum_{s} \mu(s)\Bigg(\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]-\nabla v_{\pi}(s)\Bigg) \\=&amp; \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &amp;+\sum_{s} \mu(s) \sum_{a} \pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s) \\
+=&amp; \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &amp;+\sum_{s^{\prime}} \underbrace{\sum_{s} \mu(s) \sum_{a} \pi(a | s) p\left(s^{\prime} | s, a\right)}_{\mu(s^{\prime})} \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s)
+\end{aligned}
+</div>
+<script type="math/tex; mode=display">
+\begin{aligned} \nabla J(\boldsymbol{\theta})=& \sum_{s} \mu(s)\Bigg(\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right]-\nabla v_{\pi}(s)\Bigg) \\=& \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &+\sum_{s} \mu(s) \sum_{a} \pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s) \\
+=& \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &+\sum_{s^{\prime}} \underbrace{\sum_{s} \mu(s) \sum_{a} \pi(a | s) p\left(s^{\prime} | s, a\right)}_{\mu(s^{\prime})} \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s)
+\end{aligned}
+</script>
+</div>
+<p>整理即得</p>
 <div>
 <div class="MathJax_Preview">
 \begin{aligned}
-v_\pi(s)&amp;=\sum_a\pi(a|s)\sum_{r,s'}p(s',r|s,a)[r-r(\pi)+v_\pi(s')]\\
-q_\pi(s,a)&amp;=\sum_{r,s'}p(s',r|s,a)[r-r(\pi)+\sum_{a'}\pi(a'|s')q_\pi(s',a')]\\
-v_*(s)&amp;=\max_a\sum_{r,s'}p(s',r|s,a)[r-\max_\pi r(\pi)+v_*(s')]\\
-q_*(s,a)&amp;=\sum_{r,s'}p(s',r|s,a)[r-\max_\pi r(\pi)+\max_{a'}q_*(s',a')]
+\nabla J(\boldsymbol{\theta})=&amp; \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a)+\sum_{s^{\prime}} \mu\left(s^{\prime}\right) \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s) \\=&amp; \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a)
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
 \begin{aligned}
-v_\pi(s)&=\sum_a\pi(a|s)\sum_{r,s'}p(s',r|s,a)[r-r(\pi)+v_\pi(s')]\\
-q_\pi(s,a)&=\sum_{r,s'}p(s',r|s,a)[r-r(\pi)+\sum_{a'}\pi(a'|s')q_\pi(s',a')]\\
-v_*(s)&=\max_a\sum_{r,s'}p(s',r|s,a)[r-\max_\pi r(\pi)+v_*(s')]\\
-q_*(s,a)&=\sum_{r,s'}p(s',r|s,a)[r-\max_\pi r(\pi)+\max_{a'}q_*(s',a')]
+\nabla J(\boldsymbol{\theta})=& \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a)+\sum_{s^{\prime}} \mu\left(s^{\prime}\right) \nabla v_{\pi}\left(s^{\prime}\right)-\sum_{s} \mu(s) \nabla v_{\pi}(s) \\=& \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a)
 \end{aligned}
 </script>
 </div>
-<p>同样可定义差值形式的 TD error：</p>
+<h2 id="137-policy-parameterization-for-continuous-actions"><strong>13.7 Policy Parameterization for Continuous Actions</strong><a class="headerlink" href="#137-policy-parameterization-for-continuous-actions" title="Permanent link">&para;</a></h2>
+<p>Policy-based methods 为较大 action 空间的问题提供了实用的处理方法，甚至对于连续型问题这种有着无穷种 action 的情况也没问题，它并不去计算某个具体 action 的概率值，而是直接去学习概率分布。例如，假设 action 集合是一些实数，并且来自一个高斯分布，其概率分布便可写作</p>
 <div>
 <div class="MathJax_Preview">
-\begin{aligned}
-\delta_t&amp;\doteq R_{t+1}-\bar{R}_{t+1}+\hat{v}(S_{t+1},\mathbf{w}_t)-\hat{v}(S_t,\mathbf{w}_t)\\
-\delta_t&amp;\doteq R_{t+1}-\bar{R}_{t+1}+\hat{q}(S_{t+1},A_{t+1}\mathbf{w}_t)-\hat{q}(S_t,A_t,\mathbf{w}_t)
-\end{aligned}
+\pi(a | s, \boldsymbol{\theta}) \doteq \frac{1}{\sigma(s, \boldsymbol{\theta}) \sqrt{2 \pi}} \exp \left(-\frac{(a-\mu(s, \boldsymbol{\theta}))^{2}}{2 \sigma(s, \boldsymbol{\theta})^{2}}\right)
 </div>
 <script type="math/tex; mode=display">
-\begin{aligned}
-\delta_t&\doteq R_{t+1}-\bar{R}_{t+1}+\hat{v}(S_{t+1},\mathbf{w}_t)-\hat{v}(S_t,\mathbf{w}_t)\\
-\delta_t&\doteq R_{t+1}-\bar{R}_{t+1}+\hat{q}(S_{t+1},A_{t+1}\mathbf{w}_t)-\hat{q}(S_t,A_t,\mathbf{w}_t)
-\end{aligned}
+\pi(a | s, \boldsymbol{\theta}) \doteq \frac{1}{\sigma(s, \boldsymbol{\theta}) \sqrt{2 \pi}} \exp \left(-\frac{(a-\mu(s, \boldsymbol{\theta}))^{2}}{2 \sigma(s, \boldsymbol{\theta})^{2}}\right)
 </script>
 </div>
-<p><img alt="" src="../imgs/RLAI_10/diff-semi-grad-sarsa.png" /></p>
-<h2 id="104-deprecating-the-discounted-setting">10.4 Deprecating the Discounted Setting<a class="headerlink" href="#104-deprecating-the-discounted-setting" title="Permanent link">&para;</a></h2>
-<p>在本章背景下，原先的 discounted setting 存在一些问题（下面会讲），所以需要用 average reward setting 来取代 discounted setting 。</p>
-<p>假设有一段没有起始点和终点的 episode ，下面证明两种方案的评价值是成正比的：</p>
-<p><img alt="" src="../imgs/RLAI_10/discount-average.png" /></p>
-<p>可以看出，在 on-policy 分布下，<span><span class="MathJax_Preview">J(\pi)</span><script type="math/tex">J(\pi)</script></span> 和 <span><span class="MathJax_Preview">r(\pi)</span><script type="math/tex">r(\pi)</script></span> 成正比关系，然而通过 <span><span class="MathJax_Preview">r(\pi)</span><script type="math/tex">r(\pi)</script></span> 对策略优劣的排序结果是固定的，显然 <span><span class="MathJax_Preview">J(\pi)</span><script type="math/tex">J(\pi)</script></span> 选出的策略顺序也相同，这说明削减系数 <span><span class="MathJax_Preview">\gamma</span><script type="math/tex">\gamma</script></span> 对于决策选择行动没有实质性的影响，discounted setting 在这时便失去了一些使用价值，所以需要做出一些改变。</p>
-<h2 id="105-n-step-differential-semi-gradient-sarsa">10.5 n-step Differential Semi-gradient Sarsa<a class="headerlink" href="#105-n-step-differential-semi-gradient-sarsa" title="Permanent link">&para;</a></h2>
-<p>在 average reward setting 下，可定义 n-step TD return 为：</p>
+<p>其中 <span><span class="MathJax_Preview">\mu : \mathcal{S} \times \mathbb{R}^{d^{\prime}} \rightarrow \mathbb{R}, \sigma : \mathcal{S} \times \mathbb{R}^{d^{\prime}} \rightarrow \mathbb{R}^{+}</span><script type="math/tex">\mu : \mathcal{S} \times \mathbb{R}^{d^{\prime}} \rightarrow \mathbb{R}, \sigma : \mathcal{S} \times \mathbb{R}^{d^{\prime}} \rightarrow \mathbb{R}^{+}</script></span> 是参数化的近似函数。策略参数 <span><span class="MathJax_Preview">\boldsymbol{\theta}</span><script type="math/tex">\boldsymbol{\theta}</script></span> 由两部分组成：<span><span class="MathJax_Preview">\boldsymbol{\theta}=\left[\boldsymbol{\theta}_{\mu}, \boldsymbol{\theta}_{\sigma}\right]^{\top}</span><script type="math/tex">\boldsymbol{\theta}=\left[\boldsymbol{\theta}_{\mu}, \boldsymbol{\theta}_{\sigma}\right]^{\top}</script></span> ，第一部分用于均值的近似，第二部分用于标准差的近似：</p>
 <div>
 <div class="MathJax_Preview">
-G_{t:t+n}\doteq R_{t+1}-\bar{R}_{t+1}+\cdots+R_{t+n}-\bar{R}_{t+n}+\hat{q}(S_{t+n},A_{t+n},\mathbf{w}_{t+n-1})
+\mu(s, \boldsymbol{\theta}) \doteq \boldsymbol{\theta}_{\mu}^{\top} \mathbf{x}_{\mu}(s) \quad \text { and } \quad \sigma(s, \boldsymbol{\theta}) \doteq \exp \left(\boldsymbol{\theta}_{\sigma}^{\top} \mathbf{x}_{\sigma}(s)\right)
 </div>
 <script type="math/tex; mode=display">
-G_{t:t+n}\doteq R_{t+1}-\bar{R}_{t+1}+\cdots+R_{t+n}-\bar{R}_{t+n}+\hat{q}(S_{t+n},A_{t+n},\mathbf{w}_{t+n-1})
+\mu(s, \boldsymbol{\theta}) \doteq \boldsymbol{\theta}_{\mu}^{\top} \mathbf{x}_{\mu}(s) \quad \text { and } \quad \sigma(s, \boldsymbol{\theta}) \doteq \exp \left(\boldsymbol{\theta}_{\sigma}^{\top} \mathbf{x}_{\sigma}(s)\right)
 </script>
 </div>
-<p>同时也有 n-step TD error ：</p>
-<div>
-<div class="MathJax_Preview">
-\delta_t\doteq G_{t:t+n}-\hat{q}(S_t,A_t,\mathbf{w})
-</div>
-<script type="math/tex; mode=display">
-\delta_t\doteq G_{t:t+n}-\hat{q}(S_t,A_t,\mathbf{w})
-</script>
-</div>
-<p><img alt="" src="../imgs/RLAI_10/diff-semi-grad-n-sarsa.png" /></p>
+<p>这样，便组成了完整的 Policy 参数化算法。</p>
                 
                   
                 
@@ -1857,7 +2011,7 @@ G_{t:t+n}\doteq R_{t+1}-\bar{R}_{t+1}+\cdots+R_{t+n}-\bar{R}_{t+n}+\hat{q}(S_{t+
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../RLAI_9/" title="Chapter 9" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../RLAI_12/" title="Chapter 12" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1866,19 +2020,19 @@ G_{t:t+n}\doteq R_{t+1}-\bar{R}_{t+1}+\cdots+R_{t+n}-\bar{R}_{t+n}+\hat{q}(S_{t+
                 <span class="md-footer-nav__direction">
                   后退
                 </span>
-                Chapter 9
+                Chapter 12
               </span>
             </div>
           </a>
         
         
-          <a href="../RLAI_11/" title="Chapter 11" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../MCTS_introduction/" title="MCTS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   前进
                 </span>
-                Chapter 11
+                MCTS
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
