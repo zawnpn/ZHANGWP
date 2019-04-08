@@ -1777,16 +1777,16 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 \nabla J(\boldsymbol{\theta}) \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta})
 </script>
 </div>
-<p>推导过程如下 (episodic case) </p>
+<p>推导过程如下 (episodic case)</p>
 <div>
 <div class="MathJax_Preview">
-\begin{aligned} \nabla v_{\pi}(s) &amp;=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right] 
+\begin{aligned} \nabla v_{\pi}(s) &amp;=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right]
 \\&amp;=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right] \\&amp;= \sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right)  \\ &amp;\times \sum_{a^{\prime}}\left[\nabla \pi\left(a^{\prime} | s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)+\pi\left(a^{\prime} | s^{\prime}\right) \sum_{s^{\prime \prime}} p\left(s^{\prime \prime} | s^{\prime}, a^{\prime}\right) \nabla v_{\pi}\left(s^{\prime \prime}\right)\right] \Bigg]\\
 &amp;=\sum_{x \in \mathcal S} \sum_{k=0}^{\infty} \operatorname{Pr}(s \rightarrow x, k, \pi) \sum_{a} \nabla \pi(a | x) q_{\pi}(x, a)
 \end{aligned}
 </div>
 <script type="math/tex; mode=display">
-\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right] 
+\begin{aligned} \nabla v_{\pi}(s) &=\nabla\left[\sum_{a} \pi(a | s) q_{\pi}(s, a)\right], \quad \text { for all } s \in \mathcal{S} \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla q_{\pi}(s, a)\right] \\ &=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \nabla \sum_{s^{\prime}, r} p\left(s^{\prime}, r | s, a\right)\left(r+v_{\pi}\left(s^{\prime}\right)\right)\right]
 \\&=\sum_{a}\left[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right) \nabla v_{\pi}\left(s^{\prime}\right)\right] \\&= \sum_{a}\Bigg[\nabla \pi(a | s) q_{\pi}(s, a)+\pi(a | s) \sum_{s^{\prime}} p\left(s^{\prime} | s, a\right)  \\ &\times \sum_{a^{\prime}}\left[\nabla \pi\left(a^{\prime} | s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)+\pi\left(a^{\prime} | s^{\prime}\right) \sum_{s^{\prime \prime}} p\left(s^{\prime \prime} | s^{\prime}, a^{\prime}\right) \nabla v_{\pi}\left(s^{\prime \prime}\right)\right] \Bigg]\\
 &=\sum_{x \in \mathcal S} \sum_{k=0}^{\infty} \operatorname{Pr}(s \rightarrow x, k, \pi) \sum_{a} \nabla \pi(a | x) q_{\pi}(x, a)
 \end{aligned}
@@ -1827,10 +1827,15 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 </script>
 </div>
 <p>这样便能得到随机梯度上升算法：</p>
-<p>$$
-\boldsymbol{\theta}<em>{t+1} \doteq \boldsymbol{\theta}</em>{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
-$$
-其中 <span><span class="MathJax_Preview">\hat{q}</span><script type="math/tex">\hat{q}</script></span> 是对 <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> 学习出来的逼近，称该算法 all-actions 方法。</p>
+<div>
+<div class="MathJax_Preview">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
+</script>
+</div>
+<p>其中 <span><span class="MathJax_Preview">\hat{q}</span><script type="math/tex">\hat{q}</script></span> 是对 <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> 学习出来的逼近，称该算法 all-actions 方法。</p>
 <p>因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：</p>
 <div>
 <div class="MathJax_Preview">
