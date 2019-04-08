@@ -21,5 +21,6 @@
     - [强化学习导论（十）- 在线策略的近似控制](/study/reinforcement-learning/notes/RLAI_10/)
     - [强化学习导论（十一）- 离线策略的近似方法](/study/reinforcement-learning/notes/RLAI_11/)
     - [强化学习导论（十二）- 资格迹](/study/reinforcement-learning/notes/RLAI_12/)
+    - [强化学习导论（十三）- 策略梯度法](/study/reinforcement-learning/notes/RLAI_13/)
  - **强化学习相关介绍**
     - [蒙特卡罗树搜索 - 介绍](/study/reinforcement-learning/notes/MCTS_introduction/)
