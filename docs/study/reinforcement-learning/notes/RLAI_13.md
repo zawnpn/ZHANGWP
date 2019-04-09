@@ -37,7 +37,7 @@ Policy Approximation 有几个优点：
 
 
 - 第一个优势是，即使对于 deterministic policy（确定性策略，明确选择某个具体 action 的策略），参数化策略也能足够逼近（比如将某个 a 对应的 $h(s,a,\boldsymbol{\theta})$ 设为无穷大即可），而传统的 $\varepsilon$-greedy 策略则不能做到，因为它必须对非最优策略分配 $\varepsilon$ 的概率。
-- 第二个优势是能灵活地任意分配 action 的概率，对于一些特殊情况，比如不完全信息下的卡牌游戏，最佳 policy 对应的选择随机性很强，能够对两种差异很大的 action 来分配概率进而做出选择，比如在 Poker 中进行 bluffing 时（bluff 指在自己手牌较弱时加注以试图吓退对方），这对于 action-value 方法而言很难做到，从 example 13.1 中可以简单明了的看出两类方法的效果差异。
+- 第二个优势是能灵活地任意分配 action 的概率，对于一些特殊情况，比如不完全信息下的卡牌游戏，最佳 policy 对应的选择随机性很强，能够对两种差异很大的 action 来分配概率进而做出选择，比如在 Poker 中进行 bluffing 时（bluff 指在自己手牌较弱时加注以试图吓退对方），这对于 action-value 方法而言很难做到，从书中 example 13.1 中可以简单明了的看出两类方法的效果差异。
 - 第三个优势是，参数化的 policy 是一个相对更易于近似的函数(Simsek, Algorta, and Kothiyal, 2016)。
 - 最后一个优势是，参数化的 policy 能较好地将先验知识引入强化学习系统，这通常也是选择 policy-based learning method 的重要原因。
 
@@ -83,8 +83,9 @@ $$
 
 
 
-关于 $\eta(s)$ 和 $\mu(s)$ ，之前已在第 9、10 章有过相关定义：
+证毕。
 
+关于 $\eta(s)$ 和 $\mu(s)$ ，之前已在第 9、10 章有过相关定义：
 $$
 \begin{aligned}
 \eta(s)&=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
@@ -102,17 +103,13 @@ $$
 \begin{aligned} \nabla J(\boldsymbol{\theta}) & \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta}) \\ &=\mathbb{E}_{\pi}\left[\sum_{a} q_{\pi}\left(S_{t}, a\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)\right] \end{aligned}
 $$
 
-这样便能得到随机梯度上升算法：
+于是我们的随机梯度上升算法可以写作：
 
 $$
 \boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
 $$
 
-其中 $\hat{q}$ 是对 $q_\pi$ 学习出来的逼近，称该算法 all-actions 方法。
-
-
-
-因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action $A_t$ ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：
+其中 $\hat{q}$ 是对 $q_\pi$ 学习出来的逼近，称该算法 all-actions 方法。因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action $A_t$ ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：
 
 $$
 \begin{aligned} \nabla J(\boldsymbol{\theta}) &=\mathbb{E}_{\pi}\left[\sum_{a} \pi\left(a | S_{t}, \boldsymbol{\theta}\right) q_{\pi}\left(S_{t}, a\right) \frac{\nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(a | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &=\mathbb{E}_{\pi}\left[q_{\pi}\left(S_{t}, A_{t}\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &=\mathbb{E}_{\pi}\left[G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \end{aligned}
@@ -178,7 +175,7 @@ $$
 
 
 
-这样区分是有意义的，因为只有通过 bootstrapping 才能引入 bias ，以及对函数近似效果的渐进依赖。通过 bootstrapping 引入的 bias 以及对状态表示的依赖都是有益的，因为它能够减小方差，并且加速学习。而上一节的 REINFORCE-with-baseline 算法由于是 unbiased 的，容易渐进收敛到局部最优解，同时由于是 MC 方法，方差较大，学习速度较慢，且不太适合处理在线学习/连续型问题。之前章节介绍的 TD 方法恰好能够解决上面所有的缺点，所以引出了下面的 actor–critic methods with a bootstrapping critic 。
+这样区分是有意义的，因为只有通过 bootstrapping 才能引入 bias ，以及对函数近似效果的渐进依赖。前面章节有提到过，通过 bootstrapping 引入的 bias 以及对状态表示的依赖都是有益的，因为它能够减小方差，并且加速学习。而上一节的 REINFORCE-with-baseline 算法由于是 unbiased 的，容易渐进收敛到局部最优解，同时由于是 MC 方法，方差较大，学习速度较慢，且不太适合处理在线学习/连续型问题。之前章节介绍的 TD 方法恰好能够解决上面所有的缺点，所以引出了下面的 actor–critic methods with a bootstrapping critic 。
 
 
 
@@ -214,7 +211,7 @@ $$
 G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
 $$
 
-结合上面的定义，原先 episodic 下的 Policy Gradient Theorem 便可拓展到连续型情况下了。
+使用上面在连续型问题下定义的 return 值，原先 episodic 下的 Policy Gradient Theorem 便可拓展到连续型问题下了。
 
 下面给出连续型问题下 Policy Gradient Theorem 的证明
 
@@ -268,5 +265,5 @@ $$
 \mu(s, \boldsymbol{\theta}) \doteq \boldsymbol{\theta}_{\mu}^{\top} \mathbf{x}_{\mu}(s) \quad \text { and } \quad \sigma(s, \boldsymbol{\theta}) \doteq \exp \left(\boldsymbol{\theta}_{\sigma}^{\top} \mathbf{x}_{\sigma}(s)\right)
 $$
 
-这样，便组成了完整的 Policy 参数化算法。
+这样，便组成了完整的连续型问题下 Policy 参数化算法。
 
