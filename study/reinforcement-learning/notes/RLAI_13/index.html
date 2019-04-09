@@ -1752,7 +1752,7 @@
 <p>Policy Approximation 有几个优点：</p>
 <ul>
 <li>第一个优势是，即使对于 deterministic policy（确定性策略，明确选择某个具体 action 的策略），参数化策略也能足够逼近（比如将某个 a 对应的 <span><span class="MathJax_Preview">h(s,a,\boldsymbol{\theta})</span><script type="math/tex">h(s,a,\boldsymbol{\theta})</script></span> 设为无穷大即可），而传统的 <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span>-greedy 策略则不能做到，因为它必须对非最优策略分配 <span><span class="MathJax_Preview">\varepsilon</span><script type="math/tex">\varepsilon</script></span> 的概率。</li>
-<li>第二个优势是能灵活地任意分配 action 的概率，对于一些特殊情况，比如不完全信息下的卡牌游戏，最佳 policy 对应的选择随机性很强，能够对两种差异很大的 action 来分配概率进而做出选择，比如在 Poker 中进行 bluffing 时（bluff 指在自己手牌较弱时加注以试图吓退对方），这对于 action-value 方法而言很难做到，从 example 13.1 中可以简单明了的看出两类方法的效果差异。</li>
+<li>第二个优势是能灵活地任意分配 action 的概率，对于一些特殊情况，比如不完全信息下的卡牌游戏，最佳 policy 对应的选择随机性很强，能够对两种差异很大的 action 来分配概率进而做出选择，比如在 Poker 中进行 bluffing 时（bluff 指在自己手牌较弱时加注以试图吓退对方），这对于 action-value 方法而言很难做到，从书中 example 13.1 中可以简单明了的看出两类方法的效果差异。</li>
 <li>第三个优势是，参数化的 policy 是一个相对更易于近似的函数(Simsek, Algorta, and Kothiyal, 2016)。</li>
 <li>最后一个优势是，参数化的 policy 能较好地将先验知识引入强化学习系统，这通常也是选择 policy-based learning method 的重要原因。</li>
 </ul>
@@ -1801,21 +1801,14 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 \begin{aligned} \nabla J(\boldsymbol{\theta}) &=\nabla v_{\pi}\left(s_{0}\right) \\ &=\sum_{s}\left(\sum_{k=0}^{\infty} \operatorname{Pr}\left(s_{0} \rightarrow s, k, \pi\right)\right) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s} \eta(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)} \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \\ &=\sum_{s^{\prime}} \eta\left(s^{\prime}\right) \sum_{s} \mu(s)\sum_a\nabla\pi(a|s) q_{\pi}(s, a) \\ & \propto \sum_{s} \mu(s) \sum_{a} \nabla \pi(a | s) q_{\pi}(s, a) \end{aligned}
 </script>
 </div>
-<p>关于 <span><span class="MathJax_Preview">\eta(s)</span><script type="math/tex">\eta(s)</script></span> 和 <span><span class="MathJax_Preview">\mu(s)</span><script type="math/tex">\mu(s)</script></span> ，之前已在第 9、10 章有过相关定义：</p>
-<div>
-<div class="MathJax_Preview">
+<p>证毕。</p>
+<p>关于 <span><span class="MathJax_Preview">\eta(s)</span><script type="math/tex">\eta(s)</script></span> 和 <span><span class="MathJax_Preview">\mu(s)</span><script type="math/tex">\mu(s)</script></span> ，之前已在第 9、10 章有过相关定义：
+$$
 \begin{aligned}
-\eta(s)&amp;=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
+\eta(s)&amp;=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\
 \mu(s)&amp;=\frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)}, \text { for all } s \in \mathcal{S}
 \end{aligned}
-</div>
-<script type="math/tex; mode=display">
-\begin{aligned}
-\eta(s)&=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
-\mu(s)&=\frac{\eta(s)}{\sum_{s^{\prime}} \eta\left(s^{\prime}\right)}, \text { for all } s \in \mathcal{S}
-\end{aligned}
-</script>
-</div>
+$$</p>
 <h2 id="133-reinforce-monte-carlo-policy-gradient"><strong>13.3 REINFORCE: Monte Carlo Policy Gradient</strong><a class="headerlink" href="#133-reinforce-monte-carlo-policy-gradient" title="Permanent link">&para;</a></h2>
 <p>下面开始介绍 policy-gradient 的学习算法。回想一开始的目标是要得到随机梯度上升的形式，且希望样本梯度的期望恰好为度量函数的梯度，而 policy gradient theorem 给出的公式恰好满足，注意到公式右侧是一个关于 <span><span class="MathJax_Preview">\mu(s)</span><script type="math/tex">\mu(s)</script></span> （其含义是在服从策略 <span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span> 时，各状态 s 发生的概率）的加权和，因此有</p>
 <div>
@@ -1826,7 +1819,7 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 \begin{aligned} \nabla J(\boldsymbol{\theta}) & \propto \sum_{s} \mu(s) \sum_{a} q_{\pi}(s, a) \nabla \pi(a | s, \boldsymbol{\theta}) \\ &=\mathbb{E}_{\pi}\left[\sum_{a} q_{\pi}\left(S_{t}, a\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)\right] \end{aligned}
 </script>
 </div>
-<p>这样便能得到随机梯度上升算法：</p>
+<p>于是我们的随机梯度上升算法可以写作：</p>
 <div>
 <div class="MathJax_Preview">
 \boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
@@ -1835,8 +1828,7 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 \boldsymbol{\theta}_{t+1} \doteq \boldsymbol{\theta}_{t}+\alpha \sum_{a} \hat{q}\left(S_{t}, a, \mathbf{w}\right) \nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)
 </script>
 </div>
-<p>其中 <span><span class="MathJax_Preview">\hat{q}</span><script type="math/tex">\hat{q}</script></span> 是对 <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> 学习出来的逼近，称该算法 all-actions 方法。</p>
-<p>因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：</p>
+<p>其中 <span><span class="MathJax_Preview">\hat{q}</span><script type="math/tex">\hat{q}</script></span> 是对 <span><span class="MathJax_Preview">q_\pi</span><script type="math/tex">q_\pi</script></span> 学习出来的逼近，称该算法 all-actions 方法。因为它的更新过程包含了全部 action ，有着不错的前景，但这里将重点放在传统的 REINFORCE algorithm (Willams, 1992) ，它在 t 时刻的更新只涉及到该时刻实际采取行动的 action <span><span class="MathJax_Preview">A_t</span><script type="math/tex">A_t</script></span> ，做法是将随机变量的加权和替换为一个期望，然后来对这个期望做采样：</p>
 <div>
 <div class="MathJax_Preview">
 \begin{aligned} \nabla J(\boldsymbol{\theta}) &amp;=\mathbb{E}_{\pi}\left[\sum_{a} \pi\left(a | S_{t}, \boldsymbol{\theta}\right) q_{\pi}\left(S_{t}, a\right) \frac{\nabla \pi\left(a | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(a | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &amp;=\mathbb{E}_{\pi}\left[q_{\pi}\left(S_{t}, A_{t}\right) \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \\ &amp;=\mathbb{E}_{\pi}\left[G_{t} \frac{\nabla \pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}{\pi\left(A_{t} | S_{t}, \boldsymbol{\theta}\right)}\right] \end{aligned}
@@ -1899,7 +1891,7 @@ J(\boldsymbol{\theta}) \doteq v_{\pi_{\boldsymbol{\theta}}}\left(s_{0}\right)
 <p><img alt="" src="../imgs/RLAI_13/REINFORCE_algorighm_baseline.png" /></p>
 <h2 id="135-actorcritic-methods"><strong>13.5 Actor–Critic Methods</strong><a class="headerlink" href="#135-actorcritic-methods" title="Permanent link">&para;</a></h2>
 <p>最开头提到过，同时学习 policy 和 value function 的算法是『actor-critic 算法』，尽管上一节的 REINFORCE-with-baseline 算法同时学习了 policy 和 value function ，但并不认为它是 actor-critic 算法，因为这个 value function 仅仅是用作 baseline ，而没起到 critic 的用处，具体而言，即是它没有用来做 bootstrapping（指通过状态估计值序列来更新状态估计值。例如用 <span><span class="MathJax_Preview">R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)</span><script type="math/tex">R_{t+1}+\gamma \hat{v}\left(S_{t+1}, \mathbf{w}\right)-\hat{v}\left(S_{t}, \mathbf{w}\right)</script></span> 更新就是 bootstrapping，而用 <span><span class="MathJax_Preview">G_t -\hat{v}\left(S_{t}, \mathbf{w}\right)</span><script type="math/tex">G_t -\hat{v}\left(S_{t}, \mathbf{w}\right)</script></span> 更新则不是）。</p>
-<p>这样区分是有意义的，因为只有通过 bootstrapping 才能引入 bias ，以及对函数近似效果的渐进依赖。通过 bootstrapping 引入的 bias 以及对状态表示的依赖都是有益的，因为它能够减小方差，并且加速学习。而上一节的 REINFORCE-with-baseline 算法由于是 unbiased 的，容易渐进收敛到局部最优解，同时由于是 MC 方法，方差较大，学习速度较慢，且不太适合处理在线学习/连续型问题。之前章节介绍的 TD 方法恰好能够解决上面所有的缺点，所以引出了下面的 actor–critic methods with a bootstrapping critic 。</p>
+<p>这样区分是有意义的，因为只有通过 bootstrapping 才能引入 bias ，以及对函数近似效果的渐进依赖。前面章节有提到过，通过 bootstrapping 引入的 bias 以及对状态表示的依赖都是有益的，因为它能够减小方差，并且加速学习。而上一节的 REINFORCE-with-baseline 算法由于是 unbiased 的，容易渐进收敛到局部最优解，同时由于是 MC 方法，方差较大，学习速度较慢，且不太适合处理在线学习/连续型问题。之前章节介绍的 TD 方法恰好能够解决上面所有的缺点，所以引出了下面的 actor–critic methods with a bootstrapping critic 。</p>
 <p>首先考虑 one-step actor-critic methods ，将 full return 替换为 one-step return:</p>
 <div>
 <div class="MathJax_Preview">
@@ -1931,7 +1923,7 @@ G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
 G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
 </script>
 </div>
-<p>结合上面的定义，原先 episodic 下的 Policy Gradient Theorem 便可拓展到连续型情况下了。</p>
+<p>使用上面在连续型问题下定义的 return 值，原先 episodic 下的 Policy Gradient Theorem 便可拓展到连续型问题下了。</p>
 <p>下面给出连续型问题下 Policy Gradient Theorem 的证明</p>
 <div>
 <div class="MathJax_Preview">
@@ -1995,7 +1987,7 @@ G_{t} \doteq R_{t+1}-r(\pi)+R_{t+2}-r(\pi)+R_{t+3}-r(\pi)+\cdots
 \mu(s, \boldsymbol{\theta}) \doteq \boldsymbol{\theta}_{\mu}^{\top} \mathbf{x}_{\mu}(s) \quad \text { and } \quad \sigma(s, \boldsymbol{\theta}) \doteq \exp \left(\boldsymbol{\theta}_{\sigma}^{\top} \mathbf{x}_{\sigma}(s)\right)
 </script>
 </div>
-<p>这样，便组成了完整的 Policy 参数化算法。</p>
+<p>这样，便组成了完整的连续型问题下 Policy 参数化算法。</p>
                 
                   
                 
