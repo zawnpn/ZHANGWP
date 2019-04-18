@@ -46,6 +46,7 @@ nav:
     - To Do: notes/to-do.md
     - Python: notes/python.md
     - Data Processing: notes/data-processing.md
+    - Git: notes/git.md
     - Linux: notes/linux.md
   - Math:
     - Math Experience: math/README.md
