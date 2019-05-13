@@ -32,8 +32,8 @@ git push origin master
 ### 获取 PR 远程内容
 
 ```bash
-git remote add [PR发送人] [PR的对应 git 地址]
-git fetch [PR发送人]
+git remote add [PR 发送人] [PR 的对应 git 地址]
+git fetch [PR 发送人]
 ```
 ### 创建测试分支
 
@@ -44,7 +44,7 @@ git checkout -b pr_test
 ### Merge
 
 ```bash
-git merge [PR发送人]/[相应分支]
+git merge [PR 发送人]/[相应分支]
 ```
 
 ### 删除测试分支
@@ -59,7 +59,7 @@ git branch -D pr_test
 
 ```bash
 git checkout [本地中需要合并的分支]
-git merge [PR发送人]/[相应分支]
+git merge [PR 发送人]/[相应分支]
 ```
 
 接下来即可 push ，最好 push 前再通过 diff 检查一遍
