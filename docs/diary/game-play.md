@@ -2,63 +2,64 @@
 
 ## 已玩游戏汇总
 
-|    状态    |                             名称                             |         Tag          | 周目 |  时间  | 评价  |
-| :--------: | :----------------------------------------------------------: | :------------------: | :--: | :----: | :---: |
-|    白金    | [**DARK SOULS™: REMASTERED**](https://store.steampowered.com/app/570940/) |        魂系列        |  3   | 100+ h | ★★★★★ |
-|    白金    | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
-|    白金    | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
-|    白金    | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |   动作 / RPG / 魂    |  1   | 100+ h | ★★★★★ |
-|    白金    | [**SEKIRO: SHADOWS DIE TWICE**](https://store.playstation.com/zh-hans-hk/product/HP0506-CUSA13910_00-ASIAFULLGAME0000) |   动作 / RPG / 魂    |  3   | 100+ h | ★★★★☆ |
-|    通关    | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
-|    在玩    | [**The Legend of Zelda: Breath of the Wild**](https://www.nintendo.com/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/) |     剧情 / 开放      |  1   | 30+ h  | ★★★★★ |
-|    在玩    | [**Super Mario Odyssey**](https://www.nintendo.com/games/detail/super-mario-odyssey-switch/) |     解谜 / 冒险      |  1   | 10+ h  | ★★★★★ |
-|    白金    | [**God of War**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA07413_00-00000000GODOFWAR) |     剧情 / 动作      |  1   | 60+ h  | ★★★★☆ |
-|  开坑待填  | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | 10+ h  | ★★★★  |
-|    通关    | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | 100+ h | ★★★★☆ |
-|   偶尔玩   | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |     动作 / 共斗      |  1   | 200+ h | ★★★☆  |
-|    在玩    | [**Monster Hunter XX Nintendo Switch Ver.**](https://www.nintendo.com/games/detail/monster-hunter-generations-ultimate-switch) |     动作 / 共斗      |  1   | 100+ h | ★★★★☆ |
-|    在玩    | [**女神异闻录5**](https://store.playstation.com/zh-hans-hk/product/HP0177-CUSA07195_00-PERSONA500000000) |    JRPG / 回合制     |  1   | 20+ h  | ★★★★☆ |
-| 多周目填坑 | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  2   | 50+ h  | ★★★★  |
-|    在玩    | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 20+ h  | ★★★★  |
-|  主线通关  | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
-|    通关    | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 潜入      |  1   |  20 h  | ★★★★☆ |
-|    通关    | [**UNCHARTED 4: A Thief's End™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00912_00-ASIAPLACEHOLDER0) |  冒险 / 剧情 / 解谜  |  1   |  20 h  | ★★★★☆ |
-|    通关    | [**Fallout 4**](https://store.steampowered.com/app/377160/Fallout_4/) |  剧情 / 开放 / 探索  |  1   | 60+ h  | ★★★★  |
-|    通关    | [**METAL GEAR SOLID V: GROUND ZEROES**](https://store.steampowered.com/app/311340) |     潜入 / 剧情      |  1   |  10 h  | ★★★★  |
-|    在玩    | [**METAL GEAR SOLID V: THE PHANTOM PAIN**](https://store.steampowered.com/app/287700) |     潜入 / 剧情      |  1   | 10+ h  | ★★★★☆ |
-|    在玩    | [**CELESTE**](https://www.nintendo.com/games/detail/celeste-switch/) |     解谜 / 动作      |  1   | 30+ h  | ★★★★☆ |
-|  主线通关  | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |    动作 / 魂-like    |  1   | 70+ h  |  ★★☆  |
-|  主线通关  | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
-|  开坑待填  | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
-|    通关    | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 75+ h  | ★★★☆  |
-|  开坑待填  | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
-|    在玩    | [**HITMAN™**](https://store.playstation.com/zh-hans-hk/product/UP4572-CUSA12421_00-ASIA000000000006) |     冒险 / 解谜      |  1   | 10+ h  | ★★★★  |
-|    在玩    | [**Detroit: Become Human™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA08392_00-ASIAPLACEHOLDER0) |         剧情         |  1   | 10+ h  | ★★★☆  |
-|  开坑待填  | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
-|  开坑待填  | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |     文字 / 科幻      |  1   | 10+ h  | ★★★★  |
-|    白金    | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |     文字 / 科幻      |  1   | 50+ h  | ★★★★☆ |
-|  开坑待填  | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
-|    通关    | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |   JRPG / 低龄剧情    |  1   |  50 h  |  ★★★  |
-|    通关    |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
-|    在玩    | [**噬神者2 狂怒解放**](https://store.playstation.com/zh-hans-hk/product/HP0700-CUSA01714_00-0000000000000000) |  JRPG / 动作 / 共斗  |  1   | 10+ h  | ★★★☆  |
-|  开坑待填  | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
-|  开坑待填  | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
-|    通关    | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
-|    在玩    | [**Danganronpa 2: Goodbye Despair**](https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/) |     解谜 / 剧情      |  1   | 20+ h  | ★★★★☆ |
-|    在玩    | [**新枪弹辩驳V3　大家的自相残杀新学期**](https://store.playstation.com/zh-hans-hk/product/HP0365-CUSA08569_00-PLACEHOLDER00000) |     解谜 / 剧情      |  1   | 20+ h  | ★★★☆  |
-|    在玩    | [**Call of Duty®: Modern Warfare® Remastered**](https://store.playstation.com/zh-hans-hk/product/HP0002-CUSA05373_00-CODMWRTHEGAME001) |     射击 / 剧情      |  1   |  10 h  | ★★★★  |
-|    在玩    | [**《死亡之光：后续》增强版**](https://store.playstation.com/zh-hans-hk/product/EP1018-CUSA03991_00-ASIA000000000000) |     跑酷 / 生存      |  1   |  10 h  | ★★★★  |
-|    在玩    | [**Gran Turismo Sport**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03667_00-ASIAPLACEHOLDER2) |         赛车         |  1   | 20+ h  | ★★★☆  |
-|  暂时不玩  | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
-|   偶尔玩   | [**For Honor**](https://store.playstation.com/zh-hans-hk/product/EP0001-CUSA05264_00-ASIA000000000000) |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
-|   偶尔玩   | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 300+ h | ★★★☆  |
-|  开坑待填  |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
-|  暂时不玩  | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
-|    通关    | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
-|  开坑待填  | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
-|    通关    | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         Gal          |  1   | 10+ h  | ★★★☆  |
-|  开坑待填  | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         Gal          |  1   | <10 h  |  ★★★  |
-|    通关    | [**Gaokao.Love.100Days**](https://www.nintendo.com/games/detail/gaokaolove100days-switch/) |         Gal          |  1   | 10+ h  |  ★★★  |
+|   状态   |                             名称                             |         Tag          | 周目 |  时间  | 评价  |
+| :------: | :----------------------------------------------------------: | :------------------: | :--: | :----: | :---: |
+|   白金   | [**DARK SOULS™: REMASTERED**](https://store.steampowered.com/app/570940/) |        魂系列        |  3   | 100+ h | ★★★★★ |
+|   白金   | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
+|   白金   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
+|   白金   | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |   动作 / RPG / 魂    |  1   | 100+ h | ★★★★★ |
+|   白金   | [**SEKIRO: SHADOWS DIE TWICE**](https://store.playstation.com/zh-hans-hk/product/HP0506-CUSA13910_00-ASIAFULLGAME0000) |   动作 / RPG / 魂    |  3   | 100+ h | ★★★★☆ |
+|   通关   | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
+|   在玩   | [**The Legend of Zelda: Breath of the Wild**](https://www.nintendo.com/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/) |     剧情 / 开放      |  1   | 30+ h  | ★★★★★ |
+|   在玩   | [**Super Mario Odyssey**](https://www.nintendo.com/games/detail/super-mario-odyssey-switch/) |     解谜 / 冒险      |  1   | 20+ h  | ★★★★★ |
+|   白金   | [**God of War**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA07413_00-00000000GODOFWAR) |     剧情 / 动作      |  1   | 60+ h  | ★★★★☆ |
+| 开坑待填 | [**Grand Theft Auto V**](https://store.steampowered.com/app/271590) |     剧情 / 开放      |  1   | 10+ h  | ★★★★  |
+|   通关   | [**Red Dead Redemption 2**](https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0) |     剧情 / 开放      |  1   | 100+ h | ★★★★☆ |
+|  偶尔玩  | [**MONSTER HUNTER: WORLD**](https://store.steampowered.com/app/582010) |     动作 / 共斗      |  1   | 200+ h | ★★★☆  |
+|   在玩   | [**Monster Hunter XX Nintendo Switch Ver.**](https://www.nintendo.com/games/detail/monster-hunter-generations-ultimate-switch) |     动作 / 共斗      |  1   | 100+ h | ★★★★☆ |
+|   在玩   | [**女神异闻录5**](https://store.playstation.com/zh-hans-hk/product/HP0177-CUSA07195_00-PERSONA500000000) |    JRPG / 回合制     |  1   | 20+ h  | ★★★★☆ |
+|   通关   | [**NieR:Automata™**](https://store.steampowered.com/app/524220) |     剧情 / 音乐      |  3   | 50+ h  | ★★★★  |
+|   在玩   | [**FINAL FANTASY VII**](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/) |         剧情         |  1   | 20+ h  | ★★★★  |
+|   通关   | [**FINAL FANTASY X/X-2 HD Remaster**](https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/) |         剧情         |  1   |  30 h  | ★★★★  |
+|   通关   | [**FINAL FANTASY XV**](https://store.steampowered.com/app/637650) |         剧情         |  1   | 50+ h  | ★★★☆  |
+|   通关   | [**最後生还者 重制版**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00559_00-THELASTOFUS00000) |     剧情 / 潜入      |  1   |  20 h  | ★★★★☆ |
+|   通关   | [**UNCHARTED 4: A Thief's End™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA00912_00-ASIAPLACEHOLDER0) |  冒险 / 剧情 / 解谜  |  1   |  20 h  | ★★★★☆ |
+|   通关   | [**Fallout 4**](https://store.steampowered.com/app/377160/Fallout_4/) |  剧情 / 开放 / 探索  |  1   | 60+ h  | ★★★★  |
+|   通关   | [**METAL GEAR SOLID V: GROUND ZEROES**](https://store.steampowered.com/app/311340) |     潜入 / 剧情      |  1   |  10 h  | ★★★★  |
+|   在玩   | [**METAL GEAR SOLID V: THE PHANTOM PAIN**](https://store.steampowered.com/app/287700) |     潜入 / 剧情      |  1   | 10+ h  | ★★★★☆ |
+|   在玩   | [**CELESTE**](https://www.nintendo.com/games/detail/celeste-switch/) |     解谜 / 动作      |  1   | 30+ h  | ★★★★☆ |
+| 主线通关 | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |    动作 / 魂-like    |  1   | 70+ h  |  ★★☆  |
+| 主线通关 | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
+| 开坑待填 | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
+|   通关   | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 75+ h  | ★★★☆  |
+| 开坑待填 | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
+|   在玩   | [**HITMAN™**](https://store.playstation.com/zh-hans-hk/product/UP4572-CUSA12421_00-ASIA000000000006) |     冒险 / 解谜      |  1   | 10+ h  | ★★★★  |
+|   在玩   | [**Detroit: Become Human™**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA08392_00-ASIAPLACEHOLDER0) |         剧情         |  1   | 10+ h  | ★★★☆  |
+| 开坑待填 | [**Tales of Berseria**](https://store.steampowered.com/app/429660) |     动作 / 剧情      |  1   | <10 h  | ★★★☆  |
+| 开坑待填 | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |     文字 / 科幻      |  1   | 10+ h  | ★★★★  |
+|   白金   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |     文字 / 科幻      |  1   | 50+ h  | ★★★★☆ |
+| 开坑待填 | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
+|   通关   | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |   JRPG / 低龄剧情    |  1   |  50 h  |  ★★★  |
+|   通关   |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
+|   在玩   | [**噬神者2 狂怒解放**](https://store.playstation.com/zh-hans-hk/product/HP0700-CUSA01714_00-0000000000000000) |  JRPG / 动作 / 共斗  |  1   | 10+ h  | ★★★☆  |
+| 开坑待填 | [**Ori and the Blind Forest**](https://store.steampowered.com/app/261570) |     横版 / 手残      |  1   | <10 h  | ★★★★  |
+| 开坑待填 | [**Salt and Sanctuary**](https://store.steampowered.com/app/283640) |  横版 / 地牢 / 类魂  |  1   | <10 h  | ★★★☆  |
+|   通关   | [**Danganronpa: Trigger Happy Havoc**](https://store.steampowered.com/app/413410) |     解谜 / 剧情      |  1   | 30+ h  | ★★★★☆ |
+|   通关   | [**Danganronpa 2: Goodbye Despair**](https://store.steampowered.com/app/413420/Danganronpa_2_Goodbye_Despair/) |     解谜 / 剧情      |  1   | 40+ h  | ★★★★☆ |
+|   在玩   | [**新枪弹辩驳V3　大家的自相残杀新学期**](https://store.playstation.com/zh-hans-hk/product/HP0365-CUSA08569_00-PLACEHOLDER00000) |     解谜 / 剧情      |  1   | 20+ h  | ★★★☆  |
+|   在玩   | [**Call of Duty®: Modern Warfare® Remastered**](https://store.playstation.com/zh-hans-hk/product/HP0002-CUSA05373_00-CODMWRTHEGAME001) |     射击 / 剧情      |  1   |  10 h  | ★★★★  |
+|   在玩   | [**《死亡之光：后续》增强版**](https://store.playstation.com/zh-hans-hk/product/EP1018-CUSA03991_00-ASIA000000000000) |     跑酷 / 生存      |  1   |  10 h  | ★★★★  |
+|   在玩   | [**Gran Turismo Sport**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03667_00-ASIAPLACEHOLDER2) |         赛车         |  1   | 20+ h  | ★★★☆  |
+| 暂时不玩 | [**Sword Art Online: Hollow Realization**](https://store.steampowered.com/app/607890) |  粉丝向 / 伪 MMORPG  |  1   | <10 h  |  ★★☆  |
+|  偶尔玩  | [**For Honor**](https://store.playstation.com/zh-hans-hk/product/EP0001-CUSA05264_00-ASIA000000000000) |  联机对战 / 打击感   |      | 30+ h  | ★★★☆  |
+|  偶尔玩  | [**Tom Clancy's Rainbow Six Siege**](https://store.steampowered.com/app/359550) |         射击         |      | 300+ h | ★★★☆  |
+| 开坑待填 |    [**Steep**](https://store.steampowered.com/app/460920)    |     休闲 / 滑雪      |      | <10 h  |  ★★★  |
+| 暂时不玩 | [**Sid Meier's Civilization V**](https://store.steampowered.com/app/8930) |   回合策略 / 巨肝    |      | 100+ h | ★★★☆  |
+|   通关   | [**The Evil Within 2**](https://store.steampowered.com/app/601430) |     恐怖 / 剧情      |  1   | 30+ h  | ★★★★  |
+| 开坑待填 | [**Sniper Elite 4**](https://store.steampowered.com/app/312660) |     潜行 / 暗杀      |  1   | 10+ h  |  ★★★  |
+|   通关   | [**Lucy -The Eternity She Wished For-**](https://store.steampowered.com/app/430960) |         Gal          |  1   | 10+ h  | ★★★☆  |
+| 开坑待填 | [**Tayutama 2 -you're the only one-**](https://store.steampowered.com/app/552280) |         Gal          |  1   | <10 h  |  ★★★  |
+|   通关   | [**Gaokao.Love.100Days**](https://www.nintendo.com/games/detail/gaokaolove100days-switch/) |         Gal          |  1   | 10+ h  |  ★★★  |
 
 ## 个人简评
 
