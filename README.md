@@ -16,4 +16,4 @@ I got my B.Sc. degree in [School of Mathmatical Sciences](http://sms.nankai.edu.
 
 ## Research Interests
 
-My research interests include ***Reinfocement Learning***. 
+My research interests include ***Reinforcement Learning***. 

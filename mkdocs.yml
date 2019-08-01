@@ -1,13 +1,13 @@
-site_name: ZHANGWP.COM
+site_name: ZHANG-WP
 site_description: Welcome to zawnpn's blog.
-site_url: 'https://zhangwp.com'
+site_url: 'https://www.zhangwp.com'
 strict: true
-repo_url: 'https://github.com/zawnpn/ZHANGWP.COM'
+repo_url: 'https://github.com/zawnpn/ZHANGWP'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
 remote_name: 'origin'
 site_author: zawnpn
-copyright: 'Copyright &copy; 2016-2020 ZHANGWP.COM'
+copyright: 'Copyright &copy; 2016-2020 ZHANGWP'
 nav:
   - Home:
     - Home: index.md
