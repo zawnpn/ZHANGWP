@@ -1,104 +1,96 @@
-site_name: ONCE.MATH
+site_name: ZHANGWP.COM
 site_description: Welcome to zawnpn's blog.
-site_url: 'https://oncemath.com'
+site_url: 'https://zhangwp.com'
 strict: true
 repo_url: 'https://github.com/zawnpn/ONCEMATH'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
 remote_name: 'origin'
 site_author: zawnpn
-copyright: 'Copyright &copy; 2016-2019 ONCE.MATH'
+copyright: 'Copyright &copy; 2016-2020 ZHANGWP.COM'
 nav:
   - Home:
-    - 主页: index.md
-    - 友情链接: links.md
-    - 打赏: donates.md
-  - Study:
-    - My Study: study/README.md
+    - Home: index.md
+    - Links: links.md
+    - Donate: donates.md
+  - Notes:
+    - Index: notes/README.md
     - Reinforcement:
       - Reinforcement Learning An Introduction:
-        - Chapter 2: study/reinforcement-learning/notes/RLAI_2.md
-        - Chapter 3: study/reinforcement-learning/notes/RLAI_3.md
-        - Chapter 4: study/reinforcement-learning/notes/RLAI_4.md
-        - Chapter 5: study/reinforcement-learning/notes/RLAI_5.md
-        - Chapter 6: study/reinforcement-learning/notes/RLAI_6.md
-        - Chapter 7: study/reinforcement-learning/notes/RLAI_7.md
-        - Chapter 8: study/reinforcement-learning/notes/RLAI_8.md
-        - Chapter 9: study/reinforcement-learning/notes/RLAI_9.md
-        - Chapter 10: study/reinforcement-learning/notes/RLAI_10.md
-        - Chapter 11: study/reinforcement-learning/notes/RLAI_11.md
-        - Chapter 12: study/reinforcement-learning/notes/RLAI_12.md
-        - Chapter 13: study/reinforcement-learning/notes/RLAI_13.md
+        - Chapter 2: notes/reinforcement-learning/notes/RLAI_2.md
+        - Chapter 3: notes/reinforcement-learning/notes/RLAI_3.md
+        - Chapter 4: notes/reinforcement-learning/notes/RLAI_4.md
+        - Chapter 5: notes/reinforcement-learning/notes/RLAI_5.md
+        - Chapter 6: notes/reinforcement-learning/notes/RLAI_6.md
+        - Chapter 7: notes/reinforcement-learning/notes/RLAI_7.md
+        - Chapter 8: notes/reinforcement-learning/notes/RLAI_8.md
+        - Chapter 9: notes/reinforcement-learning/notes/RLAI_9.md
+        - Chapter 10: notes/reinforcement-learning/notes/RLAI_10.md
+        - Chapter 11: notes/reinforcement-learning/notes/RLAI_11.md
+        - Chapter 12: notes/reinforcement-learning/notes/RLAI_12.md
+        - Chapter 13: notes/reinforcement-learning/notes/RLAI_13.md
       - Some Introduction:
-        - MCTS: study/reinforcement-learning/notes/MCTS_introduction.md
-  - Projects:
-    - My Projects: projects/README.md
-    - 基于GPU的快速傅里叶变换并行化加速: projects/FFT-GPU-Accel.md
-    - Steam-Toolkit:
-      - Steam市场比价爬虫: projects/steam-market-price-bot.md
-    - NKU-Toolkit:
-      - NKU-EAMIS工具: projects/nku-eamis.md
-      - NKU-SMS-RSS: projects/nku-sms-rss.md
-      - NKU-EAMIS_MiniApp(南开大学教务助手小程序): projects/eamis-miniapp.md
-      - NKU-EAMIS for iOS(Workflow): projects/eamis-workflow.md
-  - Notes:
-    - My Notes: notes/README.md
-    - To Do: notes/to-do.md
-    - Python: notes/python.md
-    - Data Processing: notes/data-processing.md
-    - Git: notes/git.md
-    - Linux: notes/linux.md
-    - Windows: notes/win.md
-  - Math:
-    - Math Experience: math/README.md
-    - 数学建模:
-      - 2017美赛参赛整理(Problem D): math/2017-mcm-icm.md
-      - 2016数学建模国赛: math/2016-guosai.md
-      - 数学建模之2016深圳杯——初次尝试: math/math-model-szb.md
-      - 随机多边形转化为椭圆的过程研究: math/polygon-to-ellipse.md
-    - NKU 数院试题整理:
-      - 分析:
-        - 2017-2018第一学期泛函分析期末考试: math/exam/functional-analysis-final.md
-        - 2016-2017第二学期实变函数期末考试: math/exam/real-variable-function.md
-        - 2016-2017第一学期数学分析3-3期末考试: math/exam/mathematical-analysis-3-3-final.md
-        - 2016-2017第一学期复变函数期末考试: math/exam/complex-analysis-final.md
-        - 2016-2017第一学期数学分析3-3期中考试: math/exam/mathematical-analysis-3-3-middle.md
-        - 2015-2016第二学期数学分析3-2期末考试（含解答）: math/exam/mathematical-analysis-3-2-final.md
-        - 2015-2016第二学期数学分析3-2期中考试: math/exam/mathematical-analysis-3-2-middle.md
-        - 2015-2016第一学期数学分析3-1期末考试: math/exam/mathematical-analysis-3-1-final.md
-      - 代数:
-        - 2016-2017第一学期抽象代数期末考试: math/exam/abstract-algebra-final.md
-        - 2016-2017第一学期抽象代数期中考试: math/exam/abstract-algebra-middle.md
-        - 2015-2016第二学期高等代数2-2期末考试: math/exam/advanced-algebra-2-2-final.md
-        - 2015-2016第二学期高等代数2-2期中考试: math/exam/advanced-algebra-2-2-middle.md
-        - 2015-2016第一学期高等代数2-1期末考试: math/exam/advanced-algebra-2-1-final.md
-      - 概率统计:
-        - 2016-2017第二学期概率论期末考试: math/exam/probability-final.md
-        - 2016-2017第二学期概率论期中考试: math/exam/probability-middle.md
-      - 微分方程:
-        - 2017-2018第一学期数理方程期末考试: math/exam/PDE-final.md
-        - 2016-2017第一学期常微分方程期末考试: math/exam/ODE-final.md
-        - 2016-2017第一学期常微分方程期中考试: math/exam/ODE-middle.md
-  - Diary:
-    - My Diary: diary/README.md
-    - 游戏记录 & 简评: diary/game-play.md
-    - 鹏程万里: diary/roc-fly.md
-    - 博客历史: diary/blog-history.md
+        - MCTS: notes/reinforcement-learning/notes/MCTS_introduction.md
+  - Tips:
+    - Tips: tips/README.md
+    - To Do: tips/to-do.md
+    - Python: tips/python.md
+    - Data Processing: tips/data-processing.md
+    - Git: tips/git.md
+    - Linux: tips/linux.md
+    - Windows: tips/win.md
   - Share:
-    - Share: share/README.md
-    - NKU 数院试题整理: share/nku-sms-exams.md
+    - Index: share/README.md
+    - 鹏程万里: share/roc-fly.md
+    - 博客历史: share/blog-history.md
     - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
-    - Student Developer Pack - GitHub Education: share/github-student-pack.md
-  - About:
-    - About Me: about.md
+    - Game-Experience: share/game-play.md
+    - NKU-Toolkit:
+      - NKU-EAMIS工具: share/nku-eamis.md
+      - NKU-SMS-RSS: share/nku-sms-rss.md
+      - NKU-EAMIS_MiniApp(南开大学教务助手小程序): share/eamis-miniapp.md
+      - NKU-EAMIS for iOS(Workflow): share/eamis-workflow.md
+    - Steam-Toolkit:
+      - Steam市场比价爬虫: share/steam-market-price-bot.md
+    - 数学建模:
+      - 2017美赛参赛整理(Problem D): share/2017-mcm-icm.md
+      - 2016数学建模国赛: share/2016-guosai.md
+      - 数学建模之2016深圳杯——初次尝试: share/math-model-szb.md
+      - 随机多边形转化为椭圆的过程研究: share/polygon-to-ellipse.md
+      - FFT-GPU-Accel: share/FFT-GPU-Accel.md
+    - NKU 数院试题整理:
+      - 汇总: share/nku-sms-exams.md
+      - 分析:
+        - 2017-2018第一学期泛函分析期末考试: share/exam/functional-analysis-final.md
+        - 2016-2017第二学期实变函数期末考试: share/exam/real-variable-function.md
+        - 2016-2017第一学期数学分析3-3期末考试: share/exam/mathematical-analysis-3-3-final.md
+        - 2016-2017第一学期复变函数期末考试: share/exam/complex-analysis-final.md
+        - 2016-2017第一学期数学分析3-3期中考试: share/exam/mathematical-analysis-3-3-middle.md
+        - 2015-2016第二学期数学分析3-2期末考试（含解答）: share/exam/mathematical-analysis-3-2-final.md
+        - 2015-2016第二学期数学分析3-2期中考试: share/exam/mathematical-analysis-3-2-middle.md
+        - 2015-2016第一学期数学分析3-1期末考试: share/exam/mathematical-analysis-3-1-final.md
+      - 代数:
+        - 2016-2017第一学期抽象代数期末考试: share/exam/abstract-algebra-final.md
+        - 2016-2017第一学期抽象代数期中考试: share/exam/abstract-algebra-middle.md
+        - 2015-2016第二学期高等代数2-2期末考试: share/exam/advanced-algebra-2-2-final.md
+        - 2015-2016第二学期高等代数2-2期中考试: share/exam/advanced-algebra-2-2-middle.md
+        - 2015-2016第一学期高等代数2-1期末考试: share/exam/advanced-algebra-2-1-final.md
+      - 概率统计:
+        - 2016-2017第二学期概率论期末考试: share/exam/probability-final.md
+        - 2016-2017第二学期概率论期中考试: share/exam/probability-middle.md
+      - 微分方程:
+        - 2017-2018第一学期数理方程期末考试: share/exam/PDE-final.md
+        - 2016-2017第一学期常微分方程期末考试: share/exam/ODE-final.md
+        - 2016-2017第一学期常微分方程期中考试: share/exam/ODE-middle.md
+    - Other:
+      - Student Developer Pack - GitHub Education: share/github-student-pack.md
+  - Others:
+    - Others: others.md
 
 theme:
   name: 'material'
   font: false
-  language: 'zh'
-  favicon: '/assets/images/all_inclusive.png'
-  logo:
-    icon: 'all_inclusive'
+  language: 'en'
   palette:
     primary: 'white'
     accent: 'light blue'
