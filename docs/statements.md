@@ -1,7 +1,9 @@
 
-# Others
+# Statements
 
-You can access source of this website at [Github](https://github.com/zawnpn/ZHANGWP.COM/), welcome pull requests. You can also give feedbacks at [https://github.com/zawnpn/ZHANGWP.COM/issues](https://github.com/zawnpn/ZHANGWP.COM/issues).
+You can access source of this website at [Github](https://github.com/zawnpn/ZHANGWP.COM/), welcome pull requests. 
+
+You can also give feedbacks at [https://github.com/zawnpn/ZHANGWP.COM/issues](https://github.com/zawnpn/ZHANGWP.COM/issues).
 
 
 ## Copyright

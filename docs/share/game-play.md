@@ -6,7 +6,7 @@
 | :------: | :----------------------------------------------------------: | :------------------: | :--: | :----: | :---: |
 |   白金   | [**DARK SOULS™: REMASTERED**](https://store.steampowered.com/app/570940/) |        魂系列        |  3   | 100+ h | ★★★★★ |
 |   白金   | [**DARK SOULS™ II: Scholar of the First Sin**](https://store.steampowered.com/app/335300) |        魂系列        |  3   | 150+ h | ★★★★☆ |
-|   白金   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 250+ h | ★★★★★ |
+|   白金   | [**DARK SOULS™ III**](https://store.steampowered.com/app/374320) |        魂系列        |  5   | 300+ h | ★★★★★ |
 |   白金   | [**Bloodborne™ The Old Hunters**](https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA03023_00-BLOODBORNE0000AS) |   动作 / RPG / 魂    |  1   | 100+ h | ★★★★★ |
 |   白金   | [**SEKIRO: SHADOWS DIE TWICE**](https://store.playstation.com/zh-hans-hk/product/HP0506-CUSA13910_00-ASIAFULLGAME0000) |   动作 / RPG / 魂    |  3   | 100+ h | ★★★★☆ |
 |   通关   | [**The Witcher 3: Wild Hunt**](https://store.steampowered.com/app/292030) |     剧情 / 开放      |  1   | 120+ h | ★★★★★ |
@@ -30,7 +30,7 @@
 |   在玩   | [**CELESTE**](https://www.nintendo.com/games/detail/celeste-switch/) |     解谜 / 动作      |  1   | 30+ h  | ★★★★☆ |
 | 主线通关 | [**Nioh: Complete Edition**](https://store.steampowered.com/app/485510) |    动作 / 魂-like    |  1   | 70+ h  |  ★★☆  |
 | 主线通关 | [**Assassin's Creed Origins**](https://store.steampowered.com/app/582160) |  育碧式开放 / 无聊   |  1   | 30+ h  |  ★★☆  |
-| 开坑待填 | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | <10 h  | ★★★★  |
+|   通关   | [**Divinity: Original Sin 2**](https://store.steampowered.com/app/435150) |     CRPG / 魔幻      |  1   | 100 h  | ★★★★  |
 |   通关   | [**Kingdom Come: Deliverance**](https://store.steampowered.com/app/379430) | 剧情 / 中世纪 / 开放 |  1   | 75+ h  | ★★★☆  |
 | 开坑待填 | [**Rise of the Tomb Raider**](https://store.steampowered.com/app/391220) |     冒险 / 解谜      |  1   | <10 h  | ★★★☆  |
 |   在玩   | [**HITMAN™**](https://store.playstation.com/zh-hans-hk/product/UP4572-CUSA12421_00-ASIA000000000006) |     冒险 / 解谜      |  1   | 10+ h  | ★★★★  |
@@ -39,6 +39,7 @@
 | 开坑待填 | [**STEINS;GATE**](https://store.steampowered.com/app/412830) |     文字 / 科幻      |  1   | 10+ h  | ★★★★  |
 |   白金   | [**STEINS;GATE 0**](https://store.steampowered.com/app/825630) |     文字 / 科幻      |  1   | 50+ h  | ★★★★☆ |
 | 开坑待填 | [**PSYCHO-PASS: Mandatory Happiness**](https://store.steampowered.com/app/522880) |     文字 / 科幻      |  1   | <10 h  | ★★★☆  |
+|   通关   | [**ISLAND**](https://store.steampowered.com/app/857450/ISLAND/) |     文字 / 科幻      |  1   |  30h   | ★★★☆  |
 |   通关   | [**Ni no Kuni™ II: Revenant Kingdom**](https://store.steampowered.com/app/589360) |   JRPG / 低龄剧情    |  1   |  50 h  |  ★★★  |
 |   通关   |  [**Yakuza 0**](https://store.steampowered.com/app/638970)   |     热血 / 剧情      |  1   | 40+ h  | ★★★★  |
 |   在玩   | [**噬神者2 狂怒解放**](https://store.playstation.com/zh-hans-hk/product/HP0700-CUSA01714_00-0000000000000000) |  JRPG / 动作 / 共斗  |  1   | 10+ h  | ★★★☆  |

@@ -84,8 +84,8 @@ nav:
         - 2016-2017第一学期常微分方程期中考试: share/exam/ODE-middle.md
     - Other:
       - Student Developer Pack - GitHub Education: share/github-student-pack.md
-  - Others:
-    - Others: others.md
+  - Statements:
+    - Statements: statements.md
 
 theme:
   name: 'material'
