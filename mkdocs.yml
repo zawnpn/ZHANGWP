@@ -2,7 +2,7 @@ site_name: ZHANGWP.COM
 site_description: Welcome to zawnpn's blog.
 site_url: 'https://zhangwp.com'
 strict: true
-repo_url: 'https://github.com/zawnpn/ONCEMATH'
+repo_url: 'https://github.com/zawnpn/ZHANGWP.COM'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
 remote_name: 'origin'
