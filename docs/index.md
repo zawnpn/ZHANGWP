@@ -1,12 +1,9 @@
 # Wan-Peng Zhang 张万鹏
 
-M.Sc. Student
+## Intro
 
-[Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/)
-
-[Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
-
-Email:zawnpn[AT]gmail.com, zhangwp19[AT]mails.tsinghua.edu.cn
+- M.Sc. Student, [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
+- Email: zawnpn@gmail.com, zhangwp19@mails.tsinghua.edu.cn
 
 ## Biography
 

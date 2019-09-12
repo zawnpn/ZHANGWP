@@ -6,7 +6,7 @@ M.Sc. Student
 
 [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
 
-Email:zawnpn[AT]gmail.com, zhangwp19[AT]mails.tsinghua.edu.cn
+Email: zawnpn@gmail.com, zhangwp19@mails.tsinghua.edu.cn
 
 ## Biography
 
