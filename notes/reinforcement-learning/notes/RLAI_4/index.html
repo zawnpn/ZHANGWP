@@ -1969,40 +1969,56 @@ v_{k+1}(s_n)= & c_{n1}v_k(s_1)+c_{n2}v_k(s_2)+\cdots+c_{nn}v_k(s_n)+b_n\\
 \end{aligned}
 </script>
 </div>
-<p>记
-$$
+<p>记</p>
+<div>
+<div class="MathJax_Preview">
 \boldsymbol{C} =
-    \begin{bmatrix}
-    c_{11} &amp; c_{12} &amp; \cdots &amp; c_{1n} \
-    c_{21} &amp; c_{22} &amp; \cdots &amp; c_{2n} \
-    \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
-    c_{n1} &amp; c_{n2} &amp; \cdots &amp; c_{nn}
-    \end{bmatrix}
-$$</p>
+\begin{bmatrix}
+c_{11} &amp; c_{12} &amp; \cdots &amp; c_{1n}  \\
+c_{21} &amp; c_{22} &amp; \cdots &amp; c_{2n}  \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots  \\
+c_{n1} &amp; c_{n2} &amp; \cdots &amp; c_{nn}
+\end{bmatrix}
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{C} =
+\begin{bmatrix}
+c_{11} & c_{12} & \cdots & c_{1n}  \\
+c_{21} & c_{22} & \cdots & c_{2n}  \\
+\vdots & \vdots & \ddots & \vdots  \\
+c_{n1} & c_{n2} & \cdots & c_{nn}
+\end{bmatrix}
+</script>
+</div>
 <div>
 <div class="MathJax_Preview">
 \boldsymbol{b} =
     \begin{bmatrix}
-    b_{1}  \\
-    b_{2}  \\
-    \vdots  \\
+    b_{1}\\
+    b_{2}\\
+    \vdots\\
     b_{n} 
     \end{bmatrix}
 </div>
 <script type="math/tex; mode=display">
 \boldsymbol{b} =
     \begin{bmatrix}
-    b_{1}  \\
-    b_{2}  \\
-    \vdots  \\
+    b_{1}\\
+    b_{2}\\
+    \vdots\\
     b_{n} 
     \end{bmatrix}
 </script>
 </div>
-<p>则可把贝尔曼方程及其迭代法更新规则表示为以下的矩阵形式：
-$$
+<p>则可把贝尔曼方程及其迭代法更新规则表示为以下的矩阵形式：</p>
+<div>
+<div class="MathJax_Preview">
 \boldsymbol{v} =\boldsymbol{Cv}+\boldsymbol{b}
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{v} =\boldsymbol{Cv}+\boldsymbol{b}
+</script>
+</div>
 <div>
 <div class="MathJax_Preview">
 \boldsymbol{v}_{k+1} =\boldsymbol{Cv}_k+\boldsymbol{b}
@@ -2045,16 +2061,26 @@ b_{i} =\sum_a\pi(a\mid s_i)\sum_{r}p(r\mid s_i,a)r
 b_{i} =\sum_a\pi(a\mid s_i)\sum_{r}p(r\mid s_i,a)r
 </script>
 </div>
-<p>且 <span><span class="MathJax_Preview">0\leq\gamma&lt;1</span><script type="math/tex">0\leq\gamma<1</script></span>，则显然有
-$$
+<p>且 <span><span class="MathJax_Preview">0\leq\gamma&lt;1</span><script type="math/tex">0\leq\gamma<1</script></span>，则显然有</p>
+<div>
+<div class="MathJax_Preview">
 \lim_{k\rightarrow \infty} \boldsymbol{C}^k \leq \lim_{k\rightarrow \infty}\begin{bmatrix}
-    \gamma &amp; \gamma &amp; \cdots &amp; \gamma \
-    \gamma &amp; \gamma &amp; \cdots &amp; \gamma \
-    \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
+    \gamma &amp; \gamma &amp; \cdots &amp; \gamma\\
+    \gamma &amp; \gamma &amp; \cdots &amp; \gamma\\
+    \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
     \gamma &amp; \gamma &amp; \cdots &amp; \gamma
     \end{bmatrix}^k = \boldsymbol{O}
-$$
-因此 <span><span class="MathJax_Preview">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</span><script type="math/tex">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</script></span>，故由上述定理得证：Bellman 迭代式可由 Jacobi 迭代法快速求解，并且解收敛。</p>
+</div>
+<script type="math/tex; mode=display">
+\lim_{k\rightarrow \infty} \boldsymbol{C}^k \leq \lim_{k\rightarrow \infty}\begin{bmatrix}
+    \gamma & \gamma & \cdots & \gamma\\
+    \gamma & \gamma & \cdots & \gamma\\
+    \vdots & \vdots & \ddots & \vdots\\
+    \gamma & \gamma & \cdots & \gamma
+    \end{bmatrix}^k = \boldsymbol{O}
+</script>
+</div>
+<p>因此 <span><span class="MathJax_Preview">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</span><script type="math/tex">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</script></span>，故由上述定理得证：Bellman 迭代式可由 Jacobi 迭代法快速求解，并且解收敛。</p>
 <h3 id="iterative-policy-evaluation">算法 (Iterative Policy Evaluation)<a class="headerlink" href="#iterative-policy-evaluation" title="Permanent link">&para;</a></h3>
 <ol>
 <li>给定初始值 <span><span class="MathJax_Preview">v_0(s)</span><script type="math/tex">v_0(s)</script></span></li>
@@ -2298,7 +2324,7 @@ v_\pi(s) &\leq q_\pi(s, \pi'(s)) \\ &=\mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1
       
         <script src="../../../../assets/extra.js"></script>
       
-        <script src="//cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_SVG"></script>
+        <script src="//cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_SVG"></script>
       
     
     
