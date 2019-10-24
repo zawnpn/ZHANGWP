@@ -1972,40 +1972,45 @@ v_{k+1}(s_n)= & c_{n1}v_k(s_1)+c_{n2}v_k(s_2)+\cdots+c_{nn}v_k(s_n)+b_n\\
 <p>记
 $$
 \boldsymbol{C} =
-    \left(\begin{array}{cccc}
+    \begin{bmatrix}
     c_{11} &amp; c_{12} &amp; \cdots &amp; c_{1n} \
     c_{21} &amp; c_{22} &amp; \cdots &amp; c_{2n} \
     \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
     c_{n1} &amp; c_{n2} &amp; \cdots &amp; c_{nn}
-    \end{array}\right)
+    \end{bmatrix}
 $$</p>
 <div>
 <div class="MathJax_Preview">
 \boldsymbol{b} =
-    \left(\begin{array}{c}
+    \begin{bmatrix}
     b_{1}  \\
     b_{2}  \\
     \vdots  \\
     b_{n} 
-    \end{array}\right)
+    \end{bmatrix}
 </div>
 <script type="math/tex; mode=display">
 \boldsymbol{b} =
-    \left(\begin{array}{c}
+    \begin{bmatrix}
     b_{1}  \\
     b_{2}  \\
     \vdots  \\
     b_{n} 
-    \end{array}\right)
+    \end{bmatrix}
 </script>
 </div>
 <p>则可把贝尔曼方程及其迭代法更新规则表示为以下的矩阵形式：
 $$
-\begin{aligned}
-\vec{\mathbf{v}}&amp;=\mathbf{C}\vec{\mathbf{v}}+\vec{\mathbf{b}} \quad\left(\mathbf{I}-\mathbf{C}\right)\vec{\mathbf{v}}=\vec{\mathbf{b}}\
-\vec{\mathbf{v_{k+1}}}&amp;=\mathbf{C}\vec{\mathbf{v_k}}+\vec{\mathbf{b}}
-\end{aligned}
+\boldsymbol{v} =\boldsymbol{Cv}+\boldsymbol{b}
 $$</p>
+<div>
+<div class="MathJax_Preview">
+\boldsymbol{v}_{k+1} =\boldsymbol{Cv}_k+\boldsymbol{b}
+</div>
+<script type="math/tex; mode=display">
+\boldsymbol{v}_{k+1} =\boldsymbol{Cv}_k+\boldsymbol{b}
+</script>
+</div>
 <p>在「数值分析」中，这样的求解方法叫 <strong>Jacobi 迭代求解法</strong>：</p>
 <blockquote>
 <p><img alt="" src="../imgs/RLAI_4/iter-seq.png" />
@@ -2042,12 +2047,12 @@ b_{i} =\sum_a\pi(a\mid s_i)\sum_{r}p(r\mid s_i,a)r
 </div>
 <p>且 <span><span class="MathJax_Preview">0\leq\gamma&lt;1</span><script type="math/tex">0\leq\gamma<1</script></span>，则显然有
 $$
-\lim_{k\rightarrow \infty} \boldsymbol{C}^k \leq \lim_{k\rightarrow \infty}\left(\begin{array}{cccc}
+\lim_{k\rightarrow \infty} \boldsymbol{C}^k \leq \lim_{k\rightarrow \infty}\begin{bmatrix}
     \gamma &amp; \gamma &amp; \cdots &amp; \gamma \
     \gamma &amp; \gamma &amp; \cdots &amp; \gamma \
     \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
     \gamma &amp; \gamma &amp; \cdots &amp; \gamma
-    \end{array}\right)^k = \boldsymbol{O}
+    \end{bmatrix}^k = \boldsymbol{O}
 $$
 因此 <span><span class="MathJax_Preview">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</span><script type="math/tex">\boldsymbol{C}^k\rightarrow\boldsymbol{O}</script></span>，故由上述定理得证：Bellman 迭代式可由 Jacobi 迭代法快速求解，并且解收敛。</p>
 <h3 id="iterative-policy-evaluation">算法 (Iterative Policy Evaluation)<a class="headerlink" href="#iterative-policy-evaluation" title="Permanent link">&para;</a></h3>
