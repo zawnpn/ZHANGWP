@@ -41,10 +41,8 @@ nav:
     - Windows: tips/win.md
   - Share:
     - Index: share/README.md
-    - 鹏程万里: share/roc-fly.md
     - 博客历史: share/blog-history.md
-    - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
-    - Game-Experience: share/game-play.md
+    - Game-Log: share/game-log.md
     - NKU-Toolkit:
       - NKU-EAMIS工具: share/nku-eamis.md
       - NKU-SMS-RSS: share/nku-sms-rss.md
@@ -84,6 +82,8 @@ nav:
         - 2016-2017第一学期常微分方程期中考试: share/exam/ODE-middle.md
     - Other:
       - Student Developer Pack - GitHub Education: share/github-student-pack.md
+      - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
+      - 鹏程万里: share/roc-fly.md
   - Statements:
     - Statements: statements.md
 
@@ -115,7 +115,7 @@ extra:
       link: 'https://www.zhihu.com/people/zhangwanpeng'
 extra_javascript:
   - assets/extra.js
-  - //cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_SVG
+  - //cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_SVG
 
 markdown_extensions:
   - pymdownx.arithmatex

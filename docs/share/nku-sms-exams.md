@@ -9,12 +9,6 @@ categories: share
 
 **南开大学数学学院-试题分享**
 
-> 注意：由于将要毕业，未来的某个时间可能会取消这一页面，如有同学有意接手这些文件继续为大家分享，请联系我！
->
-> 邮箱：[zwp@mail.oncemath.com](mailto:zwp@mail.oncemath.com)
-
-<!-- more -->
-
 ### 数学分析
 
 > [[PDF]2013-2014第一学期数学类数学分析3-1期中考试](/files/mathematical-analysis/2013-2014第一学期数学类数学分析3-1期中考试.pdf)

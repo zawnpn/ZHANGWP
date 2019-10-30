@@ -32,7 +32,7 @@ $$
 \begin{aligned}v_\pi(s) &\doteq \mathbb{E}_\pi[R_{t+1}+\gamma R_{t+2}+ \gamma^2 R_{t+3}+ \cdots \mid S_t = s] \\ &= \mathbb{E}_\pi[R_{t+1}+\gamma v_\pi(S_{t+1}) \mid S_t=s] &(4.3)\\ &=\sum_a\pi(a\mid s)\sum_{s',r}p(s',r\mid s,a)[r+\gamma v_\pi(s')] &(4.4)\end{aligned}
 $$
 
-- 如果我们已知 $p(s',r|s,a)$ ，那么 (4.4) 式为其实就是一个线性方程组（$|\mathcal{S}|$ 个方程、 $|\mathcal{S}|​$ 个未知元）。
+- 如果我们已知 $p(s',r|s,a)$ ，那么 (4.4) 式为其实就是一个线性方程组（$|\mathcal{S}|$ 个方程、 $|\mathcal{S}|$ 个未知元）。
 - 这个方程组是能直接求解得出的，但是速度太慢，不实用。
 
 ### 思路
@@ -56,35 +56,74 @@ v_{k+1}(s_n)= & c_{n1}v_k(s_1)+c_{n2}v_k(s_2)+\cdots+c_{nn}v_k(s_n)+b_n\\
 \end{aligned}
 $$
 
-进一步地，我们可以把贝尔曼方程及其迭代法更新规则表示为以下的向量化形式：
+记
 
 $$
-\begin{aligned}
-\vec{\mathbf{v}}&=\mathbf{C}\vec{\mathbf{v}}+\vec{\mathbf{b}} \quad\left(\mathbf{I}-\mathbf{C}\right)\vec{\mathbf{v}}=\vec{\mathbf{b}}\\
-\vec{\mathbf{v_{k+1}}}&=\mathbf{C}\vec{\mathbf{v_k}}+\vec{\mathbf{b}}
-\end{aligned}
+\boldsymbol{C} =
+\begin{bmatrix}
+c_{11} & c_{12} & \cdots & c_{1n}  \\
+c_{21} & c_{22} & \cdots & c_{2n}  \\
+\vdots & \vdots & \ddots & \vdots  \\
+c_{n1} & c_{n2} & \cdots & c_{nn}
+\end{bmatrix}
 $$
 
-在「数值分析」中，这样的方法叫 **Jacobi 迭代求解法**：
+$$
+\boldsymbol{b} =
+    \begin{bmatrix}
+    b_{1}\\
+    b_{2}\\
+    \vdots\\
+    b_{n} 
+    \end{bmatrix}
+$$
+
+则可把贝尔曼方程及其迭代法更新规则表示为以下的矩阵形式：
+
+$$
+\boldsymbol{v} =\boldsymbol{Cv}+\boldsymbol{b}
+$$
+
+$$
+\boldsymbol{v}_{k+1} =\boldsymbol{Cv}_k+\boldsymbol{b}
+$$
+
+在「数值分析」中，这样的求解方法叫 **Jacobi 迭代求解法**：
 
 > ![](imgs/RLAI_4/iter-seq.png)
 ![](imgs/RLAI_4/iter-method.png)
 
-可以看出，我们之前给出的向量化形式，正是迭代法所讨论的问题。而我们可以通过下面的定理来确保我们的迭代极限确实能够收敛到真实解：
+可以看出，我们之前给出的矩阵形式，正是迭代法所讨论的问题。而我们可以通过下面的定理来确保我们的迭代极限确实能够收敛到真实解：
 
 > ![](imgs/RLAI_4/theorem1.png)
-![](imgs/RLAI_4/theorem2.png)
-![](imgs/RLAI_4/theorem3.png)
+> ![](imgs/RLAI_4/theorem2.png)
+> ![](imgs/RLAI_4/theorem3.png)
 
-前两个定理描述的是迭代法收敛的**充要条件**，其条件有点强，不容易看出，而第三个定理只是一个**必要条件**，所以条件要求得比较弱，只需找到一个矩阵范数能使我们的系数矩阵范数小于 1 即可（$||C||<1$）。
-
-我们可以考虑「无穷范数」：
+回到 Bellman 方程，由于
 
 $$
-||C||_\infty=\max\limits_{1\leq j\leq n}\sum_{i=1}^m|c_{ij}|
+\begin{aligned}
+        c_{ij} &=\sum_a\pi(a\mid s_i)\sum_{r}p(s_j,r \mid s_i,a)\gamma\\
+        &\leq \sum_a\pi(a\mid s_i)\sum_{s_j,r}p(s_j,r \mid s_i,a)\gamma=\gamma
+    \end{aligned}
 $$
 
-其含义是矩阵的 **元素绝对值的行和最大值** ，显然，我们的 $c_{ij}$ 是由概率 $\pi, p$ 以及削减率 $\gamma (0\leq \gamma < 1)$ 相乘而得，我们先不看削减率，由于状态和行动的独立性，两个概率相乘即为联合分布（关于 s,a）。我们对一行求和，显然只包含到了部分情况，进而显然概率之和小于等于 1 （注意特殊情况下仍有可能为 1，此时恰好只有这一行的 (s,a) 对应的事件能够发生，其他行的概率均分别为0），再乘上削减率 $\gamma$ ，于是显然有 $||C||_\infty < 1$，于是迭代序列收敛到真实解，因此这个方法是正确合理的。
+$$
+b_{i} =\sum_a\pi(a\mid s_i)\sum_{r}p(r\mid s_i,a)r
+$$
+
+且 $0\leq\gamma<1$，则显然有
+
+$$
+\lim_{k\rightarrow \infty} \boldsymbol{C}^k \leq \lim_{k\rightarrow \infty}\begin{bmatrix}
+    \gamma & \gamma & \cdots & \gamma\\
+    \gamma & \gamma & \cdots & \gamma\\
+    \vdots & \vdots & \ddots & \vdots\\
+    \gamma & \gamma & \cdots & \gamma
+    \end{bmatrix}^k = \boldsymbol{O}
+$$
+
+因此 $\boldsymbol{C}^k\rightarrow\boldsymbol{O}$，故由上述定理得证：Bellman 迭代式可由 Jacobi 迭代法快速求解，并且解收敛。
 
 ### 算法 (Iterative Policy Evaluation)
 
@@ -224,7 +263,7 @@ $$
 **算法复杂度**：
 
 - 直接搜索： $O(k^n)$ (n 种状态，k 种行动)
-- 动态规划： $O(c^n+c^k)$ (c 是与 n、k 无关的常数)
+- 动态规划： 关于 $n,k$ 的多项式复杂度
 
 **总结**:
 
