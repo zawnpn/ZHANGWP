@@ -1,10 +1,8 @@
 # Share
 
 ## Diary
-- [鹏程万里](/share/roc-fly)
 - [博客历史](/share/blog-history)
-- [保研推免经验分享 - 数学系跨保 CS](/share/my-postgraduate-share)
-- [Game-Experience](/share/game-play)
+- [Game-Log](/share/game-log)
 
 ## Projects
 - NKU-Toolkit
@@ -48,5 +46,7 @@
         - [2016-2017第一学期常微分方程期末考试](/share/exam/ODE-final)
         - [2016-2017第一学期常微分方程期中考试](/share/exam/ODE-middle)
 
-## Others
+## Other
 - [Student Developer Pack - GitHub Education](/share/github-student-pack)
+- [保研推免经验分享 - 数学系跨保 CS](/share/my-postgraduate-share)
+- [鹏程万里](/share/roc-fly)
