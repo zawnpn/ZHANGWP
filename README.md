@@ -1,16 +1,14 @@
 # Wan-Peng Zhang 张万鹏
 
-M.Sc. Student
+## Intro
 
-[Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/)
-
-[Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
-
-Email: zawnpn@gmail.com, zhangwp19@mails.tsinghua.edu.cn
+- M.Sc. Student, [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
+- Internship, [Tencent AI Lab](https://ai.tencent.com/ailab/), Shenzhen, China
+- Email: zawnpn@gmail.com, zhangwp19@mails.tsinghua.edu.cn
 
 ## Biography
 
-Currently I am a first year graduate student of [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/) in [Tsinghua University](https://www.tsinghua.edu.cn).
+Currently I am a second year graduate student of [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/) in [Tsinghua University](https://www.tsinghua.edu.cn). At the same time, I am internship in [Tencent AI Lab](https://ai.tencent.com/ailab/).
 
 I got my B.Sc. degree in [School of Mathmatical Sciences](http://sms.nankai.edu.cn/) in June 2019 from [Nankai University](http://www.nankai.edu.cn/). In the same year, I was admitted to pursue for a M.Sc. degree in [Tsinghua University](https://www.tsinghua.edu.cn).
 
