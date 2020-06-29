@@ -100,7 +100,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../../#-" tabindex="1" class="md-skip">
+      <a href="../../../../#-on-policy" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1740,7 +1740,7 @@
                   <a href="https://github.com/zawnpn/ZHANGWP/edit/master/docs/notes/reinforcement-learning/notes/RLAI_9.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="-">强化学习导论（九）- 在线策略的近似预测<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+                <h1 id="-on-policy">强化学习导论（九）- On-Policy的近似预测<a class="headerlink" href="#-on-policy" title="Permanent link">&para;</a></h1>
 <p>前面八章讲的算法在使用旧的 <span><span class="MathJax_Preview">Q(S)</span><script type="math/tex">Q(S)</script></span> 时都是在对 <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> 函数进行查表操作：采用数据表存储每个 state 的 value ，然后用各种各样的算法来更新这个 <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> 表，直到收敛。在更新的过程中也能渐渐确定出对应的最优策略。</p>
 <p>本章在 <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> 函数的处理上，不再使用查表法，而是使用『<strong>函数近似</strong>』的方法，他和『<strong>查表法</strong>』的区别在于：</p>
 <ol>

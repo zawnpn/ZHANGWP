@@ -100,7 +100,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../../#-" tabindex="1" class="md-skip">
+      <a href="../../../../#-on-policy" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1588,7 +1588,7 @@
                   <a href="https://github.com/zawnpn/ZHANGWP/edit/master/docs/notes/reinforcement-learning/notes/RLAI_10.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="-">强化学习导论（十）- 在线策略的近似控制<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
+                <h1 id="-on-policy">强化学习导论（十）- On-Policy的近似控制<a class="headerlink" href="#-on-policy" title="Permanent link">&para;</a></h1>
 <p>第九章是在讲 prediction 问题，也就是如何对 value function 估值，这一章主要在其基础上关注 control 问题，也就是结合了 policy improvement 和 action select 的问题。</p>
 <h2 id="101-episode-semi-gradient-control">10.1 Episode Semi-gradient Control<a class="headerlink" href="#101-episode-semi-gradient-control" title="Permanent link">&para;</a></h2>
 <p>这一节对 Q 函数进行估计：<span><span class="MathJax_Preview">\hat{q}\approx q_\pi</span><script type="math/tex">\hat{q}\approx q_\pi</script></span> ，同样也是关于权向量 <span><span class="MathJax_Preview">\mathbf{w}</span><script type="math/tex">\mathbf{w}</script></span> 的参数化函数，此时用于训练的样本由前一节的 <span><span class="MathJax_Preview">S_t\mapsto U_t</span><script type="math/tex">S_t\mapsto U_t</script></span> 变为 <span><span class="MathJax_Preview">S_t,A_t\mapsto U_t</span><script type="math/tex">S_t,A_t\mapsto U_t</script></span> 。</p>
