@@ -1,4 +1,4 @@
-# 强化学习导论（十）- 在线策略的近似控制
+# 强化学习导论（十）- On-Policy的近似控制
 
 第九章是在讲 prediction 问题，也就是如何对 value function 估值，这一章主要在其基础上关注 control 问题，也就是结合了 policy improvement 和 action select 的问题。
 
