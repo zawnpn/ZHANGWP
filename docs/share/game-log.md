@@ -2,67 +2,85 @@
 
 ## Game Log
 
-|   状态   |                       名称                       |         Tag          |  平台  |  时间  | 评价  |
-| :------: | :----------------------------------------------: | :------------------: | :----: | :----: | :---: |
-|   白金   |           **DARK SOULS™: REMASTERED**            |        魂系列        |   PC   | 100+ h | ★★★★★ |
-|   白金   |   **DARK SOULS™ II: Scholar of the First Sin**   |        魂系列        |   PC   | 150+ h | ★★★★☆ |
-|   白金   |               **DARK SOULS™ III**                |        魂系列        |   PC   | 300+ h | ★★★★★ |
-|   白金   |         **Bloodborne™ The Old Hunters**          |   动作 / RPG / 魂    |  PS4   | 100+ h | ★★★★★ |
-|   白金   |          **SEKIRO: SHADOWS DIE TWICE**           |   动作 / RPG / 魂    |  PS4   | 100+ h | ★★★★☆ |
-|   通关   |           **The Witcher 3: Wild Hunt**           |     剧情 / 开放      |   PC   | 120+ h | ★★★★★ |
-|   在玩   |   **The Legend of Zelda: Breath of the Wild**    |     剧情 / 开放      |   NS   | 30+ h  | ★★★★★ |
-|   在玩   |             **Super Mario Odyssey**              |     解谜 / 冒险      |   NS   | 20+ h  | ★★★★★ |
-|   白金   |                  **God of War**                  |     剧情 / 动作      |  PS4   | 60+ h  | ★★★★☆ |
-|   在玩   |              **Grand Theft Auto V**              |     剧情 / 开放      |   PC   | 10+ h  | ★★★★  |
-|   通关   |            **Red Dead Redemption 2**             |     剧情 / 开放      |  PS4   | 100+ h | ★★★★☆ |
-|  偶尔玩  |            **MONSTER HUNTER: WORLD**             |     动作 / 共斗      |   PC   | 200+ h | ★★★☆  |
-|   在玩   |              **Monster Hunter XX**               |     动作 / 共斗      |   NS   | 100+ h | ★★★★☆ |
-|   白金   |                  **Persona 5**                   |    JRPG / 回合制     |  PS4   | 150+ h | ★★★★★ |
-|   白金   |          **Ys VIII: Lacrimosa of DANA**          |     JRPG / 动作      |  PS4   | 80+ h  | ★★★★☆ |
-|   通关   |                **NieR:Automata™**                |     剧情 / 音乐      |   PC   | 50+ h  | ★★★★  |
-|   在玩   |              **FINAL FANTASY VII**               |         剧情         |   PC   | 20+ h  | ★★★★  |
-|   通关   |       **FINAL FANTASY X/X-2 HD Remaster**        |         剧情         |   PC   |  30 h  | ★★★★  |
-|   通关   |               **FINAL FANTASY XV**               |         剧情         |   PC   | 50+ h  | ★★★☆  |
-|   通关   |          **The Last of Us™ Remastered**          |     剧情 / 潜入      |  PS4   |  20 h  | ★★★★☆ |
-|   通关   |         **UNCHARTED 4: A Thief's End™**          |  冒险 / 剧情 / 解谜  |  PS4   |  20 h  | ★★★★☆ |
-|   通关   |                  **Fallout 4**                   |  剧情 / 开放 / 探索  |   PC   | 60+ h  | ★★★★  |
-|   通关   |      **METAL GEAR SOLID V: GROUND ZEROES**       |     潜入 / 剧情      |   PC   |  10 h  | ★★★★  |
-|   在玩   |     **METAL GEAR SOLID V: THE PHANTOM PAIN**     |     潜入 / 剧情      |   PC   | 10+ h  | ★★★★☆ |
-|   在玩   |                   **CELESTE**                    |     解谜 / 动作      |   NS   | 30+ h  | ★★★★☆ |
-| 主线通关 |            **Nioh: Complete Edition**            |    动作 / 魂-like    |   PC   | 70+ h  |  ★★☆  |
-| 主线通关 |           **Assassin's Creed Origins**           |  育碧式开放 / 无聊   |   PC   | 30+ h  |  ★★☆  |
-|   通关   |           **Divinity: Original Sin 2**           |     CRPG / 魔幻      |   PC   | 100 h  | ★★★★  |
-|   通关   |          **Kingdom Come: Deliverance**           | 剧情 / 中世纪 / 开放 |   PC   | 75+ h  | ★★★☆  |
-|   在玩   |           **Rise of the Tomb Raider**            |     冒险 / 解谜      |   PC   | <10 h  | ★★★☆  |
-|   在玩   |                   **HITMAN™**                    |     冒险 / 解谜      |  PS4   | 10+ h  | ★★★★  |
-|   在玩   |            **Detroit: Become Human™**            |         剧情         |  PS4   | 10+ h  | ★★★☆  |
-|   在玩   |              **Tales of Berseria**               |     动作 / 剧情      |   PC   | <10 h  | ★★★☆  |
-|   在玩   |                 **STEINS;GATE**                  |     文字 / 科幻      |   PC   | 10+ h  | ★★★★  |
-|   白金   |                **STEINS;GATE 0**                 |     文字 / 科幻      |   PC   | 50+ h  | ★★★★☆ |
-|   在玩   |       **PSYCHO-PASS: Mandatory Happiness**       |     文字 / 科幻      |   PC   | <10 h  | ★★★☆  |
-|   通关   |                    **ISLAND**                    |     文字 / 科幻      |   PC   |  30h   | ★★★☆  |
-|   通关   |       **Ni no Kuni™ II: Revenant Kingdom**       |   JRPG / 低龄剧情    |   PC   |  50 h  |  ★★★  |
-|   通关   |                   **Yakuza 0**                   |     热血 / 剧情      |   PC   | 40+ h  | ★★★★  |
-|   通关   |                **Yakuza Kiwami**                 |     热血 / 剧情      |  PS4   | 30+ h  | ★★★★  |
-|   在玩   |           **GOD EATER 2: Rage Burst**            |  JRPG / 动作 / 共斗  |  PS4   | 10+ h  | ★★★☆  |
-|   在玩   |           **Ori and the Blind Forest**           |     横版 / 手残      |   PC   | <10 h  | ★★★★  |
-|   在玩   |              **Salt and Sanctuary**              |  横版 / 地牢 / 类魂  |   PC   | <10 h  | ★★★☆  |
-|   通关   |       **Danganronpa: Trigger Happy Havoc**       |     解谜 / 剧情      |   PC   | 30+ h  | ★★★★☆ |
-|   通关   |        **Danganronpa 2: Goodbye Despair**        |     解谜 / 剧情      |   PC   | 40+ h  | ★★★★☆ |
-|   在玩   | **Danganronpa 3: The End of Kibougamine Gakuen** |     解谜 / 剧情      |  PS4   | 20+ h  | ★★★☆  |
-|   在玩   |  **Call of Duty®: Modern Warfare® Remastered**   |     射击 / 剧情      |  PS4   |  10 h  | ★★★★  |
-|   在玩   |                 **Dying Light**                  |     跑酷 / 生存      |  PS4   |  10 h  | ★★★★  |
-|   在玩   |              **Gran Turismo Sport**              |         赛车         |  PS4   | 20+ h  | ★★★☆  |
-| 暂时不玩 |     **Sword Art Online: Hollow Realization**     |  粉丝向 / 伪 MMORPG  |   PC   | <10 h  |  ★★☆  |
-|  偶尔玩  |                  **For Honor**                   |  联机对战 / 打击感   | PC&PS4 | 30+ h  | ★★★☆  |
-|  偶尔玩  |        **Tom Clancy's Rainbow Six Siege**        |         射击         | PC&PS4 | 500+ h | ★★★☆  |
-|   在玩   |                    **Steep**                     |     休闲 / 滑雪      | PC&PS4 | <10 h  |  ★★★  |
-| 暂时不玩 |          **Sid Meier's Civilization V**          |   回合策略 / 巨肝    |   PC   | 100+ h | ★★★☆  |
-|   通关   |              **The Evil Within 2**               |     恐怖 / 剧情      |   PC   | 30+ h  | ★★★★  |
-|   在玩   |                **Sniper Elite 4**                |     潜行 / 暗杀      |   PC   | 10+ h  |  ★★★  |
-|   通关   |      **Lucy -The Eternity She Wished For-**      |         Gal          |   PC   | 10+ h  | ★★★☆  |
-|   在玩   |       **Tayutama 2 -you're the only one-**       |         Gal          |   PC   | <10 h  |  ★★★  |
-|   通关   |             **Gaokao.Love.100Days**              |         Gal          |   NS   | 10+ h  |  ★★★  |
+| 状态 |                       名称                       |         Tag          |  平台  |  时间  | 评价  |
+| :--: | :----------------------------------------------: | :------------------: | :----: | :----: | :---: |
+| 白金 |           **DARK SOULS™: REMASTERED**            |        魂系列        |   PC   | 100+ h | ★★★★★ |
+| 白金 |   **DARK SOULS™ II: Scholar of the First Sin**   |        魂系列        |   PC   | 150+ h | ★★★★☆ |
+| 白金 |               **DARK SOULS™ III**                |        魂系列        |   PC   | 300+ h | ★★★★★ |
+| 白金 |         **Bloodborne™ The Old Hunters**          |   动作 / RPG / 魂    |  PS4   | 100+ h | ★★★★★ |
+| 白金 |          **SEKIRO: SHADOWS DIE TWICE**           |   动作 / RPG / 魂    |  PS4   | 100+ h | ★★★★☆ |
+| 通关 |            **Nioh: Complete Edition**            |    动作 / 魂-like    |   PC   | 70+ h  |  ★★☆  |
+| 通关 |           **The Witcher 3: Wild Hunt**           |     剧情 / 开放      |   PC   | 120+ h | ★★★★★ |
+| 白金 |                  **God of War**                  |     剧情 / 动作      |  PS4   | 60+ h  | ★★★★☆ |
+| 在玩 |              **Grand Theft Auto V**              |     剧情 / 开放      |   PC   | 10+ h  | ★★★★  |
+| 通关 |            **Red Dead Redemption 2**             |     剧情 / 开放      |  PS4   | 100+ h | ★★★★☆ |
+| 在玩 |   **The Legend of Zelda: Breath of the Wild**    |     剧情 / 开放      |   NS   | 30+ h  | ★★★★☆ |
+| 在玩 |             **Super Mario Odyssey**              |     解谜 / 冒险      |   NS   | 20+ h  | ★★★★☆ |
+| 在玩 |            **MONSTER HUNTER: WORLD**             |     动作 / 共斗      |   PC   | 200+ h | ★★★☆  |
+| 在玩 |              **Monster Hunter XX**               |     动作 / 共斗      |   NS   | 100+ h | ★★★★☆ |
+| 在玩 |           **GOD EATER 2: Rage Burst**            |  动作 / 共斗  |  PS4   | 10+ h  | ★★★☆  |
+| 白金 |                  **Persona 5**                   |    JRPG / 回合制     |  PS4   | 150+ h | ★★★★★ |
+| 在玩 |    **PERSONA5 SCRAMBLE THE PHANTOM STRIKERS**    |     JRPG / 无双      |  PS4   |  10 h  | ★★★★  |
+| 在玩 |             **Persona 4 The GOLDEN**             |    JRPG / 回合制     |  PSV   |  30 h  | ★★★★  |
+| 白金 |         **Ys VIII -Lacrimosa of DANA-**          |     JRPG / 动作      |  PS4   | 80+ h  | ★★★★☆ |
+| 在玩 |             **Ys IX -Monstrum NOX-**             |     JRPG / 动作      |  PS4   |  20 h  | ★★★★  |
+| 在玩 |            **Xenoblade Chronicles 2**            |     JRPG / 动作      |   NS   |  20 h  | ★★★★  |
+| 在玩 | **DRAGON QUEST® XI S: Echoes of an Elusive Age** |     JRPG / 动作      |   NS   |  20 h  | ★★★★  |
+| 在玩 |              **Tales of Berseria**               |     JRPG / 动作      |   PC   |  10 h  | ★★★★  |
+| 在玩 |              **Tales of Vesperia**               |     JRPG / 动作      |   NS   |  10 h  | ★★★★  |
+| 通关 |       **Ni no Kuni™ II: Revenant Kingdom**       |   JRPG / 低龄剧情    |   PC   |  50 h  |  ★★★  |
+| 在玩 |     **Sword Art Online: Hollow Realization**     |  JRPG / 粉丝向  |   PC   | <10 h  |  ★★☆  |
+| 通关 |                **NieR:Automata™**                |  剧情 / 动作 / 音乐  |   PC   | 50+ h  | ★★★★  |
+| 通关 |                 **ASTRAL CHAIN**                 |     剧情 / 动作      |   NS   | 30+ h  | ★★★★  |
+| 在玩 |              **FINAL FANTASY VII**               |         剧情 / 回合         |   PC   | 20+ h  | ★★★★  |
+| 通关 |       **FINAL FANTASY X/X-2 HD Remaster**        |         剧情 / 动作         |   PC   |  30 h  | ★★★★  |
+| 通关 |               **FINAL FANTASY XV**               |         剧情 / 动作         |   PC   | 50+ h  | ★★★☆  |
+| 通关 |           **FINAL FANTASY VII REMAKE**           |         剧情 / 动作         |  PS4   |  30 h  | ★★★★  |
+| 白金 |           **13 Sentinels: Aegis Rim**            |         剧情         |  PS4   |  30 h  | ★★★★  |
+| 通关 |              **The Evil Within 2**               |     恐怖 / 剧情      |   PC   | 30+ h  | ★★★★  |
+| 在玩 |               **RESIDENT EVIL 2**                |     恐怖 / 解谜      |  PS4   |  10 h  | ★★★★  |
+| 通关 |          **The Last of Us™ Remastered**          |     剧情 / 潜行      |  PS4   |  20 h  | ★★★★☆ |
+| 在玩 |           **The Last of Us™ Part II**            |     剧情 / 潜行      |  PS4   |  10 h  | ★★★☆  |
+| 通关 |         **UNCHARTED 4: A Thief's End™**          |  冒险 / 剧情 / 解谜  |  PS4   |  20 h  | ★★★★☆ |
+| 通关 |                  **Fallout 4**                   |  剧情 / 开放 / 探索  |   PC   | 60+ h  | ★★★★  |
+| 在玩 |                  **Fallout 76**                  |  剧情 / 开放 / 探索  |  PS4   |  10 h  | ★★★☆  |
+| 通关 |      **METAL GEAR SOLID V: GROUND ZEROES**       |     潜行 / 剧情      |   PC   |  10 h  | ★★★★  |
+| 在玩 |     **METAL GEAR SOLID V: THE PHANTOM PAIN**     |     潜行 / 剧情      |   PC   | 10+ h  | ★★★★☆ |
+| 在玩 |               **DEATH STRANDING**                |     剧情 / 步行      |  PS4   |  10 h  | ★★★☆  |
+| 通关 |           **Divinity: Original Sin 2**           |     CRPG / 魔幻      |   PC   | 100 h  | ★★★★  |
+| 通关 |          **Kingdom Come: Deliverance**           | 剧情 / 中世纪 / 开放 |   PC   | 75+ h  | ★★★☆  |
+| 在玩 |           **Rise of the Tomb Raider**            |     冒险 / 解谜      |   PC   | <10 h  | ★★★☆  |
+| 在玩 |                   **HITMAN™**                    |     潜行 / 解谜      |  PS4   | 10+ h  | ★★★★  |
+| 通关 |                   **Yakuza 0**                   |     热血 / 剧情      |   PC   | 40+ h  | ★★★★  |
+| 通关 |                **Yakuza Kiwami**                 |     热血 / 剧情      |  PS4   | 30+ h  | ★★★★  |
+| 在玩 |          **JUDGE EYES: wills of death**          |     热血 / 剧情      |  PS4   |  10 h  | ★★★★  |
+| 在玩 |                   **CELESTE**                    |     横版 / 解谜 / 动作      |   NS   | 30+ h  | ★★★★☆ |
+| 在玩 |           **Ori and the Blind Forest**           |     横版 / 手残      |   PC   | <10 h  | ★★★★  |
+| 在玩 |              **Salt and Sanctuary**              |  横版 / 地牢 / 类魂  |   PC   | <10 h  | ★★★☆  |
+| 通关 |      **Bloodstained: Ritual of the Night**       |    横版 / 恶魔城     |   NS   |  30 h  | ★★★★  |
+| 在玩 |     **Phoenix Wright: Ace Attorney Trilogy**     |     解谜 / 剧情      |   NS   |  20 h  | ★★★★☆ |
+| 通关 |       **Danganronpa: Trigger Happy Havoc**       |     解谜 / 剧情      |   PC   | 30+ h  | ★★★★☆ |
+| 通关 |        **Danganronpa 2: Goodbye Despair**        |     解谜 / 剧情      |   PC   | 40+ h  | ★★★★☆ |
+| 通关 | **Danganronpa 3: The End of Kibougamine Gakuen** |     解谜 / 剧情      |  PS4   |  40 h  | ★★★★  |
+| 在玩 |          **Fire Emblem: Three Houses**           |     战旗 / 剧情      |   NS   |  10 h  | ★★★★  |
+| 在玩 |  **Call of Duty®: Modern Warfare® Remastered**   |     射击 / 剧情      |  PS4   |  10 h  | ★★★★  |
+| 在玩 |                **Sniper Elite 4**                |     潜行 / 射击      |   PC   | 10+ h  |  ★★★  |
+| 在玩 |                 **Dying Light**                  |     跑酷 / 生存      |  PS4   |  10 h  | ★★★★  |
+| 在玩 |              **Gran Turismo Sport**              |         赛车         |  PS4   | 20+ h  | ★★★☆  |
+| 通关 |           **Assassin's Creed Origins**           |  育碧式开放 / 无聊   |   PC   | 30+ h  |  ★★☆  |
+| 在玩 |                  **For Honor**                   |  联机对战 / 打击感   | PC&PS4 | 30+ h  | ★★★☆  |
+| 在玩 |        **Tom Clancy's Rainbow Six Siege**        |         射击         | PC&PS4 | 800+ h | ★★★☆  |
+| 在玩 |                    **Steep**                     |     休闲 / 滑雪      | PC&PS4 | <10 h  |  ★★★  |
+| 在玩 |          **Sid Meier's Civilization V**          |    回合策略 / 肝     |   PC   | 100+ h | ★★★☆  |
+| 在玩 |            **Detroit: Become Human™**            |         剧情 / 科幻        |  PS4   | 10+ h  | ★★★☆  |
+| 在玩 |                 **STEINS;GATE**                  |     文字 / 科幻      |   PC   | 10+ h  | ★★★★  |
+| 白金 |                **STEINS;GATE 0**                 |     文字 / 科幻      |   PC   | 50+ h  | ★★★★☆ |
+| 在玩 |       **PSYCHO-PASS: Mandatory Happiness**       |     文字 / 科幻      |   PC   | <10 h  | ★★★☆  |
+| 通关 |                    **ISLAND**                    |     文字 / 科幻      |   PC   |  30h   | ★★★☆  |
+| 通关 |      **Lucy -The Eternity She Wished For-**      |         Gal          |   PC   | 10+ h  | ★★★☆  |
+| 在玩 |       **Tayutama 2 -you're the only one-**       |         Gal          |   PC   | <10 h  |  ★★★  |
+| 通关 |             **Gaokao.Love.100Days**              |         Gal          |   NS   | 10+ h  |  ★★★  |
+| 在玩 | **Maitetsu** | Gal | PC | 10 h | ★★★ |
 
 ## Comments
 
