@@ -3,7 +3,7 @@
 ## Intro
 
 - M.Sc. Student, [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China
-- Internship, [Tencent AI Lab](https://ai.tencent.com/ailab/), Shenzhen, China
+- Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/), Shenzhen, China
 - Email: zawnpn@gmail.com, zhangwp19@mails.tsinghua.edu.cn
 
 ## Biography

@@ -90,35 +90,48 @@ nav:
 theme:
   name: 'material'
   font: false
-  language: 'en'
+  language: en
   palette:
-    primary: 'white'
-    accent: 'light blue'
+    # scheme: default
+    primary: blue grey
+    # accent: light blue
   include_search_page: false
   search_index_only: true
-  feature:
-    tabs: true
+  features:
+    - tabs
+  icon:
+    logo: fontawesome/solid/terminal
+  favicon: assets/images/favicon.svg
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ja
+  - minify:
+      minify_html: true
+  - git-revision-date-localized
 
 extra:
-  search:
-    language: 'jp'
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github
       link: 'https://github.com/zawnpn'
-    - type: 'twitter'
+    - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/zawnpn'
-    - type: 'trophy'
+    - icon: fontawesome/brands/playstation
       link: 'https://psnprofiles.com/zawnpn'
-    - type: 'steam'
+    - icon: fontawesome/brands/steam
       link: 'https://steamcommunity.com/id/zawnpn/'
-    - type: 'globe'
+    - icon: fontawesome/brands/zhihu
       link: 'https://www.zhihu.com/people/zhangwanpeng'
+
 extra_javascript:
-  - assets/extra.js
-  - //cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_SVG
+  # - assets/extra.js
+  - //cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-MML-AM_SVG
 
 markdown_extensions:
   - pymdownx.arithmatex
-  - codehilite
+  - codehilite:
+      guess_lang: false
   - toc:
       permalink: true

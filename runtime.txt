@@ -1,0 +1,2 @@
+# don't specify a patch version, such as 3.7.6
+3.7
