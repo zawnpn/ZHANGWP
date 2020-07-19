@@ -1876,7 +1876,7 @@ V(S_t)\leftarrow V(S_t)+\alpha\left[R_{t+1}+\gamma V(S_{t+1})-V(S_t)\right]
 <li>MC 方法必须等待整个 episode 结束后得到 <span><span class="MathJax_Preview">G_t</span><script type="math/tex">G_t</script></span> 才能做一次更新。</li>
 <li>TD 方法则只需等到这一步结束，利用实时观测到的奖励值 <span><span class="MathJax_Preview">R_{t+1}</span><script type="math/tex">R_{t+1}</script></span> 和现有估计值 <span><span class="MathJax_Preview">V(S_{t+1})</span><script type="math/tex">V(S_{t+1})</script></span> 来进行更新。</li>
 </ul>
-<p><em>这里的 TD(0) 方法指</em><em>单步 TD 方法</em><em>，括号里的 0 改为其他数字后又指其他算法，将会在后面章节介绍。</em></p>
+<p><em>这里的 TD(0) 方法指<strong>单步 TD 方法</strong>，括号里的 0 改为其他数字后又指其他算法，将会在后面章节介绍。</em></p>
 <p>我们在第二章讲过，这样的更新式可以更广义地写作</p>
 <div>
 <div class="MathJax_Preview">

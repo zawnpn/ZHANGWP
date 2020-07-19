@@ -855,60 +855,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notes-for-hexo" title="Notes (for Hexo)" class="md-nav__link">
-    Notes (for Hexo)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cdn" title="阿里云的全站 CDN 加速" class="md-nav__link">
-    阿里云的全站 CDN 加速
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" title="LaTeX 解析不正常" class="md-nav__link">
-    LaTeX 解析不正常
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-1" title="Solution 1" class="md-nav__link">
-    Solution 1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2" title="Solution 2" class="md-nav__link">
-    Solution 2
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_1" title="临时在另一台电脑上如何编辑文章？" class="md-nav__link">
-    临时在另一台电脑上如何编辑文章？
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -1639,60 +1585,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notes-for-hexo" title="Notes (for Hexo)" class="md-nav__link">
-    Notes (for Hexo)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cdn" title="阿里云的全站 CDN 加速" class="md-nav__link">
-    阿里云的全站 CDN 加速
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" title="LaTeX 解析不正常" class="md-nav__link">
-    LaTeX 解析不正常
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-1" title="Solution 1" class="md-nav__link">
-    Solution 1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2" title="Solution 2" class="md-nav__link">
-    Solution 2
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_1" title="临时在另一台电脑上如何编辑文章？" class="md-nav__link">
-    临时在另一台电脑上如何编辑文章？
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -1733,46 +1625,6 @@
 <p>渐渐考虑要输出一波读书笔记，原有的 Timeline 式 Blog 已经不太如我意，故经考虑后改为使用文档管理框架 MkDocs ，采用系统的文档管理方式来构成我的 Blog。</p>
 <h3 id="20198">2019.8<a class="headerlink" href="#20198" title="Permanent link">&para;</a></h3>
 <p>考虑到个人识别度问题，更换域名为 www.zhangwp.com ，原有的域名 oncemath.com 使用 301 重定向至新域名。</p>
-<h2 id="notes-for-hexo">Notes (for Hexo)<a class="headerlink" href="#notes-for-hexo" title="Permanent link">&para;</a></h2>
-<p>博客的折腾过程中，还是遇到了一些坑，这里简单记录一下，以供后期查阅。</p>
-<h3 id="cdn">阿里云的全站 CDN 加速<a class="headerlink" href="#cdn" title="Permanent link">&para;</a></h3>
-<p>因为自己阿里云里面还有些钱，域名当初也辛辛苦苦搞过备案，于是打算用阿里云的 CDN 来加速一下 Github Pages ，虽然效果也不一定好，但总能有点心理安慰。</p>
-<p>首先，要想用上阿里云的 CDN 你自己得绑个域名在你的 Github Pages 上，而且还得是备案域名！</p>
-<p>然后就得去阿里云的 CDN 控制台操作一波。</p>
-<ul>
-<li>首先在 <code>域名管理</code> 中添加上自己的域名，并按要求做好域名解析（建议海外线路仍直连，国内才解析为 CDN 的域名）。</li>
-<li><code>基本配置</code> 中，源站域名填自己的 <code>xxx.github.io</code>，端口根据有无 HTTPS 需求来选择</li>
-<li>如果有 SSL 证书（没有就在阿里云申请一个免费的，还不错），且打算做 HTTPS ，则进入 <code>HTTPS 配置</code> ，添加你的证书信息。下方的 <code>强制跳转</code> 选择 <code>HTTP -&gt; HTTPS</code> ，HTTP/2 可以考虑开启</li>
-<li>其他的一些配置项，根据自己的需求随便调整</li>
-</ul>
-<p>之后等一小会儿，CDN 差不多就能用啦。</p>
-<h3 id="latex">LaTeX 解析不正常<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h3>
-<p>原因在于 markdown 的渲染器把 <code>\\</code> 这样的 command 转义了，变成一个斜杠，所以公式全乱了。</p>
-<h4 id="solution-1">Solution 1<a class="headerlink" href="#solution-1" title="Permanent link">&para;</a></h4>
-<p>（不推荐）自己把文章中的相关命令提前转义，比如 <code>\\</code> 全替换为 <code>\\\\</code> ，这样出来的东西就是正常的。</p>
-<p>但是这样缺点就不言而喻了，麻烦、容易出错、迁移性差。</p>
-<h4 id="solution-2">Solution 2<a class="headerlink" href="#solution-2" title="Permanent link">&para;</a></h4>
-<p>放弃自带的 renderer ，使用另一款更好的 renderer : hexo-renderer-pandoc （需要电脑中安装好 <a href="https://github.com/jgm/pandoc/releases">Pandoc</a> ）</p>
-<p>步骤：</p>
-<div class="codehilite"><pre><span></span>npm uninstall hexo-renderer-marked --save
-npm install hexo-renderer-pandoc --save
-</pre></div>
-
-
-<p>注意，如果使用这个 Pandoc renderer，那么书写 Markdown 时候需要遵循 <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc 对 Markdown 的规定</a>。</p>
-<h3 id="_1">临时在另一台电脑上如何编辑文章？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>默认 deploy 之后，自己 Github 上的博客仓库中是生成好的静态内容，而我们真正需要用 git 好好管理的是这些宝贵的配置文件以及文章的 markdown 源文件，只要这些好好地托管在 Github 上，我们就能随时随地方便地写文章了。至于仓库的管理，我们就用好那个托管网站文件的仓库就可以了。</p>
-<p>步骤：</p>
-<ol>
-<li>新建名为 <code>xxx.github.io</code> 的 Repo （随便起名，也可沿用你之前自动 depoly 上去的那个 Repo）</li>
-<li>为这个 Repo 添加分支 <code>hexo</code> （随便起名字），并设为默认分支</li>
-<li>将相应源文件做好备份，并迁移至 hexo 分支</li>
-<li>注意 <code>_config.yml</code> 中的 deploy 参数，分支仍应为 master，因为仍是要往 master 分支上传生成的内容</li>
-<li>执行 <code>hexo g -d</code> ，更新你的博客</li>
-<li>执行 <code>git add</code>, <code>git commit</code>, <code>git push</code> 等操作，更新你的 Github 仓库（注意，如果你的一些主题、模块是 git clone 下来的，最好这样添加：<code>git add themes/xxx/</code> ，要有末尾这么一个斜杠，否则会当作 submodule ，不利于管理你的一些自定义修改）</li>
-</ol>
-<p>这样，在另一台电脑上，你可以 clone 下来，只要装有 hexo ，就能很快地同步部署上去。</p>
-<p>而日常写文章，只需重复 4、5 步骤即可。</p>
                 
                   
                 
