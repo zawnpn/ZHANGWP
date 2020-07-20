@@ -89,18 +89,22 @@ nav:
 
 theme:
   name: 'material'
-  font: false
+  font: 
+    text: Noto Sans SC
+    code: Fira Code
   language: en
   palette:
-    # scheme: default
-    primary: blue grey
-    # accent: light blue
+    scheme: default # slate
+    primary: white
+    accent: light blue
   include_search_page: false
   search_index_only: true
   features:
     - tabs
+    # - instant # !cause bug on Mathjax
   icon:
     logo: fontawesome/solid/terminal
+    repo: fontawesome/solid/code-branch
   favicon: assets/images/favicon.svg
 
 plugins:
