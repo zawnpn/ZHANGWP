@@ -139,3 +139,7 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+google_analytics:
+  - UA-173056794-1
+  - auto
