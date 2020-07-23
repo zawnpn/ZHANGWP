@@ -122,12 +122,18 @@ extra:
       link: 'https://github.com/zawnpn'
     - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/zawnpn'
+    - icon: fontawesome/brands/linkedin
+      link: 'https://www.linkedin.com/in/zawnpn/'
+    - icon: fontawesome/brands/zhihu
+      link: 'https://www.zhihu.com/people/zhangwanpeng'
     - icon: fontawesome/brands/playstation
       link: 'https://psnprofiles.com/zawnpn'
     - icon: fontawesome/brands/steam
       link: 'https://steamcommunity.com/id/zawnpn/'
-    - icon: fontawesome/brands/zhihu
-      link: 'https://www.zhihu.com/people/zhangwanpeng'
+    - icon: fontawesome/regular/play-circle
+      link: 'https://space.bilibili.com/38332230'
+    - icon: fontawesome/regular/closed-captioning
+      link: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en'
 
 extra_javascript:
   # - assets/extra.js
@@ -140,6 +146,6 @@ markdown_extensions:
   - toc:
       permalink: true
 
-google_analytics:
-  - UA-173056794-1
-  - auto
+# google_analytics:
+#   - UA-173056794-1
+#   - auto
