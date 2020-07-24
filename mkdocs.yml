@@ -130,9 +130,9 @@ extra:
       link: 'https://psnprofiles.com/zawnpn'
     - icon: fontawesome/brands/steam
       link: 'https://steamcommunity.com/id/zawnpn/'
-    - icon: fontawesome/regular/play-circle
+    - icon: fontawesome/solid/play-circle
       link: 'https://space.bilibili.com/38332230'
-    - icon: fontawesome/regular/closed-captioning
+    - icon: fontawesome/solid/closed-captioning
       link: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en'
 
 extra_javascript:
