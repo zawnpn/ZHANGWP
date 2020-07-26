@@ -37,27 +37,25 @@ nav:
         - Chapter 11: notes/book-reading/RLAI/RLAI_11.md
         - Chapter 12: notes/book-reading/RLAI/RLAI_12.md
         - Chapter 13: notes/book-reading/RLAI/RLAI_13.md
-        
-  - Tips:
-    - Tips: tips/README.md
-    - To Do: tips/to-do.md
-    - Python: tips/python.md
-    - Data Processing: tips/data-processing.md
-    - Git: tips/git.md
-    - Linux: tips/linux.md
-    - Windows: tips/win.md
-  
+
+  - Projects:
+    - Index: projects/README.md
+    - NKU:
+      - NKU-EAMIS工具: projects/nku-eamis.md
+      - NKU-SMS-RSS: projects/nku-sms-rss.md
+      - NKU-EAMIS_MiniApp(南开大学教务助手小程序): projects/eamis-miniapp.md
+      - NKU-EAMIS for iOS(Workflow): projects/eamis-workflow.md
+    - Game:
+      - Steam市场比价爬虫: projects/steam-market-price-bot.md
+
   - Share:
     - Index: share/README.md
-    - 博客历史: share/blog-history.md
-    - Game-Log: share/game-log.md
-    - NKU-Toolkit:
-      - NKU-EAMIS工具: share/nku-eamis.md
-      - NKU-SMS-RSS: share/nku-sms-rss.md
-      - NKU-EAMIS_MiniApp(南开大学教务助手小程序): share/eamis-miniapp.md
-      - NKU-EAMIS for iOS(Workflow): share/eamis-workflow.md
-    - Steam-Toolkit:
-      - Steam市场比价爬虫: share/steam-market-price-bot.md
+    - Diary:
+      - 鹏程万里: share/roc-fly.md
+      - 博客历史: share/blog-history.md
+      - Game-Log: share/game-log.md
+      - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
+      - Student Developer Pack - GitHub Education: share/github-student-pack.md
     - 数学建模:
       - 2017美赛参赛整理(Problem D): share/2017-mcm-icm.md
       - 2016数学建模国赛: share/2016-guosai.md
@@ -88,11 +86,16 @@ nav:
         - 2017-2018第一学期数理方程期末考试: share/exam/PDE-final.md
         - 2016-2017第一学期常微分方程期末考试: share/exam/ODE-final.md
         - 2016-2017第一学期常微分方程期中考试: share/exam/ODE-middle.md
-    - Other:
-      - Student Developer Pack - GitHub Education: share/github-student-pack.md
-      - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
-      - 鹏程万里: share/roc-fly.md
-  
+
+  - Tips:
+    - Index: tips/README.md
+    - To Do: tips/to-do.md
+    - Python: tips/python.md
+    - Data Processing: tips/data-processing.md
+    - Git: tips/git.md
+    - Linux: tips/linux.md
+    - Windows: tips/win.md
+
   - Statements:
     - Statements: statements.md
 

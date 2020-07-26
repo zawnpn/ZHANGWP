@@ -1,10 +1,3 @@
----
-title: 2016数学建模国赛
-date: 2016-09-25 13:50
-tags: Math Model
-categories: math
----
-
 国赛已经结束一段时间了，开学那会儿实在太忙，加上写了论文之后，一想到码字简直想吐，所以也就没有立马把成果总结记录在博客里。今天得闲，故整理整理，记录于文中。
 
 ## 经历
@@ -14,8 +7,6 @@ categories: math
 第一天早上，提前半小时题目就已流出，A题是一道涉及物理知识的关于锚链的一道题，题目冗长，我们三人都表示不太愿意，也没太大能力来做好这种题，而B题则是分析关于开放小区对周围交通的影响，恰巧我们队之前在深圳杯时也正是做的分析交通的类似题目，有过相关经验，所以根本没有经过太多的讨论就确定下来做B题。
 
 下面即是B题的题目内容。
-
-<!-- more -->
 
 > 2016年2月21日，国务院发布《关于进一步加强城市规划建设管理工作的若干意见》，其中第十六条关于推广街区制，原则上不再建设封闭住宅小区，已建成的住宅小区和单位大院要逐步开放等意见，引起了广泛的关注和讨论。
 >
@@ -94,7 +85,7 @@ categories: math
 
 其中，在确保能够在后续操作中消除偏差的前提下，根据拓扑学将小区类型抽象为四个类型，具体的分类统计表格如下(不同方向的同结构小区按一类计)：
 
-<img src="/images/math/2016-guosai/biao1.png" width="360" alt="biao1.png" />
+![](imgs/2016-guosai/biao1.png)
 
 结合统计分类数据，可以采用蒙特卡罗方法(Monte Carlo method)，首先利用随机数方法，产生一组随机个数的，具有随机结构、分布在随机位置的小区，进而用统计方法把开放小区模型下的交通流数字特征估计出来，从而得到最终的数值解。
 
@@ -132,11 +123,11 @@ categories: math
 
 具体地，在不考虑方向的条件下，可以将开放小区抽象为下表中的四种样式。
 
-<img src="/images/math/2016-guosai/biao2.png" width="360" alt="biao2.png" />
+![](imgs/2016-guosai/biao2.png)
 
 下图是一个随机生成的$3\times 3$小区群示例图
 
-<img src="/images/math/2016-guosai/grid.png" width="360" alt="grid.png" />
+![](imgs/2016-guosai/grid.png)
 
 #### 小区群模型的代数抽象化
 
@@ -188,7 +179,7 @@ categories: math
 
 转化为邻接矩阵$J=$
 
-![biao3.png](/images/math/2016-guosai/biao3.png)
+![biao3.png](imgs/2016-guosai/biao3.png)
 
 其中，映射$h(i,j)$确保格点矩阵中的每个点与邻接矩阵中的每个横纵坐标$J[m]$一一对应。
 
@@ -218,7 +209,7 @@ categories: math
 
 通过多次的仿真车流模拟，可以形成带有道路路径使用数的邻接矩阵$F=$
 
-![biao4.png](/images/math/2016-guosai/biao4.png)
+![biao4.png](imgs/2016-guosai/biao4.png)
 
 利用上述矩阵$F$，可以计算出需要求出的道路覆盖使用率指标
 
@@ -252,7 +243,7 @@ $$I=\sum_{i=0}^{2N+1}\sum_{j=0}^{2N+1}T_{i,j}$$
 
 同时利用Mathematica，将软件的模拟结果进行了函数曲线拟合，得到如下图的结果
 
-<img src="/images/math/2016-guosai/nihe.png" width="500" alt="nihe.png" />
+![](imgs/2016-guosai/nihe.png)
 
 由 曲线图看到，当车辆数不足5000时，拥堵程度随着车辆数的增加而增加,且该增加速度是逐渐放缓。
 
@@ -276,7 +267,7 @@ $$I=\sum_{i=0}^{2N+1}\sum_{j=0}^{2N+1}T_{i,j}$$
 
 由于本模型是集中对开放小区群进行研究，所以选取的区块是开放小区较集中的区域。
 
-<img src="/images/math/2016-guosai/biao11.png" width="500" alt="biao11.png" />
+![](imgs/2016-guosai/biao11.png)
 
 在量化为数量矩阵时，根据建立好的模型公式，随机数阈值为$R_{threshold}=\dfrac{S_{commu}}{S_{group}}$，代入统计数据，确定随机数阈值为$R_{threshold}=0.678$.
 
@@ -294,17 +285,17 @@ $$I=\sum_{i=0}^{2N+1}\sum_{j=0}^{2N+1}T_{i,j}$$
 
 下表是一个邻接矩阵的示例表：
 
-<img src="/images/math/2016-guosai/biao5.png" width="400" alt="biao5.png" />
+![](imgs/2016-guosai/biao5.png)
 
 在一个开放小区群中，每个小区的具体结构则由随机数$R_{struct}$确定。根据前面的统计结果可以确定$R_{struct}$的判断阈值区间，得到如下所示的小区类型判断阈值区间表：
 
-<img src="/images/math/2016-guosai/biao6.png" width="400" alt="biao6.png" />
+![](imgs/2016-guosai/biao6.png)
 
 需要指出的是，在最开始的模型假设中，假定所有汽车都会行驶最短路径，不会重复通行同一路径。
 
 而在后续的车流仿真模型中，前面已指出，由于对称性，只需模拟从左上角到右下角的车流，因此在每个节点处车只会选择向右或向下行驶，所以下面两种类型的小区结构在计算机模拟运算时没有实际价值，所以不予考虑。
 
-![2_5.png](/images/math/2016-guosai/2_5.png)    ![2_5.png](/images/math/2016-guosai/2_5.png)
+![2_5.png](imgs/2016-guosai/2_5.png)    ![2_5.png](imgs/2016-guosai/2_5.png)
 
 结合上述的判断阈值区间表，可以在已生成的$R_{judge}$随机数满足$R_{judge}\in [0,0.678)$的条件下，通过生成另一个随机数$R_{struct}$代入该表以确定小区结构，然后通过结构构造函数，将对应的权重值填入代表路径结构的邻接矩阵的元素中。
 
@@ -314,7 +305,7 @@ $$I=\sum_{i=0}^{2N+1}\sum_{j=0}^{2N+1}T_{i,j}$$
 
 将自动车流的初始位置设为$(0,0)$，由前提假设，车流默认选择最短路径，行驶过程中不可倒退，因此在每个结点只有向右或向下的通行选择。通过访问邻接矩阵
 
-<img src="/images/math/2016-guosai/biao7.png" width="600" alt="biao7.png" />
+![](imgs/2016-guosai/biao7.png)
 
 可以读出其可通行路径的权重值，在本模拟过程中，已到达点$(i,j)$的车具有可通行选项$(i+1,j)$和$(i,j+1)$.计算出选择概率阈值$P_{i,j\rightarrow i+1,j}=\dfrac{w_{i,j\rightarrow i+1,j}}{w_{i,j\rightarrow i+1,j}+w_{i,j\rightarrow i,j+1}}$和$P_{i,j\rightarrow i,j+1}=\dfrac{w_{i,j\rightarrow i,j+1}}{w_{i,j\rightarrow i+1,j}+w_{i,j\rightarrow i,j+1}}$，同时给出一个范围在$[0,1)$内的随机数$t$，若$t \in [0,P_{i,j\rightarrow i+1,j})$，则该车从点$(i,j)$向右通行到点$(i+1,j)$，若$t \in [P_{i,j\rightarrow i+1,j},P_{i,j\rightarrow i+1,j}+P_{i,j\rightarrow i,j+1})$，则该车向下通行到$(i,j+1)$.
 
@@ -353,7 +344,7 @@ $$Route=
 
 下面是在随机开放所有类型小区情况下，道路网络覆盖使用率指标和道路节点拥堵指标的统计结果：
 
-<img src="/images/math/2016-guosai/biao8.png" width="500" alt="biao8.png" />
+![](imgs/2016-guosai/biao8.png)
 
 在统计结果中，道路网络覆盖使用率指标下的平均值0.895332是指在该结构下，小区群的开放能够让周围的主干道路使用率降为原来的89.5332%，这个值越低，则能说明该结构的开放小区群能够更大程度地减弱周围道路的运行压力，增强主干道路的通车能力。
 
@@ -367,11 +358,11 @@ $$Route=
 
 下面是在分别开放不同类型结构小区的情况下，道路网络覆盖使用率指标的统计结果：
 
-<img src="/images/math/2016-guosai/biao9.png" width="600" alt="biao9.png" />
+![](imgs/2016-guosai/biao9.png)
 
 下面是在分别开放不同类型结构小区的情况下，道路节点拥堵指标的统计结果：
 
-<img src="/images/math/2016-guosai/biao10.png" width="600" alt="biao10.png" />
+![](imgs/2016-guosai/biao10.png)
 
 #### 基于分析结果和统计计算结果的模型结论
 

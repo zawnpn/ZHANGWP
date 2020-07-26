@@ -1,24 +1,13 @@
----
-title: NKU-EAMIS工具
-date: 2017-07-01 20:01
-tags:
- - python
- - crawler
- - NKU
-categories: projects
----
 
-### 简要介绍
+## 简要介绍
 
 一个针对NKU-EAMIS(NKU Education Affairs Management Information System, 南开大学教学管理信息系统)设计的命令行程序。目前具有查询成绩、课表、考试安排以及选课辅助的功能。有喜欢这种命令行风格的同学可以玩玩试试。
 
 > 使用效果(查询课表和考试安排)如下图：
 >
-> ![nkueamis-demo](/images/projects/nku-eamis/demo.gif)
+> ![nkueamis-demo](imgs/nku-eamis/demo.gif)
 
-<!-- more -->
-
-### 安装和使用
+## 安装和使用
 
 程序已经发布到PyPI上了，所以只需pip就可以方便地安装，还无需考虑依赖问题.
 
@@ -30,11 +19,11 @@ categories: projects
 
 程序会保持更新，若要更新，运行 `pip install nkueamis --upgrade` 即可(必要时加上`--no-cache-dir`参数避免从本地缓存更新).
 
-### TODO
+## TODO
 
  - <s>选课辅助</s>(2017/07/08更新: 已经加入选课功能，仅供测试，谨慎使用)
 
-### 使用方法
+## 使用方法
 
     nkueamis -g <course_category> [-u <username> -p <password>]
     nkueamis -c [-s <semester>]
@@ -45,14 +34,14 @@ categories: projects
     nkueamis -e -s <semester> -u <username> -p <password>
     nkueamis --course-elect
 
-### 参数说明
+## 参数说明
 
     course_category      要查询的课程类型(只能是A,B,C,D,E的组合，不区分大小写)
     semester             要查询的学期参数，必须是`[Year]-[Year]:[Semester]`的格式
     username             教务系统的用户名
     password             教务系统的密码
 
-### 选项说明
+## 选项说明
 
     -g                   grade query
     -c                   course query
@@ -63,7 +52,7 @@ categories: projects
     --course-elect       elect course
     -h, --help           guidance
 
-### 用法举例
+## 用法举例
 
     nkueamis -c    查询课表
     nkueamis -g BCD    查询BCD类的课程成绩(需要按提示输入用户名和密码)
@@ -76,13 +65,13 @@ categories: projects
 
 *注意：在选课系统中，伯苓班的课程分类只有四类(BC为一类)，在本程序的设计逻辑下，BC类被统一归为了C类，为确保程序逻辑正确，伯苓班的同学在查询成绩时，-g参数后不要带上B字符，否则可能无法成功分类。例如查询BCD成绩时只输入CD即可。*
 
-### 更新
+## 更新
 
-#### 2017/07/08
+### 2017/07/08
 
 加入选课辅助功能，仅供测试，请谨慎使用
 
-### 其他
+## 其他
 
 感谢 @谢梓龙 同学在测试和开发上提供的帮助。
 

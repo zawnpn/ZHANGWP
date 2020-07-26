@@ -1,13 +1,3 @@
----
-title: NKU-SMS-RSS
-date: 2016-08-31 00:55
-tags:
- - python
- - crawler
- - NKU
-categories: projects
----
-
 ## RSS？
 
 RSS在Wiki中的定义如下
@@ -17,10 +7,6 @@ RSS在Wiki中的定义如下
 一些网站更新频率低，在讲究快速阅读的信息聚合时代，浏览零散的传统网页并不是最优的获取新闻的解决方案。RSS通过聚合信息使我们能更快速全面地获取新闻。
 
 依托网页上的RSS源，可以借助多种多样的RSS阅读器，非常快速地浏览这些聚合后的新闻，更快速地获取信息。
-
-<img src="/images/projects/nku-sms-rss/smsrss.png" width="300" alt="smsrss.png" /><img src="/images/projects/nku-sms-rss/nkrss.png" width="300" alt="nkrss.png" />
-
-<!-- more -->
 
 ## 介绍
 
@@ -36,11 +22,6 @@ RSS在Wiki中的定义如下
  - 科研动态：[http://sms_rss.oncemath.com/sms-rss/kydt.xml](http://sms_rss.oncemath.com/sms-rss/kydt.xml)
  - 学生工作：[http://sms_rss.oncemath.com/sms-rss/xsgz.xml](http://sms_rss.oncemath.com/sms-rss/xsgz.xml)
  - 公共数学：[http://sms_rss.oncemath.com/sms-rss/ggsx.xml](http://sms_rss.oncemath.com/sms-rss/ggsx.xml)
-
-## “即刻”APP中订阅
-
-如嫌RSS订阅麻烦，可以尝试用“即刻”APP订阅“南开数学新闻订阅”主题(需要扫描下方二维码)，此主题即由上面的RSS地址提供
-![subscribe](/images/projects/nku-sms-rss/Jike_QR.jpg)
 
 ## 邮件订阅
 

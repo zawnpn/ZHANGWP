@@ -1,14 +1,3 @@
----
-title: 基于GPU的快速傅里叶变换并行化加速
-date: 2018-05-31 23:19
-tags:
- - CUDA
- - GPU
- - C++
- - Algorithm
-categories: projects
----
-
 # FFT-GPU-Accel
 
 Fast Fourier Transform Acceleration Algorithm. (Accelerated by CUDA)
@@ -18,8 +7,6 @@ Fast Fourier Transform Acceleration Algorithm. (Accelerated by CUDA)
 基于FFT的蝶形公式，利用GPU的多核心优势，结合蝶形公式算法中同一层级的运算因子互不干扰的特点，对算法进行了并行化优化处理，加速效果十分显著。
 
 在同一测试机器上，速度能达到Matlab(R2017b)的数十倍。
-
-<!-- more -->
 
 ## 核心算法
 
@@ -41,7 +28,7 @@ Fast Fourier Transform Acceleration Algorithm. (Accelerated by CUDA)
 
 利用QT设计了简单的界面，具备一定的实用化功能
 
-> ![screenshot](/images/projects/fft-gpu-accel/screenshot.png)
+> ![screenshot](imgs/fft-gpu-accel/screenshot.png)
 
 
 ### 项目地址

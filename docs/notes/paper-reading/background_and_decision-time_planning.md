@@ -1,6 +1,6 @@
 # Background and Decision-time Planning
 
-最近看了ICML 2020上的一个Tutorial（末尾有链接分享），主题就是Model-based RL，对MBRL的归纳总结非常全面，建议一看。
+最近看了ICML 2020上的一篇Tutorial（末尾有链接分享），主题就是Model-based RL，对MBRL的归纳总结非常全面，建议一看。
 
 刚好最近在考虑model planning的问题，因此把这篇tutorial中的planning部分单独拿出来简要介绍一下。
 
@@ -12,7 +12,13 @@
 
 Planning可以分为**background planning**和**decision-time planning**，前者基于一个初始状态$s_0$和当前策略$\pi_t$来与你的model交互，不断生成next state和next action($s_t\rightarrow \pi(s_t)\rightarrow s_{t+1}\rightarrow\cdots$)来实现rollout，而后者则不考虑策略$\pi$，而是基于action序列$\{a_0, a_1,\ldots ,a_H\}$持续与model交互($s_t\rightarrow a_t\rightarrow s_{t+1}\rightarrow\cdots$)来实现rollout。
 
-关于两者的区别，由于background planning的return为$J(\theta) =\mathbb{E}_{s_0}\left[\sum_{t=0}^{H} \gamma^{t} r_{t}\right], a_t=\pi_\theta(s_t)$，能够通过求期望来更全面地考虑不同初始状态$s_0$，所以其特点是**『学习在任意情况下如何更好地表现』**，通用性更好
+关于两者的区别，由于background planning的return为
+
+$$
+J(\theta) =\mathbb{E}_{s_0}\left[\sum_{t=0}^{H} \gamma^{t} r_{t}\right], a_t=\pi_\theta(s_t)
+$$
+
+可以看出，background planning能够通过求期望来更全面地考虑不同初始状态$s_0$，所以其特点是**『学习在任意情况下如何更好地表现』**，通用性更好
 
 ![](imgs/background_and_decision-time_planning/image-20200723191711684.png)
 
@@ -80,7 +86,7 @@ Decision-time planning分为离散型和连续型两种场景，前者的代表�
 
 ![](imgs/background_and_decision-time_planning/image-20200723193444994.png)
 
-在collocation算法中，通过增加$s_{t+1}$与$f(s_t,a)$的范数距离限制，确保后续状态不再受前面状态&动作影响，从而使得该问题得以改善
+在collocation算法中，通过增加$s_{t+1}$与$f(s_t,a_t)$的范数距离限制，确保后续状态不再受前面状态&动作影响，从而使得该问题得以改善
 
 ![](imgs/background_and_decision-time_planning/image-20200723194052146.png)
 
@@ -111,13 +117,17 @@ Model-based方法虽然效率高，但由于存在**model bias**，小的误差�
 *Janner et al (2019). When to Trust Your Model: Model-Based Policy Optimization.*
 
 在MBPO方法中，通过理论分析出了model-based方法的lower bound：
+
 $$
 \eta[\pi] \geq \eta^{\mathrm{branch}}[\pi]-2 r_{\max }\left[\frac{\gamma^{k+1} \epsilon_{\pi}}{(1-\gamma)^{2}}+\frac{\gamma^{k} \epsilon_{\pi}}{(1-\gamma)}+\frac{k}{1-\gamma}\left(\epsilon_{m^{\prime}}\right)\right]
 $$
+
 在该lower bound的控制下，确定出我们可容忍的最长rollout长度：
+
 $$
 k^* = \left[\frac{\gamma^{k+1} \epsilon_{\pi}}{(1-\gamma)^{2}}+\frac{\gamma^{k} \epsilon_{\pi}}{(1-\gamma)}+\frac{k}{1-\gamma}\left(\epsilon_{m^{\prime}}\right)\right]
 $$
+
 在plan时，只要把rollout控制在$k^*$长度内，便能将误差控制在我们可接受的范围内。
 
 ![](imgs/background_and_decision-time_planning/image-20200724110906460.png)

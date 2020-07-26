@@ -1,19 +1,15 @@
 # Share
 
 ## Diary
+
+- [鹏程万里](/share/roc-fly)
 - [博客历史](/share/blog-history)
 - [Game-Log](/share/game-log)
-
-## Projects
-- NKU-Toolkit
-    - [NKU-EAMIS工具](/share/nku-eamis)
-    - [NKU-SMS-RSS](/share/nku-sms-rss)
-    - [NKU-EAMIS_MiniApp(南开大学教务助手小程序)](/share/eamis-miniapp)
-    - [NKU-EAMIS for iOS(Workflow)](/share/eamis-workflow)
-- Steam-Toolkit
-    - [Steam市场比价爬虫](/share/steam-market-price-bot)
+- [保研推免经验分享 - 数学系跨保 CS](/share/my-postgraduate-share)
+- [Student Developer Pack - GitHub Education](/share/github-student-pack)
 
 ## Math
+
 - 数学建模:
     - [2017美赛参赛整理(Problem D)](/share/2017-mcm-icm)
     - [2016数学建模国赛](/share/2016-guosai)
@@ -45,8 +41,3 @@
         - [2017-2018第一学期数理方程期末考试](/share/exam/PDE-final)
         - [2016-2017第一学期常微分方程期末考试](/share/exam/ODE-final)
         - [2016-2017第一学期常微分方程期中考试](/share/exam/ODE-middle)
-
-## Other
-- [Student Developer Pack - GitHub Education](/share/github-student-pack)
-- [保研推免经验分享 - 数学系跨保 CS](/share/my-postgraduate-share)
-- [鹏程万里](/share/roc-fly)

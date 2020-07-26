@@ -1,11 +1,4 @@
----
-title: Student Developer Pack - GitHub Education
-date: 2016-08-19 17:49
-tags: share
-categories: share
----
-
-### 背景
+## 背景
 
 在某天的某个时候，偶然发现了GitHub的Student Pack，简单了解之后，不由得惊叹这些企业好任性好随便，送这么多东西简直乱来啊。
 
@@ -13,40 +6,38 @@ categories: share
 
 首先，点进它的网站，一进去会看到这样的画面：
 
-![stupack.png](/images/share/github-student-pack/stupack.png)
+![stupack.png](imgs/github-student-pack/stupack.png)
 
 嗯，听说要送点东西给Student，难道是送个小小的黄色书包？答案当然是“No”，看看图上的字吧：“The best developer tools,free for students”
 
 再往下面翻，oh my god，一颗赛艇啊！
 
-<!-- more -->
+![pack1.png](imgs/github-student-pack/pack1.png)
 
-![pack1.png](/images/share/github-student-pack/pack1.png)
+![pack2.png](imgs/github-student-pack/pack2.png)
 
-![pack2.png](/images/share/github-student-pack/pack2.png)
+![pack3.png](imgs/github-student-pack/pack3.png)
 
-![pack3.png](/images/share/github-student-pack/pack3.png)
-
-![pack4.png](/images/share/github-student-pack/pack4.png)
+![pack4.png](imgs/github-student-pack/pack4.png)
 
 简单点，直白地讲，如果你是在校的学生，GitHub就会送你一些很有用很值钱很有逼格的一些开发工具的使用优惠。
 
-### 这个Pack有些什么？
+## 这个Pack有些什么？
 
 在这个Student Developer Pack中，我个人认为最有用的就是那个DigitalOcean的50 dollars的优惠码。这可是绝对的真金白银，直接给你送的VPS啊！
 
 通过我的<a href="http://www.digitalocean.com/?refcode=f1a2fc2f316e" target="_blank">邀请链接</a>新注册的话还能直接得到10刀额度，这样加起来可就有60刀了吧，平时也可以多去找一些其他的优惠码。
-![dobill.png](/images/share/github-student-pack/dobill.png)
+![dobill.png](imgs/github-student-pack/dobill.png)
 
 当然我上面说的那60刀必须一年内消费完，按它的5刀/月的最低plan，刚好够。
 
-![dovps.png](/images/share/github-student-pack/dovps.png)
+![dovps.png](imgs/github-student-pack/dovps.png)
 
 至于它能干什么，最不济也可以像我这样部署一个免费的博客了吧，其次你也可以用这台服务器搞搞科学计算啊跑点爬虫啊也是可以的。
 
 至于其他嘛，还可以跑个SS，咳咳，嗯低调。在安装锐速的情况下速度是相当快的，看油管的1080P是绝对没问题的，给个效果图吧：
 
-![youtu.png](/images/share/github-student-pack/youtu.png)
+![youtu.png](imgs/github-student-pack/youtu.png)
 
 最重要的一点还没说，DigitalOcean是有IPV6的，这个就不说太明了。具体的话自己想象一下吧，用IPV6连上你VPS上的SS，然后去上网。IPV6上外网？多少人都梦寐以求的吧，我也不想搞点什么大新闻，就不弄什么教程了。
 
@@ -60,7 +51,7 @@ categories: share
 
 其他的那些玩意儿感觉就要么鸡肋要么太高端了，就我个人而言暂时用不上。
 
-### 如何申请Student Developer Pack？
+## 如何申请Student Developer Pack？
 
 介绍完这些听上去似乎很厉害的东西，是不是也有点急着要去申请了？
 
@@ -68,11 +59,11 @@ categories: share
 
 填邮箱特别关键，根据他的描述，只要是学校的邮箱就行，也就是后缀要有'edu'。然而当我激动地用咱天朝的edu.cn去申请并且洋洋洒洒写了好多的英文，他居然把我给秒拒了。蛤？
 
-![gitreject.png](/images/share/github-student-pack/gitreject.png)
+![gitreject.png](imgs/github-student-pack/gitreject.png)
 
 我以为我哪里没搞对又去写了一次，结果又是相同的Rejected.
 
-![reject&approved.png](/images/share/github-student-pack/reject&approved.png)
+![reject&approved.png](imgs/github-student-pack/reject&approved.png)
 
 去Google了一下，原来是因为咱天朝的学生滥用'edu.cn'邮箱，所以会直接被拒。。。
 
@@ -89,13 +80,13 @@ categories: share
 
 就在两天后，我的邮箱里来了一封这样的邮件：
 
-![approved.png](/images/share/github-student-pack/approved.png)
+![approved.png](imgs/github-student-pack/approved.png)
 
 卧槽激动死了好不好，于是就这样申请成功了。。。
 
 然而，估计是他们看不懂中文吧，我传给他们的证明写明了是15年入学的，还是只给了我两年期限，但总比没有好吧，总之还是很开心的。
 
-### 结语&一点小感受
+## 结语&一点小感受
 
 为什么写这个文章？首先，这不是软广，GitHub也无需我这种网站去宣传，写这个完全是希望大家能好好利用上这么有价值的Pack。
 

@@ -1,18 +1,8 @@
----
-title: 随机多边形转化为椭圆的过程研究
-date: 2016-08-06 00:53
-tags: research
-categories: math
----
-<p align="right">——基于Mathematica软件进行仿真模拟</p>
-
 ## 一、问题背景
 
 ### 1.1 背景来源
 
 在网上看到一篇由 Adam N. Elmachtoub 和 Charles F. Van Loan 合作撰写的论文From Random Polygon to Ellipse: An Eigenanalysis 后，我对这篇文章的结论非常感兴趣。由于原文主要是对问题进行了理论上的证明，而没有对这个过程进行很好的展示，恰巧小学期的Mathematica课程要做个报告作业，于是打算利用Mathematica对这个问题进行具体的仿真模拟研究，使得对这个问题的理解更为透彻。
-
-<!-- more -->
 
 ### 1.2 问题描述
 
@@ -69,7 +59,7 @@ PointList = RandomReal[10, {n, 2}]
 ```python
 Graphics[Polygon[PointList]]
 ```
-![random-polygon.png](/images/math/polygon-to-ellipse/random-polygon.png)
+![random-polygon.png](imgs/polygon-to-ellipse/random-polygon.png)
 
 ### 3.2 绘图函数的构建
 
@@ -108,7 +98,7 @@ iter = NestList[GetCenterList, PointList, loop];
 ```python
 Table[Paint[iter[[i]]], {i, 1, loop, 20}]
 ```
-![multi-ellipse.png](/images/math/polygon-to-ellipse/multi-ellipse.png)
+![multi-ellipse.png](imgs/polygon-to-ellipse/multi-ellipse.png)
 
 从上面的图像可以初步得出下面几点结论：
 
@@ -121,7 +111,7 @@ Table[Paint[iter[[i]]], {i, 1, loop, 20}]
 plotlist = Table[Paint[iter[[i]]], {i, 1, loop}];
 ListAnimate[plotlist]
 ```
-![polygon-to-ellipse.gif](/images/math/polygon-to-ellipse/polygon-to-ellipse.gif)
+![polygon-to-ellipse.gif](imgs/polygon-to-ellipse/polygon-to-ellipse.gif)
 
  - 这个图看上去好厉害的样子，是不是？:)
  - 有强迫症的同学看到后面请一定保持耐心。。。

@@ -1,13 +1,4 @@
----
-title: nku-sms-exams
-date: 2016-02-12 23:43:06
-tags:
- - exam
- - share
-categories: share
----
-
-**南开大学数学学院-试题分享**
+## 南开大学数学学院-试题分享
 
 ### 数学分析
 

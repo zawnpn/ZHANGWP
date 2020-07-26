@@ -1,20 +1,8 @@
----
-title: NKU-EAMIS_MiniApp(南开大学教务助手小程序)
-date: 2018-02-01 23:47
-tags:
- - javascript
- - MiniApp
- - NKU
-categories: projects
----
-
-### 背景
+## 背景
 
 之前用Python写了nku-eamis工具，后来又移植到了服务端，同时根据服务端写了一个workflow脚本。不过在实际使用过程中，总感觉使用体验不是很好，于是利用寒假空闲时间，简单写了一个教务系统的微信小程序。
 
-<!-- more -->
-
-### 介绍
+## 介绍
 
 小程序是由两部分构成，一部分是前端展现在用户眼前的微信小程序，另一部分则是放在服务器的后端代码。之所以这样设计，是不得不去满足小程序的审核要求。
 
@@ -38,27 +26,27 @@ categories: projects
 
 因此，才考虑分离前后端设计，将数据抓取部分放在了我的服务器上，同时为服务器购买了一个HTTPS书，小程序端简化为简单地作POST请求，服务器响应请求后作为中间端去抓取数据再返回给客户端，小程序拿到数据后只需将这些数据填入渲染好的布局即可。
 
-### Demo
+## Demo
 
  - 登录页面
 
-> <img width="320" src="/images/projects/eamis-miniapp/login.jpg"/>
+> ![](imgs/eamis-miniapp/login.jpg)
 
  - 课表页面
 
-> <img width="320" src="/images/projects/eamis-miniapp/table.jpg"/>
+> ![](imgs/eamis-miniapp/table.jpg)
 
  - 此外，还有成绩查询、学分绩计算等功能
 
-### 使用
+## 使用
 
  - 扫描小程序码：
 
-> <img width="240" src="/images/projects/eamis-miniapp/minicode.jpg"/>
+> ![](imgs/eamis-miniapp/minicode.jpg)
 
  - 或者：直接在微信小程序中搜索“南开教务助手”
 
-### 项目地址
+## 项目地址
 
 本项目已开源至GitHub，欢迎探讨交流。
 

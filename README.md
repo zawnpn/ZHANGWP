@@ -18,5 +18,5 @@ My research interests include ***Machine Learning, Reinforcement Learning***.
 
 - Reinforcement Learning
 - Machine Learning
-    - Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia. *Self-Paced Probabilistic Principal Component Analysis for Data with Outliers* **(ICASSP 2020)**.[[PDF]](docs/files/research_papers/sp-ppca.pdf)
+    - Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia. *Self-Paced Probabilistic Principal Component Analysis for Data with Outliers*. **(ICASSP 2020)**[[PDF]](docs/files/research_papers/sp-ppca.pdf)
 

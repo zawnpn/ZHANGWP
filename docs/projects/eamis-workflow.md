@@ -1,14 +1,4 @@
----
-title: NKU-EAMIS for iOS(Workflow)
-date: 2017-09-05 21:35
-tags:
- - workflow
- - iOS
- - NKU
-categories: projects
----
-
-### 背景
+## 背景
 
 之前用Python写了nku-eamis工具，可以在命令行下方便地查询一些教务系统中的信息。考虑到在电脑上使用存在着局限性，所以打算迁移到移动端，使得这个项目拥有一个小工具应有的便携性——随时随地都可以进行查询。
 
@@ -18,9 +8,7 @@ categories: projects
 
 后来想起来手机里一直躺着Workflow这个程序(仅限iOS，免费)，通过它能够编出一些简单的实用程序，出于自用考虑，以及分享给他人使用的可行性(主要是考虑到免费，大家都能下载，不然就用Pythonista来写UI了)，便决定了用Workflow。
 
-<!-- more -->
-
-### 介绍
+## 介绍
 
 本项目分为两部分：
 
@@ -31,18 +19,18 @@ categories: projects
 
 > *下面是一个使用示例：*
 >
-> ![demo](/images/projects/eamis-workflow/demo.gif)
+> ![demo](imgs/eamis-workflow/demo.gif)
 
 目前仅提供成绩、课表、考试安排的查询功能。(考虑到多人使用可能会严重增加服务器负载，所以目前还没有开放选课辅助功能，暂时内测中)
 
-### 使用说明
+## 使用说明
 
 1. App Store中搜索安装Workflow
 2. 浏览器打开 [「Workflow链接页面」](https://raw.githubusercontent.com/zawnpn/NKU-EAMIS_Server/master/Workflow_URL.txt) ，将页面中出现的链接复制并打开(这样做是出于更新程序方面的考虑)
 3. 第2步复制并打开的链接即是Workflow专用的分享链接，进入后点击`GET WORKFLOW`按钮，即会自动跳转到你的Workflow程序并保存本程序
 4. 按提示输入学号和密码，其他都不要再改动，点击上方的播放按钮即可运行客户端，根据UI选项便可进行相应操作
 
-### Others
+## Others
 
  - 本程序有自动检测更新的功能，未来开放新功能、或者因选课系统改版而进行修复时，无需重新下载，程序自身就能检测版本并更新
  - 逐步尝试优化程序性能，争取能够开放选课辅助功能

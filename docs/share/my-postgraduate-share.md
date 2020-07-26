@@ -1,11 +1,3 @@
----
-title: 保研推免经验分享 - 数学系跨保 CS
-date: 2018-09-21 17:46
-tags:
- - share
-categories: share
----
-
 ## **个人背景**
 
 - 学校：南开大学数学系（信息与计算科学方向，专业综合排名：4/18）
@@ -88,14 +80,14 @@ categories: share
 
 > 下面再给大家提供一份扫描版
 
-![p1](/images/share/my-postgraduate-share/1.jpg)
-![p2](/images/share/my-postgraduate-share/2.jpg)
-![p3](/images/share/my-postgraduate-share/3.jpg)
-![p4](/images/share/my-postgraduate-share/4.jpg)
-![p5](/images/share/my-postgraduate-share/5.jpg)
-![p6](/images/share/my-postgraduate-share/6.jpg)
-![p7](/images/share/my-postgraduate-share/7.jpg)
-![p8](/images/share/my-postgraduate-share/8.jpg)
+![p1](imgs/my-postgraduate-share/1.jpg)
+![p2](imgs/my-postgraduate-share/2.jpg)
+![p3](imgs/my-postgraduate-share/3.jpg)
+![p4](imgs/my-postgraduate-share/4.jpg)
+![p5](imgs/my-postgraduate-share/5.jpg)
+![p6](imgs/my-postgraduate-share/6.jpg)
+![p7](imgs/my-postgraduate-share/7.jpg)
+![p8](imgs/my-postgraduate-share/8.jpg)
 
 > [[PDF]清华大学计算机程序设计水平测试-推研机试（扫描版）](/files/share/my-postgraduate-share/THU-CS-18.pdf)
 
