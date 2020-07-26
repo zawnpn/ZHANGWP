@@ -40,6 +40,10 @@ nav:
 
   - Projects:
     - Index: projects/README.md
+    - AI:
+      - RL Runfast: projects/rl_runfast.md
+    - Typesetting:
+      - Markdown 编译转换工具: projects/markdown-toolkit.md
     - NKU:
       - NKU-EAMIS工具: projects/nku-eamis.md
       - NKU-SMS-RSS: projects/nku-sms-rss.md
