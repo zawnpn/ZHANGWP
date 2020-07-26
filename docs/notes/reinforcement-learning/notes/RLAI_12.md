@@ -490,7 +490,7 @@ $$
 
 
 $$
-\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \rho _ { t + 1 } G _ { t + 1 } ^ { \lambda a } + \overline { V } _ { t } \left( S _ { t + 1 } \right) - \rho _ { t + 1 } \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \rho _ { t + 1 } \left[ G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \end{aligned}
+\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \\ & \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \rho _ { t + 1 } G _ { t + 1 } ^ { \lambda a } + \overline { V } _ { t } \left( S _ { t + 1 } \right) - \rho _ { t + 1 } \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \rho _ { t + 1 } \left[ G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \end{aligned}
 $$
 
 
@@ -546,7 +546,7 @@ $\lambda=1$ 时，目前这些算法和 MC 联系密切，而 $\lambda<1$ 时，
 该算法的 $\lambda$-return 为使用 action values 的递归式：
 
 $$
-\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \sum _ { a \neq A _ { t + 1 } } \pi ( a | S _ { t + 1 } ) \hat { q } \left( S _ { t + 1 } , a , \mathbf { w } _ { t } \right) + \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) G _ { t + 1 } ^ { \lambda a } \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) \left( G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right) \right) \end{aligned}
+\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \\ & \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \sum _ { a \neq A _ { t + 1 } } \pi ( a | S _ { t + 1 } ) \hat { q } \left( S _ { t + 1 } , a , \mathbf { w } _ { t } \right) + \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) G _ { t + 1 } ^ { \lambda a } \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) \left( G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right) \right) \end{aligned}
 $$
 
 再对 return 做逼近：

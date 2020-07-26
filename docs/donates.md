@@ -4,8 +4,8 @@
 
 ## Wechat
 
-<img src="/assets/images/wechat.jpg" width="300" alt="wechat" />
+<img src="/_static/images/wechat.jpg" width="300" alt="wechat" />
 
 ## Alipay
 
-<img src="/assets/images/alipay.jpg" width="300" alt="alipay" />
+<img src="/_static/images/alipay.jpg" width="300" alt="alipay" />

@@ -134,7 +134,10 @@ $$
 
 $$
 V_0(A)=V_0(B)=V(T)=0\\
-\alpha_a=1,\alpha_b=\frac{1}{8},\gamma=1\\
+\alpha_a=1,\alpha_b=\frac{1}{8},\gamma=1
+$$
+
+$$
 \begin{aligned}
 (1)&{\begin{cases}
 \delta_1(A)=R_0+V_0(B)-V_0(A)=0+0-0=0\\
@@ -162,7 +165,10 @@ $$
 
 $$
 V_0(A)=V_0(B)=V(T)=0\\
-\alpha_a=\alpha_b=\frac{1}{8},\gamma=1\\
+\alpha_a=\alpha_b=\frac{1}{8},\gamma=1
+$$
+
+$$
 \begin{aligned}
 (1)&{\begin{cases}
 \delta_1(A)=G_1(A)-V_0(A)=0-0=0\\

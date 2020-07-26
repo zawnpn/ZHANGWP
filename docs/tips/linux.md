@@ -45,7 +45,7 @@ passwd <username>
 确认一下ssh daemon log (e.g. `/var/log/auth.log`)，如果有下面这个报错，就说明是该问题
 
 ```shell
-sshd[xxxx]: pam_systemd(sshd:session): Failed to create session: Connection timed out
+pam_systemd(sshd:session): Failed to create session: Connection timed out
 ```
 
 此时需要重启 `systemd-logind` ：

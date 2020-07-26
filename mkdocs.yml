@@ -7,7 +7,7 @@ edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages
 remote_name: 'origin'
 site_author: zawnpn
-copyright: 'Copyright &copy; 2016-2020 ZHANGWP'
+copyright: 'Copyright &copy; 2016-2021 ZHANGWP'
 nav:
   - Home:
     - Home: index.md
@@ -105,7 +105,7 @@ theme:
   icon:
     logo: fontawesome/solid/terminal
     repo: fontawesome/solid/code-branch
-  favicon: assets/images/favicon.svg
+  favicon: _static/images/favicon.svg
 
 plugins:
   - search:
@@ -132,15 +132,18 @@ extra:
       link: 'https://steamcommunity.com/id/zawnpn/'
     - icon: fontawesome/solid/play-circle
       link: 'https://space.bilibili.com/38332230'
-    - icon: fontawesome/solid/closed-captioning
-      link: 'https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en'
 
 extra_javascript:
-  # - assets/extra.js
-  - //cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-MML-AM_SVG
+  - _static/extra.js
+  # - //cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-MML-AM_SVG
+  - //cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js
+  - //cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js
 
 markdown_extensions:
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - codehilite:
       guess_lang: false
   - toc:

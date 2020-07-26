@@ -86,6 +86,7 @@ $$
 证毕。
 
 关于 $\eta(s)$ 和 $\mu(s)$ ，之前已在第 9、10 章有过相关定义：
+
 $$
 \begin{aligned}
 \eta(s)&=h(s)+\sum_{\overline{s}} \eta(\overline{s}) \sum_{a} \pi(a | \overline{s}) p(s | \overline{s}, a), \text { for all } s \in \mathcal{S}\\
