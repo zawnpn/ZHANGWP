@@ -1,7 +1,7 @@
 site_name: ZHANGWP
 site_description: Welcome to zhangwp's blog.
 site_url: 'https://www.zhangwp.com'
-strict: true
+strict: false
 repo_url: 'https://github.com/zawnpn/ZHANGWP'
 edit_uri: 'edit/master/docs/'
 remote_branch: gh-pages

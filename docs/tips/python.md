@@ -2,15 +2,6 @@
 
 ## Tools
 
-### 安装 Matlab Engine for Python
-
-```shell
-cd /matlab_root/extern/engine/python
-python setup.py install
-## if not root user, run following ##
-# python setup.py build -b <somedir> install
-```
-
 ### Jupyter 中添加 env
 
  - 在主 env 下安装 ipykernel `conda install ipykernel`
@@ -36,4 +27,13 @@ c.NotebookApp.ip = '0.0.0.0' #所有绑定服务器的IP都能访问，若想只
 c.NotebookApp.port = 8888
 c.NotebookApp.open_browser = False
 c.NotebookApp.notebook_dir = '<default_path>' #设置 Jupyter 根目录
+```
+
+### 安装 Matlab Engine for Python
+
+```shell
+cd /matlab_root/extern/engine/python
+python setup.py install
+## if not root user, run following ##
+# python setup.py build -b <somedir> install
 ```

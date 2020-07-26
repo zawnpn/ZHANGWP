@@ -2,21 +2,54 @@
 
 ## Network
 
+- DNS: `/etc/resolv.conf`
+- hosts: `/etc/hosts`
+- hostname: `/etc/hostname`
+
+## System
+
+### 查看进程
+
+- `jobs -l | grep <PID>`
+- `ps -ef | grep <PID>`
+- `ls -la /proc/<PID>`
+
+### 更改权限
+
+```shell
+chown <username> -R dir
+chgrp <groupname> -R dir
+```
+
+## Server
+
+### 添加用户
+
+```shell
+useradd -d /data/<username> -m -s /bin/bash <username>
+passwd <username>
+# usermod -G sudo <username>
+```
+
 ### ssh-key
 
 - 需要确保 `/etc/ssh/sshd_config` 中的 `StrictModes` 不为 `yes`
 - 本机生成密钥/公钥：`ssh-keygen -t rsa`
-- pub key 加入服务器 `~/.ssh/authorized_keys` 中即可（需注意，可能需要确保相应的读写权限：`chmod 644 authorized_keys`，或者 600 权限）
+- pub key 加入服务器 `~/.ssh/authorized_keys` 中即可（读写权限：`chmod 600 authorized_keys`，`chmod 700 -R ~/.ssh`）
 - 也可使用 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host` ，更为简便
 
-## System
+### Problem: ssh需要等待较长时间
 
-### 非 root 用户安装程序
+可能是 `D-Bus` 与 `systemd`的问题。如果 `dbus` 意外重启了，就需要你去手动重启 `systemd-logind`.
 
-- make & make install（注意留下 logs 以便删除）
-- 考虑使用 [linuxbrew](https://linuxbrew.sh/)
+确认一下ssh daemon log (e.g. `/var/log/auth.log`)，如果有下面这个报错，就说明是该问题
 
-### 查看进程
+```shell
+sshd[xxxx]: pam_systemd(sshd:session): Failed to create session: Connection timed out
+```
 
-- jobs -l | grep xxx
-- ps -ef | grep xxx
+此时需要重启 `systemd-logind` ：
+
+```shell
+systemctl restart systemd-logind
+```

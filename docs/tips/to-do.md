@@ -1,15 +1,15 @@
 # To-Do
 
-## Machine Learning
+## Study
 
-- Reinforcement Learning: Read Book *Reinforcement Learning: An Introduction*
-- 简单实现一个机器学习算法库（TinyML-Library）
+- [x] read book *Pattern Recognition and Machine Learning*
+- [x] read Book *Reinforcement Learning: An Introduction*
+- [ ] paper reading...
 
-## Algorithm
+## Coding
 
-- LeetCode
+- [ ] LeetCode
 
-## Programming
+## Idea
 
-- Study C++
-- Study Golang
+- [ ] fancy game-log
