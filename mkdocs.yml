@@ -9,28 +9,35 @@ remote_name: 'origin'
 site_author: zawnpn
 copyright: 'Copyright &copy; 2016-2021 ZHANGWP'
 nav:
+
   - Home:
     - Home: index.md
     - Links: links.md
     - Donate: donates.md
+  
   - Notes:
     - Index: notes/README.md
-    - Reinforcement:
+    - Paper Reading:
+      - Model-based RL:
+        - MBRL with uncertainty: notes/paper-reading/MBRL_with_uncertainty.md
+      - RL Control:
+        - Background and decision-time planning: notes/paper-reading/background_and_decision-time_planning.md
+        - MCTS introduction: notes/paper-reading/MCTS_introduction.md
+    - Book Reading:
       - Reinforcement Learning An Introduction:
-        - Chapter 2: notes/reinforcement-learning/notes/RLAI_2.md
-        - Chapter 3: notes/reinforcement-learning/notes/RLAI_3.md
-        - Chapter 4: notes/reinforcement-learning/notes/RLAI_4.md
-        - Chapter 5: notes/reinforcement-learning/notes/RLAI_5.md
-        - Chapter 6: notes/reinforcement-learning/notes/RLAI_6.md
-        - Chapter 7: notes/reinforcement-learning/notes/RLAI_7.md
-        - Chapter 8: notes/reinforcement-learning/notes/RLAI_8.md
-        - Chapter 9: notes/reinforcement-learning/notes/RLAI_9.md
-        - Chapter 10: notes/reinforcement-learning/notes/RLAI_10.md
-        - Chapter 11: notes/reinforcement-learning/notes/RLAI_11.md
-        - Chapter 12: notes/reinforcement-learning/notes/RLAI_12.md
-        - Chapter 13: notes/reinforcement-learning/notes/RLAI_13.md
-      - Some Introduction:
-        - MCTS: notes/reinforcement-learning/notes/MCTS_introduction.md
+        - Chapter 2: notes/book-reading/RLAI/RLAI_2.md
+        - Chapter 3: notes/book-reading/RLAI/RLAI_3.md
+        - Chapter 4: notes/book-reading/RLAI/RLAI_4.md
+        - Chapter 5: notes/book-reading/RLAI/RLAI_5.md
+        - Chapter 6: notes/book-reading/RLAI/RLAI_6.md
+        - Chapter 7: notes/book-reading/RLAI/RLAI_7.md
+        - Chapter 8: notes/book-reading/RLAI/RLAI_8.md
+        - Chapter 9: notes/book-reading/RLAI/RLAI_9.md
+        - Chapter 10: notes/book-reading/RLAI/RLAI_10.md
+        - Chapter 11: notes/book-reading/RLAI/RLAI_11.md
+        - Chapter 12: notes/book-reading/RLAI/RLAI_12.md
+        - Chapter 13: notes/book-reading/RLAI/RLAI_13.md
+        
   - Tips:
     - Tips: tips/README.md
     - To Do: tips/to-do.md
@@ -39,6 +46,7 @@ nav:
     - Git: tips/git.md
     - Linux: tips/linux.md
     - Windows: tips/win.md
+  
   - Share:
     - Index: share/README.md
     - 博客历史: share/blog-history.md
@@ -84,6 +92,7 @@ nav:
       - Student Developer Pack - GitHub Education: share/github-student-pack.md
       - 保研推免经验分享 - 数学系跨保 CS: share/my-postgraduate-share.md
       - 鹏程万里: share/roc-fly.md
+  
   - Statements:
     - Statements: statements.md
 

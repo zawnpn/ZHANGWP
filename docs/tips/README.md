@@ -1,4 +1,4 @@
-# My Tips
+# Tips
 
 记录一些 Thoughts / Problems / Solutions / Tips 。
 

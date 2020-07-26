@@ -21,6 +21,12 @@ chown <username> -R dir
 chgrp <groupname> -R dir
 ```
 
+### CRLF to LF
+
+```shell
+find . -type f -exec dos2unix {} \; # 将整个目录转换，需apt install dos2unix
+```
+
 ## Server
 
 ### 添加用户
