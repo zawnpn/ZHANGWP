@@ -12,7 +12,7 @@ Github: [zawnpn/Markdown_Toolkit](https://github.com/zawnpn/Markdown_Toolkit)
 
 |                         MD → Article                         |                         MD → Slide                          |
 | :----------------------------------------------------------: | :---------------------------------------------------------: |
-| [![article](imgs/markdown-toolkit/article.png)](example/article/article.pdf) | [![slide](imgs/markdown-toolkit/slide.png)](example/slide/slide.pdf) |
+| ![article](imgs/markdown-toolkit/article.png) | ![slide](imgs/markdown-toolkit/slide.png) |
 
 ## 特点
 
@@ -37,7 +37,7 @@ Github: [zawnpn/Markdown_Toolkit](https://github.com/zawnpn/Markdown_Toolkit)
 ```shell
 git clone https://github.com/zawnpn/Markdown_Toolkit.git
 chmod +x ./mdtool
-echo 'export PATH=<path~to~Markdown_Toolkit>:$PATH' >> ~/.bashrc
+echo 'export PATH=$PATH:<path~to~Markdown_Toolkit>' >> ~/.bashrc
 source ~/.bashrc
 ```
 
