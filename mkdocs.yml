@@ -1,13 +1,14 @@
 site_name: ZHANGWP
 site_description: Welcome to zhangwp's blog.
-site_url: 'https://www.zhangwp.com'
+site_url: https://www.zhangwp.com
 strict: false
-repo_url: 'https://github.com/zawnpn/ZHANGWP'
-edit_uri: 'edit/master/docs/'
+dev_addr: localhost:8000
+repo_url: https://github.com/zawnpn/ZHANGWP
+edit_uri: '' # edit/master/docs/'
 remote_branch: gh-pages
-remote_name: 'origin'
-site_author: zawnpn
-copyright: 'Copyright &copy; 2016-2021 ZHANGWP'
+remote_name: origin
+site_author: Wanpeng Zhang
+copyright: Copyright &copy; 2016-2021 ZHANGWP
 nav:
 
   - Home:
@@ -121,7 +122,7 @@ theme:
   icon:
     logo: fontawesome/solid/terminal
     repo: fontawesome/solid/code-branch
-  favicon: _static/images/favicon.ico
+  favicon: _static/images/favicon.svg
 
 plugins:
   - search:
@@ -150,8 +151,8 @@ extra:
       link: 'https://space.bilibili.com/38332230'
 
 extra_javascript:
-  - //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   - _static/extra.js
+  - //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   - //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
   # - //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_SVG
 
