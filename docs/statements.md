@@ -9,7 +9,7 @@
 
 ----
 
-<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="/_static/images/cc_by-nc-nd.png" /></a><br />本网站中的内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。</center>
+<center><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="/_static/images/cc_by-nc-nd.png" /></a><br />本网站中的内容采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。</center>
 
 ----
 
