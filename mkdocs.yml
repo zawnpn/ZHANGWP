@@ -21,8 +21,8 @@ nav:
       - Model-based RL:
         - MBRL with uncertainty: notes/paper-reading/MBRL_with_uncertainty.md
       - RL Control:
-        - Background and decision-time planning: notes/paper-reading/background_and_decision-time_planning.md
         - MCTS introduction: notes/paper-reading/MCTS_introduction.md
+        - Background and decision-time planning: notes/paper-reading/background_and_decision-time_planning.md
     - Book Reading:
       - Reinforcement Learning An Introduction:
         - Chapter 2: notes/book-reading/RLAI/RLAI_2.md
@@ -117,11 +117,11 @@ theme:
   search_index_only: true
   features:
     - tabs
-    # - instant # !cause bug on Mathjax
+    # - instant # !may cause bug on Mathjax
   icon:
     logo: fontawesome/solid/terminal
     repo: fontawesome/solid/code-branch
-  favicon: _static/images/favicon.svg
+  favicon: _static/images/favicon.ico
 
 plugins:
   - search:
@@ -150,10 +150,13 @@ extra:
       link: 'https://space.bilibili.com/38332230'
 
 extra_javascript:
+  - //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
   - _static/extra.js
-  # - //cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-MML-AM_SVG
-  - //cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js
-  - //cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js
+  - //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  # - //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_SVG
+
+# extra_css:
+#   - 
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -166,5 +169,5 @@ markdown_extensions:
       permalink: true
 
 # google_analytics:
-#   - UA-173056794-1
+#   - UA-
 #   - auto

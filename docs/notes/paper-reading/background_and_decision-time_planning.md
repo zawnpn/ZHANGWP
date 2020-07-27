@@ -1,8 +1,8 @@
 # Background and Decision-time Planning
 
-最近看了ICML 2020上的一篇Tutorial（末尾有链接分享），主题就是Model-based RL，对MBRL的归纳总结非常全面，建议一看。
+最近看了ICML 2020上的一个分享（末尾有链接），主题就是Model-based RL，对MBRL的归纳总结非常全面，建议一看。
 
-刚好最近在考虑model planning的问题，因此把这篇tutorial中的planning部分单独拿出来简要介绍一下。
+刚好最近在考虑model planning的问题，因此把这个分享里的planning部分单独拿出来简要介绍一下。
 
 先把整体的methods tree放出来，便于对planning体系的理解：
 

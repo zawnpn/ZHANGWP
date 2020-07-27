@@ -5,8 +5,8 @@
   - **Model-based RL**
     - [Model-based RL with uncertainty](/notes/paper-reading/MBRL_with_uncertainty/)
   - **RL Control**
-    - [Background and decision-time planning](/notes/paper-reading/background_and_decision-time_planning/)
     - [蒙特卡罗树搜索（MCTS） - 介绍](/notes/paper-reading/MCTS_introduction/)
+    - [Background and decision-time planning](/notes/paper-reading/background_and_decision-time_planning/)
 
 ## Book Reading
 

@@ -1,13 +1,18 @@
 # Tips
 
-**Only for personal usage.**
+***Only for personal usage.***
 
-## Bookmark
+## To-Do
 
-- [https://github.com/zawnpn](https://github.com/zawnpn)
-- [https://twitter.com/zawnpn](https://twitter.com/zawnpn)
-- [https://www.linkedin.com/in/zawnpn/](https://www.linkedin.com/in/zawnpn/)
-- [https://www.zhihu.com/people/zhangwanpeng](https://www.zhihu.com/people/zhangwanpeng)
-- [https://psnprofiles.com/zawnpn](https://psnprofiles.com/zawnpn)
-- [https://steamcommunity.com/id/zawnpn/](https://steamcommunity.com/id/zawnpn/)
-- [https://space.bilibili.com/38332230](https://space.bilibili.com/38332230)
+  - [To-Do List](/tips/to-do)
+
+## Coding
+
+  - [Python](/tips/python)
+  - [Data Processing](/tips/data-processing)
+  - [Git](/tips/git)
+
+## OS
+
+  - [Linux](/tips/linux)
+  - [Windows](/tips/win)

@@ -386,7 +386,7 @@ $$
 
 
 
-## **12.8 Variable $\lambda$ and $\gamma​$**
+## **12.8 Variable $\lambda$ and $\gamma$**
 
 为了更泛化地表示每一步中 bootstrapping 和 discounting 的程度，需要更通用的 $\lambda,\gamma$ ，现定义函数 $\lambda : \mathcal{S} \times \mathcal { A } \rightarrow [ 0,1 ]$ 和 $\gamma : \mathcal{S} \rightarrow [ 0,1 ]$ ，从而得到 $\lambda _ { t } \doteq \lambda \left( S _ { t } , A _ { t } \right),\gamma _ { t } \doteq \gamma \left( S _ { t } \right)$ 。
 
@@ -490,10 +490,8 @@ $$
 
 
 $$
-\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \\ & \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \rho _ { t + 1 } G _ { t + 1 } ^ { \lambda a } + \overline { V } _ { t } \left( S _ { t + 1 } \right) - \rho _ { t + 1 } \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \rho _ { t + 1 } \left[ G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \end{aligned}
+\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \gamma _ { t + 1 } \Big( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \\ & \lambda _ { t + 1 } \left[ \rho _ { t + 1 } G _ { t + 1 } ^ { \lambda a } + \overline { V } _ { t } \left( S _ { t + 1 } \right) - \rho _ { t + 1 } \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \Big) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \rho _ { t + 1 } \left[ G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right] \right) \end{aligned}
 $$
-
-
 
 
 其中
@@ -546,7 +544,7 @@ $\lambda=1$ 时，目前这些算法和 MC 联系密切，而 $\lambda<1$ 时，
 该算法的 $\lambda$-return 为使用 action values 的递归式：
 
 $$
-\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \\ & \gamma _ { t + 1 } \left( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \left[ \sum _ { a \neq A _ { t + 1 } } \pi ( a | S _ { t + 1 } ) \hat { q } \left( S _ { t + 1 } , a , \mathbf { w } _ { t } \right) + \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) G _ { t + 1 } ^ { \lambda a } \right] \right) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) \left( G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right) \right) \end{aligned}
+\begin{aligned} G _ { t } ^ { \lambda a } & \doteq R _ { t + 1 } + \gamma _ { t + 1 } \Big( \left( 1 - \lambda _ { t + 1 } \right) \overline { V } _ { t } \left( S _ { t + 1 } \right) + \\& \lambda _ { t + 1 } \left[ \sum _ { a \neq A _ { t + 1 } } \pi ( a | S _ { t + 1 } ) \hat { q } \left( S _ { t + 1 } , a , \mathbf { w } _ { t } \right) + \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) G _ { t + 1 } ^ { \lambda a } \right] \Big) \\ & = R _ { t + 1 } + \gamma _ { t + 1 } \left( \overline { V } _ { t } \left( S _ { t + 1 } \right) + \lambda _ { t + 1 } \pi \left( A _ { t + 1 } | S _ { t + 1 } \right) \left( G _ { t + 1 } ^ { \lambda a } - \hat { q } \left( S _ { t + 1 } , A _ { t + 1 } , \mathbf { w } _ { t } \right) \right) \right) \end{aligned}
 $$
 
 再对 return 做逼近：
