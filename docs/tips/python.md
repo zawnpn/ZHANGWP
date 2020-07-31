@@ -29,6 +29,13 @@ c.NotebookApp.open_browser = False
 c.NotebookApp.notebook_dir = '<default_path>' #设置 Jupyter 根目录
 ```
 
+### import local module 报错
+
+```shell
+export PYTHONPATH=.
+python main.py
+```
+
 ### 安装 Matlab Engine for Python
 
 ```shell
