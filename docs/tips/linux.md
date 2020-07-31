@@ -44,6 +44,12 @@ passwd <username>
 - pub key 加入服务器 `~/.ssh/authorized_keys` 中即可（读写权限：`chmod 600 authorized_keys`，`chmod 700 -R ~/.ssh`）
 - 也可使用 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host` ，更为简便
 
+### screen
+
+- 新建：`screen -R xxx`
+- 恢复：`screen -r xxx`
+- 中途退出：按`Ctrl + A + D`
+
 ### Problem: ssh需要等待较长时间
 
 可能是 `D-Bus` 与 `systemd`的问题。如果 `dbus` 意外重启了，就需要你去手动重启 `systemd-logind`.
