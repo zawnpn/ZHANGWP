@@ -16,3 +16,5 @@
 
   - [Linux](/tips/linux)
   - [Windows](/tips/win)
+  - [macOS](/tips/mac)
+

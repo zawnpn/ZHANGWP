@@ -100,6 +100,7 @@ nav:
     - Git: tips/git.md
     - Linux: tips/linux.md
     - Windows: tips/win.md
+    - macOS: tips/mac.md
 
   - Statements:
     - Statements: statements.md
