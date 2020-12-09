@@ -1,6 +1,8 @@
 # Tips
 
-***Only for personal usage.***
+**仅自用。 **
+
+**Only for personal usage.**
 
 ## To-Do
 

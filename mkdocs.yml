@@ -13,8 +13,6 @@ nav:
 
   - Home:
     - Home: index.md
-    - Links: links.md
-    - Donate: donates.md
   
   - Notes:
     - Index: notes/README.md
@@ -101,6 +99,12 @@ nav:
     - Linux: tips/linux.md
     - Windows: tips/win.md
     - macOS: tips/mac.md
+
+  - Links:
+    - Links: links.md
+  
+  - Donates:
+    - Donates: donates.md
 
   - Statements:
     - Statements: statements.md

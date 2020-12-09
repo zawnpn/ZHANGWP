@@ -2,10 +2,15 @@
 
 如果你觉得文章有那么一点点帮助，可以考虑鼓励作者更好地进行创作哦~
 
-## Wechat
-
 <img src="/_static/images/wechat.jpg" width="300" alt="wechat" />
 
-## Alipay
+## 赞赏记录
 
-<img src="/_static/images/alipay.jpg" width="300" alt="alipay" />
+（感谢大家的赞赏😋）
+
+| 署名  | 赞赏    | 留言               |
+| ----- | ------- | ------------------ |
+| 匿名  | ￥10.00 |                    |
+| 匿名  | ￥5.00  |                    |
+| David | ￥5.00  | 感谢学长的往届考题 |
+
