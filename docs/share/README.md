@@ -17,7 +17,7 @@
     - [随机多边形转化为椭圆的过程研究](/share/polygon-to-ellipse)
     - [FFT-GPU-Accel](/share/FFT-GPU-Accel)
 - NKU数院试题整理:
-    - [汇总](/share/nku-sms-exams)
+    - [南开数院 - 试题汇总](/share/nku-sms-exams)
     - 分析:
         - [2017-2018第一学期泛函分析期末考试](/share/exam/functional-analysis-final)
         - [2016-2017第二学期实变函数期末考试](/share/exam/real-variable-function)
