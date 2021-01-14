@@ -41,5 +41,5 @@
         - [2017-2018第一学期数理方程期末考试](/share/exam/PDE-final)
         - [2016-2017第一学期常微分方程期末考试](/share/exam/ODE-final)
         - [2016-2017第一学期常微分方程期中考试](/share/exam/ODE-middle)
-    - 机器学习导论：
+    - 机器学习：
         - [2020-2021第一学期机器学习导论期末考试](/share/exam/machine-learning-final)
