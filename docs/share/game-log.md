@@ -14,17 +14,22 @@
 | 白金 |                  **God of War**                  |     剧情 / 动作      |  PS4   | 60+ h  | ★★★★☆ |
 | 在玩 |              **Grand Theft Auto V**              |     剧情 / 开放      |   PC   | 10+ h  | ★★★★  |
 | 通关 |            **Red Dead Redemption 2**             |     剧情 / 开放      |  PS4   | 100+ h | ★★★★☆ |
+| 通关 | **Cyberpunk 2077** | 剧情 / 开放 | PS4 | 40 h | ★★★★ |
+| 通关 | **Ghost of Tsushima** | 剧情 / 动作 | PS4 | 60 h | ★★★★ |
 | 在玩 |   **The Legend of Zelda: Breath of the Wild**    |     剧情 / 开放      |   NS   | 30+ h  | ★★★★☆ |
 | 在玩 |             **Super Mario Odyssey**              |     解谜 / 冒险      |   NS   | 20+ h  | ★★★★☆ |
-| 在玩 |            **MONSTER HUNTER: WORLD**             |     动作 / 共斗      |   PC   | 200+ h | ★★★☆  |
+| 在玩 | **Animal Crossing** | 休闲 | NS | 10+ h | ★★★ |
 | 在玩 |              **Monster Hunter XX**               |     动作 / 共斗      |   NS   | 100+ h | ★★★★☆ |
+| 在玩 | **Monster Hunter: World** | 动作 / 共斗 | PC | 200+ h | ★★★☆ |
+| 在玩 | **Monster Hunter Rise** | 动作 / 共斗 | NS | 10+ h | ★★★★☆ |
 | 在玩 |           **GOD EATER 2: Rage Burst**            |  动作 / 共斗  |  PS4   | 10+ h  | ★★★☆  |
+| 在玩 | **Persona 4 The GOLDEN** | JRPG / 回合制 | PSV | 30 h | ★★★★ |
 | 白金 |                  **Persona 5**                   |    JRPG / 回合制     |  PS4   | 150+ h | ★★★★★ |
-| 在玩 |    **PERSONA5 SCRAMBLE THE PHANTOM STRIKERS**    |     JRPG / 无双      |  PS4   |  10 h  | ★★★★  |
-| 在玩 |             **Persona 4 The GOLDEN**             |    JRPG / 回合制     |  PSV   |  30 h  | ★★★★  |
+| 在玩 |    **Persona 5 Strikers**    |     JRPG / 无双      |  PS4   |  10 h  | ★★★★  |
 | 白金 |         **Ys VIII -Lacrimosa of DANA-**          |     JRPG / 动作      |  PS4   | 80+ h  | ★★★★☆ |
 | 在玩 |             **Ys IX -Monstrum NOX-**             |     JRPG / 动作      |  PS4   |  20 h  | ★★★★  |
-| 在玩 |            **Xenoblade Chronicles 2**            |     JRPG / 动作      |   NS   |  20 h  | ★★★★  |
+| 在玩 | **Xenoblade Definitive Edition** | JRPG / 即时回合 | NS | 20+ h | ★★★★ |
+| 通关 |            **Xenoblade 2**            |   JRPG / 即时回合    |   NS   |  70 h  | ★★★★  |
 | 在玩 | **DRAGON QUEST® XI S: Echoes of an Elusive Age** |     JRPG / 动作      |   NS   |  20 h  | ★★★★  |
 | 在玩 |              **Tales of Berseria**               |     JRPG / 动作      |   PC   |  10 h  | ★★★★  |
 | 在玩 |              **Tales of Vesperia**               |     JRPG / 动作      |   NS   |  10 h  | ★★★★  |
@@ -32,8 +37,9 @@
 | 在玩 |     **Sword Art Online: Hollow Realization**     |  JRPG / 粉丝向  |   PC   | <10 h  |  ★★☆  |
 | 通关 |                **NieR:Automata™**                |  剧情 / 动作 / 音乐  |   PC   | 50+ h  | ★★★★  |
 | 通关 |                 **ASTRAL CHAIN**                 |     剧情 / 动作      |   NS   | 30+ h  | ★★★★  |
-| 在玩 |              **FINAL FANTASY VII**               |         剧情 / 回合         |   PC   | 20+ h  | ★★★★  |
-| 通关 |       **FINAL FANTASY X/X-2 HD Remaster**        |         剧情 / 动作         |   PC   |  30 h  | ★★★★  |
+| 在玩 |              **FINAL FANTASY VII**               |         JRPG / 回合         |   PC   | 20+ h  | ★★★★  |
+| 通关 |       **FINAL FANTASY X/X-2 HD Remaster**        |         JRPG / 回合         |   PC   |  30 h  | ★★★★  |
+| 在玩 | **FINAL FANTASY XII** | JRPG / 即时回合 | NS | 10 h | ★★★★ |
 | 通关 |               **FINAL FANTASY XV**               |         剧情 / 动作         |   PC   | 50+ h  | ★★★☆  |
 | 通关 |           **FINAL FANTASY VII REMAKE**           |         剧情 / 动作         |  PS4   |  30 h  | ★★★★  |
 | 白金 |           **13 Sentinels: Aegis Rim**            |         剧情         |  PS4   |  30 h  | ★★★★  |
@@ -58,10 +64,11 @@
 | 在玩 |           **Ori and the Blind Forest**           |     横版 / 手残      |   PC   | <10 h  | ★★★★  |
 | 在玩 |              **Salt and Sanctuary**              |  横版 / 地牢 / 类魂  |   PC   | <10 h  | ★★★☆  |
 | 通关 |      **Bloodstained: Ritual of the Night**       |    横版 / 恶魔城     |   NS   |  30 h  | ★★★★  |
-| 在玩 |     **Phoenix Wright: Ace Attorney Trilogy**     |     解谜 / 剧情      |   NS   |  20 h  | ★★★★☆ |
+| 在玩 |     **Phoenix Wright: Ace Attorney Trilogy**     |     解谜 / 剧情      |   NS   |  30 h  | ★★★★☆ |
 | 通关 |       **Danganronpa: Trigger Happy Havoc**       |     解谜 / 剧情      |   PC   | 30+ h  | ★★★★☆ |
 | 通关 |        **Danganronpa 2: Goodbye Despair**        |     解谜 / 剧情      |   PC   | 40+ h  | ★★★★☆ |
 | 通关 | **Danganronpa 3: The End of Kibougamine Gakuen** |     解谜 / 剧情      |  PS4   |  40 h  | ★★★★  |
+| 通关 | **AI: The Somnium Files** | 解谜 / 剧情 | NS | 20 h | ★★★☆ |
 | 在玩 |          **Fire Emblem: Three Houses**           |     战旗 / 剧情      |   NS   |  10 h  | ★★★★  |
 | 在玩 |  **Call of Duty®: Modern Warfare® Remastered**   |     射击 / 剧情      |  PS4   |  10 h  | ★★★★  |
 | 在玩 |                **Sniper Elite 4**                |     潜行 / 射击      |   PC   | 10+ h  |  ★★★  |
