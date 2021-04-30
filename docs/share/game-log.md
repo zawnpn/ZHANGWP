@@ -4,7 +4,7 @@
 
 | 状态 |                       名称                       |         Tag          |  平台  |  时间  | 评价  |
 | :--: | :----------------------------------------------: | :------------------: | :----: | :----: | :---: |
-| 在玩 | **Demon's Souls** | 魂系列 | PS5 | 20+ h | ★★★★☆ |
+| 在玩 | **Demon's Souls** | 魂系列 | PS5 | 30+ h | ★★★★☆ |
 | 白金 |           **DARK SOULS™: REMASTERED**            |        魂系列        |   PC   | 100+ h | ★★★★★ |
 | 白金 |   **DARK SOULS™ II: Scholar of the First Sin**   |        魂系列        |   PC   | 150+ h | ★★★★☆ |
 | 白金 |               **DARK SOULS™ III**                |        魂系列        |   PC   | 300+ h | ★★★★★ |
@@ -22,7 +22,7 @@
 | 在玩 | **Animal Crossing** | 休闲 | NS | 10+ h | ★★★ |
 | 在玩 |              **Monster Hunter XX**               |     动作 / 共斗      |   NS   | 100+ h | ★★★★☆ |
 | 在玩 | **Monster Hunter: World** | 动作 / 共斗 | PC | 200+ h | ★★★☆ |
-| 在玩 | **Monster Hunter Rise** | 动作 / 共斗 | NS | 50+ h | ★★★★☆ |
+| 在玩 | **Monster Hunter Rise** | 动作 / 共斗 | NS | 60+ h | ★★★★☆ |
 | 在玩 |           **GOD EATER 2: Rage Burst**            |  动作 / 共斗  |  PS4   | 10+ h  | ★★★☆  |
 | 在玩 | **Persona 4 The GOLDEN** | JRPG / 回合制 | PSV | 30 h | ★★★★ |
 | 白金 |                  **Persona 5**                   |    JRPG / 回合制     |  PS4   | 150+ h | ★★★★★ |
@@ -41,7 +41,7 @@
 | 在玩 |              **FINAL FANTASY VII**               |         JRPG / 回合         |   PC   | 20+ h  | ★★★★  |
 | 通关 |       **FINAL FANTASY X/X-2 HD Remaster**        |         JRPG / 回合         |   PC   |  30 h  | ★★★★  |
 | 在玩 | **FINAL FANTASY XII** | JRPG / 即时回合 | NS | 10 h | ★★★★ |
-| 在玩 | **FINAL FANTASY XIV** | MMORPG | PC | 1000 h | ★★★★☆ |
+| 在玩 | **FINAL FANTASY XIV** | MMORPG | PC | 1500 h | ★★★★☆ |
 | 通关 |               **FINAL FANTASY XV**               |         剧情 / 动作         |   PC   | 50+ h  | ★★★☆  |
 | 通关 |           **FINAL FANTASY VII REMAKE**           |         剧情 / 动作         |  PS4   |  30 h  | ★★★★  |
 | 白金 |           **13 Sentinels: Aegis Rim**            |         剧情         |  PS4   |  30 h  | ★★★★  |
@@ -50,8 +50,9 @@
 | 通关 |          **The Last of Us™ Remastered**          |     剧情 / 潜行      |  PS4   |  20 h  | ★★★★☆ |
 | 在玩 |           **The Last of Us™ Part II**            |     剧情 / 潜行      |  PS4   |  10 h  | ★★★☆  |
 | 通关 |         **UNCHARTED 4: A Thief's End™**          |  冒险 / 剧情 / 解谜  |  PS4   |  20 h  | ★★★★☆ |
-| 通关 |                  **Fallout 4**                   |  剧情 / 开放 / 探索  |   PC   | 60+ h  | ★★★★  |
-| 在玩 |                  **Fallout 76**                  |  剧情 / 开放 / 探索  |  PS4   |  10 h  | ★★★☆  |
+| 通关 |                  **Fallout 4**                   |  剧情 / 废土  |   PC   | 60+ h  | ★★★★  |
+| 在玩 |                  **Fallout 76**                  |  剧情 / 废土  |  PS4   |  10 h  | ★★★☆  |
+| 在玩 | **Borderlands 3** | 剧情 / 废土 | PS5 | 20 h | ★★★★ |
 | 通关 |      **METAL GEAR SOLID V: GROUND ZEROES**       |     潜行 / 剧情      |   PC   |  10 h  | ★★★★  |
 | 在玩 |     **METAL GEAR SOLID V: THE PHANTOM PAIN**     |     潜行 / 剧情      |   PC   | 10+ h  | ★★★★☆ |
 | 在玩 |               **DEATH STRANDING**                |     剧情 / 步行      |  PS4   |  10 h  | ★★★☆  |
@@ -59,6 +60,7 @@
 | 通关 |          **Kingdom Come: Deliverance**           | 剧情 / 中世纪 / 开放 |   PC   | 75+ h  | ★★★☆  |
 | 在玩 |           **Rise of the Tomb Raider**            |     冒险 / 解谜      |   PC   | <10 h  | ★★★☆  |
 | 在玩 |                   **HITMAN™**                    |     潜行 / 解谜      |  PS4   | 10+ h  | ★★★★  |
+| 在玩 | **Control** | 剧情 / 动作 | PS5 | 10h | ★★★☆ |
 | 通关 |                   **Yakuza 0**                   |     热血 / 剧情      |   PC   | 40+ h  | ★★★★  |
 | 通关 |                **Yakuza Kiwami**                 |     热血 / 剧情      |  PS4   | 30+ h  | ★★★★  |
 | 在玩 |          **JUDGE EYES: wills of death**          |     热血 / 剧情      |  PS4   |  10 h  | ★★★★  |
@@ -76,6 +78,7 @@
 | 在玩 |  **Call of Duty®: Modern Warfare® Remastered**   |     射击 / 剧情      |  PS4   |  10 h  | ★★★★  |
 | 在玩 |                **Sniper Elite 4**                |     潜行 / 射击      |   PC   | 10+ h  |  ★★★  |
 | 在玩 |                 **Dying Light**                  |     跑酷 / 生存      |  PS4   |  10 h  | ★★★★  |
+| 在玩 | **Ace Combat 7: Skies Unknown** | 空战 | PS4 | 10+h | ★★★☆ |
 | 在玩 |              **Gran Turismo Sport**              |         赛车         |  PS4   | 20+ h  | ★★★☆  |
 | 通关 |           **Assassin's Creed Origins**           |  育碧式开放 / 无聊   |   PC   | 30+ h  |  ★★☆  |
 | 在玩 |                  **For Honor**                   |  联机对战 / 打击感   | PC&PS4 | 30+ h  | ★★★☆  |
@@ -87,10 +90,10 @@
 | 白金 |                **STEINS;GATE 0**                 |     文字 / 科幻      |   PC   | 50+ h  | ★★★★☆ |
 | 在玩 |       **PSYCHO-PASS: Mandatory Happiness**       |     文字 / 科幻      |   PC   | <10 h  | ★★★☆  |
 | 通关 |                    **ISLAND**                    |     文字 / 科幻      |   PC   |  30h   | ★★★☆  |
-| 通关 |      **Lucy -The Eternity She Wished For-**      |         Gal          |   PC   | 10+ h  | ★★★☆  |
-| 在玩 |       **Tayutama 2 -you're the only one-**       |         Gal          |   PC   | <10 h  |  ★★★  |
-| 通关 |             **Gaokao.Love.100Days**              |         Gal          |   NS   | 10+ h  |  ★★★  |
-| 在玩 | **Maitetsu** | Gal | PC | 10 h | ★★★ |
+| 通关 |      **Lucy -The Eternity She Wished For-**      |         文字          |   PC   | 10+ h  | ★★★☆  |
+| 在玩 |       **Tayutama 2 -you're the only one-**       |         文字          |   PC   | <10 h  |  ★★★  |
+| 通关 |             **Gaokao.Love.100Days**              |         文字          |   NS   | 10+ h  |  ★★★  |
+| 在玩 | **Maitetsu** | 文字 | PC | 10 h | ★★★ |
 
 ## Comments
 
