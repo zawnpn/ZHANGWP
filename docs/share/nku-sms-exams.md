@@ -1,20 +1,6 @@
 > 收藏本页面网址：[https://www.zhangwp.com/share/nku-sms-exams](https://www.zhangwp.com/share/nku-sms-exams)
 
-本页面长期维护更新中，欢迎投稿，可直接提交[Github PR](https://github.com/zawnpn/ZHANGWP)，或者邮件联系：`zawnpn@gmail.com`。
-
-### Contribution List
-
-- [叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)（13 级数院）
-- 颜瑞民（13 级物院）
-- [张万鹏](https://www.zhangwp.com)（15 级数院）
-- [张绰棋](https://chokie-zhang.github.io)（15 级数院）
-- 曾语晨（15 级数院）
-- 胡尽涵（16 级数院）
-- 吴诗童（16 级数院）
-- [吕之豪](https://www.alexhaoge.xyz)（18 级数院）
-- 匿名（17 级数理双修、19 级数院）
-
-（*排名不分先后；如有遗漏或需补充信息，请联系：*`zawnpn@gmail.com`）
+本页面长期维护更新中，欢迎投稿，可直接提交[Github PR](https://github.com/zawnpn/ZHANGWP)，或者邮件联系：`zawnpn@gmail.com`（页末附有Contribution List，感谢各位的贡献~）
 
 ### 分析
 
@@ -244,3 +230,17 @@
 
 > [[PDF]2020-2021第一学期数学学院《微分流形》期末考试(wj&lgc回忆)](/files/manifold/2020-2021第一学期数学学院《微分流形》期末考试(wj&lgc回忆).pdf)
 >
+
+### Contribution List
+
+- [叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)（13 级数院）
+- 颜瑞民（13 级物院）
+- [张万鹏](https://www.zhangwp.com)（15 级数院）
+- [张绰棋](https://chokie-zhang.github.io)（15 级数院）
+- 曾语晨（15 级数院）
+- 胡尽涵（16 级数院）
+- 吴诗童（16 级数院）
+- [吕之豪](https://www.alexhaoge.xyz)（18 级数院）
+- 匿名（17 级数理双修、19 级数院）
+
+（*排名不分先后；如有遗漏或需补充信息，请联系：*`zawnpn@gmail.com`）
