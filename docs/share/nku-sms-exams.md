@@ -133,7 +133,23 @@
 > 
 > [[PDF]2020-2021第一学期《泛函分析》期末考试](/files/functional-analysis/2020-2021第一学期《泛函分析》期末考试.pdf)
 >
-> [[PDF]2020-2021实变函数论期末考试A卷](/files/functional-analysis/2020-2021实变函数论期末考试A卷.pdf)
+> [[PDF]2017-2018第二学期实变函数期末考试A卷](/files/functional-analysis/2017-2018第二学期实变函数期末考试A卷.pdf)
+> 
+> [[PDF]2017-2018第二学期实变函数期末考试B卷](/files/functional-analysis/2017-2018第二学期实变函数期末考试B卷.pdf)
+> 
+> [[PDF]2018-2019第二学期实变函数期末考试A卷](/files/functional-analysis/2018-2019第二学期实变函数期末考试A卷.pdf)
+> 
+> [[PDF]2018-2019第二学期实变函数期末考试B卷](/files/functional-analysis/2018-2019第二学期实变函数期末考试B卷.pdf)
+> 
+> [[PDF]2019-2020第二学期实变函数期末考试A卷](/files/functional-analysis/2019-2020第二学期实变函数期末考试A卷.pdf)
+> 
+> [[PDF]2019-2020第二学期实变函数期末考试B卷](/files/functional-analysis/2019-2020第二学期实变函数期末考试B卷.pdf)
+> 
+> [[PDF]2019-2020第二学期实变函数期末考试C卷](/files/functional-analysis/2019-2020第二学期实变函数期末考试C卷.pdf)
+> 
+> [[PDF]2020-2021第二学期实变函数期末考试A卷(回忆版1)](/files/functional-analysis/2020-2021第二学期实变函数期末考试A卷.pdf)
+> 
+> [[PDF]2020-2021第二学期实变函数期末考试A卷(回忆版2)](/files/functional-analysis/2020-2021第二学期实变函数期末考试A卷_1.pdf)
 
 ### 常微分 / 偏微分
 
