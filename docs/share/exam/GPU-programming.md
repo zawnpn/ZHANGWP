@@ -13,12 +13,13 @@ categories: math
 4. (15分)叙述统一内存(Unified Memory)的概念及其优缺点
 5. (10分)结构体数组和数组结构体分别是什么，它们在CUDA的内存访问中有什么不同
 6. (15分)讨论不同情况下的同步及其实现方法
-7. (20分)阅读一段GPU规约的代码，回答如下问题
-(1) (5分)for循环内为什么要`__syncthreads()`
-(2) (5分)13行-21行if语句的作用
-(3) (5分)13行-21行if语句中为什么不需要`__syncthreads()`
-(4) (5分)代码中有哪些优化
-```C++{.line-numbers}
+7. (20分)阅读一段GPU规约的代码，回答如下问题  
+(1) (5分)for循环内为什么要`__syncthreads()`  
+(2) (5分)13行-21行if语句的作用  
+(3) (5分)13行-21行if语句中为什么不需要`__syncthreads()`  
+(4) (5分)代码中有哪些优化  
+
+```C++{.line-numbers}  
 __global__ void reduceInterleaved (volatile int *g_idata, int *g_odata, unsigned int n) {
     unsigned int tid = threadIdx.x;
     unsigned int idx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -43,7 +44,7 @@ __global__ void reduceInterleaved (volatile int *g_idata, int *g_odata, unsigned
 
     if (tid == 0) g_odata[blockIdx.x] = idata[0];
 }
-// 记得大概长这样，细节有出入但是影响不大
+// 记得大概长这样，细节有出入但是影响不大  
 ```
 
 注：数院好不容易第一年开了GPU编程的课，欢迎对高性能计算感兴趣的同学们选修
