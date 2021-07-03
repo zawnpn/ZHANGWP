@@ -216,6 +216,8 @@
 > 
 > [[PDF]2019-2020第一学期随机过程期末考试](/files/probability-statistics/2019-2020第一学期随机过程期末考试.pdf)
 >
+> [[PDF]2020-2021第二学期统计决策期末考试(不完全回忆版)](/files/probability-statistics/2020-2021第二学期统计决策期末考试.pdf)
+>
 
 ### 数值分析
 
@@ -251,6 +253,18 @@
 ### 微分流形
 
 > [[PDF]2020-2021第一学期数学学院《微分流形》期末考试(wj&lgc回忆)](/files/manifold/2020-2021第一学期数学学院《微分流形》期末考试(wj&lgc回忆).pdf)
+>
+
+### 优化
+
+> [[PDF]2020-2021第二学期最优化方法期末考试](/files/convex-optimization/2020-2021第二学期最优化方法期末考试.pdf)
+>
+> [[PDF]2020-2021第二学期离散优化期末考试](/files/discrete-optimization/2020-2021第二学期离散优化期末考试.pdf)
+>
+
+### GPU程序设计
+
+> [[PDF]2020-2021第二学期GPU程序设计期末考试](/files/gpu-programming/2020-2021第二学期GPU程序设计期末考试.pdf)
 >
 
 ### Contribution List
