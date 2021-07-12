@@ -46,6 +46,9 @@
 > 
 > [[PDF]2019-2020第一学期数学学院《数学分析Ⅲ》期末考试](/files/mathematical-analysis/2019-2020第一学期数学学院《数学分析Ⅲ》期末考试.pdf)
 >
+> [[PDF]2020-2021学年数学分析II月考3试卷参考解答](/files/mathematical-analysis/2020-2021学年数学分析II月考3试卷参考解答.pdf)
+>
+> [[PDF]2020-2021学年数学分析II期末考试试卷A参考解答](/files/mathematical-analysis/2020-2021学年数学分析II期末考试试卷A参考解答)
 
 ### 代数
 
