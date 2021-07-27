@@ -221,6 +221,7 @@
 >
 > [[PDF]2020-2021第二学期统计决策期末考试(不完全回忆版)](/files/probability-statistics/2020-2021第二学期统计决策期末考试.pdf)
 >
+> [[PDF]2020-2021第二学期概率论期末考试](/files/probability-statistics/2020-2021第二学期概率论期末考试.pdf)
 
 ### 数值分析
 
