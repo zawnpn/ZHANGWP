@@ -273,6 +273,6 @@
 
 ### Contribution List
 
-[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、匿名（17 级数理双修、19 级数院）
+[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、TYC、匿名（17 级数理双修、19 级数院）
 
 （*排名不分先后；如有遗漏或需补充信息，请联系：*`zawnpn@gmail.com`）
