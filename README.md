@@ -15,8 +15,8 @@ I got my B.Sc. degree in [School of Mathematical Sciences](https://math.nankai.e
 
 My research interests include ***Machine Learning, Reinforcement Learning***. 
 
-- **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo. *MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning*. (**ACML 2021**)[[PDF]](files/research_papers/mbdp.pdf)
-- **Wanpeng Zhang**, Xiaoyan Cao, Yao Yao, Zhicheng An, Dijun Luo, Xi Xiao. *Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control*. (Preprint)[[PDF]](files/research_papers/robust-control.pdf)
+- **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo. *MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning*. (Preprint)[[PDF]](files/research_papers/mbdp.pdf)
+- **Wanpeng Zhang**, Xiaoyan Cao, Yao Yao, Zhicheng An, Dijun Luo, Xi Xiao. *Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control*. (**ACML 2021**)[[PDF]](files/research_papers/robust-control.pdf)
 - Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia. *Self-Paced Probabilistic Principal Component Analysis for Data with Outliers*. **(ICASSP 2020)**[[PDF]](files/research_papers/sp-ppca.pdf)
 - Yao Yao, Li Xiao, Zhicheng An, **Wanpeng Zhang**, Dijun Luo. *Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation*. **(ICRA 2021)**[[PDF]](files/research_papers/icra21.pdf)
 - Zhicheng An, Xiaoyan Cao, Yao Yao, **Wanpeng Zhang**, Lanqing Li, Yue Wang, Shihui Guo, Dijun Luo. *A Simulator-based Planning Framework for Optimizing Autonomous Greenhouse Control Strategy*. **(ICAPS 2021)**[[PDF]](files/research_papers/icaps21.pdf)
