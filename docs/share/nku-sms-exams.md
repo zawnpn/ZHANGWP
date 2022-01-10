@@ -62,6 +62,8 @@
 >
 > [[PDF]2021-2022 学年数学分析3-3(伯苓班)期中考试试题](/files/mathematical-analysis/2021-2022 学年数学分析3-3(伯苓班)期中考试试题.pdf)
 >
+> [[PDF]2021-2022学年度第一学期伯苓班数分3-3期末考试](/files/mathematical-analysis/2021-2022学年度第一学期伯苓班数分3-3期末考试.pdf)
+>
 
 ### 代数
 
@@ -114,6 +116,10 @@
 > [[PDF]2021-2022第一学期抽象代数期末考试(回忆)](/files/algebra/2021-2022第一学期抽象代数期末考试(回忆).pdf)
 >
 > [[PDF]2021-2022学年抽象代数期末考试试题（大类）](/files/algebra/2021-2022学年抽象代数期末考试试题（大类）.pdf)
+> 
+> [[PDF]2021-2022学年度第一学期伯苓班抽象代数I期中考试](/files/algebra/2021-2022学年度第一学期伯苓班抽象代数I期中考试.pdf)
+>
+> [[PDF]2021-2022学年度第一学期伯苓班抽象代数I期末考试](/files/algebra/2021-2022学年度第一学期伯苓班抽象代数I期末考试.pdf)
 > 
 > [[PDF]2020-2021第一学期《有限群表示论》期末考试](/files/algebra/2020-2021第一学期《有限群表示论》期末考试.pdf)
 > 
@@ -259,6 +265,8 @@
 >
 > [[PDF]2016-2017学年第一学期数值分析期末考试](/files/numerical-analysis/2016-2017学年第一学期数值分析期末考试.pdf)
 >
+> [[PDF]2021-2022学年第一学期数值分析期末考试](/files/numerical-analysis/2021-2022学年第一学期数值分析期末考试.pdf)
+>
 
 ### 拓扑
 
@@ -308,6 +316,6 @@
 
 ### Contribution List
 
-[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、TYC、徐一川、匿名（17 级数理双修、19 级数院）
+[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、TYC、徐一川、邓哲、匿名（17 级数理双修、19 级数院）
 
 （*排名不分先后；如有遗漏或需补充信息，请联系：*`zawnpn@gmail.com`）
