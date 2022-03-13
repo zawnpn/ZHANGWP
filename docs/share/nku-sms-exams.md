@@ -64,6 +64,8 @@
 >
 > [[PDF]2021-2022学年度第一学期伯苓班数分3-3期末考试](/files/mathematical-analysis/2021-2022学年度第一学期伯苓班数分3-3期末考试.pdf)
 >
+> [[PDF]2021-2022学年数学分析II第1次月考试题](/files/mathematical-analysis/2021-2022学年数学分析II第1次月考试题.pdf)
+>
 
 ### 代数
 
