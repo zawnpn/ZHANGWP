@@ -130,8 +130,9 @@ theme:
   include_search_page: false
   search_index_only: true
   features:
-    - tabs
-    # - instant # !may cause bug on Mathjax
+    - navigation.tabs
+    - navigation.prune
+    # - navigation.instant # !may cause bug on Mathjax
   icon:
     logo: fontawesome/solid/terminal
     repo: fontawesome/solid/code-branch
@@ -160,7 +161,7 @@ extra:
       link: 'https://psnprofiles.com/zawnpn'
     - icon: fontawesome/brands/steam
       link: 'https://steamcommunity.com/id/zawnpn/'
-    - icon: fontawesome/solid/play-circle
+    - icon: fontawesome/solid/circle-play
       link: 'https://space.bilibili.com/38332230'
 
 extra_javascript:
