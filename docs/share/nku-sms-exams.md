@@ -2,6 +2,40 @@
 
 本页面长期维护更新中，欢迎投稿，可直接提交[Github PR](https://github.com/zawnpn/ZHANGWP)，或者邮件联系：`zawnpn@gmail.com`（页末附有Contribution List，感谢各位的贡献！如需在Contribution List中添加你的名称or昵称，请在来稿邮件中注明，感谢！）
 
+### 汇总（2022年后的试卷）
+
+*由于目前来稿分类繁多，对于2022年后的来稿不再做细致的归类，按投稿时间顺序发布在本节中*
+
+> [[PDF]2020级数学伯苓班动态进出《数学分析3-3》考试](/files/new-exams/2020级数学伯苓班动态进出《数学分析3-3》考试.pdf)
+>
+> [[PDF]2021-2022抽象代数II考试A卷](/files/new-exams/2021-2022抽象代数II考试A卷.pdf)
+>
+> [[PDF]2022春季学期伯苓班动态进出考试复变函数试卷](/files/new-exams/2022春季学期伯苓班动态进出考试复变函数试卷.pdf)
+>
+> [[PDF]伯苓选拔2022-抽象代数](/files/new-exams/伯苓选拔2022-抽象代数.pdf)
+>
+> [[PDF]离散优化2021-2022学年期末考试](/files/new-exams/离散优化2021-2022学年期末考试.pdf)
+>
+> [[PDF]离散优化2021-2022期末](/files/new-exams/离散优化2021-2022期末.pdf)
+>
+> [[PDF]2022金融工程学试题(A)](/files/new-exams/2022金融工程学试题(A).pdf)
+>
+> [[PDF]2022运筹学A 密码：hw220612A](/files/new-exams/2022运筹学A 密码：hw220612A.pdf)
+>
+> [[PDF]2022精算数学（A）密码：Li130328](/files/new-exams/2022精算数学（A）密码：Li130328.pdf)
+>
+> [[PDF]2021-2022学年图论期末考试 ](/files/new-exams/2021-2022学年图论期末考试 .pdf)
+>
+> [[PDF]2021-2022 代数拓扑考试](/files/new-exams/2021-2022 代数拓扑考试.pdf)
+>
+> [[PDF]2021-2022  Riemann 曲面考试](/files/new-exams/2021-2022  Riemann 曲面考试.pdf)
+>
+> [[PDF]2020-2021 微分流形期末教学质量检测](/files/new-exams/2020-2021 微分流形期末教学质量检测.pdf)
+>
+> [[PDF]2021-2022 学年度第二学期伯苓班抽象代数 II 结课考试](/files/new-exams/2021-2022 学年度第二学期伯苓班抽象代数 II 结课考试.pdf)
+>
+
+
 ### 数学分析
 
 > [[PDF]2013-2014第一学期数学类数学分析3-1期中考试](/files/mathematical-analysis/2013-2014第一学期数学类数学分析3-1期中考试.pdf)
@@ -318,6 +352,7 @@
 
 ### Contribution List
 
-[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、TYC、徐一川、邓哲、匿名（17 级数理双修、19 级数院）
+[叶志强](https://www.notion.so/Quicy-05360992193e48e3b605f36c1fd6ff98)、颜瑞民、[张万鹏](https://www.zhangwp.com)、[张绰棋](https://chokie-zhang.github.io)、曾语晨、胡尽涵、吴诗童、[吕之豪](https://www.alexhaoge.xyz)、于飞洋、TYC、徐一川、邓哲、sym、李雨谦、
+王健禹、数院占座小分队、匿名（17 级数理双修、19 级数院）
 
 （*排名不分先后；如有遗漏或需补充信息，请联系：*`zawnpn@gmail.com`）
