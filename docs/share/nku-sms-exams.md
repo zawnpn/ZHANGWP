@@ -34,6 +34,11 @@
 >
 > [[PDF]2021-2022 学年度第二学期伯苓班抽象代数 II 结课考试](/files/new-exams/2021-2022 学年度第二学期伯苓班抽象代数 II 结课考试.pdf)
 >
+> [[PDF]2022精算数学（A卷）](/files/new-exams/2022精算数学（A卷）.pdf)
+>
+> [[PDF]2022概率期末考试A](/files/new-exams/2022概率期末考试A.pdf)
+>
+> [[PDF]大类2022实变B卷](/files/new-exams/大类2022实变B卷.pdf)
 
 
 ### 数学分析
