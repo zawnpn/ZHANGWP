@@ -20,16 +20,16 @@ My research interests include ***Machine Learning, Reinforcement Learning***.
 
 ### [Conference]
 
+- Xiaopeng Yu, Jiechuan Jiang, **Wanpeng Zhang**, Haobin Jiang, Zongqing Lu. *Model-Based Opponent Modeling*. **(NeurIPS 2022)**[[PDF]](https://arxiv.org/pdf/2108.01843.pdf)
+- Xiaoyan Cao, Yao Yao, Lanqing Li, **Wanpeng Zhang**, Zhicheng An, Zhong Zhang, Shihui Guo, Li Xiao, Xiaoyu Cao, Dijun Luo. *iGrow: A Smart Agriculture Solution to Autonomous Greenhouse Control*. **(AAAI 2022)**[[PDF]](https://arxiv.org/pdf/2107.05464.pdf)
 - **Wanpeng Zhang**, Xiaoyan Cao, Yao Yao, Zhicheng An, Dijun Luo, Xi Xiao. *Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control*. (**ACML 2021**)[[PDF]](https://arxiv.org/pdf/2108.11645.pdf)
-- Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia. *Self-Paced Probabilistic Principal Component Analysis for Data with Outliers*. **(ICASSP 2020)**[[PDF]](https://arxiv.org/pdf/1904.06546.pdf)
 - Yao Yao, Li Xiao, Zhicheng An, **Wanpeng Zhang**, Dijun Luo. *Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation*. **(ICRA 2021)**[[PDF]](https://arxiv.org/pdf/2107.01825.pdf)
 - Zhicheng An, Xiaoyan Cao, Yao Yao, **Wanpeng Zhang**, Lanqing Li, Yue Wang, Shihui Guo, Dijun Luo. *A Simulator-based Planning Framework for Optimizing Autonomous Greenhouse Control Strategy*. **(ICAPS 2021)**[[PDF]](files/research_papers/icaps21.pdf)
-- Xiaoyan Cao, Yao Yao, Lanqing Li, **Wanpeng Zhang**, Zhicheng An, Zhong Zhang, Shihui Guo, Li Xiao, Xiaoyu Cao, Dijun Luo. *iGrow: A Smart Agriculture Solution to Autonomous Greenhouse Control*. **(AAAI 2022)**[[PDF]](https://arxiv.org/pdf/2107.05464.pdf)
+- Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia. *Self-Paced Probabilistic Principal Component Analysis for Data with Outliers*. **(ICASSP 2020)**[[PDF]](https://arxiv.org/pdf/1904.06546.pdf)
 
 ### [Preprint]
 
 - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo. *MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning*. [[PDF]](https://arxiv.org/pdf/2108.01295.pdf)
-- Xiaopeng Yu, Jiechuan Jiang, **Wanpeng Zhang**, Haobin Jiang, Zongqing Lu. *Model-Based Opponent Modeling*. [[PDF]](https://arxiv.org/abs/2108.01843)
 
 ## Academic Service
 
