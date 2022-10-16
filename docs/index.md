@@ -2,13 +2,13 @@
 
 ## Intro
 
-- Ph.D. student, [School of Electronics Engineering and Computer Science](https://eecs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
+- Ph.D. student, [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
 - Email: zawnpn@gmail.com, wpzhang@stu.pku.edu.cn
 - [[Google Scholar]](https://scholar.google.com/citations?user=_IKNf9EAAAAJ)
 
 ## Biography
 
-- Currently I am a Ph.D. student of [School of Electronics Engineering and Computer Science](https://eecs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
+- Currently I am a Ph.D. student of [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
 
 - I received my M.Sc. degree from [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn) in June 2022.
 

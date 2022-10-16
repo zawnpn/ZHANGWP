@@ -39,6 +39,12 @@
 > [[PDF]2022概率期末考试A](/files/new-exams/2022概率期末考试A.pdf)
 >
 > [[PDF]大类2022实变B卷](/files/new-exams/大类2022实变B卷.pdf)
+> 
+> [[PDF]2021级动态进出1高代](/files/new-exams/2021级动态进出1高代.pdf)
+> 
+> [[PDF]2021伯苓动态进出数分](/files/new-exams/2021伯苓动态进出数分.pdf)
+> 
+> [[PDF]2021-2022第二学期点集拓扑期末A卷](/files/topology/2021-2022第二学期点集拓扑期末A卷.pdf)
 
 
 ### 数学分析
