@@ -30,6 +30,7 @@ My research interests include ***Machine Learning, Reinforcement Learning***.
 ### [Preprint]
 
 - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo. *MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning*. [[PDF]](https://arxiv.org/pdf/2108.01295.pdf)
+- Ziluo Ding, **Wanpeng Zhang**, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *Entity Divider with Language Grounding in Multi-Agent Reinforcement Learning*. [[PDF]](https://arxiv.org/pdf/2210.13942)
 
 ## Academic Service
 
