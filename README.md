@@ -22,6 +22,7 @@ My research interests include ***Machine Learning, Reinforcement Learning***.
 
 - Xiaopeng Yu, Jiechuan Jiang, **Wanpeng Zhang**, Haobin Jiang, Zongqing Lu. *Model-Based Opponent Modeling*. **(NeurIPS 2022)**[[PDF]](https://arxiv.org/pdf/2108.01843.pdf)
 - Xiaoyan Cao, Yao Yao, Lanqing Li, **Wanpeng Zhang**, Zhicheng An, Zhong Zhang, Shihui Guo, Li Xiao, Xiaoyu Cao, Dijun Luo. *iGrow: A Smart Agriculture Solution to Autonomous Greenhouse Control*. **(AAAI 2022)**[[PDF]](https://arxiv.org/pdf/2107.05464.pdf)
+- Mingzhe Chen, Xi Xiao, **Wanpeng Zhang**, Xiaotian Gao. *Efficient and Stable Information Directed Exploration for Continuous Reinforcement Learning*. (**ICASSP 2022**)[[PDF]](/files/research_papers/icassp22.pdf)
 - **Wanpeng Zhang**, Xiaoyan Cao, Yao Yao, Zhicheng An, Dijun Luo, Xi Xiao. *Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control*. (**ACML 2021**)[[PDF]](https://arxiv.org/pdf/2108.11645.pdf)
 - Yao Yao, Li Xiao, Zhicheng An, **Wanpeng Zhang**, Dijun Luo. *Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation*. **(ICRA 2021)**[[PDF]](https://arxiv.org/pdf/2107.01825.pdf)
 - Zhicheng An, Xiaoyan Cao, Yao Yao, **Wanpeng Zhang**, Lanqing Li, Yue Wang, Shihui Guo, Dijun Luo. *A Simulator-based Planning Framework for Optimizing Autonomous Greenhouse Control Strategy*. **(ICAPS 2021)**[[PDF]](files/research_papers/icaps21.pdf)
