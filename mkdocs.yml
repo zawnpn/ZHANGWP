@@ -8,7 +8,7 @@ edit_uri: '' # edit/master/docs/'
 remote_branch: gh-pages
 remote_name: origin
 site_author: Wanpeng Zhang
-copyright: Copyright &copy; 2016-2021 ZHANGWP
+copyright: Copyright &copy; 2016-2023 ZHANGWP
 nav:
 
   - Home:
