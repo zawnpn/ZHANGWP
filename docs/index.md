@@ -44,14 +44,14 @@
     - [Link](https://ojs.aaai.org/index.php/ICAPS/article/view/15989) / [PDF](files/research_papers/icaps21.pdf)
 - [**[ICASSP'20]** Self-Paced Probabilistic Principal Component Analysis for Data with Outliers](https://ieeexplore.ieee.org/document/9054487)
     - Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia.
-    - [Link](https://ieeexplore.ieee.org/document/9054487) / [arXiv](https://arxiv.org/abs/1904.06546) / [PDF](https://arxiv.org/pdf/1904.06546.pdf)
+    - [Link](https://ieeexplore.ieee.org/document/9054487) / [arXiv](https://arxiv.org/abs/1904.06546) / [PDF](https://arxiv.org/pdf/1904.06546.pdf) / [Code](https://github.com/rumusan/SPPPCA_demo)
 
 ## Preprints
 
 ----
 
 - [**[arXiv'23]** Entity Divider with Language Grounding in Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2210.13942)
-    - Ziluo Ding\*, **Wanpeng Zhang\***, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *\*co-first-author*
+    - Ziluo Ding\*, **Wanpeng Zhang\***, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *\*equal contribution*
     - [arXiv](https://arxiv.org/abs/2210.13942) / [PDF](https://arxiv.org/pdf/2210.13942)
 - [**[arXiv'21]** MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning](https://arxiv.org/abs/2108.01295)
     - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo.
