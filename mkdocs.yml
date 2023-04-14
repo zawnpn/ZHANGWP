@@ -96,7 +96,6 @@ nav:
       - GPU程序设计:
         - 2020-2021第二学期GPU程序设计期末考试: share/exam/GPU-programming.md
     - Tips:
-      - Index: share/tips/README.md
       - To Do: share/tips/to-do.md
       - Python: share/tips/python.md
       - Data Processing: share/tips/data-processing.md
