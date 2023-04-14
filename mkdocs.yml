@@ -14,7 +14,7 @@ nav:
   - Home:
     - Home: index.md
   
-  - Notes:
+  - Note:
     - Index: notes/README.md
     - Paper Reading:
       - Model-based RL:
@@ -37,22 +37,20 @@ nav:
         - Chapter 12: notes/book-reading/RLAI/RLAI_12.md
         - Chapter 13: notes/book-reading/RLAI/RLAI_13.md
 
-  - Projects:
-    - Index: projects/README.md
-    - AI:
-      - RL Runfast: projects/rl_runfast.md
-    - Typesetting:
-      - Markdown 编译转换工具: projects/markdown-toolkit.md
-    - NKU:
-      - NKU-EAMIS工具: projects/nku-eamis.md
-      - NKU-SMS-RSS: projects/nku-sms-rss.md
-      - NKU-EAMIS_MiniApp(南开大学教务助手小程序): projects/eamis-miniapp.md
-      - NKU-EAMIS for iOS(Workflow): projects/eamis-workflow.md
-    - Game:
-      - Steam市场比价爬虫: projects/steam-market-price-bot.md
-
   - Share:
     - Index: share/README.md
+    - Projects:
+      - AI:
+        - RL Runfast: share/projects/rl_runfast.md
+      - Typesetting:
+        - Markdown 编译转换工具: share/projects/markdown-toolkit.md
+      - NKU:
+        - NKU-EAMIS工具: share/projects/nku-eamis.md
+        - NKU-SMS-RSS: share/projects/nku-sms-rss.md
+        - NKU-EAMIS_MiniApp(南开大学教务助手小程序): share/projects/eamis-miniapp.md
+        - NKU-EAMIS for iOS(Workflow): share/projects/eamis-workflow.md
+      - Game:
+        - Steam市场比价爬虫: share/projects/steam-market-price-bot.md
     - Diary:
       - 鹏程万里: share/roc-fly.md
       - 博客历史: share/blog-history.md
@@ -97,25 +95,19 @@ nav:
         - 2020-2021第二学期离散优化期末考试: share/exam/discrete-optimization.md
       - GPU程序设计:
         - 2020-2021第二学期GPU程序设计期末考试: share/exam/GPU-programming.md
+    - Tips:
+      - Index: share/tips/README.md
+      - To Do: share/tips/to-do.md
+      - Python: share/tips/python.md
+      - Data Processing: share/tips/data-processing.md
+      - Git: share/tips/git.md
+      - Linux: share/tips/linux.md
+      - Windows: share/tips/win.md
+      - macOS: share/tips/mac.md
 
-  - Tips:
-    - Index: tips/README.md
-    - To Do: tips/to-do.md
-    - Python: tips/python.md
-    - Data Processing: tips/data-processing.md
-    - Git: tips/git.md
-    - Linux: tips/linux.md
-    - Windows: tips/win.md
-    - macOS: tips/mac.md
+  - Other:
+    - Other: other.md
 
-  - Links:
-    - Links: links.md
-  
-  - Donates:
-    - Donates: donates.md
-
-  - Statements:
-    - Statements: statements.md
 
 theme:
   name: 'material'

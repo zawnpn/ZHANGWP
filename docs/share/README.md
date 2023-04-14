@@ -1,6 +1,37 @@
 # Share
 
+## EDU
+
+----
+
+- [南开数院 - 试题汇总](/share/nku-sms-exams)
+
+## Projects
+
+----
+
+### AI
+
+- [RL Runfast](/share/projects/rl_runfast)
+
+### Typesetting
+
+- [Markdown 编译转换工具](/share/projects/markdown-toolkit)
+
+### NKU
+
+- [NKU-EAMIS 工具](/share/projects/nku-eamis)
+- [NKU-SMS-RSS](/share/projects/nku-sms-rss)
+- [NKU-EAMIS_MiniApp (南开大学教务助手小程序)](/share/projects/eamis-miniapp)
+- [NKU-EAMIS for iOS (Workflow)](/share/projects/eamis-workflow)
+
+### Game
+
+- [Steam 市场比价爬虫](/share/projects/steam-market-price-bot)
+
 ## Diary
+
+----
 
 - [鹏程万里](/share/roc-fly)
 - [博客历史](/share/blog-history)
@@ -9,6 +40,8 @@
 - [Student Developer Pack - GitHub Education](/share/github-student-pack)
 
 ## Math
+
+----
 
 - 数学建模:
     - [2017美赛参赛整理(Problem D)](/share/2017-mcm-icm)
@@ -49,3 +82,23 @@
         - [2020-2021第二学期离散优化期末考试](/share/exam/discrete-optimization)
     - GPU程序设计:
         - [2020-2021第二学期GPU程序设计期末考试](/share/exam/GPU-programming)
+
+## Tips
+
+----
+
+### To-Do
+
+  - [To-Do List](/share/tips/to-do)
+
+### Coding
+
+  - [Python](/share/tips/python)
+  - [Data Processing](/share/tips/data-processing)
+  - [Git](/share/tips/git)
+
+### OS
+
+  - [Linux](/share/tips/linux)
+  - [Windows](/share/tips/win)
+  - [macOS](/share/tips/mac)

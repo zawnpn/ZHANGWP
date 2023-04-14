@@ -1,6 +1,8 @@
-# Notes
+# Note
 
 ## Paper Reading
+
+----
 
   - **Model-based RL**
     - [Model-based RL with uncertainty](/notes/paper-reading/MBRL_with_uncertainty/)
@@ -9,6 +11,8 @@
     - [Background and decision-time planning](/notes/paper-reading/background_and_decision-time_planning/)
 
 ## Book Reading
+
+----
 
   - ***Reinforcement Learning: An Introduction*** (Richard S. Sutton and Andrew G. Barto)
     - 强化学习导论（一）- 强化学习问题（略）

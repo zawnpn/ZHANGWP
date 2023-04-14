@@ -65,3 +65,19 @@ pam_systemd(sshd:session): Failed to create session: Connection timed out
 ```shell
 systemctl restart systemd-logind
 ```
+
+### nginx 端口转发
+
+`/etc/nginx/nginx.conf`:
+
+```
+stream {
+        upstream <app_name> {
+            server <目标IP>:<目标端口>;
+        }
+        server  {
+            listen <本地端口>;
+            proxy_pass <app_name>;
+        }
+}
+```
