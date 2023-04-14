@@ -64,5 +64,3 @@
 - Reviewer
     - ICML 2022, 2023
     - NeurIPS 2022, 2023
-    - AAAI 2021
-    - IJCAI 2021
