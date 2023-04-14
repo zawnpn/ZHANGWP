@@ -51,7 +51,7 @@
 ----
 
 - [**[arXiv'23]** Entity Divider with Language Grounding in Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2210.13942)
-    - Ziluo Ding\*, **Wanpeng Zhang\***, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *\*equal contribution*
+    - Ziluo Ding\*, **Wanpeng Zhang\***, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *\*co-first authorship*
     - [arXiv](https://arxiv.org/abs/2210.13942) / [PDF](https://arxiv.org/pdf/2210.13942)
 - [**[arXiv'21]** MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning](https://arxiv.org/abs/2108.01295)
     - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo.
