@@ -18,7 +18,7 @@
 
 - I received my B.Sc. degree from [School of Mathematical Sciences](https://math.nankai.edu.cn/), [Nankai University](http://www.nankai.edu.cn/) in June 2019.
 
-- I worked as an intern at [Tencent AI Lab](https://ai.tencent.com/) in 2021, advised by Dijun Luo.
+- I worked as a research intern at [Tencent AI Lab](https://ai.tencent.com/) in 2021, advised by Dijun Luo.
 
 ## Publications
 
@@ -56,6 +56,14 @@
 - [**[arXiv'21]** MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning](https://arxiv.org/abs/2108.01295)
     - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo.
     - [arXiv](https://arxiv.org/abs/2108.01295) / [PDF](https://arxiv.org/pdf/2108.01295.pdf)
+
+## Patents
+
+----
+
+- [**[CN112527104A]** Method, device and equipment for determining parameters and storage medium](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A)
+    - Wanpeng Zhang, Dijun Luo, Xi Xiao
+    - [Link](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A) / [PDF](https://patentimages.storage.googleapis.com/53/bd/72/64c9f1cc80e03a/CN112527104A.pdf)
 
 ## Academic Service
 
