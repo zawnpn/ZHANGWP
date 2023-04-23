@@ -62,7 +62,7 @@
 ----
 
 - [**[CN112527104A]** Method, device and equipment for determining parameters and storage medium](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A)
-    - Wanpeng Zhang, Dijun Luo, Xi Xiao
+    - **Wanpeng Zhang**, Dijun Luo, Xi Xiao
     - [Link](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A) / [PDF](https://patentimages.storage.googleapis.com/53/bd/72/64c9f1cc80e03a/CN112527104A.pdf)
 
 ## Academic Service
