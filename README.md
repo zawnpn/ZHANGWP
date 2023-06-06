@@ -52,7 +52,9 @@
 ## Preprints
 
 ----
-
+- [**[arXiv'23]** Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation](https://arxiv.org/abs/2306.02747)
+    - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.
+    - [arXiv](https://arxiv.org/abs/2306.02747) / [PDF](https://arxiv.org/pdf/2306.02747.pdf)
 - [**[arXiv'21]** MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning](https://arxiv.org/abs/2108.01295)
     - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo.
     - [arXiv](https://arxiv.org/abs/2108.01295) / [PDF](https://arxiv.org/pdf/2108.01295.pdf)
