@@ -5,7 +5,7 @@
 ----
 
 - Ph.D. student, [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
-- [Email](mailto:wpzhang@stu.pku.edu.cn) / [Google Scholar](https://scholar.google.com/citations?user=_IKNf9EAAAAJ) / [Github](https://github.com/zawnpn)
+- [Email](mailto:wpzhang@stu.pku.edu.cn) / [Github](https://github.com/zawnpn) / [Google Scholar](https://scholar.google.com/citations?user=_IKNf9EAAAAJ) / [DBLP](https://dblp.org/pid/73/10693-2.html)
 - My research interests include ***Machine Learning, Reinforcement Learning***. 
 
 ## Biography
