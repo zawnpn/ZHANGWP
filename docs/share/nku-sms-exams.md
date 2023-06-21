@@ -19,6 +19,10 @@
 > [[ZIP]2023期末真题资料](/files/new-exams/2023期末真题资料.zip)
 >
 > [[ZIP]大一考试](/files/new-exams/大一考试.zip)
+>
+> [[PDF]2023高代](/files/new-exams/2023高代.pdf)
+>
+> [[PDF]2022-2023第二学期概率论期末考试](/files/new-exams/2022-2023第二学期概率论期末考试.pdf)
 
 ### 汇总（2022）
 
