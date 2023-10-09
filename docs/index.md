@@ -53,7 +53,7 @@
 
 ----
 - [**[arXiv'23]** RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](https://arxiv.org/abs/2306.02747)
-    - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.
+    - **Wanpeng Zhang**, Zongqing Lu.
     - [arXiv](https://arxiv.org/abs/2309.17176) / [PDF](https://arxiv.org/pdf/2309.17176.pdf)
 - [**[arXiv'23]** Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation](https://arxiv.org/abs/2306.02747)
     - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.
