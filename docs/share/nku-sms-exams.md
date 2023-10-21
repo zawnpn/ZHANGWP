@@ -1,4 +1,4 @@
-> 收藏本页面网址：[https://www.zhangwp.com/share/nku-sms-exams](https://www.zhangwp.com/share/nku-sms-exams)
+> 收藏本页面网址：[https://zhangwp.com/share/nku-sms-exams](https://zhangwp.com/share/nku-sms-exams)
 
 本页面长期维护更新中，欢迎投稿，可直接提交[Github PR](https://github.com/zawnpn/ZHANGWP)，或者邮件联系：`zawnpn@gmail.com`（页末附有Contribution List，感谢各位的贡献！如需在Contribution List中添加你的名称or昵称，请在来稿邮件中注明，感谢！）
 

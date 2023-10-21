@@ -30,7 +30,7 @@
 
 | Intro          | Link                                               |
 | -------------- | -------------------------------------------------- |
-| ZHANGWP's Blog | [https://www.zhangwp.com](https://www.zhangwp.com) |
+| ZHANGWP's Blog | [https://zhangwp.com](https://zhangwp.com) |
 
 欢迎交换友链~
 

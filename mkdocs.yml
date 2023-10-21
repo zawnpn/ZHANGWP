@@ -1,6 +1,6 @@
 site_name: ZHANGWP
 site_description: Welcome to zhangwp's blog.
-site_url: https://www.zhangwp.com
+site_url: https://zhangwp.com
 strict: false
 dev_addr: localhost:8000
 repo_url: https://github.com/zawnpn/ZHANGWP
