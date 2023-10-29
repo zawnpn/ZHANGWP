@@ -4,11 +4,12 @@
 
 ----
 
-  - **Model-based RL**
+  - **Reinforcement Learning**
     - [Model-based RL with uncertainty](/notes/paper-reading/MBRL_with_uncertainty/)
-  - **RL Control**
     - [蒙特卡罗树搜索（MCTS） - 介绍](/notes/paper-reading/MCTS_introduction/)
     - [Background and decision-time planning](/notes/paper-reading/background_and_decision-time_planning/)
+  - **Language Modeling**
+    - [Woodpecker: Hallucination Correction for Multimodal Large Language Models](/notes/paper-reading/reading_woodpecker/)
 
 ## Book Reading
 

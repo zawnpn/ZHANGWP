@@ -17,11 +17,12 @@ nav:
   - Note:
     - Index: notes/README.md
     - Paper Reading:
-      - Model-based RL:
+      - Reinforcement Learning:
         - MBRL with uncertainty: notes/paper-reading/MBRL_with_uncertainty.md
-      - RL Control:
         - MCTS introduction: notes/paper-reading/MCTS_introduction.md
         - Background and decision-time planning: notes/paper-reading/background_and_decision-time_planning.md
+      - Language Modeling:
+        - "Woodpecker: Hallucination Correction for Multimodal Large Language Models": notes/paper-reading/reading_woodpecker.md
     - Book Reading:
       - Reinforcement Learning An Introduction:
         - Chapter 2: notes/book-reading/RLAI/RLAI_2.md
