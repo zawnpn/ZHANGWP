@@ -2,6 +2,8 @@
 
 ![image-20231029195502171](imgs/reading_woodpecker/image-20231029195502171.png)
 
+> 原文链接: [arXiv](https://arxiv.org/abs/2310.16045)
+
 ## Background
 
 - 在多模态大模型中，常会出现幻觉（hallucination）问题，即对于一些问题并不确定，但仍会在生成信息中输出不合理的信息。
