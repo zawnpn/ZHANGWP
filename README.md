@@ -4,7 +4,7 @@
 
 ----
 
-- Ph.D. student, [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
+- Ph.D. candidate, [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
 - [Email](mailto:wpzhang@stu.pku.edu.cn) / [Github](https://github.com/zawnpn) / [Google Scholar](https://scholar.google.com/citations?user=_IKNf9EAAAAJ) / [DBLP](https://dblp.org/pid/73/10693-2.html)
 - My research interests include ***Reinforcement Learning, Language Modeling***. Looking for collaborators!
 
@@ -12,7 +12,7 @@
 
 ----
 
-- Currently I am a Ph.D. student of [School of Computer Science](https://cs.pku.edu.cn/) in [Peking University](https://www.pku.edu.cn/) , advised by Prof. [Zongqing Lu](https://z0ngqing.github.io/).
+- Currently I am a Ph.D. candidate of [School of Computer Science](https://cs.pku.edu.cn/) in [Peking University](https://www.pku.edu.cn/) , advised by Prof. [Zongqing Lu](https://z0ngqing.github.io/).
 
 - I received my M.Sc. degree from [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn) in June 2022.
 
@@ -52,8 +52,8 @@
 ## Preprints
 
 ----
-- [**[arXiv'23]** RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](https://arxiv.org/abs/2306.02747)
-    - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.
+- [**[arXiv'23]** RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](https://arxiv.org/abs/2309.17176)
+    - **Wanpeng Zhang**, Zongqing Lu.
     - [arXiv](https://arxiv.org/abs/2309.17176) / [PDF](https://arxiv.org/pdf/2309.17176.pdf)
 - [**[arXiv'23]** Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation](https://arxiv.org/abs/2306.02747)
     - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.

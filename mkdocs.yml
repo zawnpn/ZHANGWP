@@ -143,18 +143,20 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: 'https://github.com/zawnpn'
+    - icon: fontawesome/solid/person-running
+      link: 'https://run.zawnpn.com'
     - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/zawnpn'
     - icon: fontawesome/brands/linkedin
       link: 'https://www.linkedin.com/in/zawnpn/'
-    - icon: fontawesome/brands/zhihu
-      link: 'https://www.zhihu.com/people/zhangwanpeng'
     - icon: fontawesome/brands/playstation
       link: 'https://psnprofiles.com/zawnpn'
     - icon: fontawesome/brands/steam
       link: 'https://steamcommunity.com/id/zawnpn/'
-    - icon: fontawesome/solid/circle-play
+    - icon: fontawesome/brands/bilibili
       link: 'https://space.bilibili.com/38332230'
+    - icon: fontawesome/brands/zhihu
+      link: 'https://www.zhihu.com/people/zhangwanpeng'
 
 extra_javascript:
   - _static/extra.js
