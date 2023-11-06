@@ -1,0 +1,62 @@
+{% set image = config.site_url ~ config.extra['SEO'] %}
+{% set title = config.site_name %}
+{% set description = config.site_description %}
+{% if page and page.meta %}
+    {% if not page.is_homepage %}
+        {% set title = page.title %}
+    {% elif page.meta.title %}
+        {% set title = page.meta.title %}
+    {% endif %}
+    {% if title == "Index" %}
+        {% if page.meta.name %}
+            {% set title = page.meta.name %}
+        {% else %}
+            {% set title = page.parent.title %}
+        {% endif %}
+    {% endif %}
+    {% if page.meta.description %}
+        {% set description = page.meta.description %}
+    {% endif %}
+    {% if page.meta.image %}
+        {% set attachmentsFolder = 'attachments' | value_in_frontmatter(config.extra) %}
+        {% set attachments = 'assets/img/' if attachmentsFolder is none else config.extra['attachments'] | regex_replace('/$', '') %}
+        {% set image = config.site_url ~ attachments ~ "/" ~ page.meta.image %}
+    {% elif page.meta.banner %}
+        {% set image = page.meta.banner %}
+    {% endif %}
+    
+{% endif %}
+
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+<meta
+    content="{{ image }}"
+    property="og:image"
+>
+<meta
+    name="twitter:image"
+    content="{{ image }}"
+>
+<meta
+    name="site_url"
+    content="{{ config.site_url }}"
+>
+<meta
+    property="og:title"
+    content="{{ title }}"
+>
+<meta
+    name="twitter:title"
+    content="{{ title }}"
+>
+<meta
+    name="og:description"
+    content="{{ description }}"
+>
+<meta
+    name="twitter:description"
+    content="{{ description }}"
+>
+<script> document.title = "{{ title }}" </script>

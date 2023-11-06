@@ -1,80 +1,82 @@
-# Wanpeng Zhang / 张万鹏
+---
+title: Configuration
+---
 
-## Intro
+- [Obsidian Plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- Template :
+  - To use with [Github Pages](https://github.com/ObsidianPublisher/template-gh-pages)
+  - With [Netlify](https://github.com/ObsidianPublisher/template-netlify-vercel)
+- [Documentation](https://obsidian-publisher.netlify.app/)
+- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
-----
+## Mkdocs configuration
 
-- Ph.D. candidate, [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/).
-- [Email](mailto:wpzhang@stu.pku.edu.cn) / [Github](https://github.com/zawnpn) / [Google Scholar](https://scholar.google.com/citations?user=_IKNf9EAAAAJ) / [DBLP](https://dblp.org/pid/73/10693-2.html)
-- My research interests include ***Reinforcement Learning, Language Modeling***. Looking for collaborators!
+You need to configure the plugin and the `mkdocs` configuration for it to work properly.
 
-## Biography
+You can find more information about creating the site using the [Material Mkdocs Documentation](https://squidfunk.github.io/mkdocs-material/creating-your-site/#advanced-configuration).
 
-----
+In the repository that you cloned, you will find a `mkdocs.yml` file. This file allows you to customize your blog. The most important settings to edit are:
 
-- Currently I am a Ph.D. candidate of [School of Computer Science](https://cs.pku.edu.cn/) in [Peking University](https://www.pku.edu.cn/) , advised by Prof. [Zongqing Lu](https://z0ngqing.github.io/).
+1. `site_name`
+2. `site_description`
+3. `site_url` (critical): By default, it's `https://github_username.github.io/repo_name`[^1]
 
-- I received my M.Sc. degree from [Department of Computer Science and Technology](http://www.cs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn) in June 2022.
+To edit the logo and favicon, first put the chosen files in the `assets/logo` directory, and then change `logo` and `favicon`:
 
-- I received my B.Sc. degree from [School of Mathematical Sciences](https://math.nankai.edu.cn/), [Nankai University](http://www.nankai.edu.cn/) in June 2019.
+1. `logo: assets/meta/logo_name.png`
+2. `favicon: assets/meta/favicon.png`
+3. To properly work with SEO, also edit the `extra` with `SEO: 'assets/meta/LOGO_SEO.png'`
 
-- I worked as a research intern at [Tencent AI Lab](https://ai.tencent.com/) in 2021, advised by Dijun Luo.
+You can also customize:
 
-## Publications
+- Font
+- Color scheme, palette, and icons
+- Language
 
-----
+[Check the documentation for more information](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
-- [**[ICML'23]** Entity Divider with Language Grounding in Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2210.13942)
-    - Ziluo Ding\*, **Wanpeng Zhang\***, Junpeng Yue, Xiangjun Wang, Tiejun Huang, Zongqing Lu. *\*co-first authorship*
-    - [arXiv](https://arxiv.org/abs/2210.13942) / [PDF](https://arxiv.org/pdf/2210.13942)
-- [**[NeurIPS'22]** Model-Based Opponent Modeling](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b528459c99e929718a7d7e1697253d7f-Abstract-Conference.html)
-    - Xiaopeng Yu, Jiechuan Jiang, **Wanpeng Zhang**, Haobin Jiang, Zongqing Lu.
-    - [Link](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b528459c99e929718a7d7e1697253d7f-Abstract-Conference.html) / [arXiv](https://arxiv.org/abs/2108.01843) / [PDF](https://arxiv.org/pdf/2108.01843.pdf)
-- [**[AAAI'22]** iGrow: A Smart Agriculture Solution to Autonomous Greenhouse Control](https://ojs.aaai.org/index.php/AAAI/article/view/21440)
-    - Xiaoyan Cao, Yao Yao, Lanqing Li, **Wanpeng Zhang**, Zhicheng An, Zhong Zhang, Shihui Guo, Li Xiao, Xiaoyu Cao, Dijun Luo.
-    - [Link](https://ojs.aaai.org/index.php/AAAI/article/view/21440) / [arXiv](https://arxiv.org/abs/2107.05464) / [PDF](https://arxiv.org/pdf/2107.05464.pdf)
-- [**[ICASSP'22]** Efficient and Stable Information Directed Exploration for Continuous Reinforcement Learning](https://ieeexplore.ieee.org/document/9746211)
-    - Mingzhe Chen, Xi Xiao, **Wanpeng Zhang**, Xiaotian Gao.
-    - [Link](https://ieeexplore.ieee.org/document/9746211) / [PDF](/files/research_papers/icassp22.pdf)
-- [**[ACML'21]** Robust Model-based Reinforcement Learning for Autonomous Greenhouse Control](https://proceedings.mlr.press/v157/zhang21e)
-    - **Wanpeng Zhang**, Xiaoyan Cao, Yao Yao, Zhicheng An, Dijun Luo, Xi Xiao. 
-    - [Link](https://proceedings.mlr.press/v157/zhang21e) / [arXiv](https://arxiv.org/abs/2108.11645) / [PDF](https://arxiv.org/pdf/2108.11645.pdf)
-- [**[ICRA'21]** Sample Efficient Reinforcement Learning via Model-Ensemble Exploration and Exploitation](https://ieeexplore.ieee.org/document/9561842)
-    - Yao Yao, Li Xiao, Zhicheng An, **Wanpeng Zhang**, Dijun Luo.
-    - [Link](https://ieeexplore.ieee.org/document/9561842) / [arXiv](https://arxiv.org/abs/2107.01825) / [PDF](https://arxiv.org/pdf/2107.01825.pdf) / [Code](https://github.com/YaoYao1995/MEEE)
-- [**[ICAPS'21]** A Simulator-based Planning Framework for Optimizing Autonomous Greenhouse Control Strategy](https://ojs.aaai.org/index.php/ICAPS/article/view/15989)
-    - Zhicheng An, Xiaoyan Cao, Yao Yao, **Wanpeng Zhang**, Lanqing Li, Yue Wang, Shihui Guo, Dijun Luo.
-    - [Link](https://ojs.aaai.org/index.php/ICAPS/article/view/15989) / [PDF](files/research_papers/icaps21.pdf)
-- [**[ICASSP'20]** Self-Paced Probabilistic Principal Component Analysis for Data with Outliers](https://ieeexplore.ieee.org/document/9054487)
-    - Bowen Zhao, Xi Xiao, **Wanpeng Zhang**, Bin Zhang, Guojun Gan, Shutao Xia.
-    - [Link](https://ieeexplore.ieee.org/document/9054487) / [arXiv](https://arxiv.org/abs/1904.06546) / [PDF](https://arxiv.org/pdf/1904.06546.pdf) / [Code](https://github.com/rumusan/SPPPCA_demo)
+You don't need to touch anything in `features` or `markdown_extensions`.
 
-## Preprints
+### Extra configuration
 
-----
-- [**[arXiv'23]** RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds](https://arxiv.org/abs/2309.17176)
-    - **Wanpeng Zhang**, Zongqing Lu.
-    - [arXiv](https://arxiv.org/abs/2309.17176) / [PDF](https://arxiv.org/pdf/2309.17176.pdf)
-- [**[arXiv'23]** Tackling Non-Stationarity in Reinforcement Learning via Causal-Origin Representation](https://arxiv.org/abs/2306.02747)
-    - **Wanpeng Zhang**, Yilin Li, Boyu Yang, Zongqing Lu.
-    - [arXiv](https://arxiv.org/abs/2306.02747) / [PDF](https://arxiv.org/pdf/2306.02747.pdf)
-- [**[arXiv'21]** MBDP: A Model-based Approach to Achieve both Robustness and Sample Efficiency via Double Dropout Planning](https://arxiv.org/abs/2108.01295)
-    - **Wanpeng Zhang**, Xi Xiao, Yao Yao, Mingzhe Chen, Dijun Luo.
-    - [arXiv](https://arxiv.org/abs/2108.01295) / [PDF](https://arxiv.org/pdf/2108.01295.pdf)
+The last part of the `mkdocs.yml` is a configuration for the `hooks` and the template Jinja displaying the list of articles (`blog_list.html`).
 
-## Patents
+There are also :
 
-----
+- `SEO` (_`string`_): Link to your default image displayed by the SEO.
+- `comments` (_`boolean`_) : Allow the comments block at the end of the page
+- `generate_graph` (_`boolean`_): Generate the [[customization#Graph view|graph view]]
+- `attachments` (_`boolean`_): For [[configuration#Blog list (article listing)]] and image in SEO. Change it according to your Obsidian Plugin settings.
 
-- [**[CN112527104A]** Method, device and equipment for determining parameters and storage medium](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A)
-    - **Wanpeng Zhang**, Dijun Luo, Xi Xiao
-    - [Link](https://patents.google.com/patent/CN112527104A/en?oq=CN112527104A) / [PDF](https://patentimages.storage.googleapis.com/53/bd/72/64c9f1cc80e03a/CN112527104A.pdf)
+#### Blog list (article listing)
 
-## Academic Service
+The list of articles is configured by the key `blog_list` and can take the following parameters :
 
-----
+- `pagination` (_`boolean, default: True`_): Display a pagination if the list is too long.
+- `pagination_message` (_`boolean, default: True`_): Display a message with the number of posts (article/file) in the folder.
+- `pagination_translation` (`string, default: 'posts in'`): Translation of the pagination's message.
+- `no_page_found` (`string, default: "No pages found!"`): The text to display if no pages were found.
 
-- Reviewer
-    - ICML 2022, 2023
-    - NeurIPS 2022, 2023
-    - ICLR 2024
+#### Hooks
+
+This part contains the configuration of `hooks`, short python scripts that allow to patch some Obsidian parts incompatible with Mkdocs.
+
+You can configure :
+
+- The suppression of the Obsidian's comments (`%% comments %%`): `strip_comments: true`
+- A fix for headings, which adds a `#` to all headings (except the 6th one) because the Mkdocs TOC considers that the H1 is the main heading/title of the file: `fix_heading: true`
+
+## Local testing
+
+To run the blog locally, you need to install the requirements and run `mkdocs serve`.
+
+`cd publish_blog pip install -r requirements.txt mkdocs serve`
+
+A tip: You can use a [conda](https://docs.conda.io/en/latest/) environment here (or a venv, but I prefer conda). Just use this command:
+
+```bash
+conda create -n Publisher python=3.11
+conda activate Publisher
+```
+
+Run this command just before running `pip install`.
