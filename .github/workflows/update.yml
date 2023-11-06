@@ -1,0 +1,12 @@
+name: Get latest release from template
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  update:
+    uses: ObsidianPublisher/actions/.github/workflows/update.yml@obs-pages
+    with:
+      AUTO_MERGE: false
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
